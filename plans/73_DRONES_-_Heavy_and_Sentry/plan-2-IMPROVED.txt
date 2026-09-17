@@ -1,0 +1,31 @@
+Drones I
+Drones II
+Drones III
+Drones IV
+Drones V
+Heavy Drone Operation I
+Heavy Drone Operation II
+Heavy Drone Operation III
+Heavy Drone Operation IV
+Heavy Drone Operation V
+Drone Interfacing I
+Drone Interfacing II
+Drone Interfacing III
+Drone Interfacing IV
+Drone Sharpshooting I
+Drone Sharpshooting II
+Drone Sharpshooting III
+Drone Sharpshooting IV
+Sentry Drone Interfacing I
+Sentry Drone Interfacing II
+Sentry Drone Interfacing III
+Sentry Drone Interfacing IV
+Sentry Drone Interfacing V
+Amarr Drone Specialization I
+Amarr Drone Specialization II
+Caldari Drone Specialization I
+Caldari Drone Specialization II
+Gallente Drone Specialization I
+Gallente Drone Specialization II
+Minmatar Drone Specialization I
+Minmatar Drone Specialization II

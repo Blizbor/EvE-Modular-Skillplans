@@ -1,0 +1,48 @@
+Spaceship Command I
+Spaceship Command II
+Minmatar Cruiser I
+Minmatar Cruiser II
+Minmatar Cruiser III
+Minmatar Cruiser IV
+Minmatar Cruiser V
+Mechanics I
+Mechanics II
+Mechanics III
+Mechanics IV
+Mechanics V
+Shield Operation I
+Shield Operation II
+Shield Operation III
+Power Grid Management I
+Power Grid Management II
+Power Grid Management III
+Power Grid Management IV
+Power Grid Management V
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Gunnery V
+Missile Launcher Operation I
+Missile Launcher Operation II
+Missile Launcher Operation III
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Navigation V
+Minmatar Strategic Cruiser I
+Minmatar Strategic Cruiser II
+Minmatar Strategic Cruiser III
+Minmatar Defensive Systems I
+Minmatar Defensive Systems II
+Minmatar Defensive Systems III
+Minmatar Core Systems I
+Minmatar Core Systems II
+Minmatar Core Systems III
+Minmatar Offensive Systems I
+Minmatar Offensive Systems II
+Minmatar Offensive Systems III
+Minmatar Propulsion Systems I
+Minmatar Propulsion Systems II
+Minmatar Propulsion Systems III

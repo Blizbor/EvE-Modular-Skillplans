@@ -1,0 +1,26 @@
+CPU Management I
+CPU Management II
+Power Grid Management I
+Power Grid Management II
+Electronics Upgrades I
+Electronics Upgrades II
+Electronics Upgrades III
+Electronics Upgrades IV
+Electronics Upgrades V
+Industry I
+Industry II
+Industry III
+Industry IV
+Industry V
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Mining Frigate I
+Mining Frigate II
+Mining Frigate III
+Mining Frigate IV
+Mining Frigate V
+Expedition Frigates I
+Expedition Frigates II
+Expedition Frigates III
+Expedition Frigates IV

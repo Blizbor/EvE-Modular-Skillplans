@@ -1,0 +1,59 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Spaceship Command V
+Advanced Spaceship Command I
+Advanced Spaceship Command II
+Advanced Spaceship Command III
+Advanced Spaceship Command IV
+Advanced Spaceship Command V
+Capital Ships I
+Capital Ships II
+Capital Ships III
+Capital Ships IV
+Gallente Battleship I
+Gallente Battleship II
+Gallente Battleship III
+Drones I
+Drones II
+Drones III
+Drones IV
+Drones V
+Drone Interfacing I
+Drone Interfacing II
+Drone Interfacing III
+Drone Interfacing IV
+Drone Interfacing V
+Science I
+Science II
+Science III
+Science IV
+Science V
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Navigation V
+Warp Drive Operation I
+Warp Drive Operation II
+Warp Drive Operation III
+Warp Drive Operation IV
+Warp Drive Operation V
+Jump Drive Operation I
+Jump Drive Operation II
+Jump Drive Operation III
+Jump Drive Operation IV
+Jump Drive Operation V
+Jump Drive Calibration I
+Jump Drive Calibration II
+Jump Drive Calibration III
+Jump Drive Calibration IV
+Jump Fuel Conservation I
+Jump Fuel Conservation II
+Jump Fuel Conservation III
+Jump Fuel Conservation IV
+Gallente Carrier I
+Gallente Carrier II
+Gallente Carrier III
+Gallente Carrier IV

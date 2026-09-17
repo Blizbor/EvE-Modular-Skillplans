@@ -1,0 +1,58 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Spaceship Command V
+Advanced Spaceship Command I
+Advanced Spaceship Command II
+Advanced Spaceship Command III
+Advanced Spaceship Command IV
+Advanced Spaceship Command V
+Capital Ships I
+Capital Ships II
+Capital Ships III
+Minmatar Battleship I
+Minmatar Battleship II
+Minmatar Battleship III
+Gunnery I
+Gunnery II
+Weapon Upgrades I
+Weapon Upgrades II
+Weapon Upgrades III
+Weapon Upgrades IV
+Advanced Weapon Upgrades I
+Advanced Weapon Upgrades II
+Advanced Weapon Upgrades III
+Advanced Weapon Upgrades IV
+Advanced Weapon Upgrades V
+Tactical Weapon Reconfiguration I
+Science I
+Science II
+Science III
+Science IV
+Science V
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Navigation V
+Warp Drive Operation I
+Warp Drive Operation II
+Warp Drive Operation III
+Warp Drive Operation IV
+Warp Drive Operation V
+Jump Drive Operation I
+Jump Drive Operation II
+Jump Drive Operation III
+Jump Drive Operation IV
+Jump Drive Operation V
+Jump Drive Calibration I
+Jump Drive Calibration II
+Jump Drive Calibration III
+Jump Fuel Conservation I
+Jump Fuel Conservation II
+Jump Fuel Conservation III
+Jump Fuel Conservation IV
+Minmatar Dreadnought I
+Minmatar Dreadnought II
+Minmatar Dreadnought III

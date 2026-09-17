@@ -1,0 +1,26 @@
+Science I
+Science II
+Science III
+Science IV
+Astrogeology I
+Astrogeology II
+Astrogeology III
+Astrogeology IV
+Astrogeology V
+Industry I
+Industry II
+Industry III
+Industry IV
+Industry V
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Mining Barge I
+Mining Barge II
+Mining Barge III
+Mining Barge IV
+Mining Barge V
+Exhumers I
+Exhumers II
+Exhumers III

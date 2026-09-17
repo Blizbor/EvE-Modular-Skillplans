@@ -1,0 +1,34 @@
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Jury Rigging I
+Jury Rigging II
+Jury Rigging III
+Projectile Weapon Rigging I
+Projectile Weapon Rigging II
+Projectile Weapon Rigging III
+Small Projectile Turret I
+Small Projectile Turret II
+Small Projectile Turret III
+Small Projectile Turret IV
+Small Projectile Turret V
+Small Autocannon Specialization I
+Small Autocannon Specialization II
+Small Autocannon Specialization III
+Small Autocannon Specialization IV
+Small Artillery Specialization I
+Small Artillery Specialization II
+Small Artillery Specialization III
+Small Artillery Specialization IV
+Medium Projectile Turret I
+Medium Projectile Turret II
+Medium Projectile Turret III
+Medium Projectile Turret IV
+Medium Projectile Turret V
+Medium Autocannon Specialization I
+Medium Autocannon Specialization II
+Medium Autocannon Specialization III
+Medium Artillery Specialization I
+Medium Artillery Specialization II
+Medium Artillery Specialization III

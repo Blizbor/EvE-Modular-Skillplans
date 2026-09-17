@@ -1,0 +1,42 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Spaceship Command V
+Advanced Spaceship Command I
+Advanced Spaceship Command II
+Advanced Spaceship Command III
+Advanced Spaceship Command IV
+Advanced Spaceship Command V
+Capital Ships I
+Capital Ships II
+ORE Hauler I
+ORE Hauler II
+ORE Hauler III
+Leadership I
+Mining Foreman I
+Mining Foreman II
+Mining Foreman III
+Mining Foreman IV
+Mining Foreman V
+Mining Director I
+Industrial Command Ships I
+Industrial Command Ships II
+Industrial Command Ships III
+Industry I
+Industry II
+Industry III
+Mass Production I
+Mass Production II
+Mass Production III
+Mass Production IV
+Mass Production V
+Advanced Mass Production I
+Advanced Mass Production II
+Advanced Mass Production III
+Advanced Mass Production IV
+Industrial Reconfiguration I
+Capital Industrial Ships I
+Capital Industrial Ships II
+Capital Industrial Ships III
+Capital Industrial Ships IV

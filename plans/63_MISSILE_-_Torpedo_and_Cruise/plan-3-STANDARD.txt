@@ -1,0 +1,29 @@
+Missile Launcher Operation I
+Missile Launcher Operation II
+Missile Launcher Operation III
+Missile Launcher Operation IV
+Missile Launcher Operation V
+Light Missiles I
+Light Missiles II
+Light Missiles III
+Heavy Missiles I
+Heavy Missiles II
+Heavy Missiles III
+Torpedoes I
+Torpedoes II
+Torpedoes III
+Torpedoes IV
+Torpedoes V
+Cruise Missiles I
+Cruise Missiles II
+Cruise Missiles III
+Cruise Missiles IV
+Cruise Missiles V
+Torpedo Specialization I
+Torpedo Specialization II
+Torpedo Specialization III
+Torpedo Specialization IV
+Cruise Missile Specialization I
+Cruise Missile Specialization II
+Cruise Missile Specialization III
+Cruise Missile Specialization IV

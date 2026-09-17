@@ -1,0 +1,18 @@
+CPU Management I
+CPU Management II
+Target Management I
+Target Management II
+Target Management III
+Target Management IV
+Target Management V
+Long Range Targeting I
+Long Range Targeting II
+Long Range Targeting III
+Long Range Targeting IV
+Signature Analysis I
+Signature Analysis II
+Signature Analysis III
+Signature Analysis IV
+Advanced Target Management I
+Advanced Target Management II
+Advanced Target Management III

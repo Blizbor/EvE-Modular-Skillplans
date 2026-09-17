@@ -1,0 +1,18 @@
+Drones I
+Drones II
+Drones III
+Drones IV
+Drones V
+Medium Drone Operation I
+Medium Drone Operation II
+Medium Drone Operation III
+Medium Drone Operation IV
+Medium Drone Operation V
+Amarr Drone Specialization I
+Amarr Drone Specialization II
+Caldari Drone Specialization I
+Caldari Drone Specialization II
+Gallente Drone Specialization I
+Gallente Drone Specialization II
+Minmatar Drone Specialization I
+Minmatar Drone Specialization II

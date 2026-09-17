@@ -1,0 +1,27 @@
+CPU Management I
+CPU Management II
+CPU Management III
+CPU Management IV
+Power Grid Management I
+Power Grid Management II
+Power Grid Management III
+Power Grid Management IV
+Capacitor Management I
+Capacitor Management II
+Capacitor Management III
+Capacitor Management IV
+Capacitor Systems Operation I
+Capacitor Systems Operation II
+Capacitor Systems Operation III
+Capacitor Systems Operation IV
+Science I
+Energy Grid Upgrades I
+Energy Grid Upgrades II
+Energy Grid Upgrades III
+Electronics Upgrades I
+Electronics Upgrades II
+Electronics Upgrades III
+Mechanics I
+Mechanics II
+Mechanics III
+Jury Rigging I

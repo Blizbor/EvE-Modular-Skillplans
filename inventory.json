@@ -1,0 +1,16 @@
+{
+  "project": "EvE Modular Skillplans",
+  "plan_count": 89,
+  "levels": [
+    "BASIC",
+    "IMPROVED",
+    "STANDARD"
+  ],
+  "languages": [
+    "PL",
+    "EN"
+  ],
+  "training_paths": 14,
+  "plan_queue_files": 267,
+  "plan_readmes_bilingual": 178
+}

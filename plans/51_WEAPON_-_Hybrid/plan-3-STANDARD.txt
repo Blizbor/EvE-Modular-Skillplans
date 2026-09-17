@@ -1,0 +1,65 @@
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Gunnery V
+Controlled Bursts I
+Controlled Bursts II
+Controlled Bursts III
+Controlled Bursts IV
+Jury Rigging I
+Jury Rigging II
+Jury Rigging III
+Hybrid Weapon Rigging I
+Hybrid Weapon Rigging II
+Hybrid Weapon Rigging III
+Hybrid Weapon Rigging IV
+Small Hybrid Turret I
+Small Hybrid Turret II
+Small Hybrid Turret III
+Small Hybrid Turret IV
+Small Hybrid Turret V
+Small Blaster Specialization I
+Small Blaster Specialization II
+Small Blaster Specialization III
+Small Blaster Specialization IV
+Small Railgun Specialization I
+Small Railgun Specialization II
+Small Railgun Specialization III
+Small Railgun Specialization IV
+Medium Hybrid Turret I
+Medium Hybrid Turret II
+Medium Hybrid Turret III
+Medium Hybrid Turret IV
+Medium Hybrid Turret V
+Medium Blaster Specialization I
+Medium Blaster Specialization II
+Medium Blaster Specialization III
+Medium Blaster Specialization IV
+Medium Railgun Specialization I
+Medium Railgun Specialization II
+Medium Railgun Specialization III
+Medium Railgun Specialization IV
+Large Hybrid Turret I
+Large Hybrid Turret II
+Large Hybrid Turret III
+Large Hybrid Turret IV
+Large Hybrid Turret V
+Large Blaster Specialization I
+Large Blaster Specialization II
+Large Blaster Specialization III
+Large Blaster Specialization IV
+Large Railgun Specialization I
+Large Railgun Specialization II
+Large Railgun Specialization III
+Large Railgun Specialization IV
+Motion Prediction I
+Motion Prediction II
+Motion Prediction III
+Motion Prediction IV
+Motion Prediction V
+Sharpshooter I
+Sharpshooter II
+Sharpshooter III
+Sharpshooter IV
+Sharpshooter V

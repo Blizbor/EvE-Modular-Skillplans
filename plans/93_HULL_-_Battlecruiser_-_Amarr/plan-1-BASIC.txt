@@ -1,0 +1,15 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Amarr Frigate I
+Amarr Frigate II
+Amarr Frigate III
+Amarr Destroyer I
+Amarr Destroyer II
+Amarr Destroyer III
+Amarr Cruiser I
+Amarr Cruiser II
+Amarr Cruiser III
+Amarr Battlecruiser I
+Amarr Battlecruiser II
+Amarr Battlecruiser III

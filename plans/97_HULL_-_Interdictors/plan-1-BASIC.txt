@@ -1,0 +1,28 @@
+CPU Management I
+CPU Management II
+CPU Management III
+Navigation I
+Navigation II
+Propulsion Jamming I
+Propulsion Jamming II
+Propulsion Jamming III
+Propulsion Jamming IV
+Propulsion Jamming V
+Science I
+Science II
+Science III
+Science IV
+Science V
+Power Grid Management I
+Power Grid Management II
+Power Grid Management III
+Power Grid Management IV
+Power Grid Management V
+Graviton Physics I
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Interdictors I
+Interdictors II
+Interdictors III

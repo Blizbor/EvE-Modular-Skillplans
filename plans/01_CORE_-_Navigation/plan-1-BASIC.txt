@@ -1,0 +1,27 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Evasive Maneuvering I
+Evasive Maneuvering II
+Evasive Maneuvering III
+Evasive Maneuvering IV
+Warp Drive Operation I
+Warp Drive Operation II
+Warp Drive Operation III
+Afterburner I
+Afterburner II
+Afterburner III
+Acceleration Control I
+Acceleration Control II
+Acceleration Control III
+High Speed Maneuvering I
+High Speed Maneuvering II
+High Speed Maneuvering III
+Fuel Conservation I
+Fuel Conservation II
+Fuel Conservation III

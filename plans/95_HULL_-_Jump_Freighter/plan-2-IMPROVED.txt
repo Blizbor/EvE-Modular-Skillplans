@@ -1,0 +1,46 @@
+Industry I
+Industry II
+Industry III
+Industry IV
+Industry V
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Spaceship Command V
+Advanced Spaceship Command I
+Advanced Spaceship Command II
+Advanced Spaceship Command III
+Advanced Spaceship Command IV
+Science I
+Science II
+Science III
+Science IV
+Science V
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Navigation V
+Warp Drive Operation I
+Warp Drive Operation II
+Warp Drive Operation III
+Warp Drive Operation IV
+Warp Drive Operation V
+Jump Drive Operation I
+Jump Drive Operation II
+Jump Drive Operation III
+Jump Drive Operation IV
+Jump Drive Operation V
+Jump Drive Calibration I
+Jump Drive Calibration II
+Jump Drive Calibration III
+Jump Drive Calibration IV
+Jump Freighters I
+Jump Freighters II
+Jump Freighters III
+Jump Freighters IV
+Jump Fuel Conservation I
+Jump Fuel Conservation II
+Jump Fuel Conservation III
+Jump Fuel Conservation IV

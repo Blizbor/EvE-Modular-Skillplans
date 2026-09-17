@@ -1,0 +1,61 @@
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Gunnery V
+Jury Rigging I
+Jury Rigging II
+Jury Rigging III
+Projectile Weapon Rigging I
+Projectile Weapon Rigging II
+Projectile Weapon Rigging III
+Projectile Weapon Rigging IV
+Small Projectile Turret I
+Small Projectile Turret II
+Small Projectile Turret III
+Small Projectile Turret IV
+Small Projectile Turret V
+Small Autocannon Specialization I
+Small Autocannon Specialization II
+Small Autocannon Specialization III
+Small Autocannon Specialization IV
+Small Artillery Specialization I
+Small Artillery Specialization II
+Small Artillery Specialization III
+Small Artillery Specialization IV
+Medium Projectile Turret I
+Medium Projectile Turret II
+Medium Projectile Turret III
+Medium Projectile Turret IV
+Medium Projectile Turret V
+Medium Autocannon Specialization I
+Medium Autocannon Specialization II
+Medium Autocannon Specialization III
+Medium Autocannon Specialization IV
+Medium Artillery Specialization I
+Medium Artillery Specialization II
+Medium Artillery Specialization III
+Medium Artillery Specialization IV
+Large Projectile Turret I
+Large Projectile Turret II
+Large Projectile Turret III
+Large Projectile Turret IV
+Large Projectile Turret V
+Large Autocannon Specialization I
+Large Autocannon Specialization II
+Large Autocannon Specialization III
+Large Autocannon Specialization IV
+Large Artillery Specialization I
+Large Artillery Specialization II
+Large Artillery Specialization III
+Large Artillery Specialization IV
+Motion Prediction I
+Motion Prediction II
+Motion Prediction III
+Motion Prediction IV
+Motion Prediction V
+Sharpshooter I
+Sharpshooter II
+Sharpshooter III
+Sharpshooter IV
+Sharpshooter V

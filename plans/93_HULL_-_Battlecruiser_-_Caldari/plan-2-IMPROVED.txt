@@ -1,0 +1,16 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Caldari Frigate I
+Caldari Frigate II
+Caldari Frigate III
+Caldari Destroyer I
+Caldari Destroyer II
+Caldari Destroyer III
+Caldari Cruiser I
+Caldari Cruiser II
+Caldari Cruiser III
+Caldari Battlecruiser I
+Caldari Battlecruiser II
+Caldari Battlecruiser III
+Caldari Battlecruiser IV

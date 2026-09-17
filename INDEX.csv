@@ -1,0 +1,90 @@
+code,title,category,directory,basic_file,improved_file,standard_file
+00,"CORE - Engineering, Capacitor & Rigging",CORE,plans/00_CORE_-_Engineering_Capacitor_and_Rigging,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+01,CORE - Navigation,CORE,plans/01_CORE_-_Navigation,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+02,CORE - Targeting,CORE,plans/02_CORE_-_Targeting,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+03,CORE - PvP Heat,CORE,plans/03_CORE_-_PvP_Heat,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+10,COMBAT - Damage Mods & Weapon Fitting,COMBAT,plans/10_COMBAT_-_Damage_Mods_and_Weapon_Fitting,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+21,TANK - Armor Buffer,TANK,plans/21_TANK_-_Armor_Buffer,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+22,TANK - Armor Active,TANK,plans/22_TANK_-_Armor_Active,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+30,TANK - Shield Passive/Buffer,TANK,plans/30_TANK_-_Shield_Passive-Buffer,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+31,TANK - Shield Active,TANK,plans/31_TANK_-_Shield_Active,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+50,WEAPON - Turret Support,WEAPON,plans/50_WEAPON_-_Turret_Support,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+51,WEAPON - Hybrid,WEAPON,plans/51_WEAPON_-_Hybrid,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+52,WEAPON - Projectile,WEAPON,plans/52_WEAPON_-_Projectile,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+53,WEAPON - Energy,WEAPON,plans/53_WEAPON_-_Energy,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+60,WEAPON - Missile Support,WEAPON,plans/60_WEAPON_-_Missile_Support,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+61,MISSILE - Rockets & Light,WEAPON,plans/61_MISSILE_-_Rockets_and_Light,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+62,MISSILE - HAM & Heavy,WEAPON,plans/62_MISSILE_-_HAM_and_Heavy,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+63,MISSILE - Torpedo & Cruise,WEAPON,plans/63_MISSILE_-_Torpedo_and_Cruise,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+70,WEAPON - Drone Support,WEAPON,plans/70_WEAPON_-_Drone_Support,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+71,DRONES - Light T2,WEAPON,plans/71_DRONES_-_Light_T2,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+72,DRONES - Medium T2,WEAPON,plans/72_DRONES_-_Medium_T2,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+73,DRONES - Heavy & Sentry,WEAPON,plans/73_DRONES_-_Heavy_and_Sentry,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+80,"SCOUT - Signature, Combat & Covert",SCOUT,plans/80_SCOUT_-_Signature_Combat_and_Covert,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+83,"CYNO - Industrial, Hard & Covert (INDUSTRIAL), Hard & Covert",CYNO,plans/83_CYNO_-_Industrial_Hard_and_Covert,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+90,HULL - Frigate - Amarr,HULL,plans/90_HULL_-_Frigate_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+90,HULL - Frigate - Caldari,HULL,plans/90_HULL_-_Frigate_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+90,HULL - Frigate - Gallente,HULL,plans/90_HULL_-_Frigate_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+90,HULL - Frigate - Minmatar,HULL,plans/90_HULL_-_Frigate_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+91,HULL - Destroyer - Amarr,HULL,plans/91_HULL_-_Destroyer_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+91,HULL - Destroyer - Caldari,HULL,plans/91_HULL_-_Destroyer_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+91,HULL - Destroyer - Gallente,HULL,plans/91_HULL_-_Destroyer_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+91,HULL - Destroyer - Minmatar,HULL,plans/91_HULL_-_Destroyer_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+92,HULL - Cruiser - Amarr,HULL,plans/92_HULL_-_Cruiser_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+92,HULL - Cruiser - Caldari,HULL,plans/92_HULL_-_Cruiser_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+92,HULL - Cruiser - Gallente,HULL,plans/92_HULL_-_Cruiser_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+92,HULL - Cruiser - Minmatar,HULL,plans/92_HULL_-_Cruiser_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+93,HULL - Battlecruiser - Amarr,HULL,plans/93_HULL_-_Battlecruiser_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+93,HULL - Battlecruiser - Caldari,HULL,plans/93_HULL_-_Battlecruiser_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+93,HULL - Battlecruiser - Gallente,HULL,plans/93_HULL_-_Battlecruiser_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+93,HULL - Battlecruiser - Minmatar,HULL,plans/93_HULL_-_Battlecruiser_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+94,HULL - Battleship - Amarr,HULL,plans/94_HULL_-_Battleship_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+94,HULL - Battleship - Caldari,HULL,plans/94_HULL_-_Battleship_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+94,HULL - Battleship - Gallente,HULL,plans/94_HULL_-_Battleship_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+94,HULL - Battleship - Minmatar,HULL,plans/94_HULL_-_Battleship_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Freighter - Amarr,HULL,plans/95_HULL_-_Freighter_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Freighter - Caldari,HULL,plans/95_HULL_-_Freighter_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Freighter - Gallente,HULL,plans/95_HULL_-_Freighter_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Freighter - Minmatar,HULL,plans/95_HULL_-_Freighter_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Hauler - Amarr,HULL,plans/95_HULL_-_Hauler_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Hauler - Caldari,HULL,plans/95_HULL_-_Hauler_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Hauler - Gallente,HULL,plans/95_HULL_-_Hauler_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Hauler - Minmatar,HULL,plans/95_HULL_-_Hauler_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Jump Freighter,HULL,plans/95_HULL_-_Jump_Freighter,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+95,HULL - Transport Ships,HULL,plans/95_HULL_-_Transport_Ships,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - Capital Industrial,HULL,plans/96_HULL_-_Capital_Industrial,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - Exhumers,HULL,plans/96_HULL_-_Exhumers,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - Expedition Frigates,HULL,plans/96_HULL_-_Expedition_Frigates,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - Industrial Command Ships,HULL,plans/96_HULL_-_Industrial_Command_Ships,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - Mining Barge,HULL,plans/96_HULL_-_Mining_Barge,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - Mining Destroyer,HULL,plans/96_HULL_-_Mining_Destroyer,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - Mining Frigate,HULL,plans/96_HULL_-_Mining_Frigate,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - ORE Freighter,HULL,plans/96_HULL_-_ORE_Freighter,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+96,HULL - ORE Hauler,HULL,plans/96_HULL_-_ORE_Hauler,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Assault Frigates,HULL,plans/97_HULL_-_Assault_Frigates,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Black Ops,HULL,plans/97_HULL_-_Black_Ops,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Command Destroyers,HULL,plans/97_HULL_-_Command_Destroyers,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Command Ships,HULL,plans/97_HULL_-_Command_Ships,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Electronic Attack Ships,HULL,plans/97_HULL_-_Electronic_Attack_Ships,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Heavy Assault Cruisers,HULL,plans/97_HULL_-_Heavy_Assault_Cruisers,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Heavy Interdiction Cruisers,HULL,plans/97_HULL_-_Heavy_Interdiction_Cruisers,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Interceptors,HULL,plans/97_HULL_-_Interceptors,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Interdictors,HULL,plans/97_HULL_-_Interdictors,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Logistics Cruisers,HULL,plans/97_HULL_-_Logistics_Cruisers,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Logistics Frigates,HULL,plans/97_HULL_-_Logistics_Frigates,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Marauders,HULL,plans/97_HULL_-_Marauders,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+97,HULL - Recon Ships,HULL,plans/97_HULL_-_Recon_Ships,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+98,HULL - Strategic Cruiser - Legion,HULL,plans/98_HULL_-_Strategic_Cruiser_-_Legion,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+98,HULL - Strategic Cruiser - Loki,HULL,plans/98_HULL_-_Strategic_Cruiser_-_Loki,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+98,HULL - Strategic Cruiser - Proteus,HULL,plans/98_HULL_-_Strategic_Cruiser_-_Proteus,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+98,HULL - Strategic Cruiser - Tengu,HULL,plans/98_HULL_-_Strategic_Cruiser_-_Tengu,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Carrier - Amarr,HULL,plans/99_HULL_-_Carrier_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Carrier - Caldari,HULL,plans/99_HULL_-_Carrier_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Carrier - Gallente,HULL,plans/99_HULL_-_Carrier_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Carrier - Minmatar,HULL,plans/99_HULL_-_Carrier_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Command Carriers,HULL,plans/99_HULL_-_Command_Carriers,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Dreadnought - Amarr,HULL,plans/99_HULL_-_Dreadnought_-_Amarr,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Dreadnought - Caldari,HULL,plans/99_HULL_-_Dreadnought_-_Caldari,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Dreadnought - Gallente,HULL,plans/99_HULL_-_Dreadnought_-_Gallente,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Dreadnought - Minmatar,HULL,plans/99_HULL_-_Dreadnought_-_Minmatar,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt
+99,HULL - Lancer Dreadnoughts,HULL,plans/99_HULL_-_Lancer_Dreadnoughts,plan-1-BASIC.txt,plan-2-IMPROVED.txt,plan-3-STANDARD.txt

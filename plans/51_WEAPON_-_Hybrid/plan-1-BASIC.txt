@@ -1,0 +1,19 @@
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Jury Rigging I
+Jury Rigging II
+Jury Rigging III
+Hybrid Weapon Rigging I
+Small Hybrid Turret I
+Small Hybrid Turret II
+Small Hybrid Turret III
+Small Hybrid Turret IV
+Small Hybrid Turret V
+Small Blaster Specialization I
+Small Blaster Specialization II
+Small Blaster Specialization III
+Small Railgun Specialization I
+Small Railgun Specialization II
+Small Railgun Specialization III

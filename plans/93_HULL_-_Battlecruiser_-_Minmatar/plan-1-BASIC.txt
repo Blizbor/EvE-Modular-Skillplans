@@ -1,0 +1,15 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Minmatar Frigate I
+Minmatar Frigate II
+Minmatar Frigate III
+Minmatar Destroyer I
+Minmatar Destroyer II
+Minmatar Destroyer III
+Minmatar Cruiser I
+Minmatar Cruiser II
+Minmatar Cruiser III
+Minmatar Battlecruiser I
+Minmatar Battlecruiser II
+Minmatar Battlecruiser III

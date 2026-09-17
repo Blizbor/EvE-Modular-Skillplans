@@ -1,0 +1,53 @@
+Spaceship Command I
+Spaceship Command II
+Amarr Cruiser I
+Amarr Cruiser II
+Amarr Cruiser III
+Amarr Cruiser IV
+Amarr Cruiser V
+Mechanics I
+Mechanics II
+Mechanics III
+Mechanics IV
+Mechanics V
+Shield Operation I
+Shield Operation II
+Shield Operation III
+Power Grid Management I
+Power Grid Management II
+Power Grid Management III
+Power Grid Management IV
+Power Grid Management V
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Gunnery V
+Drones I
+Drones II
+Drones III
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Navigation V
+Amarr Strategic Cruiser I
+Amarr Strategic Cruiser II
+Amarr Strategic Cruiser III
+Amarr Strategic Cruiser IV
+Amarr Defensive Systems I
+Amarr Defensive Systems II
+Amarr Defensive Systems III
+Amarr Defensive Systems IV
+Amarr Core Systems I
+Amarr Core Systems II
+Amarr Core Systems III
+Amarr Core Systems IV
+Amarr Offensive Systems I
+Amarr Offensive Systems II
+Amarr Offensive Systems III
+Amarr Offensive Systems IV
+Amarr Propulsion Systems I
+Amarr Propulsion Systems II
+Amarr Propulsion Systems III
+Amarr Propulsion Systems IV

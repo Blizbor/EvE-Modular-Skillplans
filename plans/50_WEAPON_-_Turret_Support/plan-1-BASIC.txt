@@ -1,0 +1,16 @@
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Rapid Firing I
+Rapid Firing II
+Rapid Firing III
+Motion Prediction I
+Motion Prediction II
+Motion Prediction III
+Sharpshooter I
+Sharpshooter II
+Sharpshooter III
+Surgical Strike I
+Surgical Strike II
+Surgical Strike III

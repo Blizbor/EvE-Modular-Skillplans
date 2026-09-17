@@ -1,0 +1,15 @@
+Mining I
+Mining II
+Mining III
+Mining IV
+Industry I
+Industry II
+Industry III
+Mining Frigate I
+Mining Frigate II
+Mining Frigate III
+Mining Destroyer I
+Mining Destroyer II
+Mining Destroyer III
+Mining Destroyer IV
+Mining Destroyer V

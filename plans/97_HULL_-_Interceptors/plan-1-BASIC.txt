@@ -1,0 +1,13 @@
+Navigation I
+Navigation II
+Evasive Maneuvering I
+Evasive Maneuvering II
+Evasive Maneuvering III
+Evasive Maneuvering IV
+Evasive Maneuvering V
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Interceptors I
+Interceptors II
+Interceptors III

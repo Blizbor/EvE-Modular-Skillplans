@@ -1,0 +1,17 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Gallente Frigate I
+Gallente Frigate II
+Gallente Frigate III
+Gallente Destroyer I
+Gallente Destroyer II
+Gallente Destroyer III
+Gallente Cruiser I
+Gallente Cruiser II
+Gallente Cruiser III
+Gallente Battlecruiser I
+Gallente Battlecruiser II
+Gallente Battlecruiser III
+Gallente Battlecruiser IV
+Gallente Battlecruiser V

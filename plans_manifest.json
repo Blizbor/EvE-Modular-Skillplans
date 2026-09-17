@@ -1,0 +1,803 @@
+[
+  {
+    "code": "00",
+    "title": "CORE - Engineering, Capacitor & Rigging",
+    "category": "CORE",
+    "basic_skills": 9,
+    "standard_skills": 9,
+    "improved_skills": 9,
+    "directory": "plans/00_CORE_-_Engineering_Capacitor_and_Rigging"
+  },
+  {
+    "code": "01",
+    "title": "CORE - Navigation",
+    "category": "CORE",
+    "basic_skills": 8,
+    "standard_skills": 8,
+    "improved_skills": 8,
+    "directory": "plans/01_CORE_-_Navigation"
+  },
+  {
+    "code": "02",
+    "title": "CORE - Targeting",
+    "category": "CORE",
+    "basic_skills": 4,
+    "standard_skills": 5,
+    "improved_skills": 4,
+    "directory": "plans/02_CORE_-_Targeting"
+  },
+  {
+    "code": "03",
+    "title": "CORE - PvP Heat",
+    "category": "CORE",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/03_CORE_-_PvP_Heat"
+  },
+  {
+    "code": "10",
+    "title": "COMBAT - Damage Mods & Weapon Fitting",
+    "category": "COMBAT",
+    "basic_skills": 2,
+    "standard_skills": 3,
+    "improved_skills": 3,
+    "directory": "plans/10_COMBAT_-_Damage_Mods_and_Weapon_Fitting"
+  },
+  {
+    "code": "21",
+    "title": "TANK - Armor Buffer",
+    "category": "TANK",
+    "basic_skills": 4,
+    "standard_skills": 9,
+    "improved_skills": 9,
+    "directory": "plans/21_TANK_-_Armor_Buffer"
+  },
+  {
+    "code": "22",
+    "title": "TANK - Armor Active",
+    "category": "TANK",
+    "basic_skills": 9,
+    "standard_skills": 10,
+    "improved_skills": 10,
+    "directory": "plans/22_TANK_-_Armor_Active"
+  },
+  {
+    "code": "30",
+    "title": "TANK - Shield Passive/Buffer",
+    "category": "TANK",
+    "basic_skills": 8,
+    "standard_skills": 8,
+    "improved_skills": 8,
+    "directory": "plans/30_TANK_-_Shield_Passive-Buffer"
+  },
+  {
+    "code": "31",
+    "title": "TANK - Shield Active",
+    "category": "TANK",
+    "basic_skills": 1,
+    "standard_skills": 1,
+    "improved_skills": 1,
+    "directory": "plans/31_TANK_-_Shield_Active"
+  },
+  {
+    "code": "50",
+    "title": "WEAPON - Turret Support",
+    "category": "WEAPON",
+    "basic_skills": 5,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/50_WEAPON_-_Turret_Support"
+  },
+  {
+    "code": "51",
+    "title": "WEAPON - Hybrid",
+    "category": "WEAPON",
+    "basic_skills": 6,
+    "standard_skills": 15,
+    "improved_skills": 10,
+    "directory": "plans/51_WEAPON_-_Hybrid"
+  },
+  {
+    "code": "52",
+    "title": "WEAPON - Projectile",
+    "category": "WEAPON",
+    "basic_skills": 6,
+    "standard_skills": 14,
+    "improved_skills": 9,
+    "directory": "plans/52_WEAPON_-_Projectile"
+  },
+  {
+    "code": "53",
+    "title": "WEAPON - Energy",
+    "category": "WEAPON",
+    "basic_skills": 6,
+    "standard_skills": 15,
+    "improved_skills": 10,
+    "directory": "plans/53_WEAPON_-_Energy"
+  },
+  {
+    "code": "60",
+    "title": "WEAPON - Missile Support",
+    "category": "WEAPON",
+    "basic_skills": 9,
+    "standard_skills": 9,
+    "improved_skills": 9,
+    "directory": "plans/60_WEAPON_-_Missile_Support"
+  },
+  {
+    "code": "61",
+    "title": "MISSILE - Rockets & Light",
+    "category": "WEAPON",
+    "basic_skills": 3,
+    "standard_skills": 5,
+    "improved_skills": 5,
+    "directory": "plans/61_MISSILE_-_Rockets_and_Light"
+  },
+  {
+    "code": "62",
+    "title": "MISSILE - HAM & Heavy",
+    "category": "WEAPON",
+    "basic_skills": 4,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/62_MISSILE_-_HAM_and_Heavy"
+  },
+  {
+    "code": "63",
+    "title": "MISSILE - Torpedo & Cruise",
+    "category": "WEAPON",
+    "basic_skills": 5,
+    "standard_skills": 7,
+    "improved_skills": 7,
+    "directory": "plans/63_MISSILE_-_Torpedo_and_Cruise"
+  },
+  {
+    "code": "70",
+    "title": "WEAPON - Drone Support",
+    "category": "WEAPON",
+    "basic_skills": 8,
+    "standard_skills": 8,
+    "improved_skills": 8,
+    "directory": "plans/70_WEAPON_-_Drone_Support"
+  },
+  {
+    "code": "71",
+    "title": "DRONES - Light T2",
+    "category": "WEAPON",
+    "basic_skills": 2,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/71_DRONES_-_Light_T2"
+  },
+  {
+    "code": "72",
+    "title": "DRONES - Medium T2",
+    "category": "WEAPON",
+    "basic_skills": 2,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/72_DRONES_-_Medium_T2"
+  },
+  {
+    "code": "73",
+    "title": "DRONES - Heavy & Sentry",
+    "category": "WEAPON",
+    "basic_skills": 5,
+    "standard_skills": 9,
+    "improved_skills": 9,
+    "directory": "plans/73_DRONES_-_Heavy_and_Sentry"
+  },
+  {
+    "code": "80",
+    "title": "SCOUT - Signature, Combat & Covert",
+    "category": "SCOUT",
+    "basic_skills": 2,
+    "standard_skills": 10,
+    "improved_skills": 4,
+    "directory": "plans/80_SCOUT_-_Signature_Combat_and_Covert"
+  },
+  {
+    "code": "83",
+    "title": "CYNO - Industrial, Hard & Covert (INDUSTRIAL), Hard & Covert",
+    "category": "CYNO",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/83_CYNO_-_Industrial_Hard_and_Covert"
+  },
+  {
+    "code": "90",
+    "title": "HULL - Frigate - Amarr",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/90_HULL_-_Frigate_-_Amarr"
+  },
+  {
+    "code": "90",
+    "title": "HULL - Frigate - Caldari",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/90_HULL_-_Frigate_-_Caldari"
+  },
+  {
+    "code": "90",
+    "title": "HULL - Frigate - Gallente",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/90_HULL_-_Frigate_-_Gallente"
+  },
+  {
+    "code": "90",
+    "title": "HULL - Frigate - Minmatar",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/90_HULL_-_Frigate_-_Minmatar"
+  },
+  {
+    "code": "91",
+    "title": "HULL - Destroyer - Amarr",
+    "category": "HULL",
+    "basic_skills": 3,
+    "standard_skills": 4,
+    "improved_skills": 3,
+    "directory": "plans/91_HULL_-_Destroyer_-_Amarr"
+  },
+  {
+    "code": "91",
+    "title": "HULL - Destroyer - Caldari",
+    "category": "HULL",
+    "basic_skills": 3,
+    "standard_skills": 4,
+    "improved_skills": 3,
+    "directory": "plans/91_HULL_-_Destroyer_-_Caldari"
+  },
+  {
+    "code": "91",
+    "title": "HULL - Destroyer - Gallente",
+    "category": "HULL",
+    "basic_skills": 3,
+    "standard_skills": 4,
+    "improved_skills": 3,
+    "directory": "plans/91_HULL_-_Destroyer_-_Gallente"
+  },
+  {
+    "code": "91",
+    "title": "HULL - Destroyer - Minmatar",
+    "category": "HULL",
+    "basic_skills": 3,
+    "standard_skills": 4,
+    "improved_skills": 3,
+    "directory": "plans/91_HULL_-_Destroyer_-_Minmatar"
+  },
+  {
+    "code": "92",
+    "title": "HULL - Cruiser - Amarr",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/92_HULL_-_Cruiser_-_Amarr"
+  },
+  {
+    "code": "92",
+    "title": "HULL - Cruiser - Caldari",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/92_HULL_-_Cruiser_-_Caldari"
+  },
+  {
+    "code": "92",
+    "title": "HULL - Cruiser - Gallente",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/92_HULL_-_Cruiser_-_Gallente"
+  },
+  {
+    "code": "92",
+    "title": "HULL - Cruiser - Minmatar",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/92_HULL_-_Cruiser_-_Minmatar"
+  },
+  {
+    "code": "93",
+    "title": "HULL - Battlecruiser - Amarr",
+    "category": "HULL",
+    "basic_skills": 5,
+    "standard_skills": 5,
+    "improved_skills": 5,
+    "directory": "plans/93_HULL_-_Battlecruiser_-_Amarr"
+  },
+  {
+    "code": "93",
+    "title": "HULL - Battlecruiser - Caldari",
+    "category": "HULL",
+    "basic_skills": 5,
+    "standard_skills": 5,
+    "improved_skills": 5,
+    "directory": "plans/93_HULL_-_Battlecruiser_-_Caldari"
+  },
+  {
+    "code": "93",
+    "title": "HULL - Battlecruiser - Gallente",
+    "category": "HULL",
+    "basic_skills": 5,
+    "standard_skills": 5,
+    "improved_skills": 5,
+    "directory": "plans/93_HULL_-_Battlecruiser_-_Gallente"
+  },
+  {
+    "code": "93",
+    "title": "HULL - Battlecruiser - Minmatar",
+    "category": "HULL",
+    "basic_skills": 5,
+    "standard_skills": 5,
+    "improved_skills": 5,
+    "directory": "plans/93_HULL_-_Battlecruiser_-_Minmatar"
+  },
+  {
+    "code": "94",
+    "title": "HULL - Battleship - Amarr",
+    "category": "HULL",
+    "basic_skills": 6,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/94_HULL_-_Battleship_-_Amarr"
+  },
+  {
+    "code": "94",
+    "title": "HULL - Battleship - Caldari",
+    "category": "HULL",
+    "basic_skills": 6,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/94_HULL_-_Battleship_-_Caldari"
+  },
+  {
+    "code": "94",
+    "title": "HULL - Battleship - Gallente",
+    "category": "HULL",
+    "basic_skills": 6,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/94_HULL_-_Battleship_-_Gallente"
+  },
+  {
+    "code": "94",
+    "title": "HULL - Battleship - Minmatar",
+    "category": "HULL",
+    "basic_skills": 6,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/94_HULL_-_Battleship_-_Minmatar"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Freighter - Amarr",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/95_HULL_-_Freighter_-_Amarr"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Freighter - Caldari",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/95_HULL_-_Freighter_-_Caldari"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Freighter - Gallente",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/95_HULL_-_Freighter_-_Gallente"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Freighter - Minmatar",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/95_HULL_-_Freighter_-_Minmatar"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Hauler - Amarr",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/95_HULL_-_Hauler_-_Amarr"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Hauler - Caldari",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/95_HULL_-_Hauler_-_Caldari"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Hauler - Gallente",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/95_HULL_-_Hauler_-_Gallente"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Hauler - Minmatar",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/95_HULL_-_Hauler_-_Minmatar"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Jump Freighter",
+    "category": "HULL",
+    "basic_skills": 9,
+    "standard_skills": 10,
+    "improved_skills": 10,
+    "directory": "plans/95_HULL_-_Jump_Freighter"
+  },
+  {
+    "code": "95",
+    "title": "HULL - Transport Ships",
+    "category": "HULL",
+    "basic_skills": 3,
+    "standard_skills": 3,
+    "improved_skills": 3,
+    "directory": "plans/95_HULL_-_Transport_Ships"
+  },
+  {
+    "code": "96",
+    "title": "HULL - Capital Industrial",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/96_HULL_-_Capital_Industrial"
+  },
+  {
+    "code": "96",
+    "title": "HULL - Exhumers",
+    "category": "HULL",
+    "basic_skills": 6,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/96_HULL_-_Exhumers"
+  },
+  {
+    "code": "96",
+    "title": "HULL - Expedition Frigates",
+    "category": "HULL",
+    "basic_skills": 7,
+    "standard_skills": 7,
+    "improved_skills": 7,
+    "directory": "plans/96_HULL_-_Expedition_Frigates"
+  },
+  {
+    "code": "96",
+    "title": "HULL - Industrial Command Ships",
+    "category": "HULL",
+    "basic_skills": 6,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/96_HULL_-_Industrial_Command_Ships"
+  },
+  {
+    "code": "96",
+    "title": "HULL - Mining Barge",
+    "category": "HULL",
+    "basic_skills": 6,
+    "standard_skills": 6,
+    "improved_skills": 6,
+    "directory": "plans/96_HULL_-_Mining_Barge"
+  },
+  {
+    "code": "96",
+    "title": "HULL - Mining Destroyer",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/96_HULL_-_Mining_Destroyer"
+  },
+  {
+    "code": "96",
+    "title": "HULL - Mining Frigate",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/96_HULL_-_Mining_Frigate"
+  },
+  {
+    "code": "96",
+    "title": "HULL - ORE Freighter",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/96_HULL_-_ORE_Freighter"
+  },
+  {
+    "code": "96",
+    "title": "HULL - ORE Hauler",
+    "category": "HULL",
+    "basic_skills": 2,
+    "standard_skills": 2,
+    "improved_skills": 2,
+    "directory": "plans/96_HULL_-_ORE_Hauler"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Assault Frigates",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/97_HULL_-_Assault_Frigates"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Black Ops",
+    "category": "HULL",
+    "basic_skills": 9,
+    "standard_skills": 9,
+    "improved_skills": 9,
+    "directory": "plans/97_HULL_-_Black_Ops"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Command Destroyers",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/97_HULL_-_Command_Destroyers"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Command Ships",
+    "category": "HULL",
+    "basic_skills": 5,
+    "standard_skills": 5,
+    "improved_skills": 5,
+    "directory": "plans/97_HULL_-_Command_Ships"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Electronic Attack Ships",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/97_HULL_-_Electronic_Attack_Ships"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Heavy Assault Cruisers",
+    "category": "HULL",
+    "basic_skills": 8,
+    "standard_skills": 8,
+    "improved_skills": 8,
+    "directory": "plans/97_HULL_-_Heavy_Assault_Cruisers"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Heavy Interdiction Cruisers",
+    "category": "HULL",
+    "basic_skills": 8,
+    "standard_skills": 8,
+    "improved_skills": 8,
+    "directory": "plans/97_HULL_-_Heavy_Interdiction_Cruisers"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Interceptors",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/97_HULL_-_Interceptors"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Interdictors",
+    "category": "HULL",
+    "basic_skills": 8,
+    "standard_skills": 8,
+    "improved_skills": 8,
+    "directory": "plans/97_HULL_-_Interdictors"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Logistics Cruisers",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/97_HULL_-_Logistics_Cruisers"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Logistics Frigates",
+    "category": "HULL",
+    "basic_skills": 4,
+    "standard_skills": 4,
+    "improved_skills": 4,
+    "directory": "plans/97_HULL_-_Logistics_Frigates"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Marauders",
+    "category": "HULL",
+    "basic_skills": 8,
+    "standard_skills": 8,
+    "improved_skills": 8,
+    "directory": "plans/97_HULL_-_Marauders"
+  },
+  {
+    "code": "97",
+    "title": "HULL - Recon Ships",
+    "category": "HULL",
+    "basic_skills": 7,
+    "standard_skills": 7,
+    "improved_skills": 7,
+    "directory": "plans/97_HULL_-_Recon_Ships"
+  },
+  {
+    "code": "98",
+    "title": "HULL - Strategic Cruiser - Legion",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/98_HULL_-_Strategic_Cruiser_-_Legion"
+  },
+  {
+    "code": "98",
+    "title": "HULL - Strategic Cruiser - Loki",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/98_HULL_-_Strategic_Cruiser_-_Loki"
+  },
+  {
+    "code": "98",
+    "title": "HULL - Strategic Cruiser - Proteus",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/98_HULL_-_Strategic_Cruiser_-_Proteus"
+  },
+  {
+    "code": "98",
+    "title": "HULL - Strategic Cruiser - Tengu",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/98_HULL_-_Strategic_Cruiser_-_Tengu"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Carrier - Amarr",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/99_HULL_-_Carrier_-_Amarr"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Carrier - Caldari",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/99_HULL_-_Carrier_-_Caldari"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Carrier - Gallente",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/99_HULL_-_Carrier_-_Gallente"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Carrier - Minmatar",
+    "category": "HULL",
+    "basic_skills": 13,
+    "standard_skills": 13,
+    "improved_skills": 13,
+    "directory": "plans/99_HULL_-_Carrier_-_Minmatar"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Command Carriers",
+    "category": "HULL",
+    "basic_skills": 11,
+    "standard_skills": 11,
+    "improved_skills": 11,
+    "directory": "plans/99_HULL_-_Command_Carriers"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Dreadnought - Amarr",
+    "category": "HULL",
+    "basic_skills": 15,
+    "standard_skills": 15,
+    "improved_skills": 15,
+    "directory": "plans/99_HULL_-_Dreadnought_-_Amarr"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Dreadnought - Caldari",
+    "category": "HULL",
+    "basic_skills": 15,
+    "standard_skills": 15,
+    "improved_skills": 15,
+    "directory": "plans/99_HULL_-_Dreadnought_-_Caldari"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Dreadnought - Gallente",
+    "category": "HULL",
+    "basic_skills": 15,
+    "standard_skills": 15,
+    "improved_skills": 15,
+    "directory": "plans/99_HULL_-_Dreadnought_-_Gallente"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Dreadnought - Minmatar",
+    "category": "HULL",
+    "basic_skills": 15,
+    "standard_skills": 15,
+    "improved_skills": 15,
+    "directory": "plans/99_HULL_-_Dreadnought_-_Minmatar"
+  },
+  {
+    "code": "99",
+    "title": "HULL - Lancer Dreadnoughts",
+    "category": "HULL",
+    "basic_skills": 3,
+    "standard_skills": 3,
+    "improved_skills": 3,
+    "directory": "plans/99_HULL_-_Lancer_Dreadnoughts"
+  }
+]
