@@ -2,11 +2,11 @@
 
 [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
 
-The goal is to train a pilot **around the Gila's actual bonuses** and make practical use of ships that become available through skills already required for the Gila — without adding side branches merely to create an artificial ship progression.
+The goal is to train a pilot **around the Gila's actual bonuses** and make practical use of ships that become useful through skills already required for the Gila.
 
 The Gila has three key bonuses:
 
-- **Role Bonus:** +500% Medium Combat Drone damage and +250% hitpoints;
+- **Role Bonus:** +500% damage and +250% hitpoints for **Medium Combat Drones**;
 - **Gallente Cruiser:** +10% kinetic and thermal missile damage per level;
 - **Caldari Cruiser:** +4% to all shield resistances per level.
 
@@ -31,85 +31,73 @@ Add `31 Shield Active` only if the actual Gila fit uses a shield booster. There 
 - `61 IMPROVED` — RLML / light missile path;
 - `62 IMPROVED` — HML / HAM path.
 
-The Gila receives a **kinetic and thermal missile damage** bonus from `Gallente Cruiser`, so missile support and the selected launcher family are part of the proper Gila path.
+The Gila receives a **kinetic and thermal missile damage** bonus from `Gallente Cruiser`, so missile support and the selected launcher family are a proper part of the path.
 
-## Drones — Medium are primary, but Light T2 remain in the path
+## Drones
 
 `70 IMPROVED → 71 IMPROVED → 72 IMPROVED`
 
-For the Gila itself, **T2 medium combat drones** are the key threshold because only medium drones receive its massive role bonus. `71 Light T2` still belongs in a practical progression:
+For the Gila itself, **T2 medium combat drones** are the key threshold because only medium drones receive its role bonus. `71 Light T2` is still useful within the path:
 
-1. The **Worm** uses racial frigate skills that are already prerequisites on the way to the corresponding cruisers, and its primary weapon is heavily-bonused **light combat drones**. No extra Frigate V / T2 frigate branch is required merely to use it.
+1. The **Worm** uses `Caldari Frigate III` and `Gallente Frigate III`, which are already prerequisites on the way to the corresponding cruisers, and its main weapon is heavily-bonused **light combat drones**.
 2. The **Vexor** bonuses combat drones, so lights remain useful against small and fast targets alongside mediums.
-3. On the **Gila**, light drones do not receive the role bonus and are not the primary weapon. They can still be a useful reserve against small targets. In many fits RLML is the first answer to frigates; light drones are supplementary, not a replacement for bonused mediums.
+3. On the **Gila**, light drones do not receive the role bonus and are not the primary weapon, but they can remain a useful reserve against small targets. In many fits RLML will be the first answer to this problem; light drones are supplementary rather than a replacement for bonused mediums.
 
 `73 Heavy & Sentry` is not required for this path.
 
-## Hulls and useful ships along the way
+## Useful ships along the way
 
 Final target:
 
 `92 Caldari Cruiser IMPROVED + 92 Gallente Cruiser IMPROVED → Gila`
 
-We do not add artificial intermediate ships that require long unrelated skills. An intermediate hull belongs here only when it becomes usable through competencies we are **already** training for the Gila.
-
 ### Worm — early use of both racial branches
 
-The route to `Caldari Cruiser` and `Gallente Cruiser` already passes through the corresponding racial Frigate and Destroyer skills. This makes the **Worm** available along the way without adding `Frigate V`, Assault Frigates, or another side specialization.
+The route to `Caldari Cruiser` and `Gallente Cruiser` already passes through `Caldari Frigate III` and `Gallente Frigate III`, so the **Worm** becomes available naturally along the way.
 
-The Worm already combines systems that matter later:
+The Worm uses systems that matter later on the Gila:
 
 - Caldari + Gallente hull skills,
 - shield,
 - missiles,
 - light drones.
 
-It is not a mandatory step. It is simply a useful ship that becomes available during the real training path.
+Its heavily-bonused light drones make `71 Light T2` useful well before the pilot reaches the Gila's medium-drone stage.
 
 ### Caldari / missile-first — Caracal
 
-Once `Caldari Cruiser` is trained, the **Caracal** becomes a practical ship to fly while finishing:
+Once `Caldari Cruiser` is trained, the **Caracal** becomes a practical ship to fly while the pilot finishes:
 
 - `Gallente Cruiser`,
 - Drone Support,
 - T2 medium drones.
 
-The Caracal uses shield + missiles, both of which are needed by the Gila. It does not require an unrelated training branch merely to provide something useful to fly while waiting for the second half of the skills.
-
-Pattern:
+The Caracal uses shield + missiles, both of which are required by the Gila path.
 
 **Caldari Cruiser + missiles/shield → Caracal → finish Gallente + drones → Gila**
 
 ### Gallente / drone-first — Vexor
 
-If the pilot begins from the Gallente and drone side, the **Vexor** fills the same role. `Gallente Cruiser` plus light/medium drones immediately provides a useful drone cruiser while training:
+If the pilot starts from the Gallente and drone side, the **Vexor** fills the same role. `Gallente Cruiser` plus light/medium drones immediately provides a useful drone cruiser while training:
 
 - `Caldari Cruiser`,
 - shield,
 - missiles.
 
-There is no reason to add an armor path merely because many Vexor fits use armor. Add it only if the pilot actually intends to use such a fit.
-
-Pattern:
+There is no need to add an armor path merely because many Vexor fits use armor. Add it only if the pilot actually intends to use such a fit.
 
 **Gallente Cruiser + drones → Vexor → finish Caldari + missiles/shield → Gila**
 
 ## Minimal logic
 
-`00 S → 30 I → 60 I → 61 I or 62 I → 70 I → 71 I → 72 I → 92 Caldari I + 92 Gallente I → Gila`
+`00 S → 01 I → 02 I → 10 S → 30 I → 60 I → 61 I or 62 I → 70 I → 71 I → 72 I → 92 Caldari I + 92 Gallente I → Gila`
 
-Along the way **Worm, Caracal and Vexor** can provide useful ships without adding training unrelated to the final target.
-
-## Why there is no Assault Frigate step
-
-A training path is not meant to create an impressive ladder of hulls. It is meant to reach the target efficiently.
-
-`Caldari Frigate V` and `Assault Frigates` are not required for the Gila. Therefore the Hawk does not belong in this path. A pilot who wants a Hawk can train it separately, but should not pay that training cost simply because they chose a pirate cruiser as the real goal.
+Along the way **Worm, Caracal and Vexor** provide useful ships to fly while the next elements of the path are being trained.
 
 ## Verification sources
 
-- https://wiki.eveuniversity.org/Gila
-- https://wiki.eveuniversity.org/Worm
-- https://wiki.eveuniversity.org/Vexor
-- https://wiki.eveuniversity.org/Caracal
-- https://wiki.eveuniversity.org/Support_Skills
+- [Gila — EVE University Wiki](https://wiki.eveuniversity.org/Gila)
+- [Gila — EVE Ref](https://everef.net/types/17715)
+- [Worm — EVE University Wiki](https://wiki.eveuniversity.org/Worm)
+- [Vexor — EVE University Wiki](https://wiki.eveuniversity.org/Vexor)
+- [Caracal — EVE University Wiki](https://wiki.eveuniversity.org/Caracal)

@@ -2,7 +2,7 @@
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
 
-Celem jest wyszkolenie pilota **pod konkretne bonusy Gili** i wykorzystanie po drodze tych statków, które wynikają z treningu potrzebnego do Gili — bez dokładania bocznych gałęzi.
+Celem jest wyszkolenie pilota **pod konkretne bonusy Gili** i wykorzystanie po drodze statków, które stają się użyteczne dzięki treningowi potrzebnemu do Gili.
 
 Gila ma trzy kluczowe bonusy:
 
@@ -37,46 +37,42 @@ Gila dostaje z `Gallente Cruiser` bonus do **kinetic i thermal missile damage**,
 
 `70 IMPROVED → 71 IMPROVED → 72 IMPROVED`
 
-Dla samej Gili kluczowym progiem są **T2 medium combat drones**, ponieważ tylko medium drones dostają jej ogromny role bonus. `71 Light T2` pozostaje jednak częścią sensownej progresji:
+Dla samej Gili kluczowym progiem są **T2 medium combat drones**, ponieważ tylko medium drones dostają jej role bonus. `71 Light T2` nadal jest użyteczną częścią ścieżki:
 
-1. **Worm** wykorzystuje skille rasowych fregat, które i tak są prerequisite'ami do odpowiednich cruiserów, a jego główną bronią są mocno bonusowane **light combat drones**. Nie dokładamy więc osobnej gałęzi treningu hulla tylko po to, żeby nim polecieć.
-2. **Vexor** bonusuje combat drones, więc lighty są użytecznym narzędziem przeciw małym i szybkim celom obok medium drones.
-3. Na **Gili** light drones nie dostają role bonusu i nie są podstawową bronią. Mogą jednak pozostać użytecznym zapasem przeciw małym celom. W wielu fitach pierwszym rozwiązaniem tego problemu będą RLML; light drones są uzupełnieniem, nie zamiennikiem bonusowanych medium drones.
+1. **Worm** wykorzystuje `Caldari Frigate III` i `Gallente Frigate III`, które i tak są prerequisite'ami do odpowiednich cruiserów, a jego główną bronią są mocno bonusowane **light combat drones**.
+2. **Vexor** bonusuje combat drones, więc lighty są użyteczne przeciw małym i szybkim celom obok medium drones.
+3. Na **Gili** light drones nie dostają role bonusu i nie są podstawową bronią, ale mogą pozostać użytecznym zapasem przeciw małym celom. W wielu fitach pierwszym rozwiązaniem tego problemu będą RLML; light drones są uzupełnieniem, nie zamiennikiem bonusowanych medium drones.
 
 `73 Heavy & Sentry` nie jest potrzebne do tej ścieżki.
 
-## Hulle i statki użyteczne po drodze
+## Statki użyteczne po drodze
 
 Docelowo:
 
 `92 Caldari Cruiser IMPROVED + 92 Gallente Cruiser IMPROVED → Gila`
 
-Nie tworzymy sztucznych przystanków wymagających dodatkowych długich skilli. Statki pośrednie mają sens tylko wtedy, gdy można nimi latać dzięki kompetencjom, które **i tak** szkolimy do Gili.
-
 ### Worm — wczesne wykorzystanie obu ras
 
-Droga do `Caldari Cruiser` i `Gallente Cruiser` prowadzi przez odpowiednie racial Frigate i Destroyer skills. Dzięki temu **Worm** może pojawić się po drodze.
+Droga do `Caldari Cruiser` i `Gallente Cruiser` prowadzi przez `Caldari Frigate III` i `Gallente Frigate III`, więc **Worm** staje się dostępny naturalnie po drodze.
 
-Worm wykorzystuje dokładnie te systemy, które będą później ważne:
+Worm wykorzystuje systemy ważne później na Gili:
 
 - Caldari + Gallente hull skills,
 - shield,
 - missiles,
 - light drones.
 
-Nie jest obowiązkowym etapem. Jest po prostu użytecznym statkiem, który staje się dostępny podczas właściwego treningu.
+Jego mocno bonusowane light drones sprawiają, że `71 Light T2` daje pilotowi użyteczną broń jeszcze przed dojściem do medium drones Gili.
 
 ### Caldari / missile-first — Caracal
 
-Po wyszkoleniu `Caldari Cruiser` pojawia się **Caracal**. To logiczny statek do latania w czasie, gdy pilot kończy:
+Po wyszkoleniu `Caldari Cruiser` pojawia się **Caracal**. To praktyczny statek do latania w czasie, gdy pilot kończy:
 
 - `Gallente Cruiser`,
 - Drone Support,
 - T2 medium drones.
 
-Caracal wykorzystuje shield + missiles, czyli kompetencje potrzebne Gili. Nie wymaga tworzenia dodatkowej gałęzi treningowej tylko po to, żeby mieć czym latać w oczekiwaniu na drugą połowę skilli.
-
-Schemat:
+Caracal wykorzystuje shield + missiles, czyli kompetencje potrzebne Gili.
 
 **Caldari Cruiser + missiles/shield → Caracal → dokończenie Gallente + drones → Gila**
 
@@ -90,21 +86,18 @@ Jeżeli pilot zaczyna od strony Gallente i dronów, tę samą rolę pełni **Vex
 
 Nie ma potrzeby trenować dodatkowego armor path tylko dlatego, że wiele Vexorów jest armor-tankowanych. Dodawaj go wyłącznie wtedy, gdy rzeczywiście chcesz używać takiego fita.
 
-Schemat:
-
 **Gallente Cruiser + drones → Vexor → dokończenie Caldari + missiles/shield → Gila**
 
 ## Minimalna logika
 
-`00 S → 30 I → 60 I → 61 I lub 62 I → 70 I → 71 I → 72 I → 92 Caldari I + 92 Gallente I → Gila`
+`00 S → 01 I → 02 I → 10 S → 30 I → 60 I → 61 I lub 62 I → 70 I → 71 I → 72 I → 92 Caldari I + 92 Gallente I → Gila`
 
-Po drodze **Worm, Caracal i Vexor** mogą dać pilotowi sensowne statki do latania bez dokładania treningu niezwiązanego z celem.
-
+Po drodze **Worm, Caracal i Vexor** dają pilotowi sensowne statki do latania podczas szkolenia kolejnych elementów ścieżki.
 
 ## Źródła weryfikacyjne
 
-- https://wiki.eveuniversity.org/Gila
-- https://wiki.eveuniversity.org/Worm
-- https://wiki.eveuniversity.org/Vexor
-- https://wiki.eveuniversity.org/Caracal
-- https://wiki.eveuniversity.org/Support_Skills
+- [Gila — EVE University Wiki](https://wiki.eveuniversity.org/Gila)
+- [Gila — EVE Ref](https://everef.net/types/17715)
+- [Worm — EVE University Wiki](https://wiki.eveuniversity.org/Worm)
+- [Vexor — EVE University Wiki](https://wiki.eveuniversity.org/Vexor)
+- [Caracal — EVE University Wiki](https://wiki.eveuniversity.org/Caracal)
