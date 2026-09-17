@@ -2,15 +2,15 @@
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
 
-Celem jest wyszkolenie pilota **pod konkretne bonusy Gili**, ale bez pomijania użytecznych kompetencji, które naturalnie pojawiają się po drodze i dają pilotowi czym latać podczas dłuższego treningu.
+Celem jest wyszkolenie pilota **pod konkretne bonusy Gili** i wykorzystanie po drodze tych statków, które wynikają z treningu potrzebnego do Gili — bez dokładania bocznych gałęzi tylko po to, żeby stworzyć sztuczną progresję.
 
-Gila ma obecnie trzy kluczowe bonusy:
+Gila ma trzy kluczowe bonusy:
 
 - **Role Bonus:** +500% damage i +250% hitpoints dla **Medium Combat Drones**;
 - **Gallente Cruiser:** +10% kinetic i thermal missile damage na poziom;
 - **Caldari Cruiser:** +4% do wszystkich shield resistances na poziom.
 
-Do samego wejścia w hull wymagane są `Caldari Cruiser II` i `Gallente Cruiser II`, ale oba skille bezpośrednio wzmacniają Gilę. Do regularnego latania sensownym celem jest co najmniej poziom odpowiadający `92 ... IMPROVED` (Cruiser IV).
+Do wejścia w hull wymagane są `Caldari Cruiser II` i `Gallente Cruiser II`. Oba skille bezpośrednio wzmacniają Gilę, więc do regularnego latania rozsądnym celem jest poziom odpowiadający `92 ... IMPROVED` — Cruiser IV.
 
 ## Fundament
 
@@ -31,21 +31,19 @@ Do PvP dołóż `03 IMPROVED` lub wyżej zgodnie z potrzebą.
 - `61 IMPROVED` — RLML / light missile path;
 - `62 IMPROVED` — HML / HAM path.
 
-Gila dostaje z `Gallente Cruiser` bonus do **kinetic i thermal missile damage**, więc missile support i wybrana rodzina launcherów są częścią właściwej ścieżki Gili.
+Gila dostaje z `Gallente Cruiser` bonus do **kinetic i thermal missile damage**, więc missile support i wybrana rodzina launcherów są właściwą częścią ścieżki.
 
-## Drony — Medium są główne, Light T2 nadal mają sens
+## Drony — Medium są główne, ale Light T2 zostają w ścieżce
 
 `70 IMPROVED → 71 IMPROVED → 72 IMPROVED`
 
-Kluczowym progiem dla samej Gili są **T2 medium combat drones**, bo tylko one dostają jej ogromny role bonus. To jednak nie oznacza, że `71 Light T2` jest zbędne.
+Dla samej Gili kluczowym progiem są **T2 medium combat drones**, ponieważ tylko medium drones dostają jej ogromny role bonus. `71 Light T2` pozostaje jednak częścią sensownej progresji:
 
-Light T2 są przydatne z trzech powodów:
+1. **Worm** wykorzystuje skille rasowych fregat, które i tak są prerequisite'ami do odpowiednich cruiserów, a jego główną bronią są mocno bonusowane **light combat drones**. Nie dokładamy więc osobnej gałęzi treningu hulla tylko po to, żeby nim polecieć.
+2. **Vexor** bonusuje combat drones, więc lighty są użytecznym narzędziem przeciw małym i szybkim celom obok medium drones.
+3. Na **Gili** light drones nie dostają role bonusu i nie są podstawową bronią. Mogą jednak pozostać użytecznym zapasem przeciw małym celom. W wielu fitach pierwszym rozwiązaniem tego problemu będą RLML; light drones są uzupełnieniem, nie zamiennikiem bonusowanych medium drones.
 
-1. **Worm** jest bardzo naturalnym wcześniejszym hullem Guristas: wymaga Caldari i Gallente Frigate, używa shield + missiles, a jego główną bronią są właśnie mocno bonusowane **light drones**.
-2. **Vexor** bonusuje wszystkie combat drones, więc lighty są na nim normalnym narzędziem do małych i szybkich celów obok medium drones.
-3. **Gila** bonusuje wyłącznie medium drones, ale nie każdy mały cel jest dla nich idealny. W praktyce podstawowym rozwiązaniem przeciw frigatom są często RLML, jednak T2 light drones pozostają użytecznym zapasem do szybkich/małych celów i są ogólnie przydatną kompetencją cruisera.
-
-Dlatego `71 IMPROVED` zostaje w ścieżce. `73 Heavy & Sentry` nadal nie jest potrzebne do Gili.
+`73 Heavy & Sentry` nie jest potrzebne do tej ścieżki.
 
 ## Hulle i statki użyteczne po drodze
 
@@ -53,45 +51,60 @@ Docelowo:
 
 `92 Caldari Cruiser IMPROVED + 92 Gallente Cruiser IMPROVED → Gila`
 
-Statki pośrednie nie są obowiązkowymi prerequisite'ami. Ich sens polega na tym, że pozwalają **normalnie grać podczas kończenia drugiej części treningu**.
+Nie tworzymy sztucznych przystanków wymagających dodatkowych długich skilli. Statki pośrednie mają sens tylko wtedy, gdy można nimi latać dzięki kompetencjom, które **i tak** szkolimy do Gili.
 
-### Wczesny etap: Hawk i Worm
+### Worm — wczesne wykorzystanie obu ras
 
-**Hawk** jest naturalnym krokiem po stronie Caldari, jeśli pilot chce szybko dostać mocny mały combat hull. Wymaga dodatkowo `Caldari Frigate V` i Assault Frigates, ale wykorzystuje shield oraz rockets/light missiles — czyli skille, które później pozostają użyteczne.
+Droga do `Caldari Cruiser` i `Gallente Cruiser` prowadzi przez odpowiednie racial Frigate i Destroyer skills. Dzięki temu **Worm** może pojawić się po drodze bez dokładania `Frigate V`, Assault Frigates ani innej bocznej specjalizacji.
 
-**Worm** jest jeszcze bardziej bezpośrednio związany z końcowym celem: wykorzystuje obie rasy Guristas (`Caldari Frigate` + `Gallente Frigate`), shield, missiles i light drones. Nie jest prerequisite'em Gili, ale bardzo dobrze łączy obie połowy treningu zanim pilot przejdzie do cruiserów.
+Worm wykorzystuje dokładnie te systemy, które będą później ważne:
 
-Praktyczny wariant:
+- Caldari + Gallente hull skills,
+- shield,
+- missiles,
+- light drones.
 
-**Hawk i/lub Worm → cruisery → Gila**
+Nie jest obowiązkowym etapem. Jest po prostu użytecznym statkiem, który staje się dostępny podczas właściwego treningu.
 
-### Caldari / missile-first
+### Caldari / missile-first — Caracal
 
-Po wyszkoleniu `Caldari Cruiser` pojawia się **Caracal**. To logiczny statek przejściowy, bo wykorzystuje ten sam kierunek shield + missiles. Pilot może latać Caracalem, podczas gdy kończy `Gallente Cruiser`, Drone Support i T2 medium drones.
+Po wyszkoleniu `Caldari Cruiser` pojawia się **Caracal**. To logiczny statek do latania w czasie, gdy pilot kończy:
+
+- `Gallente Cruiser`,
+- Drone Support,
+- T2 medium drones.
+
+Caracal wykorzystuje shield + missiles, czyli kompetencje potrzebne Gili. Nie wymaga tworzenia dodatkowej gałęzi treningowej tylko po to, żeby mieć czym latać w oczekiwaniu na drugą połowę skilli.
 
 Schemat:
 
-**Hawk → Caracal → Gila**
+**Caldari Cruiser + missiles/shield → Caracal → dokończenie Gallente + drones → Gila**
 
-### Gallente / drone-first
+### Gallente / drone-first — Vexor
 
-Jeżeli pilot zaczyna od strony Gallente i dronów, analogiczną rolę pełni **Vexor**. `Gallente Cruiser` oraz light/medium drones od razu dają użyteczny drone cruiser, którym można latać podczas szkolenia Caldari Cruiser, shield i missiles.
+Jeżeli pilot zaczyna od strony Gallente i dronów, tę samą rolę pełni **Vexor**. `Gallente Cruiser` oraz light/medium drones dają od razu użyteczny drone cruiser, którym można latać podczas szkolenia:
 
-Nie ma potrzeby trenować dodatkowego armor path tylko dlatego, że wiele Vexorów jest armor-tankowanych — dodawaj go tylko wtedy, gdy rzeczywiście chcesz takim Vexorem latać.
+- `Caldari Cruiser`,
+- shield,
+- missiles.
+
+Nie ma potrzeby trenować dodatkowego armor path tylko dlatego, że wiele Vexorów jest armor-tankowanych. Dodawaj go wyłącznie wtedy, gdy rzeczywiście chcesz używać takiego fita.
 
 Schemat:
 
-**Worm → Vexor → Gila**
+**Gallente Cruiser + drones → Vexor → dokończenie Caldari + missiles/shield → Gila**
 
 ## Minimalna logika
 
 `00 S → 30 I → 60 I → 61 I lub 62 I → 70 I → 71 I → 72 I → 92 Caldari I + 92 Gallente I → Gila`
 
-Po drodze **Hawk, Worm, Caracal i Vexor** mogą być pełnoprawnymi statkami do grania, a nie tylko punktami na diagramie.
+Po drodze **Worm, Caracal i Vexor** mogą dać pilotowi sensowne statki do latania bez dokładania treningu niezwiązanego z celem.
 
-## Dlaczego Light T2 zostają
+## Dlaczego nie dokładamy Assault Frigate
 
-Dyskusje graczy są dość zgodne co do dwóch rzeczy: średnie drony Gili są jej głównym źródłem damage, ale małe szybkie cele bywają dla medium drones problematyczne; bardzo często rozwiązuje się to RLML, czasem light drones. Ponieważ ta ścieżka i tak naturalnie prowadzi przez Worma/Vexora, `71 IMPROVED` daje realną wartość zamiast być „obcym” treningiem.
+Training path nie ma budować efektownej drabiny hulli. Ma prowadzić do celu możliwie efektywnie.
+
+`Caldari Frigate V` i `Assault Frigates` nie są potrzebne do Gili. Dlatego Hawk nie należy do tej ścieżki. Pilot zainteresowany Hawkiem może wyszkolić go osobno, ale nie powinien płacić tym treningiem „za karę” za wybór pirate cruisera.
 
 ## Źródła weryfikacyjne
 
@@ -99,5 +112,4 @@ Dyskusje graczy są dość zgodne co do dwóch rzeczy: średnie drony Gili są j
 - https://wiki.eveuniversity.org/Worm
 - https://wiki.eveuniversity.org/Vexor
 - https://wiki.eveuniversity.org/Caracal
-- https://wiki.eveuniversity.org/Hawk
 - https://wiki.eveuniversity.org/Support_Skills
