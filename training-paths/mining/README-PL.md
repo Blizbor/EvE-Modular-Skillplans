@@ -2,13 +2,13 @@
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
 
-Ta ścieżka ma odpowiedzieć nie tylko **„jakie hulle są dalej?”**, ale przede wszystkim **„co faktycznie trenować, żeby te hulle miały sens?”**. Zakres pozostaje celowo ograniczony do Venture/Pioneer/Outrider, barek i exhumerów oraz Porpoise/Orca.
+Ścieżka prowadzi do czterech sensownych punktów docelowych: **Venture/Pioneer**, **Outrider**, **Mining Barge/Exhumer** oraz **Porpoise/Orca**. Każda gałąź zawiera tylko skille wymagane do wejścia w hull albo odblokowania narzędzi używanych w tej roli.
 
 ```text
 MINING
 ├── Venture
-│   ├── Pioneer — docelowy lekki miner / mining side-role
-│   └── Outrider — boczna specjalizacja command/support
+│   ├── Pioneer
+│   └── Outrider — mobilny command/support, bez kompresji
 │
 ├── Barge / Exhumer
 │   ├── Procurer → Skiff
@@ -19,156 +19,294 @@ MINING
     └── Porpoise → Orca
 ```
 
-## Wspólny fundament minera
+## Rozwój narzędzi
 
-Zanim rozdzielą się hulle, warto zbudować kilka wspólnych kompetencji:
+Hulle i narzędzia są osobnymi elementami progresji. Venture/Pioneer/Outrider używają zwykłych mining laserów; Mining Barges i Exhumery używają strip minerów.
 
-- `00 CORE` — co najmniej **BASIC**, docelowo **IMPROVED** dla wygodnego fittingu;
-- `01 Navigation BASIC` — mobilność i warp;
-- `02 Targeting BASIC` — `Target Management IV` i sensowny zasięg locka są praktyczne przy wielu asteroidach;
-- `30 Shield Passive/Buffer BASIC` — większość mining hulli jest shield-tankowana;
-- `Mining IV` — podstawowy próg dla Pioneer/Barge i wielu mining skills;
-- `Mining Upgrades IV` — odblokowuje **Mining Laser Upgrade II** i ogranicza jego CPU penalty;
-- `Drones` / `Light Drone Operation` — przydatne do obrony przed małymi NPC; rozwijaj proporcjonalnie do realnego miejsca na drony i zagrożenia.
+| Zastosowanie | T1 | T2 | Próg T2 |
+|---|---|---|---|
+| Ore — Venture/Pioneer/Outrider | Miner I | Miner II | `Mining IV` |
+| Yield upgrade | Mining Laser Upgrade I | Mining Laser Upgrade II | `Mining Upgrades IV` |
+| Ore — Barge/Exhumer | Strip Miner I | Modulated Strip Miner II | `Mining V` |
+| Gas — Venture/Pioneer | Gas Cloud Scoop I | Gas Cloud Scoop II | `Gas Cloud Harvesting V` |
+| Gas — Barge/Exhumer | Gas Cloud Harvester I | Gas Cloud Harvester II | `Gas Cloud Harvesting V` |
 
-`Mining` i `Astrogeology` zwiększają yield o 5% na poziom, więc nie są tylko prerequisite'ami. Dla pilota, który naprawdę kopie regularnie, poziom IV jest bardzo dobrym wczesnym celem; V dodawaj tam, gdzie otwiera konkretny sprzęt lub dalszą progresję.
+### Mining Laser Upgrade
 
----
+Nie ma sensownego celu „Mining Upgrades III–IV”. Są dwa konkretne progi:
 
-## 1. Venture — punkt wejścia
+- `Mining Upgrades I` — odblokowuje **Mining Laser Upgrade I**;
+- `Mining Upgrades IV` — odblokowuje **Mining Laser Upgrade II**.
 
-### Trening
+Jeżeli chcesz od razu MLU II, wklej:
 
-`96 HULL - Mining Frigate BASIC`
+```text
+Mining Upgrades I
+Mining Upgrades II
+Mining Upgrades III
+Mining Upgrades IV
+```
 
-Praktyczny pakiet:
+### Mining drones
 
-- `Mining Frigate III` — wystarcza do przejścia dalej i daje już sensowny bonus hulla;
-- `Mining IV`;
-- `Mining Upgrades III–IV`;
-- `00 BASIC`;
-- `02 BASIC`;
-- `30 BASIC`.
+Mining drones nie są wymagane do żadnego z opisanych hulli, ale dla pilota nastawionego na realny yield są ważnym rozwinięciem. `Drone Interfacing` zwiększa również mining yield dronów.
 
-Venture jest początkiem całego drzewa, ale nie trzeba go „maxować” przed przejściem dalej.
+**Mining Drone I:**
 
----
+```text
+Drones I
+Mining Drone Operation I
+```
 
-## 2. Pioneer — docelowy lekki miner / mining side-role
+**Mining Drone II + sensowny support:**
 
-Pioneer **nie jest tylko statkiem przejściowym**. Dla pilota, który kopie okazjonalnie, może być pełnoprawnym punktem końcowym.
+```text
+Drones I
+Drones II
+Drones III
+Drones IV
+Drones V
+Mining Drone Operation I
+Mining Drone Operation II
+Mining Drone Operation III
+Mining Drone Operation IV
+Mining Drone Operation V
+Mining Drone Specialization I
+Drone Interfacing I
+Drone Interfacing II
+Drone Interfacing III
+Drone Interfacing IV
+```
 
-### Trening
-
-`96 HULL - Mining Destroyer IMPROVED`
-
-To daje praktyczny cel `Mining Destroyer IV`. Pioneer dostaje **10% mining yield na poziom Mining Destroyer**, więc IV daje realną wartość bez automatycznego wciskania V.
-
-Do tego:
-
-- `Mining IV` minimum;
-- `Mining Upgrades IV` dla MLU II;
-- `00 IMPROVED` jeśli fit zaczyna być ciasny na CPU/PG;
-- `30 BASIC` lub wyżej zależnie od ryzyka;
-- `02 BASIC` dla wygodnej pracy na wielu skałach.
-
-`Mining Destroyer V` nie jest konieczne dla samego Pioneera — staje się konieczne dopiero, jeśli pilot wybiera **Outridera**.
-
----
-
-## 3. Outrider — skok w bok, nie „następny Pioneer”
-
-Outrider jest osobną specjalizacją. Nie prowadzi do Porpoise/Orca i **nie daje kompresji**. Jego wartością jest mobilny mining/command support, command burst, MJD field i bardzo mocne bonusy zależne od `Mining Destroyer` oraz `Command Destroyers`.
-
-### Hull prerequisites
-
-`96 HULL - Mining Destroyer STANDARD` → `97 HULL - Command Destroyers IMPROVED`
-
-Kluczowe progi:
-
-- `Mining Destroyer V` — wymagane do wejścia w Outridera;
-- `Command Burst Specialist IV` — prerequisite do Command Destroyers;
-- `Command Destroyers IV` — rozsądny poziom regularnego używania, bo zwiększa siłę i czas Mining Foreman / Shield bursts;
-- `Leadership V` — wchodzi w prerequisite Command Destroyers.
-
-### Żeby Outrider faktycznie był mining supportem
-
-Sam hull nie wystarczy. Dla Mining Foreman Burst warto dołożyć:
-
-- `Mining Foreman IV` — sensowny poziom T1 boostów;
-- **albo** `Mining Foreman V → Mining Director I` — jeśli chcesz używać Mining Foreman Burst II;
-- `Mining Director III/IV` dopiero, gdy pilot faktycznie specjalizuje się w boostowaniu.
-
-Dodatkowo:
-
-- `30 IMPROVED` dobrze wykorzystuje jego bonus do shield resistances;
-- `70 Drone Support BASIC/IMPROVED` ma sens, jeśli korzystasz z jego bonusu do drone damage/HP;
-- `71 Light T2 IMPROVED` jest rozsądnym rozwinięciem dla defensywnych light drones, ale nie jest wymagane do samego hull progression.
-
-**Ważne:** Outrider pozostaje boczną odnogą. Nie traktujemy go jako prerequisite do Industrial Command.
+`Mining Drone II` wymaga `Mining IV`, `Mining Drone Operation V` i `Mining Drone Specialization I`. `Drones V` nie jest wymagane przez sam moduł T2, ale pozwala wystawić pięć dronów i otwiera `Drone Interfacing`, dlatego dla poważnego minera jest logicznym progiem.
 
 ---
 
-## 4. Mining Barge — pierwszy pełny mining hull
+## Venture
+
+### Hull
+
+Użyj:
+
+`96 HULL - Mining Frigate / plan-1-BASIC` → `Mining Frigate III`
+
+### Ore — Miner II
+
+```text
+Mining I
+Mining II
+Mining III
+Mining IV
+```
+
+Jeżeli chcesz MLU I, dodaj `Mining Upgrades I`. Dla MLU II użyj pełnego bloku `Mining Upgrades I–IV` z sekcji **Rozwój narzędzi**.
+
+### Opcja gas
+
+**Gas Cloud Scoop I:**
+
+```text
+Mining I
+Mining II
+Mining III
+Mining IV
+Gas Cloud Harvesting I
+```
+
+**Gas Cloud Scoop II:**
+
+```text
+Gas Cloud Harvesting I
+Gas Cloud Harvesting II
+Gas Cloud Harvesting III
+Gas Cloud Harvesting IV
+Gas Cloud Harvesting V
+```
+
+---
+
+## Pioneer
+
+Pioneer może być docelowym lekkim minerem dla pilota, dla którego mining jest aktywnością poboczną.
+
+### Hull
+
+Użyj:
+
+`96 HULL - Mining Destroyer / plan-2-IMPROVED` → `Mining Destroyer IV`
+
+Ten plan zawiera już wymagane `Mining IV`, `Industry III` i `Mining Frigate III`.
+
+`Mining Destroyer V` nie jest potrzebne dla Pioneera. Trenuj je dopiero, jeśli faktycznie wybierasz Outridera.
+
+### Narzędzia
+
+- **Miner II** — `Mining IV` jest już w planie hulla;
+- **MLU I** — dodaj `Mining Upgrades I`;
+- **MLU II** — dodaj `Mining Upgrades I–IV`;
+- **gas T1/T2** — dodaj odpowiednio `Gas Cloud Harvesting I` lub `V`.
+
+---
+
+## Outrider — boczna specjalizacja command/support
+
+Outrider nie jest etapem wymaganym do Porpoise ani Orca. Jest mobilnym Command Destroyerem z jednym Command Burst, Micro Jump Field Generatorem i bonusami do Mining Foreman/Shield bursts. Nie ma industrial core i **nie zapewnia kompresji**.
+
+### Hull
+
+Potrzebujesz dwóch planów:
+
+`96 HULL - Mining Destroyer / plan-3-STANDARD` → `Mining Destroyer V`
+
+oraz co najmniej:
+
+`97 HULL - Command Destroyers / plan-1-BASIC` → `Command Destroyers III`
+
+Sam hull odblokowuje się przy `Command Destroyers I`, ale BASIC daje III i jest lepszym punktem wejścia do faktycznego używania statku.
+
+### Outrider czy Porpoise?
+
+Jeżeli celem jest **zwykły mining fleet support + compression**, Outridera należy ominąć i iść bezpośrednio w Porpoise. Outrider ma sens wtedy, gdy potrzebujesz jego konkretnej przewagi: mobilności, MJD Field Generatora i command-destroyerowego sposobu pracy.
+
+Porównanie roli:
+
+| | Outrider | Porpoise |
+|---|---|---|
+| Command Bursts | 1 | 2 |
+| Industrial Core | — | Medium |
+| Compression | — | asteroid ore + gas |
+| Mining hold | 20,000 m³ | 50,000 m³ |
+| Specjalna użyteczność | Micro Jump Field Generator | remote shield support, compression |
+| Charakter roli | szybki, mobilny support | pełny mining command/support |
+
+### Różnica czasu treningu
+
+Bazowy przykład: pilot ma już **Pioneer IMPROVED** (`Mining Destroyer IV`) i nie ma wcześniejszych skilli command/leadership. Przy 1800 SP/h, bez implantów i remapu:
+
+- **Outrider — sam unlock:** około **27 d 22 h** dodatkowego treningu;
+- **Outrider — Command Destroyers III (BASIC):** około **29 dni**;
+- **Outrider — Command Destroyers IV (IMPROVED):** około **34 d 4 h**;
+- **Porpoise — sam unlock:** około **18 d 14 h**;
+- **Porpoise — Industrial Command Ships III (BASIC):** około **20 dni**.
+
+W takim punkcie startowym Porpoise jest około **9 dni szybszy** do sensownego progu BASIC. Jeżeli pilot ma już `Spaceship Command V`, `Leadership V` albo skille command burst z innej roli, różnica może być znacznie mniejsza.
+
+Wniosek praktyczny: **nie szkol Outridera „po drodze” do Porpoise**. Wybierz go tylko jako osobną specjalizację.
+
+---
+
+## Mining Barge
+
+### Hull
 
 Dla regularnego używania T1 barge:
 
-`96 HULL - Mining Barge IMPROVED`
+`96 HULL - Mining Barge / plan-2-IMPROVED` → `Mining Barge IV`
 
-Praktyczny zestaw:
+Plan zawiera już `Mining IV`, `Science IV`, `Astrogeology III`, `Industry V` i `Mining Frigate III`.
 
-- `Mining Barge IV`;
-- `Mining IV`, a dla **Modulated Strip Miner II** → `Mining V`;
-- `Astrogeology IV`;
-- `Mining Upgrades IV` → Mining Laser Upgrade II;
-- `00 IMPROVED`;
-- `02 BASIC`;
-- `30 IMPROVED`.
+### Narzędzia
 
-### Trzy równoległe profile
+**Strip Miner I** jest już pokryty przez skille wymagane w planie Mining Barge.
 
-Nie rekomendujemy jednego „najlepszego” hulla — pokazujemy trzy sensowne role:
+Dla **Modulated Strip Miner II** dodaj:
 
-- **Procurer** — większy nacisk na tank / survivability;
-- **Retriever** — większy mining hold / samodzielność;
-- **Covetor** — większy nacisk na yield i pracę w zorganizowanej flocie.
+```text
+Mining V
+```
 
-To nie są szczeble tej samej drabiny. Wybierasz profil odpowiadający sposobowi kopania.
+Modulated Strip Miner II używa mining crystals. Trenuj tylko processing dla tych rud, które faktycznie zamierzasz kopać.
+
+**MLU I:**
+
+```text
+Mining Upgrades I
+```
+
+**MLU II:**
+
+```text
+Mining Upgrades I
+Mining Upgrades II
+Mining Upgrades III
+Mining Upgrades IV
+```
+
+### Opcja gas
+
+Mining Barges mogą używać Gas Cloud Harvester.
+
+**Gas Cloud Harvester I:**
+
+```text
+Gas Cloud Harvesting I
+```
+
+**Gas Cloud Harvester II:**
+
+```text
+Gas Cloud Harvesting I
+Gas Cloud Harvesting II
+Gas Cloud Harvesting III
+Gas Cloud Harvesting IV
+Gas Cloud Harvesting V
+```
+
+### Wybór hulla
+
+- **Procurer** — profil nastawiony bardziej na survivability;
+- **Retriever** — większy mining hold i autonomia;
+- **Covetor** — profil nastawiony bardziej na yield i pracę we flocie.
+
+To są równoległe wybory, nie kolejne szczeble progresji.
 
 ---
 
-## 5. Exhumer — T2 odpowiednik wybranej barki
+## Exhumer
 
-Żeby wejść w Exhumery, potrzebujesz `Mining Barge V` i `Astrogeology V`.
+### Hull
 
-Ścieżka:
+Najpierw:
 
-`96 HULL - Mining Barge STANDARD → 96 HULL - Exhumers BASIC/IMPROVED`
+`96 HULL - Mining Barge / plan-3-STANDARD` → `Mining Barge V`
+
+następnie:
+
+`96 HULL - Exhumers / plan-2-IMPROVED` → `Exhumers IV`
 
 Naturalne pary:
 
-- **Procurer → Skiff** — tank/survivability;
-- **Retriever → Mackinaw** — duży hold i autonomia;
-- **Covetor → Hulk** — yield/range.
+- **Procurer → Skiff**;
+- **Retriever → Mackinaw**;
+- **Covetor → Hulk**.
 
-Dla regularnego pilota exhumerów rozsądnym celem jest `Exhumers IV` (`IMPROVED`). `Exhumers V` jest już długim treningiem pod dalszą specjalizację/max efficiency, a nie automatycznym wymaganiem tej biblioteki.
+Plan Exhumers zawiera wymagane `Astrogeology V` i `Mining Barge V`.
 
-Dla T2 strip minerów:
+### Narzędzia
 
-- `Mining V` → Modulated Strip Miner II;
-- odpowiedni ore processing tylko dla kryształów, których rzeczywiście używasz — nie ma powodu trenować wszystkich „na zapas”.
+Exhumery używają tej samej rodziny narzędzi co Mining Barges:
+
+- **Strip Miner I**;
+- **Modulated Strip Miner II** → `Mining V`;
+- **Mining Laser Upgrade I** → `Mining Upgrades I`;
+- **Mining Laser Upgrade II** → `Mining Upgrades IV`;
+- opcjonalnie **Gas Cloud Harvester I/II** → `Gas Cloud Harvesting I/V`.
+
+Dla pilota, który faktycznie traktuje mining jako główną działalność, to również naturalne miejsce na rozwinięcie **Mining Drone II + Drone Interfacing IV** z sekcji **Rozwój narzędzi**.
 
 ---
 
-## 6. Industrial Command — Porpoise → Orca
+## Industrial Command — Porpoise / Orca
 
-Porpoise i Orca używają tego samego głównego skilla `Industrial Command Ships`. To nie jest formalne „musisz latać Porpoisem zanim Orcą”, ale jako training path **Porpoise jest naturalnym wcześniejszym punktem użytkowym**, a Orca większym i bardziej zaangażowanym rozwinięciem tej samej roli.
+### Hull
 
-### Wejście w hull
+Porpoise i Orca mają **ten sam skillowy próg wejścia**. Oba wymagają `Industrial Command Ships I` z tym samym łańcuchem prerequisites.
 
-`96 HULL - Industrial Command Ships BASIC`
+Użyj:
 
-Plan już prowadzi przez kluczowe prerequisites:
+`96 HULL - Industrial Command Ships / plan-1-BASIC` → `Industrial Command Ships III`
+
+Plan zawiera:
 
 - `Spaceship Command V`;
 - `ORE Hauler III`;
@@ -176,41 +314,100 @@ Plan już prowadzi przez kluczowe prerequisites:
 - `Mining Director I`;
 - `Industrial Command Ships III`.
 
-To wystarcza, by hull nie był pustym unlockiem. `Industrial Command Ships` daje m.in. bonusy do mining/utility drones oraz Mining Foreman Bursts, więc dla regularnego używania bardzo sensownym celem jest:
-
-`96 HULL - Industrial Command Ships IMPROVED` → `Industrial Command Ships IV + Mining Director IV`.
+Nie trzeba najpierw latać Porpoise, żeby odblokować Orca. Porpoise jest wcześniejszym wyborem **ekonomicznym i operacyjnym**, nie krótszym hullem do wyszkolenia.
 
 ### Porpoise
 
-Porpoise jest tańszym i bardziej mobilnym command shipem:
+Porpoise oferuje:
 
 - dwa Command Burst modules;
 - Medium Industrial Core;
-- mocne bonusy do mining drones;
-- może zapewniać **compression asteroid ore i gas** przy aktywnym industrial core i odpowiednim compressorze.
+- 50,000 m³ bazowego mining hold;
+- compression **asteroid ore** i **gas**;
+- 44 km bazowego zasięgu medium compressor;
+- bonusy do mining drones i remote shield support.
 
 ### Orca
 
-Orca jest większym rozwinięciem tej roli:
+Orca oferuje:
 
 - trzy Command Burst modules;
 - Large Industrial Core;
-- większa skala logistyki/cargo;
-- większy zasięg i szersze możliwości compression niż Porpoise.
+- 150,000 m³ bazowego mining hold;
+- znacznie większą logistykę: fleet hangar i ship maintenance bay;
+- 83 km bazowego zasięgu large compressor;
+- compression **asteroid ore, ice, gas, Mercoxit i moon ore**.
 
-Nie nazywamy Orcy „lepszą we wszystkim”, ale w tej ścieżce jest **wyższym poziomem zaangażowania w fleet mining support**.
+Orca nie wymaga wyższego `Industrial Command Ships` tylko po to, żeby wejść w hull. Dodatkowy trening pojawia się wtedy, gdy rozwijasz bardziej zaawansowane funkcje Large Industrial Core i kolejne typy kompresji.
 
-### Compression — osobny, realny zestaw skilli
+### Industrial Core + compression — copy-paste
 
-Samo `Industrial Command Ships` **nie daje jeszcze działającej kompresji**. Jeśli celem pilota jest compression, trzeba dołożyć:
+Samo `Industrial Command Ships` nie odblokowuje działającego industrial core ani compressorów.
 
-`Industry III → Mass Production V → Advanced Mass Production I → Industrial Reconfiguration I → Shipboard Compression Technology I`
+**T1 Industrial Core + asteroid ore compression:**
 
-To odblokowuje T1 industrial core i podstawowe subcapital compressors dla właściwego hulla. Dalej:
+```text
+Industry I
+Industry II
+Industry III
+Mass Production I
+Mass Production II
+Mass Production III
+Mass Production IV
+Mass Production V
+Advanced Mass Production I
+Industrial Reconfiguration I
+Shipboard Compression Technology I
+```
 
-- `Fleet Compression Logistics` zwiększa zasięg, z którego fleet members mogą korzystać z kompresji;
-- wymaga `Mining Director III`;
-- T2 Industrial Core wymaga dalszego `Industrial Reconfiguration` (`IV` dla Medium Core II, `V` dla Large Core II) — to już trening specjalistyczny, nie obowiązkowy próg wejścia.
+Ten sam `Industrial Reconfiguration I` odblokowuje **Medium Industrial Core I** dla Porpoise i **Large Industrial Core I** dla Orca.
+
+### Poziomy Shipboard Compression Technology
+
+| Poziom | Odblokowanie | Hull |
+|---|---|---|
+| I | Asteroid Ore Compressor | Porpoise / Orca |
+| II | Ice Compressor | Orca |
+| III | Gas Compressor | Porpoise / Orca |
+| IV | Mercoxit Compressor | Orca |
+| V | Moon Ore Compressor | Orca |
+
+**Porpoise — asteroid + gas:**
+
+```text
+Shipboard Compression Technology I
+Shipboard Compression Technology II
+Shipboard Compression Technology III
+```
+
+**Orca — pełny zestaw kompresji:**
+
+```text
+Shipboard Compression Technology I
+Shipboard Compression Technology II
+Shipboard Compression Technology III
+Shipboard Compression Technology IV
+Shipboard Compression Technology V
+```
+
+### T2 Industrial Core — opcjonalna specjalizacja
+
+**Porpoise / Medium Industrial Core II:**
+
+```text
+Industrial Reconfiguration II
+Industrial Reconfiguration III
+Industrial Reconfiguration IV
+```
+
+**Orca / Large Industrial Core II:**
+
+```text
+Industrial Reconfiguration II
+Industrial Reconfiguration III
+Industrial Reconfiguration IV
+Industrial Reconfiguration V
+```
 
 ---
 
@@ -218,35 +415,46 @@ To odblokowuje T1 industrial core i podstawowe subcapital compressors dla właś
 
 ### Lekki miner
 
-`96 Mining Frigate BASIC → 96 Mining Destroyer IMPROVED → Pioneer`
+`Mining Frigate BASIC → Mining Destroyer IMPROVED → Pioneer`
+
+Dodatki zależnie od narzędzi: `Mining Upgrades I/IV`, opcjonalnie `Gas Cloud Harvesting I/V`, opcjonalnie mining drones.
 
 ### Outrider
 
-`96 Mining Frigate BASIC → 96 Mining Destroyer STANDARD → 97 Command Destroyers IMPROVED → Outrider`
+`Mining Destroyer STANDARD → Command Destroyers BASIC → Outrider`
 
-+ Mining Foreman / Mining Director zależnie od jakości boostów.
+Trenuj tylko jako osobną specjalizację. Nie jest potrzebny do Porpoise/Orca.
 
 ### Barge / Exhumer
 
-`96 Mining Frigate BASIC → 96 Mining Barge IMPROVED → [Procurer / Retriever / Covetor]`
+`Mining Barge IMPROVED → Procurer / Retriever / Covetor`
 
 następnie:
 
-`96 Mining Barge STANDARD → 96 Exhumers IMPROVED → [Skiff / Mackinaw / Hulk]`
+`Mining Barge STANDARD → Exhumers IMPROVED → Skiff / Mackinaw / Hulk`
+
+Dodatki zależnie od narzędzi: `Mining V`, `Mining Upgrades I/IV`, opcjonalnie `Gas Cloud Harvesting I/V`, opcjonalnie mining drones.
 
 ### Industrial Command
 
-`96 Industrial Command Ships BASIC → Porpoise → 96 Industrial Command Ships IMPROVED → Orca`
+`Industrial Command Ships BASIC → Porpoise lub Orca`
 
-+ osobny compression chain, jeżeli pilot ma świadczyć kompresję.
+Do kompresji dodaj gotowy blok **Industrial Core + compression** oraz wymagany poziom `Shipboard Compression Technology`.
 
 ## Źródła weryfikacyjne
 
-- https://wiki.eveuniversity.org/Mining
 - https://wiki.eveuniversity.org/Pioneer
 - https://wiki.eveuniversity.org/Outrider
-- https://wiki.eveuniversity.org/Mining_Barges
-- https://wiki.eveuniversity.org/Exhumer
 - https://wiki.eveuniversity.org/Porpoise
 - https://wiki.eveuniversity.org/Orca
 - https://wiki.eveuniversity.org/Compression
+- https://wiki.eveuniversity.org/Mining
+- https://everef.net/types/22542 — Mining Laser Upgrade I
+- https://everef.net/types/28576 — Mining Laser Upgrade II
+- https://everef.net/types/17482 — Strip Miner I
+- https://everef.net/types/17912 — Modulated Strip Miner II
+- https://everef.net/types/25266 — Gas Cloud Scoop I
+- https://everef.net/types/25812 — Gas Cloud Scoop II
+- https://everef.net/types/60313 — Gas Cloud Harvester I
+- https://everef.net/types/60314 — Gas Cloud Harvester II
+- https://everef.net/types/10250 — Mining Drone II
