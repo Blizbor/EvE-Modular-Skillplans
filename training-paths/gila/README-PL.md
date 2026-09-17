@@ -2,7 +2,7 @@
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
 
-Celem jest wyszkolenie pilota **pod konkretne bonusy Gili** i wykorzystanie po drodze tych statków, które wynikają z treningu potrzebnego do Gili — bez dokładania bocznych gałęzi tylko po to, żeby stworzyć sztuczną progresję.
+Celem jest wyszkolenie pilota **pod konkretne bonusy Gili** i wykorzystanie po drodze tych statków, które wynikają z treningu potrzebnego do Gili — bez dokładania bocznych gałęzi.
 
 Gila ma trzy kluczowe bonusy:
 
@@ -33,7 +33,7 @@ Do PvP dołóż `03 IMPROVED` lub wyżej zgodnie z potrzebą.
 
 Gila dostaje z `Gallente Cruiser` bonus do **kinetic i thermal missile damage**, więc missile support i wybrana rodzina launcherów są właściwą częścią ścieżki.
 
-## Drony — Medium są główne, ale Light T2 zostają w ścieżce
+## Drony
 
 `70 IMPROVED → 71 IMPROVED → 72 IMPROVED`
 
@@ -55,7 +55,7 @@ Nie tworzymy sztucznych przystanków wymagających dodatkowych długich skilli. 
 
 ### Worm — wczesne wykorzystanie obu ras
 
-Droga do `Caldari Cruiser` i `Gallente Cruiser` prowadzi przez odpowiednie racial Frigate i Destroyer skills. Dzięki temu **Worm** może pojawić się po drodze bez dokładania `Frigate V`, Assault Frigates ani innej bocznej specjalizacji.
+Droga do `Caldari Cruiser` i `Gallente Cruiser` prowadzi przez odpowiednie racial Frigate i Destroyer skills. Dzięki temu **Worm** może pojawić się po drodze.
 
 Worm wykorzystuje dokładnie te systemy, które będą później ważne:
 
@@ -100,11 +100,6 @@ Schemat:
 
 Po drodze **Worm, Caracal i Vexor** mogą dać pilotowi sensowne statki do latania bez dokładania treningu niezwiązanego z celem.
 
-## Dlaczego nie dokładamy Assault Frigate
-
-Training path nie ma budować efektownej drabiny hulli. Ma prowadzić do celu możliwie efektywnie.
-
-`Caldari Frigate V` i `Assault Frigates` nie są potrzebne do Gili. Dlatego Hawk nie należy do tej ścieżki. Pilot zainteresowany Hawkiem może wyszkolić go osobno, ale nie powinien płacić tym treningiem „za karę” za wybór pirate cruisera.
 
 ## Źródła weryfikacyjne
 
