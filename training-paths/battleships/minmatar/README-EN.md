@@ -2,34 +2,30 @@
 
 [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
 
-## Goal
-
-Practical DPS/PvE battleships rather than utility hulls trained only because they exist. Main targets: **Maelstrom / Tempest / Typhoon**.
+This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, their roles, and the modular skill branches they use.
 
 ## Common foundation
 
-`00 → 01 → 02 → 10`, plus `03` before serious PvP. Battleships are unusually sensitive to fitting, capacitor, lock time and application, so do not build an expensive BS pilot on entry-level support skills alone.
+`00 → 01 → 02 → 10`, plus `03` for serious PvP. BASIC is enough for first tests; IMPROVED is the normal regular-use hull milestone; STANDARD is specialization.
 
-## Hull milestone
+## Available hulls
 
-`94 HULL - Battleship - Minmatar`:
+- **Maelstrom** — projectile battleship with shield-booster bonus.
+- **Tempest** — projectile battleship with flexible tank choices.
+- **Typhoon** — missile battleship with useful drone support.
 
-- BASIC — enough for first tests / quiet PvE.
-- IMPROVED — the normal regular-use target.
-- STANDARD — specialist level when the role or later T2/capital progression justifies it.
+### Maelstrom
 
-## Tank and weapons
+`00 I → 01 I → 02 I → 10 S → 30 I → 31 I → 50 I → 52 → 94 Minmatar B/I`
 
-- Primary tank family: **shield or armor by fit**.
-- Weapon route: **projectiles; missiles + drones for Typhoon**.
-- Relevant modular plans: **50/52 projectiles or 60/63 missiles**.
+### Tempest
 
-Large T2 weapons are the long-term regular DPS/PvP goal, but a pilot can begin suitable PvE earlier with the large weapon skill at a practical level and good meta/faction guns or launchers.
+`00 I → 01 I → 02 I → 10 S → chosen tank → 50 I → 52 → 94 Minmatar B/I`
 
-## Training order
+Do not train both shield and armor merely because the hull can support both styles.
 
-1. Bring fitting/capacitor and targeting support to a practical level.
-2. Train the chosen racial Battleship hull to BASIC for the first inexpensive tests.
-3. Build the correct tank and weapon branch; do not train unrelated alternatives.
-4. Move the hull to IMPROVED for regular use.
-5. Add STANDARD/T2-large-weapon specialization only when the pilot is committing to that battleship role.
+### Typhoon
+
+`00 I → 01 I → 02 I → 10 S → chosen tank → 60 I → 63 → 70 I as required → 94 Minmatar B/I`
+
+Projectile skills are not part of the Typhoon path just because the hull is Minmatar.

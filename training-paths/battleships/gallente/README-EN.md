@@ -2,34 +2,32 @@
 
 [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
 
-## Goal
-
-Practical DPS/PvE battleships rather than utility hulls trained only because they exist. Main targets: **Dominix / Megathron / Hyperion**.
+This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, their roles, and the modular skill branches they use.
 
 ## Common foundation
 
-`00 → 01 → 02 → 10`, plus `03` before serious PvP. Battleships are unusually sensitive to fitting, capacitor, lock time and application, so do not build an expensive BS pilot on entry-level support skills alone.
+`00 → 01 → 02 → 10`, plus `03` for serious PvP. BASIC is enough for first tests; IMPROVED is the normal regular-use hull milestone; STANDARD is specialization.
 
-## Hull milestone
+## Available hulls
 
-`94 HULL - Battleship - Gallente`:
+- **Dominix** — drone battleship; drones + armor according to fit.
+- **Megathron** — hybrid turret DPS; hybrids + armor.
+- **Hyperion** — hybrid turrets + strong local armor repair bonus.
 
-- BASIC — enough for first tests / quiet PvE.
-- IMPROVED — the normal regular-use target.
-- STANDARD — specialist level when the role or later T2/capital progression justifies it.
+### Dominix
 
-## Tank and weapons
+`00 I → 01 I → 02 I → 10 S → 22 I → 70 I → 73 → 94 Gallente B/I`
 
-- Primary tank family: **armor**.
-- Weapon route: **drones and/or hybrid turrets**.
-- Relevant modular plans: **70/73 drones and/or 50/51 hybrids**.
+Large turret training is not mandatory when the fit is drone-centered.
 
-Large T2 weapons are the long-term regular DPS/PvP goal, but a pilot can begin suitable PvE earlier with the large weapon skill at a practical level and good meta/faction guns or launchers.
+### Megathron
 
-## Training order
+`00 I → 01 I → 02 I → 10 S → 21/22 I → 50 I → 51 → 94 Gallente B/I`
 
-1. Bring fitting/capacitor and targeting support to a practical level.
-2. Train the chosen racial Battleship hull to BASIC for the first inexpensive tests.
-3. Build the correct tank and weapon branch; do not train unrelated alternatives.
-4. Move the hull to IMPROVED for regular use.
-5. Add STANDARD/T2-large-weapon specialization only when the pilot is committing to that battleship role.
+Large Hybrid IV can be an entry point; T2 large hybrids belong to the regular committed path.
+
+### Hyperion
+
+`00 I → 01 I → 02 I → 10 S → 22 I → 50 I → 51 → 94 Gallente B/I`
+
+The local-repair bonus makes the active-armor branch especially relevant when the fit is built around that bonus.

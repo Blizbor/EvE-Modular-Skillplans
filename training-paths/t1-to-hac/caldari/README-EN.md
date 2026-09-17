@@ -26,19 +26,19 @@ For early frigates BASIC is enough to start. By regular cruiser/HAC use, the pra
 
 ## 1. Frigate
 
-Target hulls: **Kestrel / Merlin**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
+Relevant hulls: **Kestrel / Merlin**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
 
 ## 2. Destroyer
 
-Target hulls: **Corax / Cormorant**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
+Relevant hulls: **Corax / Cormorant**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
 
 ## 3. Cruiser
 
-Target hulls: **Caracal / Moa**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
+Relevant hulls: **Caracal / Moa**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
 
 ## 4. HAC
 
-Target hulls: **Cerberus / Eagle**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
+Relevant hulls: **Cerberus / Eagle**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
 
 ## What not to train automatically
 

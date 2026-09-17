@@ -1,7 +1,9 @@
-# AMARR — Battleship training recommendations
+# AMARR — Battleship training path
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
 > W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
+
+Ten dokument **nie rekomenduje konkretnego hulla**. Pokazuje sensowne T1 Battleshipy dostępne w tej rasie, ich role oraz gałęzie skillplanów, które wykorzystują. Wybór hulla zależy od aktywności, doctrine i konkretnego fita.
 
 ## Jak czytać ścieżki
 
@@ -17,7 +19,7 @@ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
 
 `00 I → 01 I → 02 I → 03 I → 10 I`
 
-Dla Battleshipów nie polecam budowania pilota na samych BASIC supportach.
+Battleship na samych BASIC supportach traktuj jako etap pierwszych prób; regularne używanie zwykle uzasadnia mocniejsze supporty.
 
 | Plan | Minimum do pierwszych prób | Zalecane regularnie | Uwagi |
 |---|---|---|---|
@@ -43,13 +45,13 @@ Dla Battleshipa rozróżniamy:
 - Nie odkładaj Battleship IV tylko po to, żeby natychmiast robić cały weapon STANDARD. Najpierw hull IV + support IMPROVED.
 
 
-## Co polecam trenować
+## Dostępne sensowne hulle
 
-Pomijam Scorpion-like utility oddities. Dla Amarr jako główne DPS/PvE Battleshipy traktuję:
+Amarr ma trzy sensowne T1 Battleshipy o wyraźnie różnych profilach:
 
-- **Apocalypse** — laser range/tracking, dobry PvE i ranged DPS.
-- **Abaddon** — laser DPS + bardzo mocny armor tank/resists.
-- Armageddon jest użyteczny, ale jego neutralizer/drone charakter jest bardziej specjalistyczny; nie robię z niego głównej ścieżki tego dokumentu.
+- **Apocalypse** — laser range/tracking; klasyczny ranged laser platform.
+- **Abaddon** — laser DPS + mocny armor/resist profile.
+- **Armageddon** — drones + capacitor warfare; utility/drone battleship zamiast kolejnego laserowego hulla.
 
 ---
 
@@ -87,7 +89,7 @@ To jest przypadek, gdzie **Battleship III może wystarczyć na start**, jeśli:
 
 Abaddon szczególnie korzysta z hull levelu, bo dostaje bonusy bojowe/tankowe per level.
 
-**Nie polecam regularnego Abaddona na Battleship III.**
+**Regularny Abaddon na Battleship III wykorzystuje tylko część potencjału hulla.**
 
 - Fleet/buffer: `21 I`.
 - PvE/local tank: `22 I`.
@@ -106,6 +108,17 @@ Nie robiłbym `50 S/53 S` przed `94 I`, dobrym tankiem i fitting supportami.
 
 ---
 
+## Armageddon — drones / capacitor warfare
+
+`00 I → 01 I → 02 I → 10 I/S → 21 I lub 22 I → 70 I → 73 wg używanych heavy/sentry → 94 Amarr I`
+
+Armageddon nie jest „gorszym Apocalypse”. Ma inną rolę: bonusuje **drone hitpoints/damage** oraz zasięg Nosferatu i Energy Neutralizerów. Large Energy Turret nie jest obowiązkową częścią tej ścieżki.
+
+- `70 I` — sensowna baza drone support.
+- `73` — tylko jeżeli fit rzeczywiście używa heavy/sentry jako głównej broni.
+- Capacitor warfare wymaga własnych skilli modułowych poza obecną biblioteką; nie zastępuj ich przypadkowym treningiem laserów.
+- Tank wybierz pod konkretny fit; najczęściej będzie to armor.
+
 ## Skrót
 
 | Hull | Hull minimum | Hull zalecany | Tank | Broń |
@@ -113,8 +126,10 @@ Nie robiłbym `50 S/53 S` przed `94 I`, dobrym tankiem i fitting supportami.
 | Apocalypse PvE entry | `94 B` | **`94 I`** | `22 I` | Large Energy IV na start, potem **`53 S`** |
 | Apocalypse PvP | `94 I` | `94 I/S` | `21 I` | **`50 I + 53 S`** |
 | Abaddon | `94 I` | `94 I/S` | `21 I` lub `22 I` | **`50 I + 53 S`** |
+| Armageddon | `94 B/I` | `94 I` | wg fita | **drones + capacitor warfare** |
 
 ## Źródła weryfikacyjne
 
 - https://wiki.eveuniversity.org/Battleship
 - https://wiki.eveuniversity.org/Amarr_Basic_Ship_and_Skill_Guide
+- https://wiki.eveuniversity.org/Armageddon

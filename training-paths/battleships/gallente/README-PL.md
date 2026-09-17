@@ -1,7 +1,9 @@
-# GALLENTE — Battleship training recommendations
+# GALLENTE — Battleship training path
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
 > W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
+
+Ten dokument **nie rekomenduje konkretnego hulla**. Pokazuje sensowne T1 Battleshipy dostępne w tej rasie, ich role oraz gałęzie skillplanów, które wykorzystują. Wybór hulla zależy od aktywności, doctrine i konkretnego fita.
 
 ## Jak czytać ścieżki
 
@@ -17,7 +19,7 @@ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
 
 `00 I → 01 I → 02 I → 03 I → 10 I`
 
-Dla Battleshipów nie polecam budowania pilota na samych BASIC supportach.
+Battleship na samych BASIC supportach traktuj jako etap pierwszych prób; regularne używanie zwykle uzasadnia mocniejsze supporty.
 
 | Plan | Minimum do pierwszych prób | Zalecane regularnie | Uwagi |
 |---|---|---|---|
@@ -43,13 +45,13 @@ Dla Battleshipa rozróżniamy:
 - Nie odkładaj Battleship IV tylko po to, żeby natychmiast robić cały weapon STANDARD. Najpierw hull IV + support IMPROVED.
 
 
-## Co polecam trenować
+## Dostępne sensowne hulle
 
-Gallente ma trzy bardzo sensowne DPS/PvE T1 Battleshipy:
+Gallente ma trzy sensowne T1 Battleshipy o różnych profilach:
 
-- **Dominix** — drones; jeden z najlepszych naturalnych PvE progression hulls.
+- **Dominix** — drones; drone battleship do PvE i wielu zastosowań utility/PvP.
 - **Megathron** — hybrid turret DPS.
-- **Hyperion** — hybrid + mocny active armor bonus.
+- **Hyperion** — hybrid turrets + mocny local armor repair bonus.
 
 ---
 

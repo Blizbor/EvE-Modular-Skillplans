@@ -1,0 +1,1865 @@
+diff --git a/tools/README-EN.md b/tools/README-EN.md
+deleted file mode 100644
+index 56f47c3..0000000
+--- a/tools/README-EN.md
++++ /dev/null
+@@ -1,12 +0,0 @@
+-# Tools
+-
+-[🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+-
+-`build-language-repo.py` creates a clean single-language shadow repository from the bilingual source repository.
+-
+-```bash
+-python tools/build-language-repo.py PL ../EvE-Modular-Skillplans-PL
+-python tools/build-language-repo.py EN ../EvE-Modular-Skillplans-EN
+-```
+-
+-The source repository remains the only editing source of truth. Shadow repositories should be treated as generated publication output.
+diff --git a/tools/README-PL.md b/tools/README-PL.md
+deleted file mode 100644
+index 3d1d402..0000000
+--- a/tools/README-PL.md
++++ /dev/null
+@@ -1,12 +0,0 @@
+-# Narzędzia
+-
+-🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
+-
+-`build-language-repo.py` generuje czyste shadow repo jednego języka z dwujęzycznego repo źródłowego.
+-
+-```bash
+-python tools/build-language-repo.py PL ../EvE-Modular-Skillplans-PL
+-python tools/build-language-repo.py EN ../EvE-Modular-Skillplans-EN
+-```
+-
+-Repo źródłowe pozostaje jedynym miejscem edycji. Shadow repo powinny być traktowane jako wynik publikacji.
+diff --git a/tools/README.md b/tools/README.md
+deleted file mode 100644
+index f1b6664..0000000
+--- a/tools/README.md
++++ /dev/null
+@@ -1,4 +0,0 @@
+-# Build tools
+-
+-- 🇵🇱 [Polski](README-PL.md)
+-- 🇬🇧 [English](README-EN.md)
+diff --git a/tools/build-language-repo.py b/tools/build-language-repo.py
+deleted file mode 100644
+index 53e7cc5..0000000
+--- a/tools/build-language-repo.py
++++ /dev/null
+@@ -1,53 +0,0 @@
+-#!/usr/bin/env python3
+-"""Build a clean language-only shadow repository from the bilingual source tree.
+-Usage: python tools/build-language-repo.py PL out/PL
+-       python tools/build-language-repo.py EN out/EN
+-"""
+-from pathlib import Path
+-import shutil, sys, re
+-
+-lang=sys.argv[1].upper()
+-src=Path(__file__).resolve().parents[1]
+-dst=Path(sys.argv[2]).resolve()
+-if lang not in {'PL','EN'}:
+-    raise SystemExit('Language must be PL or EN')
+-if dst.exists():
+-    shutil.rmtree(dst)
+-dst.mkdir(parents=True)
+-
+-for p in src.rglob('*'):
+-    rel=p.relative_to(src)
+-    if rel.parts and rel.parts[0] in {'out','.git','tools'}:
+-        continue
+-    if p.is_dir():
+-        continue
+-    name=p.name
+-    # Any neutral markdown file with a localized sibling is only a selector in source.
+-    if p.suffix.lower()=='.md':
+-        localized=p.with_name(p.stem+f'-{lang}'+p.suffix)
+-        if localized.exists():
+-            continue
+-    m=re.match(r'^(.*)-(PL|EN)(\.md)$',name)
+-    if m:
+-        if m.group(2)!=lang:
+-            continue
+-        outrel=rel.with_name(m.group(1)+m.group(3))
+-    else:
+-        outrel=rel
+-    target=dst/outrel
+-    target.parent.mkdir(parents=True,exist_ok=True)
+-    if p.suffix.lower()=='.md':
+-        body=p.read_text(encoding='utf-8')
+-        # remove the source-repo language switch line
+-        body='\n'.join(line for line in body.splitlines() if not ('🇵🇱' in line and '🇬🇧' in line))
+-        # selected-language links become neutral filenames in the shadow repo
+-        body=body.replace(f'-{lang}.md', '.md')
+-        # source-only README structure description
+-        if lang=='PL':
+-            body=body.replace('- `README.md` / `README-EN.md`\n- `README.md` jako neutralny wybór języka.', '- `README.md` — dokumentacja planu.')
+-        else:
+-            body=body.replace('- `README-PL.md` / `README.md`\n- `README.md` as a language-neutral selector.', '- `README.md` — plan documentation.')
+-        target.write_text(body.rstrip()+'\n',encoding='utf-8')
+-    else:
+-        shutil.copy2(p,target)
+-print(dst)
+diff --git a/training-paths/battleships/amarr/DIAGRAM-EN.md b/training-paths/battleships/amarr/DIAGRAM-EN.md
+index b28b01b..fdc7d04 100644
+--- a/training-paths/battleships/amarr/DIAGRAM-EN.md
++++ b/training-paths/battleships/amarr/DIAGRAM-EN.md
+@@ -6,7 +6,7 @@
+ flowchart LR
+     CORE[Core / capacitor / fitting] --> B[94 Amarr Battleship]
+     T[Tank branch] --> B
+-    W[Large weapon branch] --> B
+-    B --> H[Apocalypse / Abaddon]
+-    H --> SPEC[STANDARD / specialist progression]
++    B --> H[Apocalypse / Abaddon / Armageddon]
++    ROLE[Role-specific weapons / drones / EWAR] --> H
++    H --> SPEC[IMPROVED / STANDARD as required]
+ ```
+diff --git a/training-paths/battleships/amarr/DIAGRAM-PL.md b/training-paths/battleships/amarr/DIAGRAM-PL.md
+index 2f1d012..9f6435b 100644
+--- a/training-paths/battleships/amarr/DIAGRAM-PL.md
++++ b/training-paths/battleships/amarr/DIAGRAM-PL.md
+@@ -6,7 +6,7 @@
+ flowchart LR
+     CORE[Core / capacitor / fitting] --> B[94 Amarr Battleship]
+     T[Tank branch] --> B
+-    W[Large weapon branch] --> B
+-    B --> H[Apocalypse / Abaddon]
+-    H --> SPEC[STANDARD / specialist progression]
++    B --> H[Apocalypse / Abaddon / Armageddon]
++    ROLE[Role-specific weapons / drones / EWAR] --> H
++    H --> SPEC[IMPROVED / STANDARD as required]
+ ```
+diff --git a/training-paths/battleships/amarr/README-EN.md b/training-paths/battleships/amarr/README-EN.md
+index ddb9fc4..7cf5030 100644
+--- a/training-paths/battleships/amarr/README-EN.md
++++ b/training-paths/battleships/amarr/README-EN.md
+@@ -2,34 +2,37 @@
+ 
+ [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+ 
+-## Goal
+-
+-Practical DPS/PvE battleships rather than utility hulls trained only because they exist. Main targets: **Apocalypse / Abaddon**.
++This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, what each one does, and which modular skill branches it uses.
+ 
+ ## Common foundation
+ 
+-`00 → 01 → 02 → 10`, plus `03` before serious PvP. Battleships are unusually sensitive to fitting, capacitor, lock time and application, so do not build an expensive BS pilot on entry-level support skills alone.
++`00 → 01 → 02 → 10`, plus `03` for serious PvP. A BASIC hull level is enough for first tests; IMPROVED is the normal regular-use milestone, while STANDARD is for specialization or later progression.
++
++## Available hulls
++
++- **Apocalypse** — laser range/tracking platform; armor + energy turrets.
++- **Abaddon** — laser DPS with a strong armor/resist profile; armor + energy turrets.
++- **Armageddon** — drones + capacitor warfare; not another laser progression hull.
++
++### Apocalypse
++
++`00 I → 01 I → 02 I → 10 S → 21/22 I → 50 I → 53 → 94 Amarr B/I`
++
++Large Energy IV can be enough for initial PvE; T2 large energy weapons belong to a committed regular-use path.
+ 
+-## Hull milestone
++### Abaddon
+ 
+-`94 HULL - Battleship - Amarr`:
++`00 I → 01 I → 02 I → 10 S → 21/22 I → 50 I → 53 S → 94 Amarr I`
+ 
+-- BASIC — enough for first tests / quiet PvE.
+-- IMPROVED — the normal regular-use target.
+-- STANDARD — specialist level when the role or later T2/capital progression justifies it.
++Hull level, capacitor and fitting support matter strongly because the ship combines armor tank and capacitor-using lasers.
+ 
+-## Tank and weapons
++### Armageddon
+ 
+-- Primary tank family: **armor**.
+-- Weapon route: **energy turrets**.
+-- Relevant modular plans: **53 WEAPON - Energy**.
++`00 I → 01 I → 02 I → 10 I/S → 21/22 I → 70 I → 73 as required → 94 Amarr I`
+ 
+-Large T2 weapons are the long-term regular DPS/PvP goal, but a pilot can begin suitable PvE earlier with the large weapon skill at a practical level and good meta/faction guns or launchers.
++The hull bonuses drones and Nosferatu/Neutralizer range. Large Energy Turret is not mandatory; capacitor-warfare support should be trained for the actual fit rather than replaced with unrelated laser skills.
+ 
+-## Training order
++## Verification
+ 
+-1. Bring fitting/capacitor and targeting support to a practical level.
+-2. Train the chosen racial Battleship hull to BASIC for the first inexpensive tests.
+-3. Build the correct tank and weapon branch; do not train unrelated alternatives.
+-4. Move the hull to IMPROVED for regular use.
+-5. Add STANDARD/T2-large-weapon specialization only when the pilot is committing to that battleship role.
++- https://wiki.eveuniversity.org/Battleship
++- https://wiki.eveuniversity.org/Armageddon
+diff --git a/training-paths/battleships/amarr/README-PL.md b/training-paths/battleships/amarr/README-PL.md
+index 156d1a0..2565c4e 100644
+--- a/training-paths/battleships/amarr/README-PL.md
++++ b/training-paths/battleships/amarr/README-PL.md
+@@ -1,8 +1,10 @@
+-# AMARR — Battleship training recommendations
++# AMARR — Battleship training path
+ 
+ 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
+ > W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
+ 
++Ten dokument **nie rekomenduje konkretnego hulla**. Pokazuje sensowne T1 Battleshipy dostępne w tej rasie, ich role oraz gałęzie skillplanów, które wykorzystują. Wybór hulla zależy od aktywności, doctrine i konkretnego fita.
++
+ ## Jak czytać ścieżki
+ 
+ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+@@ -17,7 +19,7 @@ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+ 
+ `00 I → 01 I → 02 I → 03 I → 10 I`
+ 
+-Dla Battleshipów nie polecam budowania pilota na samych BASIC supportach.
++Battleship na samych BASIC supportach traktuj jako etap pierwszych prób; regularne używanie zwykle uzasadnia mocniejsze supporty.
+ 
+ | Plan | Minimum do pierwszych prób | Zalecane regularnie | Uwagi |
+ |---|---|---|---|
+@@ -43,13 +45,13 @@ Dla Battleshipa rozróżniamy:
+ - Nie odkładaj Battleship IV tylko po to, żeby natychmiast robić cały weapon STANDARD. Najpierw hull IV + support IMPROVED.
+ 
+ 
+-## Co polecam trenować
++## Dostępne sensowne hulle
+ 
+-Pomijam Scorpion-like utility oddities. Dla Amarr jako główne DPS/PvE Battleshipy traktuję:
++Amarr ma trzy sensowne T1 Battleshipy o wyraźnie różnych profilach:
+ 
+-- **Apocalypse** — laser range/tracking, dobry PvE i ranged DPS.
+-- **Abaddon** — laser DPS + bardzo mocny armor tank/resists.
+-- Armageddon jest użyteczny, ale jego neutralizer/drone charakter jest bardziej specjalistyczny; nie robię z niego głównej ścieżki tego dokumentu.
++- **Apocalypse** — laser range/tracking; klasyczny ranged laser platform.
++- **Abaddon** — laser DPS + mocny armor/resist profile.
++- **Armageddon** — drones + capacitor warfare; utility/drone battleship zamiast kolejnego laserowego hulla.
+ 
+ ---
+ 
+@@ -87,7 +89,7 @@ To jest przypadek, gdzie **Battleship III może wystarczyć na start**, jeśli:
+ 
+ Abaddon szczególnie korzysta z hull levelu, bo dostaje bonusy bojowe/tankowe per level.
+ 
+-**Nie polecam regularnego Abaddona na Battleship III.**
++**Regularny Abaddon na Battleship III wykorzystuje tylko część potencjału hulla.**
+ 
+ - Fleet/buffer: `21 I`.
+ - PvE/local tank: `22 I`.
+@@ -106,6 +108,17 @@ Nie robiłbym `50 S/53 S` przed `94 I`, dobrym tankiem i fitting supportami.
+ 
+ ---
+ 
++## Armageddon — drones / capacitor warfare
++
++`00 I → 01 I → 02 I → 10 I/S → 21 I lub 22 I → 70 I → 73 wg używanych heavy/sentry → 94 Amarr I`
++
++Armageddon nie jest „gorszym Apocalypse”. Ma inną rolę: bonusuje **drone hitpoints/damage** oraz zasięg Nosferatu i Energy Neutralizerów. Large Energy Turret nie jest obowiązkową częścią tej ścieżki.
++
++- `70 I` — sensowna baza drone support.
++- `73` — tylko jeżeli fit rzeczywiście używa heavy/sentry jako głównej broni.
++- Capacitor warfare wymaga własnych skilli modułowych poza obecną biblioteką; nie zastępuj ich przypadkowym treningiem laserów.
++- Tank wybierz pod konkretny fit; najczęściej będzie to armor.
++
+ ## Skrót
+ 
+ | Hull | Hull minimum | Hull zalecany | Tank | Broń |
+@@ -113,8 +126,10 @@ Nie robiłbym `50 S/53 S` przed `94 I`, dobrym tankiem i fitting supportami.
+ | Apocalypse PvE entry | `94 B` | **`94 I`** | `22 I` | Large Energy IV na start, potem **`53 S`** |
+ | Apocalypse PvP | `94 I` | `94 I/S` | `21 I` | **`50 I + 53 S`** |
+ | Abaddon | `94 I` | `94 I/S` | `21 I` lub `22 I` | **`50 I + 53 S`** |
++| Armageddon | `94 B/I` | `94 I` | wg fita | **drones + capacitor warfare** |
+ 
+ ## Źródła weryfikacyjne
+ 
+ - https://wiki.eveuniversity.org/Battleship
+ - https://wiki.eveuniversity.org/Amarr_Basic_Ship_and_Skill_Guide
++- https://wiki.eveuniversity.org/Armageddon
+diff --git a/training-paths/battleships/caldari/DIAGRAM-EN.md b/training-paths/battleships/caldari/DIAGRAM-EN.md
+index de69c18..4691ea8 100644
+--- a/training-paths/battleships/caldari/DIAGRAM-EN.md
++++ b/training-paths/battleships/caldari/DIAGRAM-EN.md
+@@ -6,7 +6,7 @@
+ flowchart LR
+     CORE[Core / capacitor / fitting] --> B[94 Caldari Battleship]
+     T[Tank branch] --> B
+-    W[Large weapon branch] --> B
+-    B --> H[Raven / Rokh]
+-    H --> SPEC[STANDARD / specialist progression]
++    B --> H[Raven / Rokh / Scorpion]
++    ROLE[Role-specific weapons / drones / EWAR] --> H
++    H --> SPEC[IMPROVED / STANDARD as required]
+ ```
+diff --git a/training-paths/battleships/caldari/DIAGRAM-PL.md b/training-paths/battleships/caldari/DIAGRAM-PL.md
+index 42c13f6..4616065 100644
+--- a/training-paths/battleships/caldari/DIAGRAM-PL.md
++++ b/training-paths/battleships/caldari/DIAGRAM-PL.md
+@@ -6,7 +6,7 @@
+ flowchart LR
+     CORE[Core / capacitor / fitting] --> B[94 Caldari Battleship]
+     T[Tank branch] --> B
+-    W[Large weapon branch] --> B
+-    B --> H[Raven / Rokh]
+-    H --> SPEC[STANDARD / specialist progression]
++    B --> H[Raven / Rokh / Scorpion]
++    ROLE[Role-specific weapons / drones / EWAR] --> H
++    H --> SPEC[IMPROVED / STANDARD as required]
+ ```
+diff --git a/training-paths/battleships/caldari/README-EN.md b/training-paths/battleships/caldari/README-EN.md
+index cec8a59..e31cbd7 100644
+--- a/training-paths/battleships/caldari/README-EN.md
++++ b/training-paths/battleships/caldari/README-EN.md
+@@ -2,34 +2,37 @@
+ 
+ [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+ 
+-## Goal
+-
+-Practical DPS/PvE battleships rather than utility hulls trained only because they exist. Main targets: **Raven / Rokh**.
++This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, their roles, and the modular skill branches they use.
+ 
+ ## Common foundation
+ 
+-`00 → 01 → 02 → 10`, plus `03` before serious PvP. Battleships are unusually sensitive to fitting, capacitor, lock time and application, so do not build an expensive BS pilot on entry-level support skills alone.
++`00 → 01 → 02 → 10`, plus `03` for serious PvP. BASIC is enough for first tests; IMPROVED is the normal regular-use hull milestone; STANDARD is specialization.
++
++## Available hulls
++
++- **Raven** — missile battleship; shield + large missiles.
++- **Rokh** — hybrid turret battleship; shield + hybrids.
++- **Scorpion** — ECM/fleet-support battleship; not a Raven/Rokh DPS substitute.
++
++### Raven
++
++`00 I → 01 I → 02 I → 10 S → 30 I → 31 I when active → 60 I → 63 → 94 Caldari B/I`
++
++Cruise IV with solid support can be enough for initial PvE; T2 large missiles are a later committed milestone.
+ 
+-## Hull milestone
++### Rokh
+ 
+-`94 HULL - Battleship - Caldari`:
++`00 I → 01 I → 02 I → 10 S → 30 I → 50 I → 51 → 94 Caldari B/I`
+ 
+-- BASIC — enough for first tests / quiet PvE.
+-- IMPROVED — the normal regular-use target.
+-- STANDARD — specialist level when the role or later T2/capital progression justifies it.
++Add `31` for active-shield fits. The hull's hybrid and shield profile makes strong turret support important.
+ 
+-## Tank and weapons
++### Scorpion
+ 
+-- Primary tank family: **shield**.
+-- Weapon route: **missiles for Raven; hybrids for Rokh**.
+-- Relevant modular plans: **60/62/63 missiles or 50/51 hybrids**.
++`00 I → 01 I → 02 I → 03 I → 94 Caldari I` plus the ECM/EWAR and tank skills required by the actual fit.
+ 
+-Large T2 weapons are the long-term regular DPS/PvP goal, but a pilot can begin suitable PvE earlier with the large weapon skill at a practical level and good meta/faction guns or launchers.
++Its hull bonuses ECM strength and range. Weapons are secondary, and the tank may be shield or armor depending on how many mid slots the fit dedicates to jammers.
+ 
+-## Training order
++## Verification
+ 
+-1. Bring fitting/capacitor and targeting support to a practical level.
+-2. Train the chosen racial Battleship hull to BASIC for the first inexpensive tests.
+-3. Build the correct tank and weapon branch; do not train unrelated alternatives.
+-4. Move the hull to IMPROVED for regular use.
+-5. Add STANDARD/T2-large-weapon specialization only when the pilot is committing to that battleship role.
++- https://wiki.eveuniversity.org/Battleship
++- https://wiki.eveuniversity.org/Scorpion
+diff --git a/training-paths/battleships/caldari/README-PL.md b/training-paths/battleships/caldari/README-PL.md
+index fc7bfc5..6ec8c39 100644
+--- a/training-paths/battleships/caldari/README-PL.md
++++ b/training-paths/battleships/caldari/README-PL.md
+@@ -1,8 +1,10 @@
+-# CALDARI — Battleship training recommendations
++# CALDARI — Battleship training path
+ 
+ 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
+ > W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
+ 
++Ten dokument **nie rekomenduje konkretnego hulla**. Pokazuje sensowne T1 Battleshipy dostępne w tej rasie, ich role oraz gałęzie skillplanów, które wykorzystują. Wybór hulla zależy od aktywności, doctrine i konkretnego fita.
++
+ ## Jak czytać ścieżki
+ 
+ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+@@ -17,7 +19,7 @@ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+ 
+ `00 I → 01 I → 02 I → 03 I → 10 I`
+ 
+-Dla Battleshipów nie polecam budowania pilota na samych BASIC supportach.
++Battleship na samych BASIC supportach traktuj jako etap pierwszych prób; regularne używanie zwykle uzasadnia mocniejsze supporty.
+ 
+ | Plan | Minimum do pierwszych prób | Zalecane regularnie | Uwagi |
+ |---|---|---|---|
+@@ -43,14 +45,13 @@ Dla Battleshipa rozróżniamy:
+ - Nie odkładaj Battleship IV tylko po to, żeby natychmiast robić cały weapon STANDARD. Najpierw hull IV + support IMPROVED.
+ 
+ 
+-## Co polecam trenować
+-
+-Świadomie **pomijam Scorpiona**: to ECM/support Battleship o niskim DPS, nie jest dobrym standardowym solo/PvE/DPS celem.
++## Dostępne sensowne hulle
+ 
+-Główne ścieżki:
++Caldari ma trzy sensowne T1 Battleshipy, ale pełnią bardzo różne role:
+ 
+-- **Raven** — missiles, klasyczny L4/PvE Battleship.
+-- **Rokh** — rail/blaster hybrid, bardzo mocny range i shield tank.
++- **Raven** — missiles; klasyczny missile battleship do PvE i części zastosowań PvP.
++- **Rokh** — hybrid turrets; range + shield resist profile.
++- **Scorpion** — ECM/support battleship. Nie jest DPS-owym odpowiednikiem Ravena lub Rokha, ale jest pełnoprawną rasową opcją do swojej roli.
+ 
+ ---
+ 
+@@ -60,7 +61,7 @@ Główne ścieżki:
+ 
+ `00 I → 01 B/I → 02 I → 10 S → 30 I → 31 I → 60 I → 63 do Cruise Missiles IV → 94 Caldari B`
+ 
+-Raven jest jednym z najlepszych przykładów, gdzie **nie trzeba czekać na T2 large weapons**, żeby zacząć L4:
++Raven dobrze pokazuje, że **nie trzeba czekać na T2 large weapons**, żeby zacząć L4:
+ Cruise IV + dobre launchery + supporty IV może już działać.
+ 
+ Ale nie traktuj tego jako końca treningu.
+@@ -100,7 +101,7 @@ PvE active:
+ Fleet buffer:
+ `30 I` wystarczy, bez `31`.
+ 
+-**Nie polecam Rokha na słabych turret supportach.**
++**Rokh na słabych turret supportach wykorzystuje tylko część swojego potencjału.**
+ Jego wartość bierze się z dobrego wykorzystania rail/blaster range + shield tanku.
+ 
+ - `94 I` — minimum regularne.
+@@ -109,6 +110,17 @@ Jego wartość bierze się z dobrego wykorzystania rail/blaster range + shield t
+ 
+ ---
+ 
++## Scorpion — ECM / fleet support
++
++`00 I → 01 I → 02 I → 03 I → 94 Caldari I` + właściwe skille ECM/EWAR i tank wybranego fita.
++
++Scorpion jest wyjątkiem wśród T1 Battleshipów: jego bonusy dotyczą **ECM jammer strength oraz optimal/falloff**, więc nie należy wciskać go w Raven/Rokh DPS progression.
++
++- `94 I` ma dużą wartość, bo hull level bezpośrednio wzmacnia ECM.
++- Weapon branch jest drugorzędny; launchery lub utility highs dobiera się do konkretnego zastosowania.
++- Tank może być shield albo armor zależnie od liczby mids potrzebnych na jammery.
++- Pełny EWAR support nie jest jeszcze osobnym modułem w tej bibliotece, więc ta ścieżka wskazuje lukę zamiast udawać, że missile plan ją zastępuje.
++
+ ## Skrót
+ 
+ | Hull | Hull minimum | Hull zalecany | Tank | Broń |
+@@ -117,6 +129,7 @@ Jego wartość bierze się z dobrego wykorzystania rail/blaster range + shield t
+ | Raven regular | `94 I` | `94 I/S` | `30 I + 31 I` | **`60 I + 63 I`** |
+ | Rokh entry | `94 B` | **`94 I`** | `30 I + 31 I` PvE | Large Hybrid IV na start |
+ | Rokh regular | `94 I` | `94 I/S` | `30 I` (+31 active) | **`50 I + 51 S`** |
++| Scorpion | `94 B/I` | `94 I` | wg ECM fita | **ECM/EWAR; broń drugorzędna** |
+ 
+ ## Źródła weryfikacyjne
+ 
+@@ -124,3 +137,4 @@ Jego wartość bierze się z dobrego wykorzystania rail/blaster range + shield t
+ - https://wiki.eveuniversity.org/Caldari_Basic_Ship_and_Skill_Guide
+ - https://wiki.eveuniversity.org/Raven
+ - https://wiki.eveuniversity.org/Rokh
++- https://wiki.eveuniversity.org/Scorpion
+diff --git a/training-paths/battleships/gallente/DIAGRAM-EN.md b/training-paths/battleships/gallente/DIAGRAM-EN.md
+index 0449c14..98a4798 100644
+--- a/training-paths/battleships/gallente/DIAGRAM-EN.md
++++ b/training-paths/battleships/gallente/DIAGRAM-EN.md
+@@ -6,7 +6,7 @@
+ flowchart LR
+     CORE[Core / capacitor / fitting] --> B[94 Gallente Battleship]
+     T[Tank branch] --> B
+-    W[Large weapon branch] --> B
+     B --> H[Dominix / Megathron / Hyperion]
+-    H --> SPEC[STANDARD / specialist progression]
++    ROLE[Role-specific weapons / drones / EWAR] --> H
++    H --> SPEC[IMPROVED / STANDARD as required]
+ ```
+diff --git a/training-paths/battleships/gallente/DIAGRAM-PL.md b/training-paths/battleships/gallente/DIAGRAM-PL.md
+index 8423b6f..8466bbe 100644
+--- a/training-paths/battleships/gallente/DIAGRAM-PL.md
++++ b/training-paths/battleships/gallente/DIAGRAM-PL.md
+@@ -6,7 +6,7 @@
+ flowchart LR
+     CORE[Core / capacitor / fitting] --> B[94 Gallente Battleship]
+     T[Tank branch] --> B
+-    W[Large weapon branch] --> B
+     B --> H[Dominix / Megathron / Hyperion]
+-    H --> SPEC[STANDARD / specialist progression]
++    ROLE[Role-specific weapons / drones / EWAR] --> H
++    H --> SPEC[IMPROVED / STANDARD as required]
+ ```
+diff --git a/training-paths/battleships/gallente/README-EN.md b/training-paths/battleships/gallente/README-EN.md
+index 90e6465..829530e 100644
+--- a/training-paths/battleships/gallente/README-EN.md
++++ b/training-paths/battleships/gallente/README-EN.md
+@@ -2,34 +2,32 @@
+ 
+ [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+ 
+-## Goal
+-
+-Practical DPS/PvE battleships rather than utility hulls trained only because they exist. Main targets: **Dominix / Megathron / Hyperion**.
++This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, their roles, and the modular skill branches they use.
+ 
+ ## Common foundation
+ 
+-`00 → 01 → 02 → 10`, plus `03` before serious PvP. Battleships are unusually sensitive to fitting, capacitor, lock time and application, so do not build an expensive BS pilot on entry-level support skills alone.
++`00 → 01 → 02 → 10`, plus `03` for serious PvP. BASIC is enough for first tests; IMPROVED is the normal regular-use hull milestone; STANDARD is specialization.
++
++## Available hulls
++
++- **Dominix** — drone battleship; drones + armor according to fit.
++- **Megathron** — hybrid turret DPS; hybrids + armor.
++- **Hyperion** — hybrid turrets + strong local armor repair bonus.
++
++### Dominix
+ 
+-## Hull milestone
++`00 I → 01 I → 02 I → 10 S → 22 I → 70 I → 73 → 94 Gallente B/I`
+ 
+-`94 HULL - Battleship - Gallente`:
++Large turret training is not mandatory when the fit is drone-centered.
+ 
+-- BASIC — enough for first tests / quiet PvE.
+-- IMPROVED — the normal regular-use target.
+-- STANDARD — specialist level when the role or later T2/capital progression justifies it.
++### Megathron
+ 
+-## Tank and weapons
++`00 I → 01 I → 02 I → 10 S → 21/22 I → 50 I → 51 → 94 Gallente B/I`
+ 
+-- Primary tank family: **armor**.
+-- Weapon route: **drones and/or hybrid turrets**.
+-- Relevant modular plans: **70/73 drones and/or 50/51 hybrids**.
++Large Hybrid IV can be an entry point; T2 large hybrids belong to the regular committed path.
+ 
+-Large T2 weapons are the long-term regular DPS/PvP goal, but a pilot can begin suitable PvE earlier with the large weapon skill at a practical level and good meta/faction guns or launchers.
++### Hyperion
+ 
+-## Training order
++`00 I → 01 I → 02 I → 10 S → 22 I → 50 I → 51 → 94 Gallente B/I`
+ 
+-1. Bring fitting/capacitor and targeting support to a practical level.
+-2. Train the chosen racial Battleship hull to BASIC for the first inexpensive tests.
+-3. Build the correct tank and weapon branch; do not train unrelated alternatives.
+-4. Move the hull to IMPROVED for regular use.
+-5. Add STANDARD/T2-large-weapon specialization only when the pilot is committing to that battleship role.
++The local-repair bonus makes the active-armor branch especially relevant when the fit is built around that bonus.
+diff --git a/training-paths/battleships/gallente/README-PL.md b/training-paths/battleships/gallente/README-PL.md
+index 27c49d9..72f2d95 100644
+--- a/training-paths/battleships/gallente/README-PL.md
++++ b/training-paths/battleships/gallente/README-PL.md
+@@ -1,8 +1,10 @@
+-# GALLENTE — Battleship training recommendations
++# GALLENTE — Battleship training path
+ 
+ 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
+ > W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
+ 
++Ten dokument **nie rekomenduje konkretnego hulla**. Pokazuje sensowne T1 Battleshipy dostępne w tej rasie, ich role oraz gałęzie skillplanów, które wykorzystują. Wybór hulla zależy od aktywności, doctrine i konkretnego fita.
++
+ ## Jak czytać ścieżki
+ 
+ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+@@ -17,7 +19,7 @@ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+ 
+ `00 I → 01 I → 02 I → 03 I → 10 I`
+ 
+-Dla Battleshipów nie polecam budowania pilota na samych BASIC supportach.
++Battleship na samych BASIC supportach traktuj jako etap pierwszych prób; regularne używanie zwykle uzasadnia mocniejsze supporty.
+ 
+ | Plan | Minimum do pierwszych prób | Zalecane regularnie | Uwagi |
+ |---|---|---|---|
+@@ -43,13 +45,13 @@ Dla Battleshipa rozróżniamy:
+ - Nie odkładaj Battleship IV tylko po to, żeby natychmiast robić cały weapon STANDARD. Najpierw hull IV + support IMPROVED.
+ 
+ 
+-## Co polecam trenować
++## Dostępne sensowne hulle
+ 
+-Gallente ma trzy bardzo sensowne DPS/PvE T1 Battleshipy:
++Gallente ma trzy sensowne T1 Battleshipy o różnych profilach:
+ 
+-- **Dominix** — drones; jeden z najlepszych naturalnych PvE progression hulls.
++- **Dominix** — drones; drone battleship do PvE i wielu zastosowań utility/PvP.
+ - **Megathron** — hybrid turret DPS.
+-- **Hyperion** — hybrid + mocny active armor bonus.
++- **Hyperion** — hybrid turrets + mocny local armor repair bonus.
+ 
+ ---
+ 
+diff --git a/training-paths/battleships/minmatar/DIAGRAM-EN.md b/training-paths/battleships/minmatar/DIAGRAM-EN.md
+index 323ee40..7d67821 100644
+--- a/training-paths/battleships/minmatar/DIAGRAM-EN.md
++++ b/training-paths/battleships/minmatar/DIAGRAM-EN.md
+@@ -6,7 +6,7 @@
+ flowchart LR
+     CORE[Core / capacitor / fitting] --> B[94 Minmatar Battleship]
+     T[Tank branch] --> B
+-    W[Large weapon branch] --> B
+     B --> H[Maelstrom / Tempest / Typhoon]
+-    H --> SPEC[STANDARD / specialist progression]
++    ROLE[Role-specific weapons / drones / EWAR] --> H
++    H --> SPEC[IMPROVED / STANDARD as required]
+ ```
+diff --git a/training-paths/battleships/minmatar/DIAGRAM-PL.md b/training-paths/battleships/minmatar/DIAGRAM-PL.md
+index bf69d49..9770d2e 100644
+--- a/training-paths/battleships/minmatar/DIAGRAM-PL.md
++++ b/training-paths/battleships/minmatar/DIAGRAM-PL.md
+@@ -6,7 +6,7 @@
+ flowchart LR
+     CORE[Core / capacitor / fitting] --> B[94 Minmatar Battleship]
+     T[Tank branch] --> B
+-    W[Large weapon branch] --> B
+     B --> H[Maelstrom / Tempest / Typhoon]
+-    H --> SPEC[STANDARD / specialist progression]
++    ROLE[Role-specific weapons / drones / EWAR] --> H
++    H --> SPEC[IMPROVED / STANDARD as required]
+ ```
+diff --git a/training-paths/battleships/minmatar/README-EN.md b/training-paths/battleships/minmatar/README-EN.md
+index af13574..6bfe512 100644
+--- a/training-paths/battleships/minmatar/README-EN.md
++++ b/training-paths/battleships/minmatar/README-EN.md
+@@ -2,34 +2,30 @@
+ 
+ [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+ 
+-## Goal
+-
+-Practical DPS/PvE battleships rather than utility hulls trained only because they exist. Main targets: **Maelstrom / Tempest / Typhoon**.
++This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, their roles, and the modular skill branches they use.
+ 
+ ## Common foundation
+ 
+-`00 → 01 → 02 → 10`, plus `03` before serious PvP. Battleships are unusually sensitive to fitting, capacitor, lock time and application, so do not build an expensive BS pilot on entry-level support skills alone.
++`00 → 01 → 02 → 10`, plus `03` for serious PvP. BASIC is enough for first tests; IMPROVED is the normal regular-use hull milestone; STANDARD is specialization.
++
++## Available hulls
++
++- **Maelstrom** — projectile battleship with shield-booster bonus.
++- **Tempest** — projectile battleship with flexible tank choices.
++- **Typhoon** — missile battleship with useful drone support.
+ 
+-## Hull milestone
++### Maelstrom
+ 
+-`94 HULL - Battleship - Minmatar`:
++`00 I → 01 I → 02 I → 10 S → 30 I → 31 I → 50 I → 52 → 94 Minmatar B/I`
+ 
+-- BASIC — enough for first tests / quiet PvE.
+-- IMPROVED — the normal regular-use target.
+-- STANDARD — specialist level when the role or later T2/capital progression justifies it.
++### Tempest
+ 
+-## Tank and weapons
++`00 I → 01 I → 02 I → 10 S → chosen tank → 50 I → 52 → 94 Minmatar B/I`
+ 
+-- Primary tank family: **shield or armor by fit**.
+-- Weapon route: **projectiles; missiles + drones for Typhoon**.
+-- Relevant modular plans: **50/52 projectiles or 60/63 missiles**.
++Do not train both shield and armor merely because the hull can support both styles.
+ 
+-Large T2 weapons are the long-term regular DPS/PvP goal, but a pilot can begin suitable PvE earlier with the large weapon skill at a practical level and good meta/faction guns or launchers.
++### Typhoon
+ 
+-## Training order
++`00 I → 01 I → 02 I → 10 S → chosen tank → 60 I → 63 → 70 I as required → 94 Minmatar B/I`
+ 
+-1. Bring fitting/capacitor and targeting support to a practical level.
+-2. Train the chosen racial Battleship hull to BASIC for the first inexpensive tests.
+-3. Build the correct tank and weapon branch; do not train unrelated alternatives.
+-4. Move the hull to IMPROVED for regular use.
+-5. Add STANDARD/T2-large-weapon specialization only when the pilot is committing to that battleship role.
++Projectile skills are not part of the Typhoon path just because the hull is Minmatar.
+diff --git a/training-paths/battleships/minmatar/README-PL.md b/training-paths/battleships/minmatar/README-PL.md
+index 9795a27..6542b96 100644
+--- a/training-paths/battleships/minmatar/README-PL.md
++++ b/training-paths/battleships/minmatar/README-PL.md
+@@ -1,8 +1,10 @@
+-# MINMATAR — Battleship training recommendations
++# MINMATAR — Battleship training path
+ 
+ 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
+ > W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
+ 
++Ten dokument **nie rekomenduje konkretnego hulla**. Pokazuje sensowne T1 Battleshipy dostępne w tej rasie, ich role oraz gałęzie skillplanów, które wykorzystują. Wybór hulla zależy od aktywności, doctrine i konkretnego fita.
++
+ ## Jak czytać ścieżki
+ 
+ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+@@ -17,7 +19,7 @@ Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+ 
+ `00 I → 01 I → 02 I → 03 I → 10 I`
+ 
+-Dla Battleshipów nie polecam budowania pilota na samych BASIC supportach.
++Battleship na samych BASIC supportach traktuj jako etap pierwszych prób; regularne używanie zwykle uzasadnia mocniejsze supporty.
+ 
+ | Plan | Minimum do pierwszych prób | Zalecane regularnie | Uwagi |
+ |---|---|---|---|
+@@ -43,9 +45,9 @@ Dla Battleshipa rozróżniamy:
+ - Nie odkładaj Battleship IV tylko po to, żeby natychmiast robić cały weapon STANDARD. Najpierw hull IV + support IMPROVED.
+ 
+ 
+-## Co polecam trenować
++## Dostępne sensowne hulle
+ 
+-Minmatar ma trzy sensowne T1 Battleship paths:
++Minmatar ma trzy sensowne T1 Battleshipy o różnych profilach:
+ 
+ - **Maelstrom** — projectile + active shield; bardzo naturalny PvE/artillery BS.
+ - **Tempest** — projectile, elastyczny shield/armor.
+diff --git a/training-paths/gila/DIAGRAM-EN.md b/training-paths/gila/DIAGRAM-EN.md
+index f66096f..e752a39 100644
+--- a/training-paths/gila/DIAGRAM-EN.md
++++ b/training-paths/gila/DIAGRAM-EN.md
+@@ -6,17 +6,48 @@
+ flowchart TD
+     A[00 Core / fitting STANDARD] --> B[30 Shield IMPROVED]
+     A --> M[60 Missile Support IMPROVED]
++    M --> M1[61 RLML / Light IMPROVED]
++    M --> M2[62 HML / HAM IMPROVED]
++
+     A --> D[70 Drone Support IMPROVED]
+-    M --> M1[61 Light/RLML IMPROVED]
+-    M --> M2[62 HAM/HML IMPROVED]
+-    D --> D1[71 Light Drones IMPROVED]
+-    D --> D2[72 Medium Drones IMPROVED]
+-    A --> C[92 Caldari Cruiser]
+-    A --> G[92 Gallente Cruiser]
++    D --> D1[71 Light T2 IMPROVED]
++    D1 --> D2[72 Medium T2 IMPROVED]
++
++    A --> CF[90 Caldari Frigate]
++    A --> GF[90 Gallente Frigate]
++    CF --> HAWK[Hawk
++early Caldari step]
++    B --> HAWK
++    M1 --> HAWK
++
++    CF --> W[Worm
++Guristas frigate step]
++    GF --> W
++    D1 --> W
++    B --> W
++    M1 --> W
++
++    A --> C[92 Caldari Cruiser IMPROVED]
++    C --> CAR[Caracal]
++    B --> CAR
++    M1 --> CAR
++    M2 --> CAR
++
++    A --> G[92 Gallente Cruiser IMPROVED]
++    G --> VEX[Vexor]
++    D1 --> VEX
++    D2 --> VEX
++
+     B --> X[GILA]
+     M1 --> X
+     M2 --> X
++    D1 --> X
+     D2 --> X
+     C --> X
+     G --> X
++
++    HAWK -. useful while training .-> CAR
++    W -. useful while training .-> VEX
++    CAR -. finish Gallente + drones .-> X
++    VEX -. finish Caldari + missiles .-> X
+ ```
+diff --git a/training-paths/gila/DIAGRAM-PL.md b/training-paths/gila/DIAGRAM-PL.md
+index de7fb47..fb9ca3a 100644
+--- a/training-paths/gila/DIAGRAM-PL.md
++++ b/training-paths/gila/DIAGRAM-PL.md
+@@ -6,17 +6,48 @@
+ flowchart TD
+     A[00 Core / fitting STANDARD] --> B[30 Shield IMPROVED]
+     A --> M[60 Missile Support IMPROVED]
++    M --> M1[61 RLML / Light IMPROVED]
++    M --> M2[62 HML / HAM IMPROVED]
++
+     A --> D[70 Drone Support IMPROVED]
+-    M --> M1[61 Light/RLML IMPROVED]
+-    M --> M2[62 HAM/HML IMPROVED]
+-    D --> D1[71 Light Drones IMPROVED]
+-    D --> D2[72 Medium Drones IMPROVED]
+-    A --> C[92 Caldari Cruiser]
+-    A --> G[92 Gallente Cruiser]
++    D --> D1[71 Light T2 IMPROVED]
++    D1 --> D2[72 Medium T2 IMPROVED]
++
++    A --> CF[90 Caldari Frigate]
++    A --> GF[90 Gallente Frigate]
++    CF --> HAWK[Hawk
++early Caldari step]
++    B --> HAWK
++    M1 --> HAWK
++
++    CF --> W[Worm
++Guristas frigate step]
++    GF --> W
++    D1 --> W
++    B --> W
++    M1 --> W
++
++    A --> C[92 Caldari Cruiser IMPROVED]
++    C --> CAR[Caracal]
++    B --> CAR
++    M1 --> CAR
++    M2 --> CAR
++
++    A --> G[92 Gallente Cruiser IMPROVED]
++    G --> VEX[Vexor]
++    D1 --> VEX
++    D2 --> VEX
++
+     B --> X[GILA]
+     M1 --> X
+     M2 --> X
++    D1 --> X
+     D2 --> X
+     C --> X
+     G --> X
++
++    HAWK -. useful while training .-> CAR
++    W -. useful while training .-> VEX
++    CAR -. finish Gallente + drones .-> X
++    VEX -. finish Caldari + missiles .-> X
+ ```
+diff --git a/training-paths/gila/README-EN.md b/training-paths/gila/README-EN.md
+index 2088261..1bb0a19 100644
+--- a/training-paths/gila/README-EN.md
++++ b/training-paths/gila/README-EN.md
+@@ -2,7 +2,15 @@
+ 
+ [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+ 
+-The goal is a practical route to a good Gila, not checking every possible box on the way. Gila combines shield, missiles and above all medium drones, and the hull requires both racial cruiser branches.
++The goal is to train a pilot **for the Gila's actual hull bonuses** without skipping useful competencies that naturally appear on the way and provide ships to fly during the longer training stages.
++
++The Gila currently has three key bonuses:
++
++- **Role Bonus:** +500% damage and +250% hitpoints for **Medium Combat Drones**;
++- **Gallente Cruiser:** +10% kinetic and thermal missile damage per level;
++- **Caldari Cruiser:** +4% to all shield resistances per level.
++
++The hull itself requires `Caldari Cruiser II` and `Gallente Cruiser II`, but both racial skills directly strengthen the Gila. For regular use, the practical target is therefore at least the level represented by `92 ... IMPROVED` (Cruiser IV).
+ 
+ ## Foundation
+ 
+@@ -10,33 +18,86 @@ The goal is a practical route to a good Gila, not checking every possible box on
+ 
+ For PvP add `03 IMPROVED` or higher as required.
+ 
+-## Tank
++## Shield
+ 
+-`30 IMPROVED → 31 IMPROVED`
++`30 IMPROVED`
+ 
+-The active-shield plan `31` is only needed when the actual fit uses a shield booster.
++Add `31 Shield Active` only when the actual Gila fit uses a shield booster. There is no reason to train the active-tank branch for a buffer/passive fit.
+ 
+ ## Missiles
+ 
+-`60 IMPROVED` plus one branch:
++`60 IMPROVED` plus **one** branch matching the intended fit:
+ 
+-- `61 IMPROVED` — rockets / light / RLML path,
+-- `62 IMPROVED` — HAM/HML path.
++- `61 IMPROVED` — RLML / light missile path;
++- `62 IMPROVED` — HML / HAM path.
+ 
+-There is no need to train both immediately.
++`Gallente Cruiser` gives the Gila a bonus to **kinetic and thermal missile damage**, so missile support and the chosen launcher family are part of the actual Gila competency.
+ 
+-## Drones — the core of the Gila
++## Drones — Medium are primary, but Light T2 still belong here
+ 
+ `70 IMPROVED → 71 IMPROVED → 72 IMPROVED`
+ 
+-T2 medium drones are a more important milestone than collecting extra side hulls. `73 Heavy & Sentry` is not required for the first sensible Gila.
++The key Gila milestone is **T2 medium combat drones**, because only medium drones receive its huge role bonus. That does not make `71 Light T2` wasted training.
++
++T2 light drones remain useful for three reasons:
++
++1. The **Worm** is a very natural earlier Guristas hull: it requires Caldari and Gallente Frigate, uses shield + missiles, and its main weapon system is strongly-bonused **light drones**.
++2. The **Vexor** bonuses all combat drones, so light drones are a normal tool against small and fast targets alongside mediums.
++3. The **Gila** only bonuses medium drones, but not every small target is ideal for mediums. RLML is often the primary anti-frigate solution, yet T2 light drones remain a useful spare tool for fast/small targets and a generally useful cruiser competency.
++
++For that reason `71 IMPROVED` stays in the path. `73 Heavy & Sentry` is still unnecessary for the Gila.
++
++## Hulls and useful ships while training
++
++Target:
++
++`92 Caldari Cruiser IMPROVED + 92 Gallente Cruiser IMPROVED → Gila`
++
++Intermediate ships are not mandatory prerequisites. Their value is that they give the pilot **useful ships to fly while the other half of the training finishes**.
++
++### Early stage: Hawk and Worm
++
++The **Hawk** is a natural Caldari-side step if the pilot wants a strong small combat hull early. It adds `Caldari Frigate V` and Assault Frigates, but uses shield plus rockets/light missiles — skills that remain useful later.
++
++The **Worm** is even more directly connected to the final target: it uses both Guristas races (`Caldari Frigate` + `Gallente Frigate`), shield, missiles and light drones. It is not a Gila prerequisite, but it connects both halves of the training very well before moving into cruisers.
+ 
+-## Hulls
++Practical variant:
+ 
+-Train `92 Caldari` + `92 Gallente` to the hull requirement and then to a practical regular-use level.
++**Hawk and/or Worm → cruisers → Gila**
+ 
+-The cleanest intermediate ship is **Caracal**. Hawk can be a useful side goal for a pilot who already wants Assault Frigates; Sunesis can be a cheap utility side-step. Neither is mandatory.
++### Caldari / missile-first
++
++Once `Caldari Cruiser` is trained, the **Caracal** becomes a logical intermediate ship because it uses the same shield + missile direction. The pilot can fly the Caracal while finishing `Gallente Cruiser`, Drone Support and T2 medium drones.
++
++Route:
++
++**Hawk → Caracal → Gila**
++
++### Gallente / drone-first
++
++If the pilot starts from the Gallente and drone side, the **Vexor** fills the same role. `Gallente Cruiser` plus light/medium drones immediately gives a useful drone cruiser that can be flown while training Caldari Cruiser, shield and missiles.
++
++There is no need to add an armor branch merely because many Vexor fits use armor — add it only if the pilot actually intends to fly such a Vexor fit.
++
++Route:
++
++**Worm → Vexor → Gila**
+ 
+ ## Minimal logic
+ 
+-**core/fitting → shield → missile support → drone support → T2 medium drones → Caldari + Gallente Cruiser → Gila**
++`00 S → 30 I → 60 I → 61 I or 62 I → 70 I → 71 I → 72 I → 92 Caldari I + 92 Gallente I → Gila`
++
++Along the way **Hawk, Worm, Caracal and Vexor** can be genuinely useful ships rather than diagram placeholders.
++
++## Why Light T2 stays
++
++Player discussions broadly agree on two points: the Gila's medium drones are its main damage source, but small fast targets can be awkward for mediums; RLML is often the first solution, with light drones also remaining useful. Because this path naturally passes through Worm/Vexor anyway, `71 IMPROVED` has real value instead of being unrelated training.
++
++## Verification sources
++
++- https://wiki.eveuniversity.org/Gila
++- https://wiki.eveuniversity.org/Worm
++- https://wiki.eveuniversity.org/Vexor
++- https://wiki.eveuniversity.org/Caracal
++- https://wiki.eveuniversity.org/Hawk
++- https://wiki.eveuniversity.org/Support_Skills
+diff --git a/training-paths/gila/README-PL.md b/training-paths/gila/README-PL.md
+index 3242732..96dc312 100644
+--- a/training-paths/gila/README-PL.md
++++ b/training-paths/gila/README-PL.md
+@@ -2,7 +2,15 @@
+ 
+ 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
+ 
+-Celem jest praktyczna droga do dobrej Gili, a nie „odhaczenie wszystkiego po drodze”. Gila łączy shield, missiles i przede wszystkim medium drones, a do hulla potrzebuje obu rasowych cruiserów.
++Celem jest wyszkolenie pilota **pod konkretne bonusy Gili**, ale bez pomijania użytecznych kompetencji, które naturalnie pojawiają się po drodze i dają pilotowi czym latać podczas dłuższego treningu.
++
++Gila ma obecnie trzy kluczowe bonusy:
++
++- **Role Bonus:** +500% damage i +250% hitpoints dla **Medium Combat Drones**;
++- **Gallente Cruiser:** +10% kinetic i thermal missile damage na poziom;
++- **Caldari Cruiser:** +4% do wszystkich shield resistances na poziom.
++
++Do samego wejścia w hull wymagane są `Caldari Cruiser II` i `Gallente Cruiser II`, ale oba skille bezpośrednio wzmacniają Gilę. Do regularnego latania sensownym celem jest co najmniej poziom odpowiadający `92 ... IMPROVED` (Cruiser IV).
+ 
+ ## Fundament
+ 
+@@ -10,33 +18,86 @@ Celem jest praktyczna droga do dobrej Gili, a nie „odhaczenie wszystkiego po d
+ 
+ Do PvP dołóż `03 IMPROVED` lub wyżej zgodnie z potrzebą.
+ 
+-## Tank
++## Shield
+ 
+-`30 IMPROVED → 31 IMPROVED`
++`30 IMPROVED`
+ 
+-Aktywny plan `31` jest potrzebny tylko wtedy, gdy faktyczny fit używa shield boostera.
++`31 Shield Active` dodawaj tylko wtedy, gdy faktyczny fit Gili używa shield boostera. Nie ma powodu trenować active tanku dla fita buffer/passive.
+ 
+ ## Missiles
+ 
+-`60 IMPROVED` oraz jedna z gałęzi:
++`60 IMPROVED` oraz **jedna** gałąź zgodna z planowanym fitem:
+ 
+-- `61 IMPROVED` — rockets / light / RLML path,
+-- `62 IMPROVED` — HAM/HML path.
++- `61 IMPROVED` — RLML / light missile path;
++- `62 IMPROVED` — HML / HAM path.
+ 
+-Nie trzeba trenować obu od razu.
++Gila dostaje z `Gallente Cruiser` bonus do **kinetic i thermal missile damage**, więc missile support i wybrana rodzina launcherów są częścią właściwej ścieżki Gili.
+ 
+-## Drony — serce Gili
++## Drony — Medium są główne, Light T2 nadal mają sens
+ 
+ `70 IMPROVED → 71 IMPROVED → 72 IMPROVED`
+ 
+-Medium T2 drones są ważniejszym milestone'em niż dokładanie kolejnych pobocznych hulli. `73 Heavy & Sentry` nie jest potrzebne do pierwszej sensownej Gili.
++Kluczowym progiem dla samej Gili są **T2 medium combat drones**, bo tylko one dostają jej ogromny role bonus. To jednak nie oznacza, że `71 Light T2` jest zbędne.
++
++Light T2 są przydatne z trzech powodów:
++
++1. **Worm** jest bardzo naturalnym wcześniejszym hullem Guristas: wymaga Caldari i Gallente Frigate, używa shield + missiles, a jego główną bronią są właśnie mocno bonusowane **light drones**.
++2. **Vexor** bonusuje wszystkie combat drones, więc lighty są na nim normalnym narzędziem do małych i szybkich celów obok medium drones.
++3. **Gila** bonusuje wyłącznie medium drones, ale nie każdy mały cel jest dla nich idealny. W praktyce podstawowym rozwiązaniem przeciw frigatom są często RLML, jednak T2 light drones pozostają użytecznym zapasem do szybkich/małych celów i są ogólnie przydatną kompetencją cruisera.
++
++Dlatego `71 IMPROVED` zostaje w ścieżce. `73 Heavy & Sentry` nadal nie jest potrzebne do Gili.
++
++## Hulle i statki użyteczne po drodze
++
++Docelowo:
++
++`92 Caldari Cruiser IMPROVED + 92 Gallente Cruiser IMPROVED → Gila`
++
++Statki pośrednie nie są obowiązkowymi prerequisite'ami. Ich sens polega na tym, że pozwalają **normalnie grać podczas kończenia drugiej części treningu**.
++
++### Wczesny etap: Hawk i Worm
++
++**Hawk** jest naturalnym krokiem po stronie Caldari, jeśli pilot chce szybko dostać mocny mały combat hull. Wymaga dodatkowo `Caldari Frigate V` i Assault Frigates, ale wykorzystuje shield oraz rockets/light missiles — czyli skille, które później pozostają użyteczne.
++
++**Worm** jest jeszcze bardziej bezpośrednio związany z końcowym celem: wykorzystuje obie rasy Guristas (`Caldari Frigate` + `Gallente Frigate`), shield, missiles i light drones. Nie jest prerequisite'em Gili, ale bardzo dobrze łączy obie połowy treningu zanim pilot przejdzie do cruiserów.
+ 
+-## Hulle
++Praktyczny wariant:
+ 
+-`92 Caldari` + `92 Gallente` do poziomu wymaganego przez hull i dalej do praktycznego poziomu regularnego używania.
++**Hawk i/lub Worm → cruisery → Gila**
+ 
+-Najczystszy statek po drodze to **Caracal**. Hawk może być wartościowym bocznym celem dla pilota, który i tak chce Assault Frigates; Sunesis może służyć jako tani utility side-step. Żaden z nich nie jest obowiązkowym etapem.
++### Caldari / missile-first
++
++Po wyszkoleniu `Caldari Cruiser` pojawia się **Caracal**. To logiczny statek przejściowy, bo wykorzystuje ten sam kierunek shield + missiles. Pilot może latać Caracalem, podczas gdy kończy `Gallente Cruiser`, Drone Support i T2 medium drones.
++
++Schemat:
++
++**Hawk → Caracal → Gila**
++
++### Gallente / drone-first
++
++Jeżeli pilot zaczyna od strony Gallente i dronów, analogiczną rolę pełni **Vexor**. `Gallente Cruiser` oraz light/medium drones od razu dają użyteczny drone cruiser, którym można latać podczas szkolenia Caldari Cruiser, shield i missiles.
++
++Nie ma potrzeby trenować dodatkowego armor path tylko dlatego, że wiele Vexorów jest armor-tankowanych — dodawaj go tylko wtedy, gdy rzeczywiście chcesz takim Vexorem latać.
++
++Schemat:
++
++**Worm → Vexor → Gila**
+ 
+ ## Minimalna logika
+ 
+-**core/fitting → shield → missile support → drone support → medium T2 drones → Caldari + Gallente Cruiser → Gila**
++`00 S → 30 I → 60 I → 61 I lub 62 I → 70 I → 71 I → 72 I → 92 Caldari I + 92 Gallente I → Gila`
++
++Po drodze **Hawk, Worm, Caracal i Vexor** mogą być pełnoprawnymi statkami do grania, a nie tylko punktami na diagramie.
++
++## Dlaczego Light T2 zostają
++
++Dyskusje graczy są dość zgodne co do dwóch rzeczy: średnie drony Gili są jej głównym źródłem damage, ale małe szybkie cele bywają dla medium drones problematyczne; bardzo często rozwiązuje się to RLML, czasem light drones. Ponieważ ta ścieżka i tak naturalnie prowadzi przez Worma/Vexora, `71 IMPROVED` daje realną wartość zamiast być „obcym” treningiem.
++
++## Źródła weryfikacyjne
++
++- https://wiki.eveuniversity.org/Gila
++- https://wiki.eveuniversity.org/Worm
++- https://wiki.eveuniversity.org/Vexor
++- https://wiki.eveuniversity.org/Caracal
++- https://wiki.eveuniversity.org/Hawk
++- https://wiki.eveuniversity.org/Support_Skills
+diff --git a/training-paths/mining/DIAGRAM-EN.md b/training-paths/mining/DIAGRAM-EN.md
+index 065d759..3c3bd67 100644
+--- a/training-paths/mining/DIAGRAM-EN.md
++++ b/training-paths/mining/DIAGRAM-EN.md
+@@ -4,14 +4,57 @@
+ 
+ ```mermaid
+ flowchart TD
+-    V[Venture] --> P[Pioneer
+-light miner / side-role]
+-    V --> O[Outrider
+-side branch]
+-    V --> B[Mining Barge]
+-    B --> PR[Procurer] --> SK[Skiff]
+-    B --> RE[Retriever] --> MA[Mackinaw]
+-    B --> CO[Covetor] --> HU[Hulk]
+-    V --> IC[Industrial Command]
+-    IC --> PO[Porpoise] --> OR[Orca]
++    C[Common foundation
++00 BASIC/IMPROVED
++02 BASIC
++30 BASIC
++Mining IV
++Mining Upgrades IV] --> V[96 Mining Frigate BASIC
++Venture]
++
++    V --> P[96 Mining Destroyer IMPROVED
++Mining Destroyer IV
++Pioneer endpoint]
++
++    V --> OS[96 Mining Destroyer STANDARD
++Mining Destroyer V]
++    OS --> CD[97 Command Destroyers IMPROVED
++Command Destroyers IV]
++    CD --> O[Outrider
++side branch / no compression]
++    MF[Mining Foreman IV
++or V + Mining Director I] --> O
++
++    V --> B[96 Mining Barge IMPROVED
++Mining Barge IV
++Astrogeology IV]
++    B --> PR[Procurer
++tank]
++    B --> RE[Retriever
++hold]
++    B --> CO[Covetor
++yield]
++
++    B --> BV[96 Mining Barge STANDARD
++Mining Barge V
++Astrogeology V]
++    BV --> EX[96 Exhumers IMPROVED
++Exhumers IV]
++    EX --> SK[Skiff]
++    EX --> MA[Mackinaw]
++    EX --> HU[Hulk]
++
++    IC[96 Industrial Command Ships BASIC
++ICS III + Mining Foreman V
++Mining Director I] --> PO[Porpoise]
++    PO --> ICI[96 Industrial Command Ships IMPROVED
++ICS IV + Mining Director IV]
++    ICI --> OR[Orca]
++
++    COMP[Compression role
++Mass Production V
++Advanced Mass Production I
++Industrial Reconfiguration I
++Shipboard Compression Technology I] --> PO
++    COMP --> OR
+ ```
+diff --git a/training-paths/mining/DIAGRAM-PL.md b/training-paths/mining/DIAGRAM-PL.md
+index beda411..b566add 100644
+--- a/training-paths/mining/DIAGRAM-PL.md
++++ b/training-paths/mining/DIAGRAM-PL.md
+@@ -4,14 +4,57 @@
+ 
+ ```mermaid
+ flowchart TD
+-    V[Venture] --> P[Pioneer
+-light miner / side-role]
+-    V --> O[Outrider
+-side branch]
+-    V --> B[Mining Barge]
+-    B --> PR[Procurer] --> SK[Skiff]
+-    B --> RE[Retriever] --> MA[Mackinaw]
+-    B --> CO[Covetor] --> HU[Hulk]
+-    V --> IC[Industrial Command]
+-    IC --> PO[Porpoise] --> OR[Orca]
++    C[Common foundation
++00 BASIC/IMPROVED
++02 BASIC
++30 BASIC
++Mining IV
++Mining Upgrades IV] --> V[96 Mining Frigate BASIC
++Venture]
++
++    V --> P[96 Mining Destroyer IMPROVED
++Mining Destroyer IV
++Pioneer endpoint]
++
++    V --> OS[96 Mining Destroyer STANDARD
++Mining Destroyer V]
++    OS --> CD[97 Command Destroyers IMPROVED
++Command Destroyers IV]
++    CD --> O[Outrider
++side branch / no compression]
++    MF[Mining Foreman IV
++or V + Mining Director I] --> O
++
++    V --> B[96 Mining Barge IMPROVED
++Mining Barge IV
++Astrogeology IV]
++    B --> PR[Procurer
++tank]
++    B --> RE[Retriever
++hold]
++    B --> CO[Covetor
++yield]
++
++    B --> BV[96 Mining Barge STANDARD
++Mining Barge V
++Astrogeology V]
++    BV --> EX[96 Exhumers IMPROVED
++Exhumers IV]
++    EX --> SK[Skiff]
++    EX --> MA[Mackinaw]
++    EX --> HU[Hulk]
++
++    IC[96 Industrial Command Ships BASIC
++ICS III + Mining Foreman V
++Mining Director I] --> PO[Porpoise]
++    PO --> ICI[96 Industrial Command Ships IMPROVED
++ICS IV + Mining Director IV]
++    ICI --> OR[Orca]
++
++    COMP[Compression role
++Mass Production V
++Advanced Mass Production I
++Industrial Reconfiguration I
++Shipboard Compression Technology I] --> PO
++    COMP --> OR
+ ```
+diff --git a/training-paths/mining/README-EN.md b/training-paths/mining/README-EN.md
+index 53cfdb7..d6c537b 100644
+--- a/training-paths/mining/README-EN.md
++++ b/training-paths/mining/README-EN.md
+@@ -2,13 +2,13 @@
+ 
+ [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+ 
+-This path is intentionally limited. It gives a pilot several natural levels of commitment to mining without trying to document every industrial niche in EVE.
++This path is meant to answer not only **“which hull comes next?”** but mainly **“what should I actually train so that the hull is useful?”**. The scope remains intentionally limited to Venture/Pioneer/Outrider, barges and exhumers, and Porpoise/Orca.
+ 
+ ```text
+ MINING
+ ├── Venture
+ │   ├── Pioneer — target light miner / mining side-role
+-│   └── Outrider
++│   └── Outrider — side specialization: command/support
+ │
+ ├── Barge / Exhumer
+ │   ├── Procurer → Skiff
+@@ -19,26 +19,234 @@ MINING
+     └── Porpoise → Orca
+ ```
+ 
+-## Venture → Pioneer
++## Common mining foundation
+ 
+-Pioneer is not merely a transition hull. For a pilot who treats mining as a side activity, it can be the **final light-miner target**. The relevant hull module is `96 HULL - Mining Destroyer`.
++Before the hull paths split, build a few shared competencies:
+ 
+-## Outrider
++- `00 CORE` — at least **BASIC**, eventually **IMPROVED** for comfortable fitting;
++- `01 Navigation BASIC` — mobility and warp;
++- `02 Targeting BASIC` — `Target Management IV` and useful lock range matter when working multiple rocks;
++- `30 Shield Passive/Buffer BASIC` — most mining hulls are shield-tanked;
++- `Mining IV` — core threshold for Pioneer/Barge and many mining skills;
++- `Mining Upgrades IV` — unlocks **Mining Laser Upgrade II** and reduces its CPU penalty;
++- `Drones` / `Light Drone Operation` — useful for defence against small NPCs; scale this with the ship's drone bay and actual threat.
+ 
+-Outrider is an intentional **side branch**: mobile command/mining support rather than a step toward Porpoise or Orca. It is not treated as a “small Orca” or a required part of the Industrial Command route.
++`Mining` and `Astrogeology` each increase ore yield by 5% per level, so they are not merely prerequisites. Level IV is a strong early target for a pilot who mines regularly; add V where it unlocks specific equipment or further progression.
+ 
+-## Barge / Exhumer
++---
+ 
+-`96 HULL - Mining Barge → 96 HULL - Exhumers`
++## 1. Venture — entry point
+ 
+-The three pairs show the natural T1 → T2 specialization routes:
++### Training
+ 
+-- Procurer → Skiff
+-- Retriever → Mackinaw
+-- Covetor → Hulk
++`96 HULL - Mining Frigate BASIC`
+ 
+-## Industrial Command
++Practical package:
+ 
+-`96 HULL - Industrial Command Ships` leads to **Porpoise → Orca**. Orca is the higher commitment level of the same broad fleet-support/command role; Outrider remains a separate branch.
++- `Mining Frigate III` — enough to continue the path and already provides useful hull bonus;
++- `Mining IV`;
++- `Mining Upgrades III–IV`;
++- `00 BASIC`;
++- `02 BASIC`;
++- `30 BASIC`.
+ 
+-The path intentionally stops here. EVE should still leave pilots something to discover.
++There is no need to “max” the Venture before moving on.
++
++---
++
++## 2. Pioneer — target light miner / mining side-role
++
++The Pioneer is **not just a transition hull**. For a pilot who mines only as a secondary activity, it can be a complete endpoint.
++
++### Training
++
++`96 HULL - Mining Destroyer IMPROVED`
++
++This gives the practical target `Mining Destroyer IV`. Pioneer receives **10% mining yield per Mining Destroyer level**, so IV has real value without automatically forcing V.
++
++Add:
++
++- `Mining IV` minimum;
++- `Mining Upgrades IV` for MLU II;
++- `00 IMPROVED` if fitting becomes tight;
++- `30 BASIC` or higher depending on risk;
++- `02 BASIC` for comfortable multi-rock work.
++
++`Mining Destroyer V` is not required for a Pioneer endpoint — it becomes mandatory only if the pilot chooses the **Outrider** branch.
++
++---
++
++## 3. Outrider — side step, not “the next Pioneer”
++
++The Outrider is a separate specialization. It does not lead to Porpoise/Orca and **does not provide compression**. Its value is mobile mining/command support, command bursts, MJD field utility and strong bonuses from both `Mining Destroyer` and `Command Destroyers`.
++
++### Hull prerequisites
++
++`96 HULL - Mining Destroyer STANDARD` → `97 HULL - Command Destroyers IMPROVED`
++
++Key thresholds:
++
++- `Mining Destroyer V` — required for the Outrider;
++- `Command Burst Specialist IV` — prerequisite for Command Destroyers;
++- `Command Destroyers IV` — sensible regular-use target because it improves Mining Foreman / Shield burst strength and duration;
++- `Leadership V` — part of the Command Destroyers prerequisite chain.
++
++### Making the Outrider an actual mining support ship
++
++The hull unlock alone is not enough. For Mining Foreman Burst add:
++
++- `Mining Foreman IV` — useful T1 boosting level;
++- **or** `Mining Foreman V → Mining Director I` — if you want Mining Foreman Burst II;
++- `Mining Director III/IV` only when the pilot is genuinely specializing in boosting.
++
++Also useful:
++
++- `30 IMPROVED` to make good use of the shield-resistance bonus;
++- `70 Drone Support BASIC/IMPROVED` if using the ship's drone damage/HP bonus;
++- `71 Light T2 IMPROVED` is a reasonable defensive-drone upgrade, but is not required for hull progression itself.
++
++**Important:** Outrider remains a side branch and is not a prerequisite for Industrial Command.
++
++---
++
++## 4. Mining Barge — first full mining hull
++
++For regular T1 barge use:
++
++`96 HULL - Mining Barge IMPROVED`
++
++Practical package:
++
++- `Mining Barge IV`;
++- `Mining IV`, and for **Modulated Strip Miner II** → `Mining V`;
++- `Astrogeology IV`;
++- `Mining Upgrades IV` → Mining Laser Upgrade II;
++- `00 IMPROVED`;
++- `02 BASIC`;
++- `30 IMPROVED`.
++
++### Three parallel profiles
++
++We do not recommend one “best” hull — these are three sensible roles:
++
++- **Procurer** — stronger emphasis on tank / survivability;
++- **Retriever** — larger mining hold / autonomy;
++- **Covetor** — stronger emphasis on yield and organized-fleet work.
++
++They are parallel choices, not steps of one ladder.
++
++---
++
++## 5. Exhumer — T2 version of the selected barge role
++
++Entering Exhumers requires `Mining Barge V` and `Astrogeology V`.
++
++Path:
++
++`96 HULL - Mining Barge STANDARD → 96 HULL - Exhumers BASIC/IMPROVED`
++
++Natural pairs:
++
++- **Procurer → Skiff** — tank/survivability;
++- **Retriever → Mackinaw** — hold/autonomy;
++- **Covetor → Hulk** — yield/range.
++
++For a regular exhumer pilot, `Exhumers IV` (`IMPROVED`) is a sensible target. `Exhumers V` is a long specialization/max-efficiency train rather than an automatic library requirement.
++
++For T2 strip miners:
++
++- `Mining V` → Modulated Strip Miner II;
++- train only the ore-processing skills needed for the crystals you actually use — there is no reason to train every crystal family “just in case”.
++
++---
++
++## 6. Industrial Command — Porpoise → Orca
++
++Porpoise and Orca use the same main `Industrial Command Ships` skill. It is not a formal “you must fly Porpoise before Orca” chain, but as a training path **Porpoise is a natural earlier usable milestone**, while Orca is a larger and more committed version of the same broad role.
++
++### Hull entry
++
++`96 HULL - Industrial Command Ships BASIC`
++
++The plan already includes the key prerequisites:
++
++- `Spaceship Command V`;
++- `ORE Hauler III`;
++- `Mining Foreman V`;
++- `Mining Director I`;
++- `Industrial Command Ships III`.
++
++This prevents the hull from being an empty unlock. `Industrial Command Ships` improves mining/utility drones and Mining Foreman Bursts, so for regular use a strong target is:
++
++`96 HULL - Industrial Command Ships IMPROVED` → `Industrial Command Ships IV + Mining Director IV`.
++
++### Porpoise
++
++Porpoise is the cheaper and more mobile command platform:
++
++- two Command Burst modules;
++- Medium Industrial Core;
++- strong mining-drone bonuses;
++- can provide **asteroid ore and gas compression** with active industrial core and the appropriate compressor.
++
++### Orca
++
++Orca is the larger development of the role:
++
++- three Command Burst modules;
++- Large Industrial Core;
++- greater logistics/cargo scale;
++- longer-range and broader compression capability than Porpoise.
++
++We do not call Orca “better at everything”, but within this path it represents a **higher commitment to fleet mining support**.
++
++### Compression — a separate real skill chain
++
++`Industrial Command Ships` alone **does not provide working compression**. If compression is part of the pilot's role, add:
++
++`Industry III → Mass Production V → Advanced Mass Production I → Industrial Reconfiguration I → Shipboard Compression Technology I`
++
++This unlocks a T1 industrial core and basic subcapital compressors for the appropriate hull. Then:
++
++- `Fleet Compression Logistics` extends the range at which fleet members can use compression;
++- it requires `Mining Director III`;
++- T2 Industrial Core requires further `Industrial Reconfiguration` (`IV` for Medium Core II, `V` for Large Core II) — specialist training, not an entry requirement.
++
++---
++
++## Path summary
++
++### Light miner
++
++`96 Mining Frigate BASIC → 96 Mining Destroyer IMPROVED → Pioneer`
++
++### Outrider
++
++`96 Mining Frigate BASIC → 96 Mining Destroyer STANDARD → 97 Command Destroyers IMPROVED → Outrider`
++
+++ Mining Foreman / Mining Director depending on desired boost quality.
++
++### Barge / Exhumer
++
++`96 Mining Frigate BASIC → 96 Mining Barge IMPROVED → [Procurer / Retriever / Covetor]`
++
++then:
++
++`96 Mining Barge STANDARD → 96 Exhumers IMPROVED → [Skiff / Mackinaw / Hulk]`
++
++### Industrial Command
++
++`96 Industrial Command Ships BASIC → Porpoise → 96 Industrial Command Ships IMPROVED → Orca`
++
+++ separate compression chain if the pilot is expected to provide compression.
++
++## Verification sources
++
++- https://wiki.eveuniversity.org/Mining
++- https://wiki.eveuniversity.org/Pioneer
++- https://wiki.eveuniversity.org/Outrider
++- https://wiki.eveuniversity.org/Mining_Barges
++- https://wiki.eveuniversity.org/Exhumer
++- https://wiki.eveuniversity.org/Porpoise
++- https://wiki.eveuniversity.org/Orca
++- https://wiki.eveuniversity.org/Compression
+diff --git a/training-paths/mining/README-PL.md b/training-paths/mining/README-PL.md
+index 3baee3d..18a7f25 100644
+--- a/training-paths/mining/README-PL.md
++++ b/training-paths/mining/README-PL.md
+@@ -2,13 +2,13 @@
+ 
+ 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
+ 
+-Ta ścieżka jest celowo ograniczona. Ma doprowadzić pilota do kilku naturalnych poziomów zaangażowania w mining, a nie opisywać każdą możliwą niszę przemysłową.
++Ta ścieżka ma odpowiedzieć nie tylko **„jakie hulle są dalej?”**, ale przede wszystkim **„co faktycznie trenować, żeby te hulle miały sens?”**. Zakres pozostaje celowo ograniczony do Venture/Pioneer/Outrider, barek i exhumerów oraz Porpoise/Orca.
+ 
+ ```text
+ MINING
+ ├── Venture
+ │   ├── Pioneer — docelowy lekki miner / mining side-role
+-│   └── Outrider
++│   └── Outrider — boczna specjalizacja command/support
+ │
+ ├── Barge / Exhumer
+ │   ├── Procurer → Skiff
+@@ -19,26 +19,234 @@ MINING
+     └── Porpoise → Orca
+ ```
+ 
+-## Venture → Pioneer
++## Wspólny fundament minera
+ 
+-Pioneer nie jest tylko hullem przejściowym. Dla pilota, dla którego mining jest aktywnością poboczną, może być **docelowym lekkim minerem**. Odpowiednim modułem hullowym jest `96 HULL - Mining Destroyer`.
++Zanim rozdzielą się hulle, warto zbudować kilka wspólnych kompetencji:
+ 
+-## Outrider
++- `00 CORE` — co najmniej **BASIC**, docelowo **IMPROVED** dla wygodnego fittingu;
++- `01 Navigation BASIC` — mobilność i warp;
++- `02 Targeting BASIC` — `Target Management IV` i sensowny zasięg locka są praktyczne przy wielu asteroidach;
++- `30 Shield Passive/Buffer BASIC` — większość mining hulli jest shield-tankowana;
++- `Mining IV` — podstawowy próg dla Pioneer/Barge i wielu mining skills;
++- `Mining Upgrades IV` — odblokowuje **Mining Laser Upgrade II** i ogranicza jego CPU penalty;
++- `Drones` / `Light Drone Operation` — przydatne do obrony przed małymi NPC; rozwijaj proporcjonalnie do realnego miejsca na drony i zagrożenia.
+ 
+-Outrider jest świadomym **skokiem w bok**: mobilny command/mining support, a nie szczebel prowadzący do Porpoise lub Orcy. Nie traktujemy go jako „mniejszej Orcy” ani wymaganej części Industrial Command.
++`Mining` i `Astrogeology` zwiększają yield o 5% na poziom, więc nie są tylko prerequisite'ami. Dla pilota, który naprawdę kopie regularnie, poziom IV jest bardzo dobrym wczesnym celem; V dodawaj tam, gdzie otwiera konkretny sprzęt lub dalszą progresję.
+ 
+-## Barge / Exhumer
++---
+ 
+-`96 HULL - Mining Barge → 96 HULL - Exhumers`
++## 1. Venture — punkt wejścia
+ 
+-Trzy pary pokazują naturalne specjalizacje i przejście T1 → T2:
++### Trening
+ 
+-- Procurer → Skiff
+-- Retriever → Mackinaw
+-- Covetor → Hulk
++`96 HULL - Mining Frigate BASIC`
+ 
+-## Industrial Command
++Praktyczny pakiet:
+ 
+-`96 HULL - Industrial Command Ships` prowadzi do **Porpoise → Orca**. Orca jest wyższym poziomem tej samej ogólnej roli fleet support/command; Outrider pozostaje osobną odnogą.
++- `Mining Frigate III` — wystarcza do przejścia dalej i daje już sensowny bonus hulla;
++- `Mining IV`;
++- `Mining Upgrades III–IV`;
++- `00 BASIC`;
++- `02 BASIC`;
++- `30 BASIC`.
+ 
+-Dalszych industrialnych nisz nie dokładamy do tej ścieżki. Jeśli pilot będzie chciał więcej — EVE nadal ma co odkrywać.
++Venture jest początkiem całego drzewa, ale nie trzeba go „maxować” przed przejściem dalej.
++
++---
++
++## 2. Pioneer — docelowy lekki miner / mining side-role
++
++Pioneer **nie jest tylko statkiem przejściowym**. Dla pilota, który kopie okazjonalnie, może być pełnoprawnym punktem końcowym.
++
++### Trening
++
++`96 HULL - Mining Destroyer IMPROVED`
++
++To daje praktyczny cel `Mining Destroyer IV`. Pioneer dostaje **10% mining yield na poziom Mining Destroyer**, więc IV daje realną wartość bez automatycznego wciskania V.
++
++Do tego:
++
++- `Mining IV` minimum;
++- `Mining Upgrades IV` dla MLU II;
++- `00 IMPROVED` jeśli fit zaczyna być ciasny na CPU/PG;
++- `30 BASIC` lub wyżej zależnie od ryzyka;
++- `02 BASIC` dla wygodnej pracy na wielu skałach.
++
++`Mining Destroyer V` nie jest konieczne dla samego Pioneera — staje się konieczne dopiero, jeśli pilot wybiera **Outridera**.
++
++---
++
++## 3. Outrider — skok w bok, nie „następny Pioneer”
++
++Outrider jest osobną specjalizacją. Nie prowadzi do Porpoise/Orca i **nie daje kompresji**. Jego wartością jest mobilny mining/command support, command burst, MJD field i bardzo mocne bonusy zależne od `Mining Destroyer` oraz `Command Destroyers`.
++
++### Hull prerequisites
++
++`96 HULL - Mining Destroyer STANDARD` → `97 HULL - Command Destroyers IMPROVED`
++
++Kluczowe progi:
++
++- `Mining Destroyer V` — wymagane do wejścia w Outridera;
++- `Command Burst Specialist IV` — prerequisite do Command Destroyers;
++- `Command Destroyers IV` — rozsądny poziom regularnego używania, bo zwiększa siłę i czas Mining Foreman / Shield bursts;
++- `Leadership V` — wchodzi w prerequisite Command Destroyers.
++
++### Żeby Outrider faktycznie był mining supportem
++
++Sam hull nie wystarczy. Dla Mining Foreman Burst warto dołożyć:
++
++- `Mining Foreman IV` — sensowny poziom T1 boostów;
++- **albo** `Mining Foreman V → Mining Director I` — jeśli chcesz używać Mining Foreman Burst II;
++- `Mining Director III/IV` dopiero, gdy pilot faktycznie specjalizuje się w boostowaniu.
++
++Dodatkowo:
++
++- `30 IMPROVED` dobrze wykorzystuje jego bonus do shield resistances;
++- `70 Drone Support BASIC/IMPROVED` ma sens, jeśli korzystasz z jego bonusu do drone damage/HP;
++- `71 Light T2 IMPROVED` jest rozsądnym rozwinięciem dla defensywnych light drones, ale nie jest wymagane do samego hull progression.
++
++**Ważne:** Outrider pozostaje boczną odnogą. Nie traktujemy go jako prerequisite do Industrial Command.
++
++---
++
++## 4. Mining Barge — pierwszy pełny mining hull
++
++Dla regularnego używania T1 barge:
++
++`96 HULL - Mining Barge IMPROVED`
++
++Praktyczny zestaw:
++
++- `Mining Barge IV`;
++- `Mining IV`, a dla **Modulated Strip Miner II** → `Mining V`;
++- `Astrogeology IV`;
++- `Mining Upgrades IV` → Mining Laser Upgrade II;
++- `00 IMPROVED`;
++- `02 BASIC`;
++- `30 IMPROVED`.
++
++### Trzy równoległe profile
++
++Nie rekomendujemy jednego „najlepszego” hulla — pokazujemy trzy sensowne role:
++
++- **Procurer** — większy nacisk na tank / survivability;
++- **Retriever** — większy mining hold / samodzielność;
++- **Covetor** — większy nacisk na yield i pracę w zorganizowanej flocie.
++
++To nie są szczeble tej samej drabiny. Wybierasz profil odpowiadający sposobowi kopania.
++
++---
++
++## 5. Exhumer — T2 odpowiednik wybranej barki
++
++Żeby wejść w Exhumery, potrzebujesz `Mining Barge V` i `Astrogeology V`.
++
++Ścieżka:
++
++`96 HULL - Mining Barge STANDARD → 96 HULL - Exhumers BASIC/IMPROVED`
++
++Naturalne pary:
++
++- **Procurer → Skiff** — tank/survivability;
++- **Retriever → Mackinaw** — duży hold i autonomia;
++- **Covetor → Hulk** — yield/range.
++
++Dla regularnego pilota exhumerów rozsądnym celem jest `Exhumers IV` (`IMPROVED`). `Exhumers V` jest już długim treningiem pod dalszą specjalizację/max efficiency, a nie automatycznym wymaganiem tej biblioteki.
++
++Dla T2 strip minerów:
++
++- `Mining V` → Modulated Strip Miner II;
++- odpowiedni ore processing tylko dla kryształów, których rzeczywiście używasz — nie ma powodu trenować wszystkich „na zapas”.
++
++---
++
++## 6. Industrial Command — Porpoise → Orca
++
++Porpoise i Orca używają tego samego głównego skilla `Industrial Command Ships`. To nie jest formalne „musisz latać Porpoisem zanim Orcą”, ale jako training path **Porpoise jest naturalnym wcześniejszym punktem użytkowym**, a Orca większym i bardziej zaangażowanym rozwinięciem tej samej roli.
++
++### Wejście w hull
++
++`96 HULL - Industrial Command Ships BASIC`
++
++Plan już prowadzi przez kluczowe prerequisites:
++
++- `Spaceship Command V`;
++- `ORE Hauler III`;
++- `Mining Foreman V`;
++- `Mining Director I`;
++- `Industrial Command Ships III`.
++
++To wystarcza, by hull nie był pustym unlockiem. `Industrial Command Ships` daje m.in. bonusy do mining/utility drones oraz Mining Foreman Bursts, więc dla regularnego używania bardzo sensownym celem jest:
++
++`96 HULL - Industrial Command Ships IMPROVED` → `Industrial Command Ships IV + Mining Director IV`.
++
++### Porpoise
++
++Porpoise jest tańszym i bardziej mobilnym command shipem:
++
++- dwa Command Burst modules;
++- Medium Industrial Core;
++- mocne bonusy do mining drones;
++- może zapewniać **compression asteroid ore i gas** przy aktywnym industrial core i odpowiednim compressorze.
++
++### Orca
++
++Orca jest większym rozwinięciem tej roli:
++
++- trzy Command Burst modules;
++- Large Industrial Core;
++- większa skala logistyki/cargo;
++- większy zasięg i szersze możliwości compression niż Porpoise.
++
++Nie nazywamy Orcy „lepszą we wszystkim”, ale w tej ścieżce jest **wyższym poziomem zaangażowania w fleet mining support**.
++
++### Compression — osobny, realny zestaw skilli
++
++Samo `Industrial Command Ships` **nie daje jeszcze działającej kompresji**. Jeśli celem pilota jest compression, trzeba dołożyć:
++
++`Industry III → Mass Production V → Advanced Mass Production I → Industrial Reconfiguration I → Shipboard Compression Technology I`
++
++To odblokowuje T1 industrial core i podstawowe subcapital compressors dla właściwego hulla. Dalej:
++
++- `Fleet Compression Logistics` zwiększa zasięg, z którego fleet members mogą korzystać z kompresji;
++- wymaga `Mining Director III`;
++- T2 Industrial Core wymaga dalszego `Industrial Reconfiguration` (`IV` dla Medium Core II, `V` dla Large Core II) — to już trening specjalistyczny, nie obowiązkowy próg wejścia.
++
++---
++
++## Skrót ścieżek
++
++### Lekki miner
++
++`96 Mining Frigate BASIC → 96 Mining Destroyer IMPROVED → Pioneer`
++
++### Outrider
++
++`96 Mining Frigate BASIC → 96 Mining Destroyer STANDARD → 97 Command Destroyers IMPROVED → Outrider`
++
+++ Mining Foreman / Mining Director zależnie od jakości boostów.
++
++### Barge / Exhumer
++
++`96 Mining Frigate BASIC → 96 Mining Barge IMPROVED → [Procurer / Retriever / Covetor]`
++
++następnie:
++
++`96 Mining Barge STANDARD → 96 Exhumers IMPROVED → [Skiff / Mackinaw / Hulk]`
++
++### Industrial Command
++
++`96 Industrial Command Ships BASIC → Porpoise → 96 Industrial Command Ships IMPROVED → Orca`
++
+++ osobny compression chain, jeżeli pilot ma świadczyć kompresję.
++
++## Źródła weryfikacyjne
++
++- https://wiki.eveuniversity.org/Mining
++- https://wiki.eveuniversity.org/Pioneer
++- https://wiki.eveuniversity.org/Outrider
++- https://wiki.eveuniversity.org/Mining_Barges
++- https://wiki.eveuniversity.org/Exhumer
++- https://wiki.eveuniversity.org/Porpoise
++- https://wiki.eveuniversity.org/Orca
++- https://wiki.eveuniversity.org/Compression
+diff --git a/training-paths/t1-to-hac/amarr/README-EN.md b/training-paths/t1-to-hac/amarr/README-EN.md
+index 6d98a63..e6077fb 100644
+--- a/training-paths/t1-to-hac/amarr/README-EN.md
++++ b/training-paths/t1-to-hac/amarr/README-EN.md
+@@ -26,19 +26,19 @@ For early frigates BASIC is enough to start. By regular cruiser/HAC use, the pra
+ 
+ ## 1. Frigate
+ 
+-Target hulls: **laser combat frigate**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
++Relevant hulls: **laser combat frigate**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
+ 
+ ## 2. Destroyer
+ 
+-Target hulls: **Coercer / Dragoon**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
++Relevant hulls: **Coercer / Dragoon**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
+ 
+ ## 3. Cruiser
+ 
+-Target hulls: **Omen / Maller / Arbitrator**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
++Relevant hulls: **Omen / Maller / Arbitrator**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
+ 
+ ## 4. HAC
+ 
+-Target hulls: **Zealot / Sacrilege**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
++Relevant hulls: **Zealot / Sacrilege**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
+ 
+ ## What not to train automatically
+ 
+diff --git a/training-paths/t1-to-hac/caldari/README-EN.md b/training-paths/t1-to-hac/caldari/README-EN.md
+index ce75875..bc20eaf 100644
+--- a/training-paths/t1-to-hac/caldari/README-EN.md
++++ b/training-paths/t1-to-hac/caldari/README-EN.md
+@@ -26,19 +26,19 @@ For early frigates BASIC is enough to start. By regular cruiser/HAC use, the pra
+ 
+ ## 1. Frigate
+ 
+-Target hulls: **Kestrel / Merlin**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
++Relevant hulls: **Kestrel / Merlin**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
+ 
+ ## 2. Destroyer
+ 
+-Target hulls: **Corax / Cormorant**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
++Relevant hulls: **Corax / Cormorant**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
+ 
+ ## 3. Cruiser
+ 
+-Target hulls: **Caracal / Moa**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
++Relevant hulls: **Caracal / Moa**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
+ 
+ ## 4. HAC
+ 
+-Target hulls: **Cerberus / Eagle**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
++Relevant hulls: **Cerberus / Eagle**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
+ 
+ ## What not to train automatically
+ 
+diff --git a/training-paths/t1-to-hac/gallente/README-EN.md b/training-paths/t1-to-hac/gallente/README-EN.md
+index a6ec093..87688dd 100644
+--- a/training-paths/t1-to-hac/gallente/README-EN.md
++++ b/training-paths/t1-to-hac/gallente/README-EN.md
+@@ -26,19 +26,19 @@ For early frigates BASIC is enough to start. By regular cruiser/HAC use, the pra
+ 
+ ## 1. Frigate
+ 
+-Target hulls: **Incursus/Atron / Tristan**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
++Relevant hulls: **Incursus/Atron / Tristan**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
+ 
+ ## 2. Destroyer
+ 
+-Target hulls: **Catalyst / Algos**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
++Relevant hulls: **Catalyst / Algos**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
+ 
+ ## 3. Cruiser
+ 
+-Target hulls: **Thorax / Vexor**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
++Relevant hulls: **Thorax / Vexor**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
+ 
+ ## 4. HAC
+ 
+-Target hulls: **Deimos / Ishtar**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
++Relevant hulls: **Deimos / Ishtar**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
+ 
+ ## What not to train automatically
+ 
+diff --git a/training-paths/t1-to-hac/minmatar/README-EN.md b/training-paths/t1-to-hac/minmatar/README-EN.md
+index f2385c3..1c85ea9 100644
+--- a/training-paths/t1-to-hac/minmatar/README-EN.md
++++ b/training-paths/t1-to-hac/minmatar/README-EN.md
+@@ -26,19 +26,19 @@ For early frigates BASIC is enough to start. By regular cruiser/HAC use, the pra
+ 
+ ## 1. Frigate
+ 
+-Target hulls: **Rifter/Slasher / Breacher**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
++Relevant hulls: **Rifter/Slasher / Breacher**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
+ 
+ ## 2. Destroyer
+ 
+-Target hulls: **Thrasher / Talwar**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
++Relevant hulls: **Thrasher / Talwar**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
+ 
+ ## 3. Cruiser
+ 
+-Target hulls: **Stabber/Rupture / Bellicose**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
++Relevant hulls: **Stabber/Rupture / Bellicose**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
+ 
+ ## 4. HAC
+ 
+-Target hulls: **Vagabond / Muninn**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
++Relevant hulls: **Vagabond / Muninn**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
+ 
+ ## What not to train automatically
+ 
