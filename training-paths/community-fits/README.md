@@ -1,4 +1,4 @@
-# Training Paths
+# Community Fits
 
 ## Documentation language / Język dokumentacji
 

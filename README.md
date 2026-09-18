@@ -19,11 +19,14 @@ Full documentation, usage instructions and contributor material in English.
 
 ## Related projects / Powiązane projekty
 
-| Project / Projekt | Purpose / Rola |
-|---|---|
-| [**EvE Modular Skillplans**](https://github.com/Blizbor/EvE-Modular-Skillplans) | Practical, role/task-first training modules and training paths. / Praktyczne moduły i ścieżki treningu pod role, zadania i konkretne cele. |
-| [**EvE Pilot Progression**](https://github.com/Blizbor/EvE-Pilot-Progression) | EVEMon progression map and skill-gap audit for new and veteran pilots. / Mapa progresji EVEMon i audyt luk dla nowych pilotów oraz weteranów. |
-| [**EVEMon Certificates Enhanced**](https://github.com/Blizbor/EVEMon-Certificates-Enhanced) | Clearer EVEMon certificates for T1/T2 access, specialization, support skills, drones and tank. / Czytelniejsze certyfikaty EVEMon dla T1/T2, specjalizacji, supportów, dronów i tanku. |
+|  | Project / Projekt | Purpose / Rola |
+|---|---|---|
+| 🇵🇱 | [**EvE Modular Skillplans**](https://github.com/Blizbor/EvE-Modular-Skillplans) | Praktyczne moduły i ścieżki treningu pod role, zadania i konkretne cele. |
+| 🇬🇧 | [**EvE Modular Skillplans**](https://github.com/Blizbor/EvE-Modular-Skillplans) | Practical, role/task-first training modules and training paths. |
+| 🇵🇱 | [**EvE Pilot Progression**](https://github.com/Blizbor/EvE-Pilot-Progression) | Mapa progresji EVEMon i audyt luk dla nowych pilotów oraz weteranów. |
+| 🇬🇧 | [**EvE Pilot Progression**](https://github.com/Blizbor/EvE-Pilot-Progression) | EVEMon progression map and skill-gap audit for new and veteran pilots. |
+| 🇵🇱 | [**EVEMon Certificates Enhanced**](https://github.com/Blizbor/EVEMon-Certificates-Enhanced) | Czytelniejsze certyfikaty EVEMon dla T1/T2, specjalizacji, supportów, dronów i tanku. |
+| 🇬🇧 | [**EVEMon Certificates Enhanced**](https://github.com/Blizbor/EVEMon-Certificates-Enhanced) | Clearer EVEMon certificates for T1/T2 access, specialization, support skills, drones and tank. |
 
 These three projects are designed to complement one another: **Modular Skillplans** tells you what to train, **Pilot Progression** shows where the pilot has gaps, and **Certificates Enhanced** gives finer resolution for combat-system competence.  
 Te trzy projekty uzupełniają się: **Modular Skillplans** mówi co trenować, **Pilot Progression** pokazuje gdzie pilot ma luki, a **Certificates Enhanced** dokładniej pokazuje poziom kompetencji systemów walki.
