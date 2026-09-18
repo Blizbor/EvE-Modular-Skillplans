@@ -10,7 +10,9 @@ This section connects a **public community fit** with EvE Modular Skillplans mod
 - When the accompanying video can be independently verified, we include a direct video link.
 - Compare the stored snapshot with the current source fit before buying the ship — creators may update fits later.
 - The **ALPHA** column links to the maximum Alpha plan for the relevant EvE Modular Skillplans module.
-- The **OMEGA** column contains only module tiers and skill levels that improve the exact hull and equipment in `FIT.eft`.
+- The **OMEGA** column selects the nearest complete tier of the same module: ALPHA 0.5 uses BASIC, 1.5 uses IMPROVED, 2 uses IMPROVED, and 3 uses STANDARD.
+- A training path does not append individual skills outside module plans.
+- The difference column states what the selected OMEGA plan adds over ALPHA for this exact fit; when it adds nothing, that is stated explicitly.
 - Table row order is training order.
 
 ## Naming

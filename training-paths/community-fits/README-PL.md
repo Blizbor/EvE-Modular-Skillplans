@@ -10,7 +10,9 @@ Ta sekcja łączy **publiczny fit używany przez społeczność** z modułami Ev
 - Jeżeli można niezależnie zweryfikować film omawiający fit, dodajemy bezpośredni link do filmu.
 - Przed zakupem statku należy porównać snapshot z aktualnym fitem źródłowym — twórca może go później zmienić.
 - Kolumna **ALPHA** prowadzi do maksymalnego planu Alpha właściwego modułu EvE Modular Skillplans.
-- Kolumna **OMEGA** zawiera wyłącznie poziomy modułów i skilli, które poprawiają dokładnie ten kadłub i wyposażenie z `FIT.eft`.
+- Kolumna **OMEGA** wskazuje najbliższy pełny poziom tego samego modułu: dla ALPHA 0.5 jest to BASIC, dla 1.5 — IMPROVED, dla 2 — IMPROVED, a dla 3 — STANDARD.
+- Training path nie dopisuje pojedynczych skilli poza planami modułów.
+- Opis różnicy mówi, co wybrany plan OMEGA daje ponad ALPHA dokładnie temu fitowi; jeżeli nie daje nic, jest to zaznaczone wprost.
 - Kolejność wierszy tabeli jest kolejnością treningu.
 
 ## Nazewnictwo
