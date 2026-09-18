@@ -1,0 +1,22 @@
+Science I
+Science II
+Science III
+Astrometrics I
+Astrometrics II
+Astrometrics III
+Astrometric Rangefinding I
+Astrometric Rangefinding II
+CPU Management I
+CPU Management II
+CPU Management III
+CPU Management IV
+Power Grid Management I
+Power Grid Management II
+Electronics Upgrades I
+Electronics Upgrades II
+Electronics Upgrades III
+Electronics Upgrades IV
+Electronics Upgrades V
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III

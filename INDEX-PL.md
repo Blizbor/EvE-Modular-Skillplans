@@ -4,6 +4,8 @@
 
 Każdy plan ma kolejność `BASIC → IMPROVED → STANDARD`.
 
+Każdy moduł zawiera również jeden plik Alpha. Liczba w jego nazwie pokazuje maksymalny zakres dostępny pilotowi Alpha; zobacz [Plany Alpha](docs/ALPHA_CLONES-PL.md).
+
 - **00 CORE - Engineering, Capacitor & Rigging** — [`README`](./plans/00_CORE_-_Engineering_Capacitor_and_Rigging/README-PL.md)
 - **01 CORE - Navigation** — [`README`](./plans/01_CORE_-_Navigation/README-PL.md)
 - **02 CORE - Targeting** — [`README`](./plans/02_CORE_-_Targeting/README-PL.md)

@@ -10,6 +10,24 @@ A modular plan for **Missile Support** competency. Train it only when the select
 
 ## Levels
 
+### Alpha — 0.5
+
+An Alpha pilot does not complete BASIC. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Missile Launcher Operation IV
+- Rapid Launch IV
+- Warhead Upgrades III
+- Target Navigation Prediction III
+- Guided Missile Precision III
+- Missile Bombardment IV
+- Missile Projection II
+- Jury Rigging III
+- Launcher Rigging III
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

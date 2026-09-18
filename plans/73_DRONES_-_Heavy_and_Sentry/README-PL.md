@@ -12,6 +12,23 @@ Modułowy plan rozwijający kompetencję **Heavy & Sentry**. Trenuj go tylko wte
 
 ## Poziomy
 
+### Alpha — 0.5
+
+Pilot Alpha nie osiąga całego poziomu BASIC. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Drones V
+- Heavy Drone Operation III
+- Drone Interfacing III
+- Drone Sharpshooting IV
+- Amarr Drone Specialization II
+- Caldari Drone Specialization II
+- Gallente Drone Specialization II
+- Minmatar Drone Specialization II
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

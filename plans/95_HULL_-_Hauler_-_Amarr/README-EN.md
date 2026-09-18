@@ -10,6 +10,17 @@ A modular hull-progression plan for **Hauler - Amarr**. Combine it with the appr
 
 ## Levels
 
+### Alpha — 1
+
+An Alpha pilot completes BASIC but gains no additional step from IMPROVED. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-1-ALPHA.txt`](plan-1-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Spaceship Command III
+- Amarr Hauler I
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

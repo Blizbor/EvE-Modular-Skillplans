@@ -12,6 +12,21 @@ A modular plan for **Medium T2** competency. Train it only when the selected hul
 
 ## Levels
 
+### Alpha — 1.5
+
+An Alpha pilot completes BASIC but not all of IMPROVED. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Drones V
+- Medium Drone Operation IV
+- Amarr Drone Specialization II
+- Caldari Drone Specialization II
+- Gallente Drone Specialization II
+- Minmatar Drone Specialization II
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

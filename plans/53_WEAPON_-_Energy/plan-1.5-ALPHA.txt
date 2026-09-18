@@ -1,0 +1,49 @@
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Gunnery V
+Controlled Bursts I
+Controlled Bursts II
+Controlled Bursts III
+Controlled Bursts IV
+Jury Rigging I
+Jury Rigging II
+Jury Rigging III
+Energy Weapon Rigging I
+Energy Weapon Rigging II
+Energy Weapon Rigging III
+Small Energy Turret I
+Small Energy Turret II
+Small Energy Turret III
+Small Energy Turret IV
+Small Energy Turret V
+Small Pulse Laser Specialization I
+Small Pulse Laser Specialization II
+Small Pulse Laser Specialization III
+Small Beam Laser Specialization I
+Small Beam Laser Specialization II
+Small Beam Laser Specialization III
+Medium Energy Turret I
+Medium Energy Turret II
+Medium Energy Turret III
+Medium Energy Turret IV
+Medium Energy Turret V
+Medium Pulse Laser Specialization I
+Medium Pulse Laser Specialization II
+Medium Pulse Laser Specialization III
+Medium Beam Laser Specialization I
+Medium Beam Laser Specialization II
+Medium Beam Laser Specialization III
+Large Energy Turret I
+Large Energy Turret II
+Large Energy Turret III
+Large Energy Turret IV
+Motion Prediction I
+Motion Prediction II
+Motion Prediction III
+Motion Prediction IV
+Sharpshooter I
+Sharpshooter II
+Sharpshooter III
+Sharpshooter IV

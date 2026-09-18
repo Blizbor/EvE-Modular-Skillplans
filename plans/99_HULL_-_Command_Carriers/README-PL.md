@@ -10,6 +10,20 @@ Modułowy plan hull progression dla **Command Carriers**. Łącz go z odpowiedni
 
 ## Poziomy
 
+### Alpha — 0.5
+
+Pilot Alpha nie osiąga całego poziomu BASIC. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Drones V
+- Drone Interfacing III
+- Science IV
+- Navigation IV
+- Warp Drive Operation III
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

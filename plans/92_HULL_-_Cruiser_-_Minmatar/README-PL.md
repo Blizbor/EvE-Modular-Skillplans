@@ -10,6 +10,19 @@ Modułowy plan hull progression dla **Cruiser - Minmatar**. Łącz go z odpowied
 
 ## Poziomy
 
+### Alpha — 2
+
+Pilot Alpha osiąga cały poziom IMPROVED, ale nie wykonuje żadnego dodatkowego kroku ze STANDARD. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Spaceship Command II
+- Minmatar Frigate III
+- Minmatar Destroyer III
+- Minmatar Cruiser IV
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

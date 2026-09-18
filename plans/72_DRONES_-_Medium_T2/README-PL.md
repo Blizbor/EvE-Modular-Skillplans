@@ -12,6 +12,21 @@ Modułowy plan rozwijający kompetencję **Medium T2**. Trenuj go tylko wtedy, g
 
 ## Poziomy
 
+### Alpha — 1.5
+
+Pilot Alpha osiąga cały poziom BASIC, ale nie cały IMPROVED. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Drones V
+- Medium Drone Operation IV
+- Amarr Drone Specialization II
+- Caldari Drone Specialization II
+- Gallente Drone Specialization II
+- Minmatar Drone Specialization II
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

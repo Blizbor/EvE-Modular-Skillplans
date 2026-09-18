@@ -10,6 +10,20 @@ A modular plan for **Rockets & Light** competency. Train it only when the select
 
 ## Levels
 
+### Alpha — 2
+
+An Alpha pilot completes IMPROVED but gains no additional step from STANDARD. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Missile Launcher Operation V
+- Rockets V
+- Light Missiles V
+- Rocket Specialization III
+- Light Missile Specialization III
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

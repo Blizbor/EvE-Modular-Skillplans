@@ -6,7 +6,7 @@ Większość „must have skillplanów” mówi pilotowi **co trenować**, ale z
 
 **EvE Modular Skillplans** buduje rozwój pilota z niezależnych modułów: core/support, tank, broń, drony, scouting, cyno i hull progression. Pilot wybiera tylko te gałęzie, których naprawdę potrzebuje. Celem nie jest maksymalizacja liczby SP, tylko dojście do używalnego fita i sensownej kompetencji bez trenowania przypadkowych skilli „na wszelki wypadek”.
 
-## Trzy poziomy
+## Trzy poziomy i plan Alpha
 
 1. **BASIC** — najniższy rozsądny poziom wejścia.
 2. **IMPROVED** — praktyczny poziom pośredni, zwykle wystarczający do regularnego używania.
@@ -14,11 +14,24 @@ Większość „must have skillplanów” mówi pilotowi **co trenować**, ale z
 
 `STANDARD` **nie oznacza „all V”**. Level V trafia do planu wtedy, gdy rzeczywiście coś odblokowuje, jest wymagany przez dalszą progresję albo stanowi świadomy wyjątek roli.
 
+Każdy moduł ma również jeden plan Alpha nazwany `plan-<poziom>-ALPHA.txt`. Nie jest to stały czwarty poziom. Liczba pokazuje, dokąd pilot Alpha dochodzi względem `BASIC → IMPROVED → STANDARD`:
+
+- `0` — żaden skill modułu nie jest dostępny;
+- `0.5` — Alpha nie osiąga całego BASIC;
+- `1` — cały BASIC;
+- `1.5` — cały BASIC i część IMPROVED;
+- `2` — cały IMPROVED;
+- `2.5` — cały IMPROVED i część STANDARD;
+- `3` — cały STANDARD.
+
+Plik Alpha zawiera wszystkie poziomy skilli z zakresu danego modułu, które są dostępne dla Alpha, ale nigdy nie wykracza ponad `plan-3-STANDARD.txt`.
+
 Każdy katalog w `plans/` zawiera:
 
 - `plan-1-BASIC.txt`
 - `plan-2-IMPROVED.txt`
 - `plan-3-STANDARD.txt`
+- jeden `plan-<poziom>-ALPHA.txt`
 - `README-PL.md` / `README-EN.md`
 - `README.md` jako neutralny wybór języka.
 
@@ -58,6 +71,7 @@ Projekt nie próbuje opisać całego EVE. Część dalszych specjalizacji ma zos
 - [Dlaczego nie wszystko na V](docs/NEVER_LEVEL_5-PL.md)
 - [Czym to się różni od Magic 14](docs/MAGIC_14-PL.md)
 - [Progi ważnych modułów T2](docs/T2_MODULE_UNLOCKS-PL.md)
+- [Plany Alpha](docs/ALPHA_CLONES-PL.md)
 - [Diagramy](diagrams/README-PL.md)
 
 ## Import do EVE

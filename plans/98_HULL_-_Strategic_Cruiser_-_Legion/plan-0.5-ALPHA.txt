@@ -1,0 +1,31 @@
+Spaceship Command I
+Spaceship Command II
+Amarr Cruiser I
+Amarr Cruiser II
+Amarr Cruiser III
+Amarr Cruiser IV
+Mechanics I
+Mechanics II
+Mechanics III
+Mechanics IV
+Mechanics V
+Shield Operation I
+Shield Operation II
+Shield Operation III
+Power Grid Management I
+Power Grid Management II
+Power Grid Management III
+Power Grid Management IV
+Power Grid Management V
+Gunnery I
+Gunnery II
+Gunnery III
+Gunnery IV
+Gunnery V
+Drones I
+Drones II
+Drones III
+Navigation I
+Navigation II
+Navigation III
+Navigation IV

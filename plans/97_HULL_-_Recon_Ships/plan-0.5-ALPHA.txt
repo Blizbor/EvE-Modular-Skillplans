@@ -1,0 +1,18 @@
+CPU Management I
+CPU Management II
+CPU Management III
+CPU Management IV
+Power Grid Management I
+Power Grid Management II
+Electronics Upgrades I
+Electronics Upgrades II
+Electronics Upgrades III
+Electronics Upgrades IV
+Electronics Upgrades V
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Signature Analysis I
+Signature Analysis II
+Signature Analysis III

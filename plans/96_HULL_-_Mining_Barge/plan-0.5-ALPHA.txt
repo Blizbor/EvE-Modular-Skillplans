@@ -1,0 +1,16 @@
+Mining I
+Mining II
+Mining III
+Mining IV
+Science I
+Science II
+Science III
+Science IV
+Industry I
+Industry II
+Industry III
+Industry IV
+Industry V
+Mining Frigate I
+Mining Frigate II
+Mining Frigate III

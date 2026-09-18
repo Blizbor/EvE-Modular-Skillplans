@@ -6,7 +6,7 @@ Most “must-have skillplans” tell a pilot **what to train**, but much less of
 
 **EvE Modular Skillplans** builds a pilot from independent modules: core/support, tank, weapons, drones, scouting, cynos and hull progression. A pilot selects only the branches that are actually relevant. The goal is not to maximize SP; it is to reach usable fits and meaningful competence without training unrelated skills “just in case”.
 
-## Three levels
+## Three levels and the Alpha plan
 
 1. **BASIC** — the lowest sensible entry level.
 2. **IMPROVED** — the practical intermediate level, often enough for regular use.
@@ -14,11 +14,24 @@ Most “must-have skillplans” tell a pilot **what to train**, but much less of
 
 `STANDARD` **does not mean “all V”**. Level V is included when it unlocks something important, is required for further progression, or is an intentional role-specific exception.
 
+Every module also has one Alpha plan named `plan-<level>-ALPHA.txt`. It is not a fixed fourth level. The number shows how far an Alpha pilot can progress relative to `BASIC → IMPROVED → STANDARD`:
+
+- `0` — no skill in the module is available;
+- `0.5` — Alpha does not complete BASIC;
+- `1` — complete BASIC;
+- `1.5` — complete BASIC and part of IMPROVED;
+- `2` — complete IMPROVED;
+- `2.5` — complete IMPROVED and part of STANDARD;
+- `3` — complete STANDARD.
+
+The Alpha file contains every skill level within the module that is available to Alpha, but never goes beyond `plan-3-STANDARD.txt`.
+
 Every directory in `plans/` contains:
 
 - `plan-1-BASIC.txt`
 - `plan-2-IMPROVED.txt`
 - `plan-3-STANDARD.txt`
+- one `plan-<level>-ALPHA.txt`
 - `README-PL.md` / `README-EN.md`
 - `README.md` as a language-neutral selector.
 
@@ -58,6 +71,7 @@ The project is not intended to explain all of EVE. Some later specializations ar
 - [Why not everything goes to V](docs/NEVER_LEVEL_5-EN.md)
 - [How this differs from Magic 14](docs/MAGIC_14-EN.md)
 - [Important T2 module thresholds](docs/T2_MODULE_UNLOCKS-EN.md)
+- [Alpha plans](docs/ALPHA_CLONES-EN.md)
 - [Diagrams](diagrams/README-EN.md)
 
 ## Importing into EVE

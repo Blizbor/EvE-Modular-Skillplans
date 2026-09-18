@@ -12,6 +12,28 @@ A modular plan for **Hybrid** competency. Train it only when the selected hull o
 
 ## Levels
 
+### Alpha — 1.5
+
+An Alpha pilot completes BASIC but not all of IMPROVED. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Gunnery V
+- Controlled Bursts IV
+- Jury Rigging III
+- Hybrid Weapon Rigging III
+- Small Hybrid Turret V
+- Small Blaster Specialization III
+- Small Railgun Specialization III
+- Medium Hybrid Turret V
+- Medium Blaster Specialization III
+- Medium Railgun Specialization III
+- Large Hybrid Turret IV
+- Motion Prediction IV
+- Sharpshooter IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

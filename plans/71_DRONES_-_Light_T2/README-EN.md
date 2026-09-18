@@ -12,6 +12,21 @@ A modular plan for **Light T2** competency. Train it only when the selected hull
 
 ## Levels
 
+### Alpha — 2
+
+An Alpha pilot completes IMPROVED but gains no additional step from STANDARD. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Drones V
+- Light Drone Operation V
+- Amarr Drone Specialization II
+- Caldari Drone Specialization II
+- Gallente Drone Specialization II
+- Minmatar Drone Specialization II
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

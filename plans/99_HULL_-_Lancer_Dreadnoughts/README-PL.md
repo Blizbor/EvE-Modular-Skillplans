@@ -10,6 +10,16 @@ Modułowy plan hull progression dla **Lancer Dreadnoughts**. Łącz go z odpowie
 
 ## Poziomy
 
+### Alpha — 0
+
+Pilot Alpha nie może wytrenować żadnego skilla należącego do tego modułu. Plik jest celowo pusty.
+
+Import: [`plan-0-ALPHA.txt`](plan-0-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Brak — plik jest celowo pusty.
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

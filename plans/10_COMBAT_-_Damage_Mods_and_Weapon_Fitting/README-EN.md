@@ -10,6 +10,18 @@ A modular plan for **Damage Mods & Weapon Fitting** competency.
 
 ## Levels
 
+### Alpha — 2
+
+An Alpha pilot completes IMPROVED but gains no additional step from STANDARD. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Gunnery II
+- Weapon Upgrades V
+- Advanced Weapon Upgrades III
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

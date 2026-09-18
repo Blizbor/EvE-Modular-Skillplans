@@ -10,6 +10,16 @@ A modular hull-progression plan for **Lancer Dreadnoughts**. Combine it with the
 
 ## Levels
 
+### Alpha — 0
+
+An Alpha pilot cannot train any skill included in this module. The file is intentionally empty.
+
+Import: [`plan-0-ALPHA.txt`](plan-0-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- None — the file is intentionally empty.
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

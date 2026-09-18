@@ -10,6 +10,21 @@ A modular hull-progression plan for **Interdictors**. Combine it with the approp
 
 ## Levels
 
+### Alpha — 0.5
+
+An Alpha pilot does not complete BASIC. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- CPU Management III
+- Navigation II
+- Propulsion Jamming IV
+- Science IV
+- Power Grid Management V
+- Spaceship Command IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

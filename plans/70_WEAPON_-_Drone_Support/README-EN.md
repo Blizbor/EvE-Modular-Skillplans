@@ -10,6 +10,23 @@ A modular plan for **Drone Support** competency. Train it only when the selected
 
 ## Levels
 
+### Alpha — 1.5
+
+An Alpha pilot completes BASIC but not all of IMPROVED. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Drones V
+- Drone Avionics IV
+- Drone Interfacing III
+- Drone Navigation IV
+- Drone Durability IV
+- Drone Sharpshooting IV
+- Jury Rigging III
+- Drones Rigging III
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

@@ -10,6 +10,23 @@ Modułowy plan rozwijający kompetencję **Drone Support**. Trenuj go tylko wted
 
 ## Poziomy
 
+### Alpha — 1.5
+
+Pilot Alpha osiąga cały poziom BASIC, ale nie cały IMPROVED. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Drones V
+- Drone Avionics IV
+- Drone Interfacing III
+- Drone Navigation IV
+- Drone Durability IV
+- Drone Sharpshooting IV
+- Jury Rigging III
+- Drones Rigging III
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

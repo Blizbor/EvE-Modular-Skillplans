@@ -10,6 +10,23 @@ A modular hull-progression plan for **Strategic Cruiser - Legion**. Combine it w
 
 ## Levels
 
+### Alpha — 0.5
+
+An Alpha pilot does not complete BASIC. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Spaceship Command II
+- Amarr Cruiser IV
+- Mechanics V
+- Shield Operation III
+- Power Grid Management V
+- Gunnery V
+- Drones III
+- Navigation IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

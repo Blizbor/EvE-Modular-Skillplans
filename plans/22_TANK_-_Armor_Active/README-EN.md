@@ -10,6 +10,24 @@ A modular plan for **Armor Active**. It does not force training of the alternati
 
 ## Levels
 
+### Alpha — 0.5
+
+An Alpha pilot does not complete BASIC. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Mechanics IV
+- Hull Upgrades V
+- EM Armor Compensation II
+- Explosive Armor Compensation II
+- Kinetic Armor Compensation II
+- Thermal Armor Compensation II
+- Jury Rigging III
+- Armor Rigging III
+- Repair Systems IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

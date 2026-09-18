@@ -10,6 +10,24 @@ BASIC represents a low-SP pilot who can **fit a basic armor tank and an armor ri
 
 ## Levels
 
+### Alpha — 1.5
+
+An Alpha pilot completes BASIC but not all of IMPROVED. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Mechanics IV
+- Hull Upgrades V
+- EM Armor Compensation II
+- Explosive Armor Compensation II
+- Kinetic Armor Compensation II
+- Thermal Armor Compensation II
+- Jury Rigging III
+- Armor Rigging III
+- Armor Layering I
+
 ### 1 — BASIC
 Import: [`plan-1-BASIC.txt`](plan-1-BASIC.txt)
 - Mechanics III

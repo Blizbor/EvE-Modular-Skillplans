@@ -12,6 +12,28 @@ A modular plan for **Energy** competency. Train it only when the selected hull o
 
 ## Levels
 
+### Alpha — 1.5
+
+An Alpha pilot completes BASIC but not all of IMPROVED. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Gunnery V
+- Controlled Bursts IV
+- Jury Rigging III
+- Energy Weapon Rigging III
+- Small Energy Turret V
+- Small Pulse Laser Specialization III
+- Small Beam Laser Specialization III
+- Medium Energy Turret V
+- Medium Pulse Laser Specialization III
+- Medium Beam Laser Specialization III
+- Large Energy Turret IV
+- Motion Prediction IV
+- Sharpshooter IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

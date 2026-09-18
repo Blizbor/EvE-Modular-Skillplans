@@ -1,0 +1,19 @@
+CPU Management I
+CPU Management II
+CPU Management III
+CPU Management IV
+Science I
+Science II
+Science III
+Science IV
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Warp Drive Operation I
+Warp Drive Operation II
+Warp Drive Operation III
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV

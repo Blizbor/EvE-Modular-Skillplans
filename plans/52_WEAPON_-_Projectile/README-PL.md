@@ -12,6 +12,27 @@ Modułowy plan rozwijający kompetencję **Projectile**. Trenuj go tylko wtedy, 
 
 ## Poziomy
 
+### Alpha — 1.5
+
+Pilot Alpha osiąga cały poziom BASIC, ale nie cały IMPROVED. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Gunnery V
+- Jury Rigging III
+- Projectile Weapon Rigging III
+- Small Projectile Turret V
+- Small Autocannon Specialization III
+- Small Artillery Specialization III
+- Medium Projectile Turret V
+- Medium Autocannon Specialization III
+- Medium Artillery Specialization III
+- Large Projectile Turret IV
+- Motion Prediction IV
+- Sharpshooter IV
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

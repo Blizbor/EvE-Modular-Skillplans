@@ -10,6 +10,23 @@ Modułowy plan hull progression dla **Strategic Cruiser - Tengu**. Łącz go z o
 
 ## Poziomy
 
+### Alpha — 0.5
+
+Pilot Alpha nie osiąga całego poziomu BASIC. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Spaceship Command II
+- Caldari Cruiser IV
+- Shield Operation IV
+- Mechanics III
+- Power Grid Management V
+- Missile Launcher Operation V
+- Gunnery III
+- Navigation IV
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

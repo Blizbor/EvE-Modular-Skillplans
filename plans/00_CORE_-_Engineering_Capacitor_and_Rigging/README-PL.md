@@ -12,6 +12,24 @@ Wspólny moduł supportowy: **Engineering, Capacitor & Rigging**. Jest używany 
 
 ## Poziomy
 
+### Alpha — 0.5
+
+Pilot Alpha nie osiąga całego poziomu BASIC. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- CPU Management V
+- Power Grid Management V
+- Capacitor Management IV
+- Capacitor Systems Operation III
+- Science I
+- Energy Grid Upgrades IV
+- Electronics Upgrades IV
+- Mechanics III
+- Jury Rigging III
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

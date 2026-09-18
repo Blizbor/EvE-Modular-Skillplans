@@ -10,6 +10,16 @@ Modułowy plan dla **Shield Active**. Nie wymusza trenowania alternatywnego typu
 
 ## Poziomy
 
+### Alpha — 3
+
+Pilot Alpha może wytrenować cały poziom STANDARD tego modułu; plik Alpha jest z nim równoważny.
+
+Import: [`plan-3-ALPHA.txt`](plan-3-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Shield Compensation IV
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

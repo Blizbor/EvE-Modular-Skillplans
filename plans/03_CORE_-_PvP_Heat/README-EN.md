@@ -12,6 +12,17 @@ This module develops **combat overheating effectiveness**. It assumes the basic 
 
 ## Levels
 
+### Alpha — 2
+
+An Alpha pilot completes IMPROVED but gains no additional step from STANDARD. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Science IV
+- Thermodynamics IV
+
 ### 1 — BASIC
 Import: [`plan-1-BASIC.txt`](plan-1-BASIC.txt)
 - Science IV

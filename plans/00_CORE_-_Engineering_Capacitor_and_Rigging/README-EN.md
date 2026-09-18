@@ -12,6 +12,24 @@ A shared support module for **Engineering, Capacitor & Rigging**. Many paths use
 
 ## Levels
 
+### Alpha — 0.5
+
+An Alpha pilot does not complete BASIC. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- CPU Management V
+- Power Grid Management V
+- Capacitor Management IV
+- Capacitor Systems Operation III
+- Science I
+- Energy Grid Upgrades IV
+- Electronics Upgrades IV
+- Mechanics III
+- Jury Rigging III
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

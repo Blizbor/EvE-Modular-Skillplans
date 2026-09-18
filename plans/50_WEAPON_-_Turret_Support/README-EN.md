@@ -10,6 +10,21 @@ A modular plan for **Turret Support** competency. Train it only when the selecte
 
 ## Levels
 
+### Alpha — 3
+
+An Alpha pilot can train the complete STANDARD level of this module; the Alpha file is equivalent to it.
+
+Import: [`plan-3-ALPHA.txt`](plan-3-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Gunnery IV
+- Rapid Firing IV
+- Motion Prediction IV
+- Sharpshooter IV
+- Surgical Strike IV
+- Trajectory Analysis IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

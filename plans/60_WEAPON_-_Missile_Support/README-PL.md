@@ -10,6 +10,24 @@ Modułowy plan rozwijający kompetencję **Missile Support**. Trenuj go tylko wt
 
 ## Poziomy
 
+### Alpha — 0.5
+
+Pilot Alpha nie osiąga całego poziomu BASIC. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-0.5-ALPHA.txt`](plan-0.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Missile Launcher Operation IV
+- Rapid Launch IV
+- Warhead Upgrades III
+- Target Navigation Prediction III
+- Guided Missile Precision III
+- Missile Bombardment IV
+- Missile Projection II
+- Jury Rigging III
+- Launcher Rigging III
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

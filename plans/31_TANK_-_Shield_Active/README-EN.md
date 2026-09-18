@@ -10,6 +10,16 @@ A modular plan for **Shield Active**. It does not force training of the alternat
 
 ## Levels
 
+### Alpha — 3
+
+An Alpha pilot can train the complete STANDARD level of this module; the Alpha file is equivalent to it.
+
+Import: [`plan-3-ALPHA.txt`](plan-3-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Shield Compensation IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

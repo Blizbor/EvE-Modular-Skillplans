@@ -12,6 +12,27 @@ A modular plan for **Projectile** competency. Train it only when the selected hu
 
 ## Levels
 
+### Alpha — 1.5
+
+An Alpha pilot completes BASIC but not all of IMPROVED. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Gunnery V
+- Jury Rigging III
+- Projectile Weapon Rigging III
+- Small Projectile Turret V
+- Small Autocannon Specialization III
+- Small Artillery Specialization III
+- Medium Projectile Turret V
+- Medium Autocannon Specialization III
+- Medium Artillery Specialization III
+- Large Projectile Turret IV
+- Motion Prediction IV
+- Sharpshooter IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

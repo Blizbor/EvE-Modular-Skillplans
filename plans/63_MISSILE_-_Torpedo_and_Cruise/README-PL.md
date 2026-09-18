@@ -10,6 +10,20 @@ Modułowy plan rozwijający kompetencję **Torpedo & Cruise**. Trenuj go tylko w
 
 ## Poziomy
 
+### Alpha — 1
+
+Pilot Alpha osiąga cały poziom BASIC, ale nie wykonuje żadnego dodatkowego kroku z IMPROVED. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-1-ALPHA.txt`](plan-1-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Missile Launcher Operation V
+- Light Missiles III
+- Heavy Missiles III
+- Torpedoes IV
+- Cruise Missiles IV
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

@@ -1,0 +1,20 @@
+Industry I
+Industry II
+Industry III
+Industry IV
+Industry V
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Science I
+Science II
+Science III
+Science IV
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Warp Drive Operation I
+Warp Drive Operation II
+Warp Drive Operation III

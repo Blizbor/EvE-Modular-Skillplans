@@ -1,0 +1,27 @@
+Spaceship Command I
+Spaceship Command II
+Spaceship Command III
+Spaceship Command IV
+Amarr Battleship I
+Amarr Battleship II
+Amarr Battleship III
+Gunnery I
+Gunnery II
+Weapon Upgrades I
+Weapon Upgrades II
+Weapon Upgrades III
+Weapon Upgrades IV
+Advanced Weapon Upgrades I
+Advanced Weapon Upgrades II
+Advanced Weapon Upgrades III
+Science I
+Science II
+Science III
+Science IV
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
+Warp Drive Operation I
+Warp Drive Operation II
+Warp Drive Operation III

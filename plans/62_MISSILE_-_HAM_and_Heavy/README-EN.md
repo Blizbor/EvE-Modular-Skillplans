@@ -10,6 +10,21 @@ A modular plan for **HAM & Heavy** competency. Train it only when the selected h
 
 ## Levels
 
+### Alpha — 2
+
+An Alpha pilot completes IMPROVED but gains no additional step from STANDARD. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Missile Launcher Operation V
+- Light Missiles III
+- Heavy Assault Missiles V
+- Heavy Missiles V
+- Heavy Assault Missile Specialization III
+- Heavy Missile Specialization III
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

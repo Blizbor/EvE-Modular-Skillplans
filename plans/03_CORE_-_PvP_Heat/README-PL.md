@@ -12,6 +12,17 @@ Moduł rozwija **skuteczność przegrzewania modułów w walce**. Zakłada bazow
 
 ## Poziomy
 
+### Alpha — 2
+
+Pilot Alpha osiąga cały poziom IMPROVED, ale nie wykonuje żadnego dodatkowego kroku ze STANDARD. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Science IV
+- Thermodynamics IV
+
 ### 1 — BASIC
 
 Pierwszy praktyczny poziom overheatu.

@@ -14,6 +14,22 @@ For scanning, `Astrometrics` has priority. Each level improves probe strength, m
 
 ## Levels
 
+### Alpha — 1.5
+
+An Alpha pilot completes BASIC but not all of IMPROVED. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Science III
+- Astrometrics III
+- Astrometric Rangefinding II
+- CPU Management IV
+- Power Grid Management II
+- Electronics Upgrades V
+- Spaceship Command III
+
 ### 1 — BASIC
 Import: [`plan-1-BASIC.txt`](plan-1-BASIC.txt)
 - Science III

@@ -14,6 +14,22 @@ W skanowaniu priorytet ma `Astrometrics`. Każdy jego poziom jednocześnie popra
 
 ## Poziomy
 
+### Alpha — 1.5
+
+Pilot Alpha osiąga cały poziom BASIC, ale nie cały IMPROVED. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Science III
+- Astrometrics III
+- Astrometric Rangefinding II
+- CPU Management IV
+- Power Grid Management II
+- Electronics Upgrades V
+- Spaceship Command III
+
 ### 1 — BASIC
 Import: [`plan-1-BASIC.txt`](plan-1-BASIC.txt)
 - Science III

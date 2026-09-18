@@ -10,6 +10,21 @@ A modular hull-progression plan for **Battleship - Minmatar**. Combine it with t
 
 ## Levels
 
+### Alpha — 2
+
+An Alpha pilot completes IMPROVED but gains no additional step from STANDARD. The file contains every entry from the STANDARD plan that fits within Alpha limits.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maximum Alpha-accessible levels in this module:
+
+- Spaceship Command IV
+- Minmatar Frigate III
+- Minmatar Destroyer III
+- Minmatar Cruiser III
+- Minmatar Battlecruiser III
+- Minmatar Battleship IV
+
 ### 1 — BASIC
 
 The lowest sensible entry level. It should make the competency usable without delaying the pilot with unnecessary training.

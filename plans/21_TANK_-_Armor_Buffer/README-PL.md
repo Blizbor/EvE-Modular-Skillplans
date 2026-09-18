@@ -10,6 +10,24 @@ Modułowy plan **Armor Buffer**. BASIC ma oznaczać biednego w SP pilota, który
 
 ## Poziomy
 
+### Alpha — 1.5
+
+Pilot Alpha osiąga cały poziom BASIC, ale nie cały IMPROVED. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-1.5-ALPHA.txt`](plan-1.5-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Mechanics IV
+- Hull Upgrades V
+- EM Armor Compensation II
+- Explosive Armor Compensation II
+- Kinetic Armor Compensation II
+- Thermal Armor Compensation II
+- Jury Rigging III
+- Armor Rigging III
+- Armor Layering I
+
 ### 1 — BASIC
 Import: [`plan-1-BASIC.txt`](plan-1-BASIC.txt)
 - Mechanics III

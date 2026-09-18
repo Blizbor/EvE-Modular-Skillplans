@@ -10,6 +10,21 @@ Modułowy plan rozwijający kompetencję **Turret Support**. Trenuj go tylko wte
 
 ## Poziomy
 
+### Alpha — 3
+
+Pilot Alpha może wytrenować cały poziom STANDARD tego modułu; plik Alpha jest z nim równoważny.
+
+Import: [`plan-3-ALPHA.txt`](plan-3-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Gunnery IV
+- Rapid Firing IV
+- Motion Prediction IV
+- Sharpshooter IV
+- Surgical Strike IV
+- Trajectory Analysis IV
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

@@ -17,6 +17,12 @@ Pełna dokumentacja, instrukcje użycia i materiały dla kontrybutorów w język
 
 Full documentation, usage instructions and contributor material in English.
 
+## Alpha plans / Plany Alpha
+
+Every module includes one `plan-<level>-ALPHA.txt` file showing the maximum part of that module available to Alpha pilots. The value ranges from `0` to `3` in half-level steps. See [English documentation](docs/ALPHA_CLONES-EN.md).
+
+Każdy moduł zawiera jeden plik `plan-<poziom>-ALPHA.txt`, pokazujący maksymalną część modułu dostępną pilotowi Alpha. Wartość mieści się od `0` do `3` co pół poziomu. Zobacz [dokumentację polską](docs/ALPHA_CLONES-PL.md).
+
 ## Related projects / Powiązane projekty
 
 |  | Project / Projekt | Purpose / Rola |

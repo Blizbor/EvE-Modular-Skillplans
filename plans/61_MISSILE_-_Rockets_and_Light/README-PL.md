@@ -10,6 +10,20 @@ Modułowy plan rozwijający kompetencję **Rockets & Light**. Trenuj go tylko wt
 
 ## Poziomy
 
+### Alpha — 2
+
+Pilot Alpha osiąga cały poziom IMPROVED, ale nie wykonuje żadnego dodatkowego kroku ze STANDARD. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Missile Launcher Operation V
+- Rockets V
+- Light Missiles V
+- Rocket Specialization III
+- Light Missile Specialization III
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

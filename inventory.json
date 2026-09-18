@@ -11,6 +11,25 @@
     "EN"
   ],
   "training_paths": 14,
-  "plan_queue_files": 267,
-  "plan_readmes_bilingual": 178
+  "plan_queue_files": 356,
+  "plan_readmes_bilingual": 178,
+  "alpha_plan_files": 89,
+  "alpha_levels": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3
+  ],
+  "alpha_source": {
+    "provider": "CCP Static Data Export",
+    "build": 3503375,
+    "release_date": "2026-09-10",
+    "tables": [
+      "cloneGrades",
+      "types"
+    ]
+  }
 }

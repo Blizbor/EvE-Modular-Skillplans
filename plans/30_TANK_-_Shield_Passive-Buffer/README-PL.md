@@ -10,6 +10,23 @@ Modułowy plan dla **Shield Passive/Buffer**. Nie wymusza trenowania alternatywn
 
 ## Poziomy
 
+### Alpha — 2
+
+Pilot Alpha osiąga cały poziom IMPROVED, ale nie wykonuje żadnego dodatkowego kroku ze STANDARD. Plik zawiera wszystkie pozycje z planu STANDARD, które mieszczą się w limitach Alpha.
+
+Import: [`plan-2-ALPHA.txt`](plan-2-ALPHA.txt)
+
+Maksymalne poziomy dostępne dla Alpha w tym module:
+
+- Power Grid Management III
+- Shield Operation IV
+- Shield Management IV
+- Shield Upgrades IV
+- Tactical Shield Manipulation IV
+- Mechanics III
+- Jury Rigging III
+- Shield Rigging III
+
 ### 1 — BASIC
 
 Najniższy rozsądny poziom wejścia. Ma pozwolić zacząć używać danej kompetencji bez niepotrzebnego opóźniania pilota.

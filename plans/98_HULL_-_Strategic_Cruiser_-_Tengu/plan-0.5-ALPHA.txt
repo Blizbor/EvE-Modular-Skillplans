@@ -1,0 +1,30 @@
+Spaceship Command I
+Spaceship Command II
+Caldari Cruiser I
+Caldari Cruiser II
+Caldari Cruiser III
+Caldari Cruiser IV
+Shield Operation I
+Shield Operation II
+Shield Operation III
+Shield Operation IV
+Mechanics I
+Mechanics II
+Mechanics III
+Power Grid Management I
+Power Grid Management II
+Power Grid Management III
+Power Grid Management IV
+Power Grid Management V
+Missile Launcher Operation I
+Missile Launcher Operation II
+Missile Launcher Operation III
+Missile Launcher Operation IV
+Missile Launcher Operation V
+Gunnery I
+Gunnery II
+Gunnery III
+Navigation I
+Navigation II
+Navigation III
+Navigation IV
