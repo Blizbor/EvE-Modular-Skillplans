@@ -1,46 +1,32 @@
-# Rifter — Alpha — T0 Gamma Abyss — Loru Gaming
+# Rifter — Alpha / Omega — T0 Gamma Abyss — Loru Gaming
 
-
-> **Community-fit snapshot:** ten dokument mapuje konkretny publiczny fit na nasze moduły treningowe. Nie jest gwarancją bezpieczeństwa, rentowności ani aktualności fita. Zawsze sprawdź aktualną wersję u źródła.
+> **Community-fit snapshot:** ten dokument dotyczy wyłącznie zapisanego [`FIT.eft`](FIT.eft). Nie jest gwarancją bezpieczeństwa, rentowności ani aktualności fita.
 
 ## Źródło i autorstwo
 
 - **Autor fita:** Loru Gaming
-- **EVE Workbench:** [https://eveworkbench.com/fit/64da0293-a5bf-4150-9e4b-9bbd8840f7e5](https://eveworkbench.com/fit/64da0293-a5bf-4150-9e4b-9bbd8840f7e5)
-- **Film Loru:** źródłowa strona EVE Workbench zawiera powiązany materiał wideo; bezpośredni URL nie został wpisany, ponieważ nie udało się go niezależnie zweryfikować w publicznych metadanych.
+- **EVE Workbench:** [fit 64da0293-a5bf-4150-9e4b-9bbd8840f7e5](https://eveworkbench.com/fit/64da0293-a5bf-4150-9e4b-9bbd8840f7e5)
+- **Film Loru:** źródłowa strona EVE Workbench zawiera powiązany materiał wideo; bezpośredni URL nie został wpisany, ponieważ nie udało się go niezależnie zweryfikować.
 - **Snapshot EFT w repo:** [`FIT.eft`](FIT.eft)
 
-Fit został dodany jako **zewnętrzny punkt praktycznego celu treningowego**. EvE Modular Skillplans nie przejmuje autorstwa ani nie gwarantuje, że fit pozostanie optymalny po zmianach balansu.
+EvE Modular Skillplans nie przejmuje autorstwa fita. Kolejność wierszy poniżej jest kolejnością treningu dla dokładnie tego Riftera.
 
-## Cel training path
+## Moduły do wytrenowania
 
-Doprowadzić świeżego/Alpha pilota do możliwości użycia **tego konkretnego fita** bez wciskania niepotrzebnych poziomów tylko dlatego, że istnieją w danej rodzinie skilli. Po odblokowaniu statku i modułów pokazujemy dopiero rozsądne kierunki poprawy.
+| Moduł EvE Modular Skillplans | ALPHA | OMEGA — więcej z tego samego fita | Co poprawia w `FIT.eft` |
+|---|---|---|---|
+| 90 HULL — Frigate — Minmatar | [`plan-2-ALPHA.txt`](../../../plans/90_HULL_-_Frigate_-_Minmatar/plan-2-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/90_HULL_-_Frigate_-_Minmatar/plan-3-STANDARD.txt) — **Minmatar Frigate V** | szybkostrzelność i falloff trzech autocannonów |
+| 00 CORE — Engineering, Capacitor and Rigging | [`plan-0.5-ALPHA.txt`](../../../plans/00_CORE_-_Engineering_Capacitor_and_Rigging/plan-0.5-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/00_CORE_-_Engineering_Capacitor_and_Rigging/plan-3-STANDARD.txt) | fitting, capacitor afterburnera i obsługa rigów |
+| 01 CORE — Navigation | [`plan-0.5-ALPHA.txt`](../../../plans/01_CORE_-_Navigation/plan-0.5-ALPHA.txt) | baza ALPHA + **Spaceship Command V, Navigation V, Evasive Maneuvering V, Afterburner V, Acceleration Control V, Fuel Conservation V** | prędkość, zwrotność i koszt capacitora 1MN afterburnera |
+| 02 CORE — Targeting | [`plan-0.5-ALPHA.txt`](../../../plans/02_CORE_-_Targeting/plan-0.5-ALPHA.txt) | [`plan-2-IMPROVED.txt`](../../../plans/02_CORE_-_Targeting/plan-2-IMPROVED.txt) + **Long Range Targeting V, Signature Analysis V** | zasięg i szybkość namierzania |
+| 30 TANK — Shield Passive/Buffer | [`plan-2-ALPHA.txt`](../../../plans/30_TANK_-_Shield_Passive-Buffer/plan-2-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/30_TANK_-_Shield_Passive-Buffer/plan-3-STANDARD.txt) + **Shield Operation V, Shield Management V, Tactical Shield Manipulation V, Shield Rigging V** | shield HP, pasywny recharge, bleed-through i kara signature radius z trzech Field Purgerów |
+| 10 COMBAT — Damage Mods and Weapon Fitting | [`plan-2-ALPHA.txt`](../../../plans/10_COMBAT_-_Damage_Mods_and_Weapon_Fitting/plan-2-ALPHA.txt) | baza ALPHA; wyższe **Advanced Weapon Upgrades** nie zmienia parametrów niezmienionego fita | fitting autocannonów i Medium Shield Extender I |
+| 50 WEAPON — Turret Support | [`plan-3-ALPHA.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-ALPHA.txt) | baza ALPHA + **Gunnery V, Rapid Firing V, Motion Prediction V, Sharpshooter V, Surgical Strike V, Trajectory Analysis V** | DPS, tracking oraz optimal/falloff zamontowanych autocannonów |
+| 52 WEAPON — Projectile | [`plan-1.5-ALPHA.txt`](../../../plans/52_WEAPON_-_Projectile/plan-1.5-ALPHA.txt) | baza ALPHA; **Small Projectile Turret V** jest już osiągnięte | parametry bazowe zamontowanych autocannonów meta |
 
-## Sugerowana ścieżka modułów
+Wymagania elementów `FIT.eft` poza wskazanymi modułami: **Hull Upgrades I** dla `Damage Control I` oraz **Cybernetics I** dla implantu `Zainou 'Gnome' Shield Operation SP-901`.
 
-`90 Minmatar Frigate BASIC → 00 CORE BASIC → 01 CORE BASIC → 30 Shield Passive/Buffer BASIC → 10 Combat BASIC → 50 Turret Support BASIC → 52 Projectile BASIC`
-
-To jest mapa rodzin skilli, nie nakaz trenowania każdego modułu do najwyższego poziomu przed pierwszym lotem. W Community Fits **hard gate konkretnego modułu z fita ma pierwszeństwo przed abstrakcyjnym „dokończ plan”**.
-
-## Co rzeczywiście musi działać
-
-- Minmatar Frigate: wejście w Riftera.
-- Small projectile turrets T1/meta — bez potrzeby T2 specialization na wejściu.
-- Passive/buffer shield skills — shield extenders, shield power relays i Field Purger rigs są sednem fita.
-- Afterburner i podstawowa nawigacja — fit walczy z bliska i potrzebuje kontroli ruchu.
-- Damage Control i fitting support tylko w zakresie wymaganym przez ten tani fit.
-
-## Po pierwszych udanych runach
-
-Naturalne ulepszenia to **50 Turret Support**, **52 Projectile** oraz **30 Shield Passive/Buffer**. Dobrze wyszkolony Rifter może pozostać użytecznym małym hullem nawet wtedy, gdy pilot ma już dostęp do destroyerów i cruiserów.
-
-## Jak używać tej ścieżki
-
-1. Otwórz źródłowy fit w EVE Workbench i porównaj go z `FIT.eft`.
-2. Zaimportuj fit do EVE Online i sprawdź brakujące skille/moduły dla swojej postaci.
-3. Użyj powyższej kolejności modułów jako priorytetu treningu.
-4. Nie podnoś gałęzi do IMPROVED/STANDARD tylko „dla zielonego checkboxa”, jeśli nie poprawia tego fita ani następnego realnego celu.
-5. Po osiągnięciu celu wróć do EvE Pilot Progression / EVEMon Certificates Enhanced, aby zobaczyć, które supporty warto doszlifować.
+Specjalizacja Small Autocannon nie zwiększa obrażeń dział `200mm Light Prototype Automatic Cannon`; przewaga Omegi w uzbrojeniu pochodzi z **Minmatar Frigate V** i skilli supportowych V.
 
 ## Fit
 

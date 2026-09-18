@@ -1,46 +1,32 @@
-# Thrasher — Alpha — T0 Gamma Abyss — Loru Gaming
+# Thrasher — Alpha / Omega — T0 Gamma Abyss — Loru Gaming
 
-
-> **Community-fit snapshot:** this document maps one public fit to our training modules. It is not a guarantee of safety, profitability, or that the fit is still current. Always check the source before flying it.
+> **Community-fit snapshot:** this document applies only to the stored [`FIT.eft`](FIT.eft). It is not a guarantee of safety, profitability, or that the fit is still current.
 
 ## Source and attribution
 
 - **Fit creator:** Loru Gaming
-- **EVE Workbench:** [https://eveworkbench.com/fit/87d208be-a0b4-458e-b060-ea4c87c37e87](https://eveworkbench.com/fit/87d208be-a0b4-458e-b060-ea4c87c37e87)
-- **Loru video:** the source EVE Workbench page contains a linked video; a direct URL is intentionally not hard-coded because it could not be independently verified from public metadata.
+- **EVE Workbench:** [fit 87d208be-a0b4-458e-b060-ea4c87c37e87](https://eveworkbench.com/fit/87d208be-a0b4-458e-b060-ea4c87c37e87)
+- **Loru video:** the source EVE Workbench page contains a linked video; a direct URL is not included because it could not be independently verified.
 - **Repository EFT snapshot:** [`FIT.eft`](FIT.eft)
 
-The fit is included as an **external practical training target**. EvE Modular Skillplans does not claim authorship and does not guarantee that the fit will remain optimal after balance changes.
+EvE Modular Skillplans does not claim authorship of the fit. The row order below is the training order for this exact Thrasher.
 
-## Training-path goal
+## Modules to train
 
-Bring a fresh/Alpha pilot to the point where they can use **this exact fit**, without forcing unrelated skill levels simply because they exist in the same skill family. Once the ship and modules are unlocked, the path shows sensible improvement directions.
+| EvE Modular Skillplans module | ALPHA | OMEGA — more from the same fit | Effect on `FIT.eft` |
+|---|---|---|---|
+| 91 HULL — Destroyer — Minmatar | [`plan-2-ALPHA.txt`](../../../plans/91_HULL_-_Destroyer_-_Minmatar/plan-2-ALPHA.txt) | ALPHA base + **Minmatar Destroyer V** | damage and tracking for the seven autocannons |
+| 00 CORE — Engineering, Capacitor and Rigging | [`plan-0.5-ALPHA.txt`](../../../plans/00_CORE_-_Engineering_Capacitor_and_Rigging/plan-0.5-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/00_CORE_-_Engineering_Capacitor_and_Rigging/plan-3-STANDARD.txt) | fitting for seven guns, two Medium Shield Extender I modules, and rig operation |
+| 01 CORE — Navigation | [`plan-0.5-ALPHA.txt`](../../../plans/01_CORE_-_Navigation/plan-0.5-ALPHA.txt) | ALPHA base + **Spaceship Command V, Navigation V, Evasive Maneuvering V, Afterburner V, Acceleration Control V, Fuel Conservation V** | speed, agility, and 1MN afterburner capacitor use |
+| 02 CORE — Targeting | [`plan-0.5-ALPHA.txt`](../../../plans/02_CORE_-_Targeting/plan-0.5-ALPHA.txt) | [`plan-2-IMPROVED.txt`](../../../plans/02_CORE_-_Targeting/plan-2-IMPROVED.txt) + **Long Range Targeting V, Signature Analysis V** | targeting range and lock speed |
+| 30 TANK — Shield Passive/Buffer | [`plan-2-ALPHA.txt`](../../../plans/30_TANK_-_Shield_Passive-Buffer/plan-2-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/30_TANK_-_Shield_Passive-Buffer/plan-3-STANDARD.txt) + **Shield Operation V, Shield Management V, Tactical Shield Manipulation V, Shield Rigging V** | shield HP, passive recharge, bleed-through, and the signature-radius penalty from three Field Purgers |
+| 10 COMBAT — Damage Mods and Weapon Fitting | [`plan-2-ALPHA.txt`](../../../plans/10_COMBAT_-_Damage_Mods_and_Weapon_Fitting/plan-2-ALPHA.txt) | ALPHA base; higher **Advanced Weapon Upgrades** does not change the stats of the unchanged fit | fitting seven autocannons and two extenders |
+| 50 WEAPON — Turret Support | [`plan-3-ALPHA.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-ALPHA.txt) | ALPHA base + **Gunnery V, Rapid Firing V, Motion Prediction V, Sharpshooter V, Surgical Strike V, Trajectory Analysis V** | DPS, tracking, and optimal/falloff for the fitted autocannons |
+| 52 WEAPON — Projectile | [`plan-1.5-ALPHA.txt`](../../../plans/52_WEAPON_-_Projectile/plan-1.5-ALPHA.txt) | ALPHA base; **Small Projectile Turret V** is already reached | base performance of the fitted meta autocannons |
 
-## Suggested module route
+Requirement for a `FIT.eft` item outside the listed modules: **Cybernetics I** for the `Zainou 'Gnome' Shield Operation SP-901` implant.
 
-`91 Minmatar Destroyer BASIC → 00 CORE BASIC → 01 CORE BASIC → 30 Shield Passive/Buffer BASIC → 10 Combat BASIC → 50 Turret Support BASIC → 52 Projectile BASIC`
-
-This is a map of skill families, not a requirement to complete every module to its highest tier before the first flight. In Community Fits, **the hard gate of the fitted module takes priority over an abstract “finish the plan” checkbox**.
-
-## What actually needs to work
-
-- Minmatar Destroyer access for the Thrasher.
-- Seven T1/meta autocannons — Small Projectile is required, but T2 is not the entry gate.
-- Passive shield buffer — two Medium Shield Extender I modules, Shield Power Relays, and three Field Purgers.
-- Fitting/PG matters more than on the Rifter because the destroyer packs many more guns plus two medium extenders.
-- The source fit uses a 1MN AB; better Navigation improves practical positioning, but the branch does not need to be maxed before the first run.
-
-## After the first successful runs
-
-Once the fit is online, improve **00 CORE**, **50 Turret Support**, **52 Projectile**, and **30 Shield Passive/Buffer**. The destroyer brings more raw DPS than the frigate, but its larger signature and handling mean the hull does not replace piloting skill.
-
-## How to use this path
-
-1. Open the source fit on EVE Workbench and compare it with `FIT.eft`.
-2. Import the fit into EVE Online and check the missing skills/modules for your character.
-3. Use the module sequence above as training priority.
-4. Do not push branches to IMPROVED/STANDARD merely for a green checkbox if that does not improve this fit or your next real objective.
-5. After reaching the goal, return to EvE Pilot Progression / EVEMon Certificates Enhanced to identify support skills worth polishing.
+`Minmatar Tactical Destroyer` does not affect the Thrasher, so the OMEGA hull plan stops at **Minmatar Destroyer V**. Small Autocannon Specialization does not increase the damage of `200mm Light Prototype Automatic Cannon` turrets.
 
 ## Fit
 

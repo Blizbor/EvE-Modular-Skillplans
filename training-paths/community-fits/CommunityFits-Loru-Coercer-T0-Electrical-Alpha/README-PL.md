@@ -1,46 +1,30 @@
-# Coercer — Alpha — T0 Electrical Abyss — Loru Gaming
+# Coercer — Alpha / Omega — T0 Electrical Abyss — Loru Gaming
 
-
-> **Community-fit snapshot:** ten dokument mapuje konkretny publiczny fit na nasze moduły treningowe. Nie jest gwarancją bezpieczeństwa, rentowności ani aktualności fita. Zawsze sprawdź aktualną wersję u źródła.
+> **Community-fit snapshot:** ten dokument dotyczy wyłącznie zapisanego [`FIT.eft`](FIT.eft). Nie jest gwarancją bezpieczeństwa, rentowności ani aktualności fita.
 
 ## Źródło i autorstwo
 
 - **Autor fita:** Loru Gaming
-- **EVE Workbench:** [https://eveworkbench.com/fit/1e8260cb-b3a6-48f6-a291-48b5eea6e136](https://eveworkbench.com/fit/1e8260cb-b3a6-48f6-a291-48b5eea6e136)
+- **EVE Workbench:** [fit 1e8260cb-b3a6-48f6-a291-48b5eea6e136](https://eveworkbench.com/fit/1e8260cb-b3a6-48f6-a291-48b5eea6e136)
 - **Film Loru:** [Send This To Your Newbro Friend — Punisher / Coercer Abyss Guide](https://www.youtube.com/watch?v=At0UKxmEBCs)
 - **Snapshot EFT w repo:** [`FIT.eft`](FIT.eft)
 
-Fit został dodany jako **zewnętrzny punkt praktycznego celu treningowego**. EvE Modular Skillplans nie przejmuje autorstwa ani nie gwarantuje, że fit pozostanie optymalny po zmianach balansu.
+EvE Modular Skillplans nie przejmuje autorstwa fita. Kolejność wierszy poniżej jest kolejnością treningu dla dokładnie tego Coercera.
 
-## Cel training path
+## Moduły do wytrenowania
 
-Doprowadzić świeżego/Alpha pilota do możliwości użycia **tego konkretnego fita** bez wciskania niepotrzebnych poziomów tylko dlatego, że istnieją w danej rodzinie skilli. Po odblokowaniu statku i modułów pokazujemy dopiero rozsądne kierunki poprawy.
+| Moduł EvE Modular Skillplans | ALPHA | OMEGA — więcej z tego samego fita | Co poprawia w `FIT.eft` |
+|---|---|---|---|
+| 91 HULL — Destroyer — Amarr | [`plan-2-ALPHA.txt`](../../../plans/91_HULL_-_Destroyer_-_Amarr/plan-2-ALPHA.txt) | baza ALPHA + **Amarr Destroyer V** | tracking i koszt capacitora ośmiu laserów |
+| 00 CORE — Engineering, Capacitor and Rigging | [`plan-0.5-ALPHA.txt`](../../../plans/00_CORE_-_Engineering_Capacitor_and_Rigging/plan-0.5-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/00_CORE_-_Engineering_Capacitor_and_Rigging/plan-3-STANDARD.txt) | fitting oraz czas pracy ośmiu laserów, 10MN afterburnera i armor repairera |
+| 01 CORE — Navigation | [`plan-0.5-ALPHA.txt`](../../../plans/01_CORE_-_Navigation/plan-0.5-ALPHA.txt) | baza ALPHA + **Spaceship Command V, Navigation V, Evasive Maneuvering V, Afterburner V, Acceleration Control V, Fuel Conservation V** | prędkość, zwrotność i koszt capacitora 10MN afterburnera |
+| 02 CORE — Targeting | [`plan-0.5-ALPHA.txt`](../../../plans/02_CORE_-_Targeting/plan-0.5-ALPHA.txt) | [`plan-2-IMPROVED.txt`](../../../plans/02_CORE_-_Targeting/plan-2-IMPROVED.txt) + **Long Range Targeting V, Signature Analysis V** | zasięg i szybkość namierzania |
+| 22 TANK — Armor Active | [`plan-0.5-ALPHA.txt`](../../../plans/22_TANK_-_Armor_Active/plan-0.5-ALPHA.txt) | baza ALPHA + **Mechanics V, Repair Systems V, Armor Rigging V, EM/Explosive/Kinetic/Thermal Armor Compensation V** | armor HP, rep/s Small Armor Repairer II, odporności Multispectrum Energized Membrane i kara prędkości z rigów |
+| 10 COMBAT — Damage Mods and Weapon Fitting | [`plan-2-ALPHA.txt`](../../../plans/10_COMBAT_-_Damage_Mods_and_Weapon_Fitting/plan-2-ALPHA.txt) | baza ALPHA; wyższe **Advanced Weapon Upgrades** nie zmienia parametrów niezmienionego fita | fitting ośmiu laserów i oversize afterburnera |
+| 50 WEAPON — Turret Support | [`plan-3-ALPHA.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-ALPHA.txt) | baza ALPHA + **Gunnery V, Rapid Firing V, Motion Prediction V, Sharpshooter V, Surgical Strike V, Trajectory Analysis V** | DPS, tracking oraz optimal/falloff zamontowanych laserów |
+| 53 WEAPON — Energy | [`plan-1.5-ALPHA.txt`](../../../plans/53_WEAPON_-_Energy/plan-1.5-ALPHA.txt) | baza ALPHA + **Controlled Bursts V** | mniejszy koszt capacitora zamontowanych laserów meta |
 
-## Sugerowana ścieżka modułów
-
-`91 Amarr Destroyer BASIC → 00 CORE BASIC → 01 CORE BASIC → 22 Armor Active IMPROVED → 10 Combat BASIC → 50 Turret Support BASIC → 53 Energy BASIC`
-
-To jest mapa rodzin skilli, nie nakaz trenowania każdego modułu do najwyższego poziomu przed pierwszym lotem. W Community Fits **hard gate konkretnego modułu z fita ma pierwszeństwo przed abstrakcyjnym „dokończ plan”**.
-
-## Co rzeczywiście musi działać
-
-- Amarr Destroyer: wejście w Coercera.
-- Small Armor Repairer II jest najważniejszym odstępstwem od czysto „day-one” T1 — wymusza głębszy Repair Systems niż Punisher.
-- 8 laserów oraz oversize 10MN AB powodują, że fitting/PG ma realne znaczenie; 00 CORE nie jest tu abstrakcyjnym dodatkiem.
-- Energy Weapon Rigging i armor rigging tylko do poziomu potrzebnego przez rigi fita.
-- Nie trzeba trenować laser specialization tylko dlatego, że później istnieją działa T2.
-
-## Po pierwszych udanych runach
-
-Po odblokowaniu fita podnoś najpierw capacitor/fitting, turret support i jakość aktywnego tanku. **53 Energy IMPROVED/STANDARD** ma sens dopiero, gdy chcesz przejść z tego konkretnego T1/meta fita w prawdziwą specjalizację laserową.
-
-## Jak używać tej ścieżki
-
-1. Otwórz źródłowy fit w EVE Workbench i porównaj go z `FIT.eft`.
-2. Zaimportuj fit do EVE Online i sprawdź brakujące skille/moduły dla swojej postaci.
-3. Użyj powyższej kolejności modułów jako priorytetu treningu.
-4. Nie podnoś gałęzi do IMPROVED/STANDARD tylko „dla zielonego checkboxa”, jeśli nie poprawia tego fita ani następnego realnego celu.
-5. Po osiągnięciu celu wróć do EvE Pilot Progression / EVEMon Certificates Enhanced, aby zobaczyć, które supporty warto doszlifować.
+`Amarr Tactical Destroyer` nie wpływa na Coercera, dlatego plan OMEGA kończy hull na **Amarr Destroyer V**. Specjalizacje Small Pulse/Beam nie zwiększają obrażeń dział `Dual Modulated Pulse Energy Beam I`.
 
 ## Fit
 

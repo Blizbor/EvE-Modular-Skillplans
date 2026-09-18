@@ -1,6 +1,6 @@
-# Community Fits — praktyczne training paths
+# Community Fits — plany dla konkretnych fitów
 
-Ta sekcja łączy **publiczny fit używany przez społeczność** z modułami EvE Modular Skillplans. Nie zmienia autorstwa fita i nie udaje, że istnieje jeden „najlepszy” fit. Celem jest odpowiedź na praktyczne pytanie nowego pilota: **co mam wytrenować, żeby polecieć dokładnie tym statkiem i potem sensownie go rozwijać?**
+Ta sekcja łączy **publiczny fit używany przez społeczność** z modułami EvE Modular Skillplans. Każdy training path jest zamkniętym planem dla dokładnego snapshotu `FIT.eft`: nie proponuje zamienników, kolejnego statku ani dalszej ścieżki rozwoju.
 
 ## Zasady
 
@@ -8,18 +8,18 @@ Ta sekcja łączy **publiczny fit używany przez społeczność** z modułami Ev
 - Każda ścieżka przechowuje snapshot EFT użyty do opracowania dokumentu.
 - Link do źródłowego EVE Workbench jest obowiązkowy.
 - Jeżeli można niezależnie zweryfikować film omawiający fit, dodajemy bezpośredni link do filmu.
-- Przed zakupem statku porównaj snapshot z aktualnym fitem źródłowym — twórca może go później zmienić.
-- Training path opisuje **minimum do celu oraz sensowny następny krok**, a nie nakazuje trenowania całej gałęzi do STANDARD.
+- Przed zakupem statku należy porównać snapshot z aktualnym fitem źródłowym — twórca może go później zmienić.
+- Kolumna **ALPHA** prowadzi do maksymalnego planu Alpha właściwego modułu EvE Modular Skillplans.
+- Kolumna **OMEGA** zawiera wyłącznie poziomy modułów i skilli, które poprawiają dokładnie ten kadłub i wyposażenie z `FIT.eft`.
+- Kolejność wierszy tabeli jest kolejnością treningu.
 
 ## Nazewnictwo
 
 `CommunityFits-<Creator>-<Hull>-<Activity>-<Variant>`
 
-Pozwala to później dodać osobne kolekcje Loru, Cpt B… i innych twórców bez mieszania ich z własnymi ścieżkami projektu.
-
 ## Loru Gaming
 
-- [Punisher — Alpha, T0 Electrical](CommunityFits-Loru-Punisher-T0-Electrical-Alpha/README-PL.md)
-- [Coercer — Alpha, T0 Electrical](CommunityFits-Loru-Coercer-T0-Electrical-Alpha/README-PL.md)
-- [Rifter — Alpha, T0 Gamma](CommunityFits-Loru-Rifter-T0-Gamma-Alpha/README-PL.md)
-- [Thrasher — Alpha, T0 Gamma](CommunityFits-Loru-Thrasher-T0-Gamma-Alpha/README-PL.md)
+- [Punisher — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Punisher-T0-Electrical-Alpha/README-PL.md)
+- [Coercer — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Coercer-T0-Electrical-Alpha/README-PL.md)
+- [Rifter — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Rifter-T0-Gamma-Alpha/README-PL.md)
+- [Thrasher — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Thrasher-T0-Gamma-Alpha/README-PL.md)
