@@ -73,6 +73,7 @@ The project is not intended to explain all of EVE. Some later specializations ar
 - [Important T2 module thresholds](docs/T2_MODULE_UNLOCKS-EN.md)
 - [Alpha plans](docs/ALPHA_CLONES-EN.md)
 - [Diagrams](diagrams/README-EN.md)
+- [Plan download and merge tools](tools/README-EN.md)
 
 ## Importing into EVE
 

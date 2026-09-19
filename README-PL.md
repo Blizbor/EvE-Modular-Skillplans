@@ -73,6 +73,7 @@ Projekt nie próbuje opisać całego EVE. Część dalszych specjalizacji ma zos
 - [Progi ważnych modułów T2](docs/T2_MODULE_UNLOCKS-PL.md)
 - [Plany Alpha](docs/ALPHA_CLONES-PL.md)
 - [Diagramy](diagrams/README-PL.md)
+- [Narzędzia do pobierania i łączenia planów](tools/README-PL.md)
 
 ## Import do EVE
 

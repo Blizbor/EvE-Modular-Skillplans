@@ -23,6 +23,14 @@ Every module includes one `plan-<level>-ALPHA.txt` file showing the maximum part
 
 Każdy moduł zawiera jeden plik `plan-<poziom>-ALPHA.txt`, pokazujący maksymalną część modułu dostępną pilotowi Alpha. Wartość mieści się od `0` do `3` co pół poziomu. Zobacz [dokumentację polską](docs/ALPHA_CLONES-PL.md).
 
+## Tools / Narzędzia
+
+[English instructions](tools/README-EN.md) | [Instrukcja po polsku](tools/README-PL.md)
+
+The Bash and PowerShell tools accept one compact Training Path recipe, then print, save and copy the import-ready plan to the clipboard.
+
+Narzędzia Bash i PowerShell przyjmują jedną krótką receptę z Training Path, a następnie wyświetlają, zapisują i kopiują gotowy plan do schowka.
+
 ## Related projects / Powiązane projekty
 
 |  | Project / Projekt | Purpose / Rola |
