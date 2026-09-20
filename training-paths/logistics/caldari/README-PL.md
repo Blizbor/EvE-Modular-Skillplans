@@ -1,145 +1,82 @@
-# CALDARI — Logistics training: Frigate → Destroyer fleet → Cruiser
+# CALDARI — Logistics training path
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
-> W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
 
-## Jak czytać ścieżki
+Ścieżka opisuje dostępne statki Logistics rasy Caldari bez przypisywania ich do doktryny flotowej:
 
-Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+- **T1 Logistics Frigate: Bantam**
+- **T2 Logistics Frigate: Kirin**
+- **T1 Logistics Cruiser: Osprey**
+- **T2 Logistics Cruiser: Basilisk**
 
-### Ważne: brak klasy Logistics Destroyer
+Podstawowa rola: **zdalne naprawy shield; Osprey i Basilisk korzystają również z capacitor transfer**.
 
-EVE nie ma standardowej klasy **Logistics Destroyer** pomiędzy logi frigate i logi cruiser.
-Dla flot destroyerowych normalną odpowiedzią są **T1/T2 Logistics Frigates**:
-są szybkie, tanie i nadążają za frigate/destroyer gangiem.
+## Pokrycie modułowe
 
-Nie trzeba więc trenować `91 HULL - Destroyer`, żeby być logistykiem floty destroyerów.
+Obecna biblioteka obejmuje:
 
-Tactical Destroyery mają pojedyncze niszowe remote-rep możliwości (np. Confessor/Svipul w Defense Mode),
-ale **nie traktujemy ich jako głównej corp ścieżki logi**.
+1. CORE i fitting w `00`, nawigację w `01` oraz targeting w `02`;
+2. własny tank statku typu Shield Passive/Buffer w `30`;
+3. rasowe hulle T1 oraz moduły hulli T2 Logistics.
 
-### Supporty poza osobnym planem
+Obecna biblioteka **nie zawiera** osobnego modułu supportów remote repair. Poniższe recepty obejmują więc wyłącznie istniejącą część modułową i nie mogą być przedstawiane jako kompletny trening do zamontowanych modułów remote repair. Linia cruiserów wymaga również kompetencji capacitor transfer wynikających z konkretnego fita. Do recepty nie dopisuje się surowej listy pojedynczych skilli.
 
-Obecne 89 planów zawiera hull plans:
-- `97 HULL - Logistics Frigates`
-- `97 HULL - Logistics Cruisers`
+## Alpha i Omega
 
-ale **nie wydziela osobnego pełnego LOGI SUPPORT planu** obejmującego remote repair, cap-chain i repair drones.
-Dlatego poniżej podaję zarówno ścieżkę numerami, jak i skille, które trzeba dodać ręcznie / traktować jako supporty opisane bezpośrednio w tej ścieżce.
+- **Alpha:** Bantam i Osprey są dostępne, jeżeli konkretny fit jest zgodny z ograniczeniami Alpha. Recepty Alpha wybierają maksymalne dostępne pliki modułów, ale supporty na poziomie BASIC są tylko progiem wejścia i nie gwarantują odpowiedniej wydajności napraw ani stabilności capacitora.
+- **Alpha:** Kirin i Basilisk są niedostępne. Pliki `97 ... A` zawierają wyłącznie prerequisites dostępne dla Alpha i nie odblokowują żadnego z hulli T2.
+- **Omega:** CORE, tank i rasowy hull na poziomie IMPROVED są normalnym celem dla T1. Recepty hulli T2 używają rasowego hulla STANDARD oraz Logistics Frigates albo Logistics Cruisers IMPROVED; BASIC jest tylko etapem pierwszego dostępu do hulla.
 
-### Wspólne supporty logi
+## T1 Logistics Frigate: Bantam
 
-Do wszystkich logi:
+Moduły w wymaganej kolejności:
 
-- `00 I` — cap/fitting jest krytyczny.
-- `01 I` — logi musi utrzymywać range/transversal i nie zostawać z tyłu.
-- `02`:
-  - T1 frigate: `B` wystarczy, `I` lepsze;
-  - T1 cruiser: **I**;
-  - T2 Logistics Frigate: **I**;
-  - T2 Logistics Cruiser: **S** jest bardzo sensowne (więcej locków + LRT V).
-- `03 I` — dla PvP logi bardzo wartościowe: overheated reps/propmod mogą uratować flotę.
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `90 Caldari I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-### Remote-repair skill thresholds
+```text
+TRAINING: CALDARI_T1_LOGISTICS_FRIGATE_ALPHA,00_A,01_A,02_A,30_A,90_CALDARI_A
+TRAINING: CALDARI_T1_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,30_I,90_CALDARI_I
+```
 
-**Armor logi**
-- `Remote Armor Repair Systems III` — sensowne minimum dla małych/T1 zastosowań.
-- **IV** — właściwy standard, potrzebny do T2 large remote armor repairers.
-- V — dedicated specialist / maksymalizacja capa.
+## T2 Logistics Frigate: Kirin
 
-**Shield logi**
-- `Shield Emission Systems III` — Small Remote Shield Booster II.
-- **IV** — Medium/Large Remote Shield Booster II i właściwy standard.
-- V — dedicated specialist/capital.
+Moduły w wymaganej kolejności:
 
-**Cap-chain (Amarr/Caldari)**
-- `Capacitor Emission Systems III` — można zacząć.
-- **IV — minimum do poważnego cap-chain.**
-- V — bardzo dobry cel dla dedicated Guardian/Basilisk.
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `90 Caldari S`, `97 Logistics Frigates I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-**Repair drones**
-- `Drones V`
-- `Repair Drone Operation IV` — bardzo dobry standard.
-- V — dedicated logi / T2 maintenance bots zależnie od dokładnej gałęzi.
+```text
+TRAINING: CALDARI_T2_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,30_I,90_CALDARI_S,97_LOGISTICS_FRIGATES_I
+```
 
-### Hull levels logi
+## T1 Logistics Cruiser: Osprey
 
-- T1 racial Frigate: **IV**, nie III, jeśli faktycznie latasz logi.
-- `Logistics Frigates III` = tylko wejście; **IV = standard**, V specialist.
-- T1 racial Cruiser: **IV**, bo bonus remote repair per level jest bardzo duży.
-- `Logistics Cruisers III` = tylko etap treningu.
-- **Logistics Cruisers IV = absolutne minimum do T2 cruiser logi.**
-- **Logistics Cruisers V = wyjątkowo mocny cel**: ostatni poziom bardzo mocno poprawia realny koszt capa remote repów.
+Moduły w wymaganej kolejności:
 
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `92 Caldari I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-## Hulls
+```text
+TRAINING: CALDARI_T1_LOGISTICS_CRUISER_ALPHA,00_A,01_A,02_A,30_A,92_CALDARI_A
+TRAINING: CALDARI_T1_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_I,30_I,92_CALDARI_I
+```
 
-- T1 frigate: **Bantam** — remote shield.
-- T2 frigate: **Kirin** — shield Logistics Frigate.
-- T1 cruiser: **Osprey** — shield + cap-chain.
-- T2 cruiser: **Basilisk** — shield + cap-chain.
+## T2 Logistics Cruiser: Basilisk
 
----
+Moduły w wymaganej kolejności:
 
-## 1. T1 logi frigate — Bantam
+- CORE: `00 I`, `01 I`, `02 S`;
+- tank: `30 I`;
+- hull: `92 Caldari S`, `97 Logistics Cruisers I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-`00 I → 01 I → 02 B/I → 30 B/I → 90 Caldari I`
-
-+ `Shield Emission Systems III` minimum, **IV zalecane**
-+ `Drones V`
-+ `Repair Drone Operation III/IV`
-
-`Caldari Frigate IV` jest realnym minimum do regularnego Bantama.
-
----
-
-## 2. Logi dla destroyer gangów
-
-Nie ma normalnego Caldari Logistics Destroyera.
-Jackdaw nie ma pełnoprawnej logistycznej ścieżki remote-repair.
-
-Standard:
-- Bantam jako tani support,
-- **Kirin** jako właściwy T2 logi dla szybkich frigate/destroyer fleetów.
-
-Kirin:
-
-`00 I → 01 I → 02 I → 30 I → 90 Caldari S → 97 Logistics Frigates I`
-
-+ **`Shield Emission Systems IV`**
-+ `Repair Drone Operation IV`
-
-`97 LF III` = wejście; **LF IV = standard**.
-
----
-
-## 3. T1 cruiser logi — Osprey
-
-`00 I → 01 I → 02 I → 30 I → 92 Caldari I`
-
-+ **`Shield Emission Systems IV`**
-+ **`Capacitor Emission Systems IV`**
-+ `Repair Drone Operation IV`
-
-Osprey jest cap-chain logi. Cruiser III jest możliwy, ale **Cruiser IV** jest właściwym poziomem do floty.
-
----
-
-## 4. T2 cruiser logi — Basilisk
-
-`00 I → 01 I → 02 S → 30 I → 92 Caldari S → 97 Logistics Cruisers I`
-
-+ `Shield Emission Systems IV/V`
-+ **`Capacitor Emission Systems IV minimum, V bardzo zalecane`**
-+ `Repair Drone Operation IV/V`
-
-- Caldari Cruiser V obowiązkowe.
-- **Logistics Cruisers IV absolutne minimum.**
-- **Logistics Cruisers V bardzo mocny cel**.
-- Basilisk cap-chain wymaga dobrych cap skills i poprawnej organizacji chaina.
-
-## Źródła
-
-- https://wiki.eveuniversity.org/Logistics
-- https://wiki.eveuniversity.org/Skills:Shields
-- https://wiki.eveuniversity.org/Skills:Spaceship_Command
+```text
+TRAINING: CALDARI_T2_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_S,30_I,92_CALDARI_S,97_LOGISTICS_CRUISERS_I
+```

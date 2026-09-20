@@ -2,7 +2,7 @@
 
 🇵🇱 **Polski** | [🇬🇧 English](INDEX-EN.md)
 
-Każdy plan ma kolejność `BASIC → IMPROVED → STANDARD`.
+Każdy plan używa uporządkowanych poziomów `BASIC`, `IMPROVED` i `STANDARD`.
 
 Każdy moduł zawiera również jeden plik Alpha. Liczba w jego nazwie pokazuje maksymalny zakres dostępny pilotowi Alpha; zobacz [Plany Alpha](docs/ALPHA_CLONES-PL.md).
 

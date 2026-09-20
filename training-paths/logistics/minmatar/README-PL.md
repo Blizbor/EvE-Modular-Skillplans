@@ -1,151 +1,82 @@
-# MINMATAR — Logistics training: Frigate → Destroyer fleet → Cruiser
+# MINMATAR — Logistics training path
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
-> W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
 
-## Jak czytać ścieżki
+Ścieżka opisuje dostępne statki Logistics rasy Minmatar bez przypisywania ich do doktryny flotowej:
 
-Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+- **T1 Logistics Frigate: Burst**
+- **T2 Logistics Frigate: Scalpel**
+- **T1 Logistics Cruiser: Scythe**
+- **T2 Logistics Cruiser: Scimitar**
 
-### Ważne: brak klasy Logistics Destroyer
+Podstawowa rola: **zdalne naprawy shield i mobilność**.
 
-EVE nie ma standardowej klasy **Logistics Destroyer** pomiędzy logi frigate i logi cruiser.
-Dla flot destroyerowych normalną odpowiedzią są **T1/T2 Logistics Frigates**:
-są szybkie, tanie i nadążają za frigate/destroyer gangiem.
+## Pokrycie modułowe
 
-Nie trzeba więc trenować `91 HULL - Destroyer`, żeby być logistykiem floty destroyerów.
+Obecna biblioteka obejmuje:
 
-Tactical Destroyery mają pojedyncze niszowe remote-rep możliwości (np. Confessor/Svipul w Defense Mode),
-ale **nie traktujemy ich jako głównej corp ścieżki logi**.
+1. CORE i fitting w `00`, nawigację w `01` oraz targeting w `02`;
+2. własny tank statku typu Shield Passive/Buffer w `30`;
+3. rasowe hulle T1 oraz moduły hulli T2 Logistics.
 
-### Supporty poza osobnym planem
+Obecna biblioteka **nie zawiera** osobnego modułu supportów remote repair. Poniższe recepty obejmują więc wyłącznie istniejącą część modułową i nie mogą być przedstawiane jako kompletny trening do zamontowanych modułów remote repair.  Do recepty nie dopisuje się surowej listy pojedynczych skilli.
 
-Obecne 89 planów zawiera hull plans:
-- `97 HULL - Logistics Frigates`
-- `97 HULL - Logistics Cruisers`
+## Alpha i Omega
 
-ale **nie wydziela osobnego pełnego LOGI SUPPORT planu** obejmującego remote repair, cap-chain i repair drones.
-Dlatego poniżej podaję zarówno ścieżkę numerami, jak i skille, które trzeba dodać ręcznie / traktować jako supporty opisane bezpośrednio w tej ścieżce.
+- **Alpha:** Burst i Scythe są dostępne, jeżeli konkretny fit jest zgodny z ograniczeniami Alpha. Recepty Alpha wybierają maksymalne dostępne pliki modułów, ale supporty na poziomie BASIC są tylko progiem wejścia i nie gwarantują odpowiedniej wydajności napraw ani stabilności capacitora.
+- **Alpha:** Scalpel i Scimitar są niedostępne. Pliki `97 ... A` zawierają wyłącznie prerequisites dostępne dla Alpha i nie odblokowują żadnego z hulli T2.
+- **Omega:** CORE, tank i rasowy hull na poziomie IMPROVED są normalnym celem dla T1. Recepty hulli T2 używają rasowego hulla STANDARD oraz Logistics Frigates albo Logistics Cruisers IMPROVED; BASIC jest tylko etapem pierwszego dostępu do hulla.
 
-### Wspólne supporty logi
+## T1 Logistics Frigate: Burst
 
-Do wszystkich logi:
+Moduły w wymaganej kolejności:
 
-- `00 I` — cap/fitting jest krytyczny.
-- `01 I` — logi musi utrzymywać range/transversal i nie zostawać z tyłu.
-- `02`:
-  - T1 frigate: `B` wystarczy, `I` lepsze;
-  - T1 cruiser: **I**;
-  - T2 Logistics Frigate: **I**;
-  - T2 Logistics Cruiser: **S** jest bardzo sensowne (więcej locków + LRT V).
-- `03 I` — dla PvP logi bardzo wartościowe: overheated reps/propmod mogą uratować flotę.
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `90 Minmatar I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-### Remote-repair skill thresholds
+```text
+TRAINING: MINMATAR_T1_LOGISTICS_FRIGATE_ALPHA,00_A,01_A,02_A,30_A,90_MINMATAR_A
+TRAINING: MINMATAR_T1_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,30_I,90_MINMATAR_I
+```
 
-**Armor logi**
-- `Remote Armor Repair Systems III` — sensowne minimum dla małych/T1 zastosowań.
-- **IV** — właściwy standard, potrzebny do T2 large remote armor repairers.
-- V — dedicated specialist / maksymalizacja capa.
+## T2 Logistics Frigate: Scalpel
 
-**Shield logi**
-- `Shield Emission Systems III` — Small Remote Shield Booster II.
-- **IV** — Medium/Large Remote Shield Booster II i właściwy standard.
-- V — dedicated specialist/capital.
+Moduły w wymaganej kolejności:
 
-**Cap-chain (Amarr/Caldari)**
-- `Capacitor Emission Systems III` — można zacząć.
-- **IV — minimum do poważnego cap-chain.**
-- V — bardzo dobry cel dla dedicated Guardian/Basilisk.
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `90 Minmatar S`, `97 Logistics Frigates I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-**Repair drones**
-- `Drones V`
-- `Repair Drone Operation IV` — bardzo dobry standard.
-- V — dedicated logi / T2 maintenance bots zależnie od dokładnej gałęzi.
+```text
+TRAINING: MINMATAR_T2_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,30_I,90_MINMATAR_S,97_LOGISTICS_FRIGATES_I
+```
 
-### Hull levels logi
+## T1 Logistics Cruiser: Scythe
 
-- T1 racial Frigate: **IV**, nie III, jeśli faktycznie latasz logi.
-- `Logistics Frigates III` = tylko wejście; **IV = standard**, V specialist.
-- T1 racial Cruiser: **IV**, bo bonus remote repair per level jest bardzo duży.
-- `Logistics Cruisers III` = tylko etap treningu.
-- **Logistics Cruisers IV = absolutne minimum do T2 cruiser logi.**
-- **Logistics Cruisers V = wyjątkowo mocny cel**: ostatni poziom bardzo mocno poprawia realny koszt capa remote repów.
+Moduły w wymaganej kolejności:
 
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `92 Minmatar I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-## Hulls
+```text
+TRAINING: MINMATAR_T1_LOGISTICS_CRUISER_ALPHA,00_A,01_A,02_A,30_A,92_MINMATAR_A
+TRAINING: MINMATAR_T1_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_I,30_I,92_MINMATAR_I
+```
 
-- T1 frigate: **Burst** — remote shield.
-- T2 frigate: **Scalpel** — shield Logistics Frigate.
-- T1 cruiser: **Scythe** — shield, local cap regen.
-- T2 cruiser: **Scimitar** — shield, local cap regen + repair drone/utility bonuses.
+## T2 Logistics Cruiser: Scimitar
 
-Minmatar logi nie wymaga cap-chain, więc jest organizacyjnie prostsze niż Osprey/Basilisk.
+Moduły w wymaganej kolejności:
 
----
+- CORE: `00 I`, `01 I`, `02 S`;
+- tank: `30 I`;
+- hull: `92 Minmatar S`, `97 Logistics Cruisers I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-## 1. T1 logi frigate — Burst
-
-`00 I → 01 I → 02 B/I → 30 B/I → 90 Minmatar I`
-
-+ `Shield Emission Systems III`, **IV zalecane**
-+ `Drones V`
-+ `Repair Drone Operation IV`
-
-Minmatar Frigate III wystarczy do wejścia; **IV do regularnego Burst**.
-
----
-
-## 2. Logi dla destroyer gangów
-
-Nie ma standardowej klasy Minmatar Logistics Destroyer.
-
-Svipul ma niszowy Defense Mode z bonusem do remote shield boosterów, ale:
-- wymaga T3D progression,
-- nie zastępuje Scalpel/Scythe jako corp logi doctrine,
-- traktujemy go jako specjalistyczny gimmick, nie podstawową ścieżkę.
-
-Standardowy destroyer-fleet logi:
-- Burst,
-- **Scalpel**.
-
-Scalpel:
-
-`00 I → 01 I → 02 I → 30 I → 90 Minmatar S → 97 Logistics Frigates I`
-
-+ **`Shield Emission Systems IV`**
-+ `Repair Drone Operation IV`
-
----
-
-## 3. T1 cruiser logi — Scythe
-
-`00 I → 01 I → 02 I → 30 I → 92 Minmatar I`
-
-+ **`Shield Emission Systems IV`**
-+ `Repair Drone Operation IV`
-
-Brak cap-chain — `Capacitor Emission Systems` nie jest wymagane do podstawowej roli.
-
-**Minmatar Cruiser IV** jest właściwym standardem.
-
----
-
-## 4. T2 cruiser logi — Scimitar
-
-`00 I → 01 I → 02 S → 30 I → 92 Minmatar S → 97 Logistics Cruisers I`
-
-+ **`Shield Emission Systems IV/V`**
-+ **`Repair Drone Operation IV/V`**
-
-Scimitar polega na własnym capie:
-- `00 I` obowiązkowo,
-- `00 S` może mieć sens w ciasnym/cap-sensitive ficie,
-- `Capacitor Emission Systems` nie jest wymagane jak w Basilisku.
-
-**Logistics Cruisers IV absolutne minimum; V bardzo mocno zalecane dla dedicated Scimitar pilota.**
-
-## Źródła
-
-- https://wiki.eveuniversity.org/Logistics
-- https://wiki.eveuniversity.org/Skills:Shields
-- https://wiki.eveuniversity.org/Skills:Spaceship_Command
+```text
+TRAINING: MINMATAR_T2_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_S,30_I,92_MINMATAR_S,97_LOGISTICS_CRUISERS_I
+```

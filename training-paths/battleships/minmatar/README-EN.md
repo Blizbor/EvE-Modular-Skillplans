@@ -1,31 +1,48 @@
-# MINMATAR — Battleship training path
+# Minmatar T1 battleships
 
-[🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+This document **does not recommend one hull**. It lists sensible T1 battleships in this race, their roles, and the skillplan branches they use. Hull choice depends on the activity and exact fit.
 
-This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, their roles, and the modular skill branches they use.
+| Hull | Main use covered here |
+|---|---|
+| Maelstrom | projectile turrets and active shield tank |
+| Tempest | projectile turrets |
+| Typhoon | cruise missiles and drones |
 
-## Common foundation
+## Alpha and Omega
 
-`00 → 01 → 02 → 10`, plus `03` for serious PvP. BASIC is enough for first tests; IMPROVED is the normal regular-use hull milestone; STANDARD is specialization.
+**Alpha:** T1 battleships and meta large weapons are available, but Alpha support ceilings and lack of T2 large weapons make these expensive hulls unsuitable for demanding PvE without a carefully tested fit. The Alpha recipes are the legal modular ceiling, not a safety guarantee.
 
-## Available hulls
+**Omega:** `IMPROVED` support and hull plans are the practical baseline. `STANDARD` weapon-family plans are used where large T2 weapons materially improve this hull.
 
-- **Maelstrom** — projectile battleship with shield-booster bonus.
-- **Tempest** — projectile battleship with flexible tank choices.
-- **Typhoon** — missile battleship with useful drone support.
+## Maelstrom
 
-### Maelstrom
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `30`.
+3. Hull: `94_MINMATAR`.
+4. Weapons/tools: `50_I`, `52_S`.
 
-`00 I → 01 I → 02 I → 10 S → 30 I → 31 I → 50 I → 52 → 94 Minmatar B/I`
+TRAINING: MAELSTROM_ALPHA,00_A,01_A,02_A,10_A,30_A,94_MINMATAR_A,50_A,52_A
 
-### Tempest
+TRAINING: MAELSTROM_OMEGA,00_I,01_I,02_I,10_S,30_I,94_MINMATAR_I,50_I,52_S
 
-`00 I → 01 I → 02 I → 10 S → chosen tank → 50 I → 52 → 94 Minmatar B/I`
+## Tempest
 
-Do not train both shield and armor merely because the hull can support both styles.
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `21`.
+3. Hull: `94_MINMATAR`.
+4. Weapons/tools: `50_I`, `52_S`.
 
-### Typhoon
+TRAINING: TEMPEST_ALPHA,00_A,01_A,02_A,10_A,21_A,94_MINMATAR_A,50_A,52_A
 
-`00 I → 01 I → 02 I → 10 S → chosen tank → 60 I → 63 → 70 I as required → 94 Minmatar B/I`
+TRAINING: TEMPEST_OMEGA,00_I,01_I,02_I,10_S,21_I,94_MINMATAR_I,50_I,52_S
 
-Projectile skills are not part of the Typhoon path just because the hull is Minmatar.
+## Typhoon
+
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `30`.
+3. Hull: `94_MINMATAR`.
+4. Weapons/tools: `60_I`, `63_I`, `70_I`.
+
+TRAINING: TYPHOON_ALPHA,00_A,01_A,02_A,10_A,30_A,94_MINMATAR_A,60_A,63_A,70_A
+
+TRAINING: TYPHOON_OMEGA,00_I,01_I,02_I,10_S,30_I,94_MINMATAR_I,60_I,63_I,70_I

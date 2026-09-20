@@ -2,26 +2,81 @@
 
 [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
 
-## Important: there is no normal “Logistics Destroyer” step
+This path covers the available Caldari logistics ships without assigning them to a fleet doctrine:
 
-Destroyer gangs normally use logistics frigates. A pilot does **not** need the racial destroyer progression merely to support a destroyer fleet. Tactical Destroyers can have niche remote-repair uses, but they are not treated as the main corp logistics route.
+- **T1 Logistics Frigate: Bantam**
+- **T2 Logistics Frigate: Kirin**
+- **T1 Logistics Cruiser: Osprey**
+- **T2 Logistics Cruiser: Basilisk**
 
-## Hull path
+Primary role: **shield remote repair; Osprey and Basilisk also use capacitor transfer**.
 
-`Bantam → Kirin → Osprey → Basilisk`
+## Module coverage
 
-Primary role: **shield reps / capacitor chain**.
+The current library covers:
 
-## Shared support
+1. CORE and fitting with `00`, navigation with `01`, and targeting with `02`;
+2. the ship's own shield passive/buffer tank with `30`;
+3. racial T1 hulls and the T2 Logistics hull modules.
 
-- Strong capacitor/fitting (`00`) is critical.
-- Navigation matters because logi must keep range and stay with the fleet.
-- Targeting/lock speed matters more than raw DPS skills.
-- Remote-repair and capacitor-transfer skills are listed directly in the path where needed; they are not forced into unrelated weapon plans.
+The current library does **not** contain a dedicated remote-repair support module. The recipes below therefore cover only the existing modular part of the path and must not be presented as complete training for the fitted remote-repair modules. The cruiser line also requires capacitor-transfer competence from the exact fit. Raw individual skills are not appended to the recipe.
 
-## Practical milestones
+## Alpha and Omega
 
-- T1 logistics frigate: cheap entry and destroyer-gang support.
-- T2 logistics frigate: specialist small-fleet role.
-- T1 logistics cruiser: full cruiser-scale remote-repair platform.
-- T2 logistics cruiser: dedicated fleet logistics. Logistics Cruisers IV is the practical minimum; V can be unusually valuable for a committed logistics pilot because the hull bonuses directly affect cap/repping economics.
+- **Alpha:** Bantam and Osprey are available when the exact fit is Alpha-legal. The Alpha recipes provide the maximum available module files, but BASIC-level support is only an entry point and does not guarantee adequate repair output or capacitor stability.
+- **Alpha:** Kirin and Basilisk are unavailable. The `97 ... A` files contain only Alpha-accessible prerequisites and do not unlock either T2 hull.
+- **Omega:** IMPROVED CORE, tank and racial hull modules are the normal T1 target. T2 hull recipes use racial hull STANDARD and Logistics Frigates or Logistics Cruisers IMPROVED; BASIC is only the initial hull-access stage.
+
+## T1 Logistics Frigate: Bantam
+
+Modules, in required order:
+
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `90 Caldari I`;
+- remote-repair tools: no dedicated module currently exists.
+
+```text
+TRAINING: CALDARI_T1_LOGISTICS_FRIGATE_ALPHA,00_A,01_A,02_A,30_A,90_CALDARI_A
+TRAINING: CALDARI_T1_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,30_I,90_CALDARI_I
+```
+
+## T2 Logistics Frigate: Kirin
+
+Modules, in required order:
+
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `90 Caldari S`, `97 Logistics Frigates I`;
+- remote-repair tools: no dedicated module currently exists.
+
+```text
+TRAINING: CALDARI_T2_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,30_I,90_CALDARI_S,97_LOGISTICS_FRIGATES_I
+```
+
+## T1 Logistics Cruiser: Osprey
+
+Modules, in required order:
+
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `30 I`;
+- hull: `92 Caldari I`;
+- remote-repair tools: no dedicated module currently exists.
+
+```text
+TRAINING: CALDARI_T1_LOGISTICS_CRUISER_ALPHA,00_A,01_A,02_A,30_A,92_CALDARI_A
+TRAINING: CALDARI_T1_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_I,30_I,92_CALDARI_I
+```
+
+## T2 Logistics Cruiser: Basilisk
+
+Modules, in required order:
+
+- CORE: `00 I`, `01 I`, `02 S`;
+- tank: `30 I`;
+- hull: `92 Caldari S`, `97 Logistics Cruisers I`;
+- remote-repair tools: no dedicated module currently exists.
+
+```text
+TRAINING: CALDARI_T2_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_S,30_I,92_CALDARI_S,97_LOGISTICS_CRUISERS_I
+```

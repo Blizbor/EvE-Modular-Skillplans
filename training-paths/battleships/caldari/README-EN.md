@@ -1,38 +1,48 @@
-# CALDARI — Battleship training path
+# Caldari T1 battleships
 
-[🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+This document **does not recommend one hull**. It lists sensible T1 battleships in this race, their roles, and the skillplan branches they use. Hull choice depends on the activity and exact fit.
 
-This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, their roles, and the modular skill branches they use.
+| Hull | Main use covered here |
+|---|---|
+| Raven | cruise missiles |
+| Rokh | hybrid turrets |
+| Scorpion | ECM platform; PvE EWAR is outside this path |
 
-## Common foundation
+## Alpha and Omega
 
-`00 → 01 → 02 → 10`, plus `03` for serious PvP. BASIC is enough for first tests; IMPROVED is the normal regular-use hull milestone; STANDARD is specialization.
+**Alpha:** T1 battleships and meta large weapons are available, but Alpha support ceilings and lack of T2 large weapons make these expensive hulls unsuitable for demanding PvE without a carefully tested fit. The Alpha recipes are the legal modular ceiling, not a safety guarantee.
 
-## Available hulls
+**Omega:** `IMPROVED` support and hull plans are the practical baseline. `STANDARD` weapon-family plans are used where large T2 weapons materially improve this hull.
 
-- **Raven** — missile battleship; shield + large missiles.
-- **Rokh** — hybrid turret battleship; shield + hybrids.
-- **Scorpion** — ECM/fleet-support battleship; not a Raven/Rokh DPS substitute.
+## Raven
 
-### Raven
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `30`.
+3. Hull: `94_CALDARI`.
+4. Weapons/tools: `60_I`, `63_I`.
 
-`00 I → 01 I → 02 I → 10 S → 30 I → 31 I when active → 60 I → 63 → 94 Caldari B/I`
+TRAINING: RAVEN_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A,60_A,63_A
 
-Cruise IV with solid support can be enough for initial PvE; T2 large missiles are a later committed milestone.
+TRAINING: RAVEN_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,60_I,63_I
 
-### Rokh
+## Rokh
 
-`00 I → 01 I → 02 I → 10 S → 30 I → 50 I → 51 → 94 Caldari B/I`
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `30`.
+3. Hull: `94_CALDARI`.
+4. Weapons/tools: `50_I`, `51_S`.
 
-Add `31` for active-shield fits. The hull's hybrid and shield profile makes strong turret support important.
+TRAINING: ROKH_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A,50_A,51_A
 
-### Scorpion
+TRAINING: ROKH_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,50_I,51_S
 
-`00 I → 01 I → 02 I → 03 I → 94 Caldari I` plus the ECM/EWAR and tank skills required by the actual fit.
+## Scorpion
 
-Its hull bonuses ECM strength and range. Weapons are secondary, and the tank may be shield or armor depending on how many mid slots the fit dedicates to jammers.
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `30`.
+3. Hull: `94_CALDARI`.
+4. Weapons/tools: no PvE EWAR module exists in the current catalog; the recipe therefore stops at hull and support modules.
 
-## Verification
+TRAINING: SCORPION_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A
 
-- https://wiki.eveuniversity.org/Battleship
-- https://wiki.eveuniversity.org/Scorpion
+TRAINING: SCORPION_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I

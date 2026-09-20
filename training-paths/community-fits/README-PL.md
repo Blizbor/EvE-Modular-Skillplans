@@ -14,6 +14,7 @@ Ta sekcja łączy **publiczny fit używany przez społeczność** z modułami Ev
 - Training path nie dopisuje pojedynczych skilli poza planami modułów.
 - Opis różnicy mówi, co wybrany plan OMEGA daje ponad ALPHA dokładnie temu fitowi; jeżeli nie daje nic, jest to zaznaczone wprost.
 - Kolejność wierszy tabeli jest kolejnością treningu.
+- Każda strona fita zawiera gotowe ciągi `TRAINING:` dla narzędzia pobierającego.
 
 ## Nazewnictwo
 
@@ -21,7 +22,7 @@ Ta sekcja łączy **publiczny fit używany przez społeczność** z modułami Ev
 
 ## Loru Gaming
 
-- [Punisher — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Punisher-T0-Electrical-Alpha/README-PL.md)
-- [Coercer — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Coercer-T0-Electrical-Alpha/README-PL.md)
-- [Rifter — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Rifter-T0-Gamma-Alpha/README-PL.md)
-- [Thrasher — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Thrasher-T0-Gamma-Alpha/README-PL.md)
+- [Punisher — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Punisher-T0-Electrical-Alpha/README-PL.md) — laserowy fit fregaty z aktywnym tankiem pancerza.
+- [Coercer — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Coercer-T0-Electrical-Alpha/README-PL.md) — laserowy fit destroyera z aktywnym tankiem pancerza.
+- [Rifter — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Rifter-T0-Gamma-Alpha/README-PL.md) — projectile fit fregaty z tankiem tarczy.
+- [Thrasher — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Thrasher-T0-Gamma-Alpha/README-PL.md) — projectile fit destroyera z tankiem tarczy.

@@ -1,38 +1,48 @@
-# AMARR — Battleship training path
+# Amarr T1 battleships
 
-[🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+This document **does not recommend one hull**. It lists sensible T1 battleships in this race, their roles, and the skillplan branches they use. Hull choice depends on the activity and exact fit.
 
-This document does **not recommend one hull over another**. It shows the sensible T1 battleship options available in the race, what each one does, and which modular skill branches it uses.
+| Hull | Main use covered here |
+|---|---|
+| Apocalypse | laser range and tracking |
+| Abaddon | laser damage and armor resistance |
+| Armageddon | heavy and sentry drones |
 
-## Common foundation
+## Alpha and Omega
 
-`00 → 01 → 02 → 10`, plus `03` for serious PvP. A BASIC hull level is enough for first tests; IMPROVED is the normal regular-use milestone, while STANDARD is for specialization or later progression.
+**Alpha:** T1 battleships and meta large weapons are available, but Alpha support ceilings and lack of T2 large weapons make these expensive hulls unsuitable for demanding PvE without a carefully tested fit. The Alpha recipes are the legal modular ceiling, not a safety guarantee.
 
-## Available hulls
+**Omega:** `IMPROVED` support and hull plans are the practical baseline. `STANDARD` weapon-family plans are used where large T2 weapons materially improve this hull.
 
-- **Apocalypse** — laser range/tracking platform; armor + energy turrets.
-- **Abaddon** — laser DPS with a strong armor/resist profile; armor + energy turrets.
-- **Armageddon** — drones + capacitor warfare; not another laser progression hull.
+## Apocalypse
 
-### Apocalypse
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `21`.
+3. Hull: `94_AMARR`.
+4. Weapons/tools: `50_I`, `53_S`.
 
-`00 I → 01 I → 02 I → 10 S → 21/22 I → 50 I → 53 → 94 Amarr B/I`
+TRAINING: APOCALYPSE_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
 
-Large Energy IV can be enough for initial PvE; T2 large energy weapons belong to a committed regular-use path.
+TRAINING: APOCALYPSE_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
 
-### Abaddon
+## Abaddon
 
-`00 I → 01 I → 02 I → 10 S → 21/22 I → 50 I → 53 S → 94 Amarr I`
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `21`.
+3. Hull: `94_AMARR`.
+4. Weapons/tools: `50_I`, `53_S`.
 
-Hull level, capacitor and fitting support matter strongly because the ship combines armor tank and capacitor-using lasers.
+TRAINING: ABADDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
 
-### Armageddon
+TRAINING: ABADDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
 
-`00 I → 01 I → 02 I → 10 I/S → 21/22 I → 70 I → 73 as required → 94 Amarr I`
+## Armageddon
 
-The hull bonuses drones and Nosferatu/Neutralizer range. Large Energy Turret is not mandatory; capacitor-warfare support should be trained for the actual fit rather than replaced with unrelated laser skills.
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `21`.
+3. Hull: `94_AMARR`.
+4. Weapons/tools: `70_I`, `73_I`.
 
-## Verification
+TRAINING: ARMAGEDDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,70_A,73_A
 
-- https://wiki.eveuniversity.org/Battleship
-- https://wiki.eveuniversity.org/Armageddon
+TRAINING: ARMAGEDDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,70_I,73_I

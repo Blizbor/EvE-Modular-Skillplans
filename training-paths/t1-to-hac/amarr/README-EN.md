@@ -1,50 +1,36 @@
-# AMARR — T1 Frigate → Destroyer → Cruiser → HAC
+# AMARR: T1 Frigate, Destroyer, Cruiser and HAC
 
-[🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
+This path covers the available T1 hulls and two Heavy Assault Cruiser branches. It describes training requirements, not a fleet doctrine.
 
-## Level legend
+| HAC branch | Main weapon |
+|---|---|
+| Zealot | energy turrets |
+| Sacrilege | heavy assault missiles |
 
-- `B` = BASIC — entry level.
-- `I` = IMPROVED — practical intermediate level, normally the first regular-use target.
-- `S` = STANDARD — highest current corp standard.
+## Alpha and Omega
 
-## Hull rule
+**Alpha:** can complete the T1 Frigate, Destroyer and Cruiser stages, but cannot fly a HAC. Alpha limits are enough for initial T1 use; demanding cruiser use needs a well-matched fit and may exceed the sensible performance available from Alpha support skills.
 
-For racial T1 hull plans, BASIC commonly unlocks the hull at III, IMPROVED develops it to IV, and STANDARD is the specialist/T2-gateway level where the plan calls for V. HAC access requires racial Cruiser V; HAC IV is the normal practical target for regular use.
+**Omega:** a HAC requires the racial Cruiser at `STANDARD`, the `97 HEAVY ASSAULT CRUISERS` module, and `IMPROVED` in the matching medium weapon family.
 
-## Common combat foundation
+## Zealot
 
-`00 → 01 → 02 → 03 → 10`
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `21`.
+3. Hulls: `90_AMARR`, `91_AMARR`, `92_AMARR`; Omega also uses `97_HEAVY_ASSAULT_CRUISERS`.
+4. Weapons/tools: `50`, `53`.
 
-For early frigates BASIC is enough to start. By regular cruiser/HAC use, the practical target is normally at least IMPROVED across the relevant support modules, with STANDARD only where the fit, T2 access or role actually benefits from it.
+TRAINING: ZEALOT_T1_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,91_AMARR_A,92_AMARR_A,50_A,53_A
 
-## Race profile
+TRAINING: ZEALOT_HAC_OMEGA,00_I,01_I,02_I,10_S,21_I,90_AMARR_I,91_AMARR_I,92_AMARR_S,97_HEAVY_ASSAULT_CRUISERS_I,50_I,53_I
 
-- Default tank: **armor**.
-- Main weapons: **Energy turrets; drones or missiles where the hull calls for them**.
-- Laser path: frigate → Coercer → Omen/Maller → Zealot. Drone/missile branches: Dragoon/Arbitrator and Sacrilege.
+## Sacrilege
 
-## 1. Frigate
+1. CORE and fitting: `00`, `01`, `02`, `10`.
+2. Tank: `21`.
+3. Hulls: `90_AMARR`, `91_AMARR`, `92_AMARR`; Omega also uses `97_HEAVY_ASSAULT_CRUISERS`.
+4. Weapons/tools: `60`, `62`.
 
-Relevant hulls: **laser combat frigate**. Start with BASIC core/tank/weapon plans, then move the racial Frigate plan to IMPROVED for a ship you actually intend to fly regularly. Small T2 weapons are a strong early milestone when that branch uses turrets or missiles.
+TRAINING: SACRILEGE_T1_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,91_AMARR_A,92_AMARR_A,60_A,62_A
 
-## 2. Destroyer
-
-Relevant hulls: **Coercer / Dragoon**. Destroyer BASIC is enough to unlock the next size, but IMPROVED is the sensible target if the pilot will actually use the destroyer. Do not train Destroyer V only because HAC is the final goal; HAC progression does not require it.
-
-## 3. Cruiser
-
-Relevant hulls: **Omen / Maller / Arbitrator**. This is where fitting, tank and weapon support should stop being “minimum only”. Use the weapon family that belongs to the chosen hull; do not train every racial option merely because the race can use it. Racial Cruiser IMPROVED is the normal T1 cruiser target.
-
-## 4. HAC
-
-Relevant hulls: **Zealot / Sacrilege**. Train racial Cruiser to the level required by the HAC plan, then train `97 HULL - Heavy Assault Cruisers` to a practical regular-use level. The weapon branch should already provide the appropriate T2 medium weapons before committing to an expensive HAC fit.
-
-## What not to train automatically
-
-- Unrelated weapon families.
-- Both active and buffer tank branches if the doctrine only uses one.
-- Destroyer V just because the route passed through a destroyer.
-- Every support skill to STANDARD before the pilot can already fly and use the next meaningful hull.
-
-The point of the path is a sequence of **useful ships**, not a checklist of maximum skills.
+TRAINING: SACRILEGE_HAC_OMEGA,00_I,01_I,02_I,10_S,21_I,90_AMARR_I,91_AMARR_I,92_AMARR_S,97_HEAVY_ASSAULT_CRUISERS_I,60_I,62_I

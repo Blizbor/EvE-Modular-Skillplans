@@ -14,7 +14,7 @@ Most “must-have skillplans” tell a pilot **what to train**, but much less of
 
 `STANDARD` **does not mean “all V”**. Level V is included when it unlocks something important, is required for further progression, or is an intentional role-specific exception.
 
-Every module also has one Alpha plan named `plan-<level>-ALPHA.txt`. It is not a fixed fourth level. The number shows how far an Alpha pilot can progress relative to `BASIC → IMPROVED → STANDARD`:
+Every module also has one Alpha plan named `plan-<level>-ALPHA.txt`. It is not a fixed fourth level. The number shows how far an Alpha pilot can progress relative to the `BASIC`, `IMPROVED` and `STANDARD` levels:
 
 - `0` — no skill in the module is available;
 - `0.5` — Alpha does not complete BASIC;
@@ -39,9 +39,9 @@ Every directory in `plans/` contains:
 
 A **Plan** is one competency building block, such as `62 MISSILE - HAM & Heavy` or `30 TANK - Shield Passive/Buffer`.
 
-A **Training Path** combines several plans into a route toward a concrete goal, such as Amarr Frigate → Cruiser → HAC, Gila, or Mining.
+A **Training Path** combines several plans into a route toward a concrete goal, such as Amarr Frigate, Cruiser and HAC; Gila; or Mining.
 
-There is no separate “scenario” category: a specific Gila route and a broad T1 → HAC progression are the same kind of document; only the target differs.
+There is no separate “scenario” category: a specific Gila route and a broad T1-to-HAC progression are the same kind of document; only the target differs.
 
 ## Mining
 
@@ -54,12 +54,12 @@ MINING
 │   └── Outrider
 │
 ├── Barge / Exhumer
-│   ├── Procurer → Skiff
-│   ├── Retriever → Mackinaw
-│   └── Covetor → Hulk
+│   ├── Procurer / Skiff
+│   ├── Retriever / Mackinaw
+│   └── Covetor / Hulk
 │
 └── Industrial Command
-    └── Porpoise → Orca
+    └── Porpoise / Orca
 ```
 
 The project is not intended to explain all of EVE. Some later specializations are deliberately left for pilots to discover themselves.

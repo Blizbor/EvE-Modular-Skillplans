@@ -1,151 +1,82 @@
-# AMARR — Logistics training: Frigate → Destroyer fleet → Cruiser
+# AMARR — Logistics training path
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
-> W tej wersji: `B` = BASIC, `I` = IMPROVED, `S` = STANDARD.
 
-## Jak czytać ścieżki
+Ścieżka opisuje dostępne statki Logistics rasy Amarr bez przypisywania ich do doktryny flotowej:
 
-Numery odnoszą się do aktualnej biblioteki **89 modułowych skillplanów**.
+- **T1 Logistics Frigate: Inquisitor**
+- **T2 Logistics Frigate: Deacon**
+- **T1 Logistics Cruiser: Augoror**
+- **T2 Logistics Cruiser: Guardian**
 
-### Ważne: brak klasy Logistics Destroyer
+Podstawowa rola: **zdalne naprawy armor; Augoror i Guardian korzystają również z capacitor transfer**.
 
-EVE nie ma standardowej klasy **Logistics Destroyer** pomiędzy logi frigate i logi cruiser.
-Dla flot destroyerowych normalną odpowiedzią są **T1/T2 Logistics Frigates**:
-są szybkie, tanie i nadążają za frigate/destroyer gangiem.
+## Pokrycie modułowe
 
-Nie trzeba więc trenować `91 HULL - Destroyer`, żeby być logistykiem floty destroyerów.
+Obecna biblioteka obejmuje:
 
-Tactical Destroyery mają pojedyncze niszowe remote-rep możliwości (np. Confessor/Svipul w Defense Mode),
-ale **nie traktujemy ich jako głównej corp ścieżki logi**.
+1. CORE i fitting w `00`, nawigację w `01` oraz targeting w `02`;
+2. własny tank statku typu Armor Buffer w `21`;
+3. rasowe hulle T1 oraz moduły hulli T2 Logistics.
 
-### Supporty poza osobnym planem
+Obecna biblioteka **nie zawiera** osobnego modułu supportów remote repair. Poniższe recepty obejmują więc wyłącznie istniejącą część modułową i nie mogą być przedstawiane jako kompletny trening do zamontowanych modułów remote repair. Linia cruiserów wymaga również kompetencji capacitor transfer wynikających z konkretnego fita. Do recepty nie dopisuje się surowej listy pojedynczych skilli.
 
-Obecne 89 planów zawiera hull plans:
-- `97 HULL - Logistics Frigates`
-- `97 HULL - Logistics Cruisers`
+## Alpha i Omega
 
-ale **nie wydziela osobnego pełnego LOGI SUPPORT planu** obejmującego remote repair, cap-chain i repair drones.
-Dlatego poniżej podaję zarówno ścieżkę numerami, jak i skille, które trzeba dodać ręcznie / traktować jako supporty opisane bezpośrednio w tej ścieżce.
+- **Alpha:** Inquisitor i Augoror są dostępne, jeżeli konkretny fit jest zgodny z ograniczeniami Alpha. Recepty Alpha wybierają maksymalne dostępne pliki modułów, ale supporty na poziomie BASIC są tylko progiem wejścia i nie gwarantują odpowiedniej wydajności napraw ani stabilności capacitora.
+- **Alpha:** Deacon i Guardian są niedostępne. Pliki `97 ... A` zawierają wyłącznie prerequisites dostępne dla Alpha i nie odblokowują żadnego z hulli T2.
+- **Omega:** CORE, tank i rasowy hull na poziomie IMPROVED są normalnym celem dla T1. Recepty hulli T2 używają rasowego hulla STANDARD oraz Logistics Frigates albo Logistics Cruisers IMPROVED; BASIC jest tylko etapem pierwszego dostępu do hulla.
 
-### Wspólne supporty logi
+## T1 Logistics Frigate: Inquisitor
 
-Do wszystkich logi:
+Moduły w wymaganej kolejności:
 
-- `00 I` — cap/fitting jest krytyczny.
-- `01 I` — logi musi utrzymywać range/transversal i nie zostawać z tyłu.
-- `02`:
-  - T1 frigate: `B` wystarczy, `I` lepsze;
-  - T1 cruiser: **I**;
-  - T2 Logistics Frigate: **I**;
-  - T2 Logistics Cruiser: **S** jest bardzo sensowne (więcej locków + LRT V).
-- `03 I` — dla PvP logi bardzo wartościowe: overheated reps/propmod mogą uratować flotę.
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `21 I`;
+- hull: `90 Amarr I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-### Remote-repair skill thresholds
+```text
+TRAINING: AMARR_T1_LOGISTICS_FRIGATE_ALPHA,00_A,01_A,02_A,21_A,90_AMARR_A
+TRAINING: AMARR_T1_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,21_I,90_AMARR_I
+```
 
-**Armor logi**
-- `Remote Armor Repair Systems III` — sensowne minimum dla małych/T1 zastosowań.
-- **IV** — właściwy standard, potrzebny do T2 large remote armor repairers.
-- V — dedicated specialist / maksymalizacja capa.
+## T2 Logistics Frigate: Deacon
 
-**Shield logi**
-- `Shield Emission Systems III` — Small Remote Shield Booster II.
-- **IV** — Medium/Large Remote Shield Booster II i właściwy standard.
-- V — dedicated specialist/capital.
+Moduły w wymaganej kolejności:
 
-**Cap-chain (Amarr/Caldari)**
-- `Capacitor Emission Systems III` — można zacząć.
-- **IV — minimum do poważnego cap-chain.**
-- V — bardzo dobry cel dla dedicated Guardian/Basilisk.
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `21 I`;
+- hull: `90 Amarr S`, `97 Logistics Frigates I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-**Repair drones**
-- `Drones V`
-- `Repair Drone Operation IV` — bardzo dobry standard.
-- V — dedicated logi / T2 maintenance bots zależnie od dokładnej gałęzi.
+```text
+TRAINING: AMARR_T2_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,21_I,90_AMARR_S,97_LOGISTICS_FRIGATES_I
+```
 
-### Hull levels logi
+## T1 Logistics Cruiser: Augoror
 
-- T1 racial Frigate: **IV**, nie III, jeśli faktycznie latasz logi.
-- `Logistics Frigates III` = tylko wejście; **IV = standard**, V specialist.
-- T1 racial Cruiser: **IV**, bo bonus remote repair per level jest bardzo duży.
-- `Logistics Cruisers III` = tylko etap treningu.
-- **Logistics Cruisers IV = absolutne minimum do T2 cruiser logi.**
-- **Logistics Cruisers V = wyjątkowo mocny cel**: ostatni poziom bardzo mocno poprawia realny koszt capa remote repów.
+Moduły w wymaganej kolejności:
 
+- CORE: `00 I`, `01 I`, `02 I`;
+- tank: `21 I`;
+- hull: `92 Amarr I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-## Hulls
+```text
+TRAINING: AMARR_T1_LOGISTICS_CRUISER_ALPHA,00_A,01_A,02_A,21_A,92_AMARR_A
+TRAINING: AMARR_T1_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_I,21_I,92_AMARR_I
+```
 
-- T1 frigate: **Inquisitor** — remote armor repair.
-- T2 frigate: **Deacon** — armor Logistics Frigate.
-- T1 cruiser: **Augoror** — armor + cap-chain.
-- T2 cruiser: **Guardian** — armor + cap-chain.
+## T2 Logistics Cruiser: Guardian
 
----
+Moduły w wymaganej kolejności:
 
-## 1. T1 logi frigate — Inquisitor
+- CORE: `00 I`, `01 I`, `02 S`;
+- tank: `21 I`;
+- hull: `92 Amarr S`, `97 Logistics Cruisers I`;
+- narzędzia remote repair: obecnie brak osobnego modułu.
 
-`00 I → 01 I → 02 B/I → 21 B/I → 90 Amarr I`
-
-Do tego ręcznie / przyszły LOGI SUPPORT:
-- `Remote Armor Repair Systems III` minimum; **IV zalecane**.
-- `Drones V`.
-- `Repair Drone Operation III/IV`.
-
-**Amarr Frigate III nie jest dobrym stopem dla logi.**
-Hull bonus wpływa bezpośrednio na remote armor repair, więc **Frigate IV** jest rozsądnym minimum.
-
----
-
-## 2. Logi dla floty destroyerów
-
-Nie ma Amarr Logistics Destroyera.
-
-Dla destroyer gangów:
-- tani poziom: Inquisitor z powyższym zestawem;
-- właściwy poziom: **Deacon**.
-
-Ścieżka Deacon:
-
-`00 I → 01 I → 02 I → 21 I → 90 Amarr S → 97 Logistics Frigates I`
-
-+ `Remote Armor Repair Systems IV`
-+ `Repair Drone Operation IV`
-
-- `90 S` = Amarr Frigate V, prerequisite.
-- `97 LF B` = Logistics Frigates III — tylko wejście.
-- **`97 LF I` = Logistics Frigates IV — normalny poziom.**
-- LF V dopiero dedicated small-gang logi specialist.
-
----
-
-## 3. T1 cruiser logi — Augoror
-
-`00 I → 01 I → 02 I → 21 I → 92 Amarr I`
-
-+ `Remote Armor Repair Systems IV`
-+ **`Capacitor Emission Systems IV`**
-+ `Repair Drone Operation IV`
-
-**Amarr Cruiser IV jest bardzo zalecane.**
-Augoror opiera się na racial hull bonusach i cap-chain; Cruiser III traktuj jako szkoleniowy etap.
-
----
-
-## 4. T2 cruiser logi — Guardian
-
-`00 I → 01 I → 02 S → 21 I → 92 Amarr S → 97 Logistics Cruisers I`
-
-+ **`Remote Armor Repair Systems IV/V`**
-+ **`Capacitor Emission Systems IV minimum, V bardzo dobre`**
-+ `Repair Drone Operation IV/V`
-
-Najważniejsze:
-- Amarr Cruiser V obowiązkowe.
-- **Logistics Cruisers IV = absolutne minimum.**
-- **Logistics Cruisers V jest bardzo mocno zalecane dla dedicated Guardiana** — to nie jest typowe „ładne 5%”; ostatni poziom dramatycznie poprawia realną ekonomikę capa remote repów.
-- Cap-chain oznacza, że pilot z niskim `Capacitor Emission Systems` psuje nie tylko własny fit, ale może destabilizować cały chain.
-
-## Źródła
-
-- https://wiki.eveuniversity.org/Logistics
-- https://wiki.eveuniversity.org/Skills:Spaceship_Command
-- https://wiki.eveuniversity.org/Support_skills
+```text
+TRAINING: AMARR_T2_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_S,21_I,92_AMARR_S,97_LOGISTICS_CRUISERS_I
+```

@@ -2,7 +2,7 @@
 
 [🇵🇱 Polski](INDEX-PL.md) | 🇬🇧 **English**
 
-Every plan follows `BASIC → IMPROVED → STANDARD`.
+Every plan uses the ordered levels `BASIC`, `IMPROVED` and `STANDARD`.
 
 Every module also contains one Alpha file. The number in its filename shows the maximum range available to an Alpha pilot; see [Alpha plans](docs/ALPHA_CLONES-EN.md).
 

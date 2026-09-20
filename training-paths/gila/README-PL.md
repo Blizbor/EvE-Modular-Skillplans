@@ -1,103 +1,28 @@
-# Gila — Training Path
+# Gila
 
-🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
+Ta ścieżka trenuje moduły wykorzystywane przez fit Gili. Dokładny wybór wyrzutni, tanku tarczy i dronów nadal zależy od fita.
 
-Celem jest wyszkolenie pilota **pod konkretne bonusy Gili** i wykorzystanie po drodze statków, które stają się użyteczne dzięki treningowi potrzebnemu do Gili.
+## Alpha i Omega
 
-Gila ma trzy kluczowe bonusy:
+**Alpha:** może latać Gilą, używać wyrzutni rapid light lub heavy oraz średnich dronów, ale nie może ukończyć poziomu dronów średnich T2 reprezentowanego przez pełny plan `72 IMPROVED`. Drogi hull działa więc poniżej głównego progu Omegi; powinien być używany wyłącznie z fitem i aktywnością sprawdzonymi dla limitów Alpha.
 
-- **Role Bonus:** +500% damage i +250% hitpoints dla **Medium Combat Drones**;
-- **Gallente Cruiser:** +10% kinetic i thermal missile damage na poziom;
-- **Caldari Cruiser:** +4% do wszystkich shield resistances na poziom.
+**Omega:** plany Caldari i Gallente Cruiser na poziomie `IMPROVED`, supporty missiles oraz średnie drony T2 tworzą zwykłą bazę. Moduł aktywnego tanku `31` należy dodać tylko wtedy, gdy fit rzeczywiście używa boostera.
 
-Do wejścia w hull wymagane są `Caldari Cruiser II` i `Gallente Cruiser II`. Oba skille bezpośrednio wzmacniają Gilę, więc do regularnego latania rozsądnym celem jest poziom odpowiadający `92 ... IMPROVED` — Cruiser IV.
+## Zalecane moduły
 
-## Fundament
+1. CORE i fitting: `00`, `01`, `02`, `10`.
+2. Tank: `30`; opcjonalnie `31` dla aktywnego tanku tarczy.
+3. Hull: `92_CALDARI`, `92_GALLENTE`.
+4. Broń/narzędzia: `60`, `61` albo `62`, następnie `70`, `72`.
 
-`00 STANDARD → 01 IMPROVED → 02 IMPROVED → 10 STANDARD`
+### Fit z rapid light missiles
 
-Do PvP dołóż `03 IMPROVED` lub wyżej zgodnie z potrzebą.
+TRAINING: GILA_RLML_ALPHA,00_A,01_A,02_A,10_A,30_A,92_CALDARI_A,92_GALLENTE_A,60_A,61_A,70_A,72_A
 
-## Shield
+TRAINING: GILA_RLML_OMEGA,00_I,01_I,02_I,10_S,30_I,92_CALDARI_I,92_GALLENTE_I,60_I,61_I,70_I,72_I
 
-`30 IMPROVED`
+### Fit z heavy lub heavy assault missiles
 
-`31 Shield Active` dodawaj tylko wtedy, gdy faktyczny fit Gili używa shield boostera. Nie ma powodu trenować active tanku dla fita buffer/passive.
+TRAINING: GILA_HEAVY_MISSILES_ALPHA,00_A,01_A,02_A,10_A,30_A,92_CALDARI_A,92_GALLENTE_A,60_A,62_A,70_A,72_A
 
-## Missiles
-
-`60 IMPROVED` oraz **jedna** gałąź zgodna z planowanym fitem:
-
-- `61 IMPROVED` — RLML / light missile path;
-- `62 IMPROVED` — HML / HAM path.
-
-Gila dostaje z `Gallente Cruiser` bonus do **kinetic i thermal missile damage**, więc missile support i wybrana rodzina launcherów są właściwą częścią ścieżki.
-
-## Drony
-
-`70 IMPROVED → 71 IMPROVED → 72 IMPROVED`
-
-Dla samej Gili kluczowym progiem są **T2 medium combat drones**, ponieważ tylko medium drones dostają jej role bonus. `71 Light T2` nadal jest użyteczną częścią ścieżki:
-
-1. **Worm** wykorzystuje `Caldari Frigate III` i `Gallente Frigate III`, które i tak są prerequisite'ami do odpowiednich cruiserów, a jego główną bronią są mocno bonusowane **light combat drones**.
-2. **Vexor** bonusuje combat drones, więc lighty są użyteczne przeciw małym i szybkim celom obok medium drones.
-3. Na **Gili** light drones nie dostają role bonusu i nie są podstawową bronią, ale mogą pozostać użytecznym zapasem przeciw małym celom. W wielu fitach pierwszym rozwiązaniem tego problemu będą RLML; light drones są uzupełnieniem, nie zamiennikiem bonusowanych medium drones.
-
-`73 Heavy & Sentry` nie jest potrzebne do tej ścieżki.
-
-## Statki użyteczne po drodze
-
-Docelowo:
-
-`92 Caldari Cruiser IMPROVED + 92 Gallente Cruiser IMPROVED → Gila`
-
-### Worm — wczesne wykorzystanie obu ras
-
-Droga do `Caldari Cruiser` i `Gallente Cruiser` prowadzi przez `Caldari Frigate III` i `Gallente Frigate III`, więc **Worm** staje się dostępny naturalnie po drodze.
-
-Worm wykorzystuje systemy ważne później na Gili:
-
-- Caldari + Gallente hull skills,
-- shield,
-- missiles,
-- light drones.
-
-Jego mocno bonusowane light drones sprawiają, że `71 Light T2` daje pilotowi użyteczną broń jeszcze przed dojściem do medium drones Gili.
-
-### Caldari / missile-first — Caracal
-
-Po wyszkoleniu `Caldari Cruiser` pojawia się **Caracal**. To praktyczny statek do latania w czasie, gdy pilot kończy:
-
-- `Gallente Cruiser`,
-- Drone Support,
-- T2 medium drones.
-
-Caracal wykorzystuje shield + missiles, czyli kompetencje potrzebne Gili.
-
-**Caldari Cruiser + missiles/shield → Caracal → dokończenie Gallente + drones → Gila**
-
-### Gallente / drone-first — Vexor
-
-Jeżeli pilot zaczyna od strony Gallente i dronów, tę samą rolę pełni **Vexor**. `Gallente Cruiser` oraz light/medium drones dają od razu użyteczny drone cruiser, którym można latać podczas szkolenia:
-
-- `Caldari Cruiser`,
-- shield,
-- missiles.
-
-Nie ma potrzeby trenować dodatkowego armor path tylko dlatego, że wiele Vexorów jest armor-tankowanych. Dodawaj go wyłącznie wtedy, gdy rzeczywiście chcesz używać takiego fita.
-
-**Gallente Cruiser + drones → Vexor → dokończenie Caldari + missiles/shield → Gila**
-
-## Minimalna logika
-
-`00 S → 01 I → 02 I → 10 S → 30 I → 60 I → 61 I lub 62 I → 70 I → 71 I → 72 I → 92 Caldari I + 92 Gallente I → Gila`
-
-Po drodze **Worm, Caracal i Vexor** dają pilotowi sensowne statki do latania podczas szkolenia kolejnych elementów ścieżki.
-
-## Źródła weryfikacyjne
-
-- [Gila — EVE University Wiki](https://wiki.eveuniversity.org/Gila)
-- [Gila — EVE Ref](https://everef.net/types/17715)
-- [Worm — EVE University Wiki](https://wiki.eveuniversity.org/Worm)
-- [Vexor — EVE University Wiki](https://wiki.eveuniversity.org/Vexor)
-- [Caracal — EVE University Wiki](https://wiki.eveuniversity.org/Caracal)
+TRAINING: GILA_HEAVY_MISSILES_OMEGA,00_I,01_I,02_I,10_S,30_I,92_CALDARI_I,92_GALLENTE_I,60_I,62_I,70_I,72_I

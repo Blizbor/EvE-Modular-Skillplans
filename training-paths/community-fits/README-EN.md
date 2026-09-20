@@ -14,6 +14,7 @@ This section connects a **public community fit** with EvE Modular Skillplans mod
 - A training path does not append individual skills outside module plans.
 - The difference column states what the selected OMEGA plan adds over ALPHA for this exact fit; when it adds nothing, that is stated explicitly.
 - Table row order is training order.
+- Every fit page includes ready-to-use `TRAINING:` strings for the download tool.
 
 ## Naming
 
@@ -21,7 +22,7 @@ This section connects a **public community fit** with EvE Modular Skillplans mod
 
 ## Loru Gaming
 
-- [Punisher — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Punisher-T0-Electrical-Alpha/README-EN.md)
-- [Coercer — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Coercer-T0-Electrical-Alpha/README-EN.md)
-- [Rifter — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Rifter-T0-Gamma-Alpha/README-EN.md)
-- [Thrasher — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Thrasher-T0-Gamma-Alpha/README-EN.md)
+- [Punisher — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Punisher-T0-Electrical-Alpha/README-EN.md) — active-armor laser frigate fit.
+- [Coercer — Alpha / Omega, T0 Electrical](CommunityFits-Loru-Coercer-T0-Electrical-Alpha/README-EN.md) — active-armor laser destroyer fit.
+- [Rifter — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Rifter-T0-Gamma-Alpha/README-EN.md) — shield projectile frigate fit.
+- [Thrasher — Alpha / Omega, T0 Gamma](CommunityFits-Loru-Thrasher-T0-Gamma-Alpha/README-EN.md) — shield projectile destroyer fit.

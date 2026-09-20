@@ -13,7 +13,7 @@ EvE Modular Skillplans zaczyna się tam, gdzie taka lista przestaje wystarczać.
 
 1. **Cel zamiast uniwersalnej postaci.** Pilot shield/missile nie dostaje obowiązkowo armorów i laserów.
 2. **Więcej niż core.** Plany obejmują Weapon Upgrades/AWU, Thermodynamics, konkretne tanki, bronie, rigging, drony, scouting, cyno i hull progression.
-3. **Jawne poziomy.** `BASIC → IMPROVED → STANDARD` mówi nie tylko co trenować, ale również kiedy przestać.
+3. **Jawne poziomy.** Uporządkowane poziomy `BASIC`, `IMPROVED` i `STANDARD` mówią nie tylko co trenować, ale również kiedy przestać.
 4. **Level V tylko z powodem.** Nie ma automatycznego „zrób wszystko na V”.
 5. **Training Paths.** Moduły można składać w drogę do konkretnego celu, np. HAC, Battleship, Gila, Logistics czy Mining.
 6. **Priorytetem jest używalny fit.** CPU, PG, capacitor, wymagania T2 i realne bonusy hulla są ważniejsze niż sama liczba ukończonych skilli.
