@@ -7,7 +7,7 @@ Supports Alpha and Omega accounts. Includes tools that download, save and copy a
 These three projects are designed to complement one another:
 
 - [**EvE Modular Skillplans**](https://github.com/Blizbor/EvE-Modular-Skillplans) tells you what to train;
-- [**EvE Pilot Progression**](https://github.com/Blizbor/EvE-Pilot-Progression) shows where the pilot has gaps;
+- [**EVEMon Pilot Progression**](https://github.com/Blizbor/EVEMon-Pilot-Progression) shows where the pilot has gaps;
 - [**EVEMon Certificates Enhanced**](https://github.com/Blizbor/EVEMon-Certificates-Enhanced) improves visibility into how well the pilot is trained.
 
 **[Continue in English](README-EN.md)** for full documentation, usage instructions and contributor material.
@@ -25,7 +25,7 @@ Projekt obsługuje konta Alpha i Omega. Zawiera narzędzia, które pobierają, z
 Te trzy projekty zostały zaprojektowane tak, aby wzajemnie się uzupełniały:
 
 - [**EvE Modular Skillplans**](https://github.com/Blizbor/EvE-Modular-Skillplans) mówi, co trenować;
-- [**EvE Pilot Progression**](https://github.com/Blizbor/EvE-Pilot-Progression) pokazuje, gdzie pilot ma braki;
+- [**EVEMon Pilot Progression**](https://github.com/Blizbor/EVEMon-Pilot-Progression) pokazuje, gdzie pilot ma braki;
 - [**EVEMon Certificates Enhanced**](https://github.com/Blizbor/EVEMon-Certificates-Enhanced) poprawia widoczność poziomu wyszkolenia pilota.
 
 **[Kontynuuj po polsku](README-PL.md)**, aby przejść do pełnej dokumentacji, instrukcji użycia i materiałów dla kontrybutorów.
