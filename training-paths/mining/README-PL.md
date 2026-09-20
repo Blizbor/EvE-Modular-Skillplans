@@ -2,6 +2,18 @@
 
 Ta ścieżka obejmuje Venture, Pioneera, Outridera, Mining Barges i Exhumers. Pioneer jest pełnoprawnym celem dla lekkiego minera lub pilota traktującego mining jako zajęcie poboczne; Outrider jest osobną gałęzią command/support, a nie obowiązkowym etapem do barges.
 
+## Progresja hulli
+
+| Cel | Charakter etapu | Zalecany hull plan | Co daje ten etap |
+|---|---|---|---|
+| Venture | najtańsze wejście w asteroid mining i gas | `96_MINING_FRIGATE I` | Mining Frigate IV i użyteczny statek do rozpoczęcia aktywności |
+| Pioneer | docelowy lekki miner lub mining side-role | `96_MINING_DESTROYER I` | większy mining hold, trzy turrety i wyższy yield niż Venture |
+| Outrider | boczna specjalizacja command/support | `96_MINING_DESTROYER S`, `97_COMMAND_DESTROYERS B` | mining i jeden burst; bez Industrial Core i kompresji |
+| Mining Barge | wyspecjalizowany hull Omega | `96_MINING_BARGE I` | Mining Barge IV oraz wybór profilu tank, hold albo yield |
+| Exhumer | odpowiednik T2 barek | `96_MINING_BARGE S`, `96_EXHUMERS I` | Mining Barge V i Exhumers IV |
+
+Outrider nie jest skrótem do Porpoise. Rozwija boczną gałąź Mining Destroyer V i Command Destroyers, podczas gdy Porpoise używa Industrial Command Ships. Jeżeli celem są Industrial Core i kompresja, właściwa ścieżka znajduje się w [Mining Command](../mining-command/README-PL.md).
+
 ## Etapy modułów
 
 | Moduł | BASIC | IMPROVED | STANDARD |
@@ -17,6 +29,17 @@ Ta ścieżka obejmuje Venture, Pioneera, Outridera, Mining Barges i Exhumers. Pi
 **Alpha:** może latać Venture i Pioneerem. Według aktualnego SDE Alpha nie może trenować Astrogeology ani Mining Drone Operation, dlatego może używać mining laserów i upgrades, ale pozostaje poniżej normalnego yieldu Omegi i nie może używać mining drones. Outrider, Mining Barges i Exhumers są niedostępne.
 
 **Omega:** hull i narzędzia na poziomie IMPROVED są celem do regularnego użycia. STANDARD stosuje się tam, gdzie odblokowuje kolejny hull albo jest uzasadnioną specjalizacją.
+
+## Co odblokowują narzędzia
+
+| Zastosowanie | Etap wejściowy | Regularny etap | Specjalizacja |
+|---|---|---|---|
+| Lasery i upgrades | `44 B`: mining T1 | `44 I`: Miner II, Modulated Strip Miner II i Mining Laser Upgrade II | `44 S`: Astrogeology V i maksymalny poziom supportu z tego modułu |
+| Mining drones | `45 B`: mining drones T1 | `45 I`: Mining Drone II | `45 S`: Mining Drone Specialization IV |
+| Gas | `46 B`: dwa scoopy | `46 I`: do czterech scoopów | `46 S`: piąty scoop na hullu, który może go zamontować |
+| Ice | `47 B`: wejście w ice harvesting | `47 I`: regularny cycle-time level | `47 S`: Ice Harvesting V |
+
+Mining Barges mają trzy różne profile: Procurer stawia na tank, Retriever na mining hold, a Covetor na yield. Exhumery zachowują te profile odpowiednio jako Skiff, Mackinaw i Hulk. Wybór jest decyzją o zastosowaniu, a nie obowiązkową kolejnością trenowania wszystkich sześciu statków.
 
 ## Venture: asteroid mining
 

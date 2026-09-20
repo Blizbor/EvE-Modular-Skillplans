@@ -2,6 +2,16 @@
 
 Ta ścieżka obejmuje Porpoise i Orkę jako mining command ships dla Omegi. Oba statki mogą boostować, używać Industrial Core, zapewniać kompresję pokładową i kopać dronami. Remote shield boosting jest obsługiwaną rolą opcjonalną.
 
+Porpoise i Orca mają ten sam skillowy próg wejścia w hull. Porpoise jest wcześniejszym wyborem praktycznym dlatego, że jest tańszy i bardziej mobilny, a nie dlatego, że wymaga osobnej krótszej ścieżki.
+
+| Właściwość | Porpoise | Orca |
+|---|---|---|
+| Command Bursts | 2 | 3 |
+| Industrial Core | Medium | Large |
+| Kompresja dostępna na hullu | asteroid ore i gas | asteroid ore, ice, gas, Mercoxit i moon ore |
+| Mobilność, koszt i ryzyko | lepsza mobilność, niższy koszt | większa platforma, wyższy koszt i ekspozycja |
+| Typowy etap | mobilny support i pierwsza platforma kompresji | rozwinięty support, logistyka i pełniejsza kompresja |
+
 ## Etapy modułów
 
 | Moduł | BASIC | IMPROVED | STANDARD |
@@ -17,12 +27,30 @@ Ta ścieżka obejmuje Porpoise i Orkę jako mining command ships dla Omegi. Oba 
 
 **Omega:** IMPROVED jest celem do regularnego Porpoise. Orca może używać Large Industrial Core I i typowych kompresorów na IMPROVED; STANDARD jest uzasadniony, gdy potrzebny jest Large Industrial Core II, kompresja moon/mercoxit albo maksymalna siła boostów.
 
+## Co pilot zyskuje na kolejnych etapach
+
+| Etap | Hull i boosty | Industrial Core i kompresja | Drony i remote support |
+|---|---|---|---|
+| ENTRY | `96 B` daje Industrial Command Ships III; `48 B` obsługuje burst T1 | `49 B` daje Core I i kompresję asteroid ore | `45 B` daje mining drones T1; `41 B` mały remote shield support |
+| REGULAR | `96 I` podnosi hull do IV; `48 I` daje burst T2 i Mining Director IV | `49 I` daje Medium Core II, kompresję do gas oraz Fleet Compression Logistics IV | `70 I` i `45 I` dają Mining Drone II; `41 I` średnie/duże remote boostery T2 |
+| SPECIALIST | hull pozostaje na IV; `48 S` maksymalizuje siłę bursta i poprawia reload | `49 S` daje Large Core II, wszystkie kompresory i maksymalny zasięg fleet compression z tego modułu | `70 S`, `45 S` i `41 S` są uzasadnione tylko dla rzeczywiście wykonywanej roli |
+
+Każdy poziom `Mining Foreman` wydłuża działanie efektu bursta, `Mining Director` zwiększa jego siłę, a `Fleet Compression Logistics` zwiększa zasięg udostępnianej kompresji. Dzięki temu etapy pośrednie dają mierzalny efekt, nawet zanim pilot ukończy pełną specjalizację.
+
 ## Porpoise
 
 1. CORE i fitting: `00 I`, `01 I`, `02 I`.
 2. Tank: `30 I`; `31 I` jest opcjonalny dla fita z aktywnym boosterem.
 3. Hull: `96_INDUSTRIAL_COMMAND_SHIPS I`.
 4. Narzędzia: `48 I` dla boostów; `49 I` dla Medium Industrial Core II i kompresji asteroid/gas; `70 I` z `45 I` dla mining drones; opcjonalny `41 I` dla remote shield boosting.
+
+Pierwszy użyteczny Porpoise z burstem T1, Core I i kompresją asteroid ore:
+
+Training string:
+
+```text
+PORPOISE_ENTRY_OMEGA,00_B,01_B,02_B,30_B,96_INDUSTRIAL_COMMAND_SHIPS_B,48_B,49_B
+```
 
 Boostowanie bez uruchamiania Industrial Core:
 
@@ -54,6 +82,14 @@ PORPOISE_FULL_SUPPORT_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48
 2. Tank: `30 I`; `31 I` jest opcjonalny dla fita z aktywnym boosterem.
 3. Hull: `96_INDUSTRIAL_COMMAND_SHIPS I` do regularnego użycia; STANDARD daje Industrial Command Ships IV, ale nie jest wymagany tylko po to, aby wsiąść do hulla.
 4. Narzędzia: `48 I` i `49 I` do typowego boostowania i kompresji; STANDARD jest właściwy, gdy fit wymaga Large Industrial Core II, kompresji moon/mercoxit albo maksymalnej siły bursta. `70` i `45` należy dodać tylko wtedy, gdy mining drones są częścią roli.
+
+Pierwsza użyteczna Orca z burstem T1, Large Industrial Core I i kompresją asteroid ore:
+
+Training string:
+
+```text
+ORCA_ENTRY_OMEGA,00_B,01_B,02_B,30_B,96_INDUSTRIAL_COMMAND_SHIPS_B,48_B,49_B
+```
 
 Regularne boostowanie i typowa kompresja:
 

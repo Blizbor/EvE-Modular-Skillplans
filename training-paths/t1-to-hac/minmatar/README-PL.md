@@ -13,7 +13,20 @@ Ta ścieżka prowadzi przez dostępne hulle T1 do dwóch wariantów Heavy Assaul
 
 **Omega:** HAC wymaga racial Cruiser na poziomie `STANDARD`, modułu `97 HEAVY ASSAULT CRUISERS` oraz `IMPROVED` dla właściwej rodziny średniej broni.
 
+## Praktyczna progresja Minmatar
+
+| Etap | Gałąź projectile | Gałąź missiles | Zalecany przystanek |
+|---|---|---|---|
+| Frigate | Rifter, Slasher | Breacher | `90_MINMATAR I`; `50 B/I` z `52 B` albo `60 B/I` z `61 I` |
+| Destroyer | Thrasher | Talwar | `91_MINMATAR I`; mała broń zgodna z wybranym hullem |
+| Cruiser | Stabber, Rupture | Bellicose | `92_MINMATAR I`; projectile `50 I` i `52 I` albo missiles `60 I` oraz `61/62 I` |
+| HAC | Vagabond | Muninn | `92_MINMATAR S`, `97 ... I`; Vagabond używa projectile, obecny Muninn missiles |
+
+Minmatar nie wymaga trenowania obu tanków naraz. Stabber i Vagabond naturalnie korzystają z shield i mobilności; Rupture może wymagać armor albo shield zależnie od konkretnego fita. `31 Shield Active` jest uzasadniony dla aktywnie tankowanego Breachera lub Vagabonda, ale nie dla każdego hulla w tej rasie.
+
 ## Vagabond
+
+Vagabond jest końcem projectile branch rozwijanej przez Rifter, Thrasher i Stabber. `52 I` zapewnia medium autocannons i artillery T2; STANDARD obejmuje również large projectiles i nie jest wymagany tylko do HAC-a. `30 I` daje bazę shield, a `31 I` należy do wariantu aktywnego. Navigation IMPROVED ma tu większe znaczenie niż na wolniejszym, statycznym hullu.
 
 1. CORE i fitting: `00`, `01`, `02`, `10`.
 2. Tank: `30`.
@@ -33,6 +46,8 @@ VAGABOND_HAC_OMEGA,00_I,01_I,02_I,10_S,30_I,90_MINMATAR_I,91_MINMATAR_I,92_MINMA
 ```
 
 ## Muninn
+
+Obecny Muninn jest missile HAC-em. Pilot nie powinien trenować projectile turrets na podstawie dawnej roli statku ani tylko dlatego, że jest to hull Minmatar. `60 I` z `62 I` zapewnia supporty i T2 HML/HAM; inna rodzina launchera powinna pojawić się tylko wtedy, gdy wymaga jej konkretny fit. Tank może być shield albo armor zgodnie z fitem, lecz recepta pokazuje shield.
 
 1. CORE i fitting: `00`, `01`, `02`, `10`.
 2. Tank: `30`.

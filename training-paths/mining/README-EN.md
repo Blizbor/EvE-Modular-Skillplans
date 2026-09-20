@@ -2,6 +2,18 @@
 
 This path covers Venture, Pioneer, Outrider, Mining Barges and Exhumers. Pioneer is a valid destination for a light or side-role miner; Outrider is a separate command/support branch, not a required step toward barges.
 
+## Hull progression
+
+| Target | Nature of the stage | Recommended hull plan | What the stage provides |
+|---|---|---|---|
+| Venture | cheapest entry into asteroid mining and gas | `96_MINING_FRIGATE I` | Mining Frigate IV and a useful ship for beginning the activity |
+| Pioneer | destination for a light miner or mining side role | `96_MINING_DESTROYER I` | larger mining hold, three turrets and higher yield than Venture |
+| Outrider | side command/support specialization | `96_MINING_DESTROYER S`, `97_COMMAND_DESTROYERS B` | mining and one burst; no Industrial Core or compression |
+| Mining Barge | specialized Omega hull | `96_MINING_BARGE I` | Mining Barge IV and a choice of tank, hold or yield profile |
+| Exhumer | T2 counterpart of a barge | `96_MINING_BARGE S`, `96_EXHUMERS I` | Mining Barge V and Exhumers IV |
+
+Outrider is not a shortcut to Porpoise. It develops the Mining Destroyer V and Command Destroyers side branch, while Porpoise uses Industrial Command Ships. When the target is Industrial Core and compression, use [Mining Command](../mining-command/README-EN.md).
+
 ## Module stages
 
 | Module | BASIC | IMPROVED | STANDARD |
@@ -17,6 +29,17 @@ This path covers Venture, Pioneer, Outrider, Mining Barges and Exhumers. Pioneer
 **Alpha:** can fly Venture and Pioneer. Alpha cannot train Astrogeology or Mining Drone Operation in the current SDE, so the Alpha versions can use mining lasers and upgrades but remain below the normal Omega yield and cannot use mining drones. Outrider, Mining Barges and Exhumers are unavailable to Alpha.
 
 **Omega:** IMPROVED hull and tool modules are the regular-use target. STANDARD is used where it unlocks the next hull or represents a justified specialist role.
+
+## What the tool modules unlock
+
+| Use | Entry stage | Regular stage | Specialization |
+|---|---|---|---|
+| Lasers and upgrades | `44 B`: T1 mining | `44 I`: Miner II, Modulated Strip Miner II and Mining Laser Upgrade II | `44 S`: Astrogeology V and the highest support level in this module |
+| Mining drones | `45 B`: T1 mining drones | `45 I`: Mining Drone II | `45 S`: Mining Drone Specialization IV |
+| Gas | `46 B`: two scoops | `46 I`: up to four scoops | `46 S`: the fifth scoop on a hull able to fit it |
+| Ice | `47 B`: ice-harvesting entry | `47 I`: regular cycle-time level | `47 S`: Ice Harvesting V |
+
+Mining Barges provide three profiles: Procurer emphasizes tank, Retriever mining hold and Covetor yield. Exhumers retain those profiles as Skiff, Mackinaw and Hulk respectively. This is a choice of use case, not a mandatory sequence through all six ships.
 
 ## Venture: asteroid mining
 

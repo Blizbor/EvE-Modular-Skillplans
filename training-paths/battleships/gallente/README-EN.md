@@ -16,6 +16,10 @@ This document **does not recommend one hull**. It lists sensible T1 battleships 
 
 ## Dominix
 
+Dominix is an exception to the rule that a large hull needs T2 large guns: drones are its primary weapon, so a turret plan is not mandatory. `70 I` supplies regular support and `73 I` develops the heavy and sentry drones used as the main weapon.
+
+The recipe below uses armor buffer. Typical active PvE should use `22 I` instead of `21 I`.
+
 1. CORE and fitting: `00`, `01`, `02`, `10`.
 2. Tank: `21`.
 3. Hull: `94_GALLENTE`.
@@ -35,6 +39,10 @@ DOMINIX_OMEGA,00_I,01_I,02_I,10_S,21_I,94_GALLENTE_I,70_I,73_I
 
 ## Megathron
 
+Megathron is the direct large-hybrid branch. Large Hybrid IV can be an entry stage with meta/faction guns; `51 S` is the proper target for regular T2 DPS. Gallente Battleship IV and turret support `50 I` should be completed before expensive secondary specialization.
+
+Tank depends on the fit: the recipe shows buffer module `21`; a fit with a local repairer uses `22`.
+
 1. CORE and fitting: `00`, `01`, `02`, `10`.
 2. Tank: `21`.
 3. Hull: `94_GALLENTE`.
@@ -53,6 +61,8 @@ MEGATHRON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_GALLENTE_I,50_I,51_S
 ```
 
 ## Hyperion
+
+Hyperion combines large hybrid turrets with a strong local armor-repair bonus. In this path, `22 I` is not an optional extra but part of using the hull's primary role. The entry stage allows first trials, while regular use combines Gallente Battleship IV, IMPROVED tank and `51 S`.
 
 1. CORE and fitting: `00`, `01`, `02`, `10`.
 2. Tank: `22`.
