@@ -4,16 +4,16 @@
 
 ```mermaid
 flowchart TD
-    V[Mining Frigate BASIC<br/>Venture]
-    P[Mining Destroyer IMPROVED<br/>Pioneer]
-    O[Mining Destroyer STANDARD<br/>Command Destroyers BASIC<br/>Outrider]
-    B[Mining Barge IMPROVED<br/>Procurer / Retriever / Covetor]
-    E[Mining Barge STANDARD<br/>Exhumers IMPROVED<br/>Skiff / Mackinaw / Hulk]
+    V["Venture: ore lub gas"]
+    P["Pioneer: lekki miner"]
+    O["Outrider: boczna gałąź command"]
+    B["Mining Barge: trzy role T1"]
+    E["Exhumer: trzy role T2"]
 
     V --> P
-    P --> O
+    P -. opcjonalna specjalizacja .-> O
     V --> B
     B --> E
 ```
 
-Porpoise i Orca są w osobnym [Mining Command Training Path](../mining-command/README-PL.md).
+Moduły narzędzi wybierają aktywność: 44 lasers i upgrades, 45 mining drones, 46 gas, 47 ice oraz 48 foreman bursts. Porpoise i Orca są opisane w osobnej [ścieżce Mining Command](../mining-command/README-PL.md).

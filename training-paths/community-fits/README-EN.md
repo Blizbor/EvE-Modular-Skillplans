@@ -14,7 +14,7 @@ This section connects a **public community fit** with EvE Modular Skillplans mod
 - A training path does not append individual skills outside module plans.
 - The difference column states what the selected OMEGA plan adds over ALPHA for this exact fit; when it adds nothing, that is stated explicitly.
 - Table row order is training order.
-- Every fit page includes ready-to-use `TRAINING:` strings for the download tool.
+- Every fit page includes ready-to-copy training-string blocks for the download tool.
 
 ## Naming
 

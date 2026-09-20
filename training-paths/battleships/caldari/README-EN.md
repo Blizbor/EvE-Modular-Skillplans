@@ -21,9 +21,17 @@ This document **does not recommend one hull**. It lists sensible T1 battleships 
 3. Hull: `94_CALDARI`.
 4. Weapons/tools: `60_I`, `63_I`.
 
-TRAINING: RAVEN_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A,60_A,63_A
+Training string:
 
-TRAINING: RAVEN_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,60_I,63_I
+```text
+RAVEN_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A,60_A,63_A
+```
+
+Training string:
+
+```text
+RAVEN_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,60_I,63_I
+```
 
 ## Rokh
 
@@ -32,9 +40,17 @@ TRAINING: RAVEN_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,60_I,63_I
 3. Hull: `94_CALDARI`.
 4. Weapons/tools: `50_I`, `51_S`.
 
-TRAINING: ROKH_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A,50_A,51_A
+Training string:
 
-TRAINING: ROKH_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,50_I,51_S
+```text
+ROKH_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A,50_A,51_A
+```
+
+Training string:
+
+```text
+ROKH_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,50_I,51_S
+```
 
 ## Scorpion
 
@@ -43,6 +59,14 @@ TRAINING: ROKH_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,50_I,51_S
 3. Hull: `94_CALDARI`.
 4. Weapons/tools: no PvE EWAR module exists in the current catalog; the recipe therefore stops at hull and support modules.
 
-TRAINING: SCORPION_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A
+Training string:
 
-TRAINING: SCORPION_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I
+```text
+SCORPION_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A
+```
+
+Training string:
+
+```text
+SCORPION_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I
+```

@@ -1,0 +1,12 @@
+Science I
+Science II
+Science III
+Science IV
+Mining I
+Mining II
+Mining III
+Mining IV
+Mining Upgrades I
+Mining Upgrades II
+Mining Upgrades III
+Mining Upgrades IV

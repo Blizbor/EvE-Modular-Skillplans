@@ -12,13 +12,15 @@ A Training Path combines atomic modules from `plans/` into training for a concre
 
 ## Download, save and copy a plan
 
-Every individual path contains one or more lines in this form:
+Every individual path contains at least one block in this form:
+
+Training string:
 
 ```text
-TRAINING: TRAINING_NAME,00_I,01_S,02_B,10_A
+TRAINING_NAME,00_I,01_S,02_B,10_A
 ```
 
-Copy the complete line or only the text after `TRAINING:` and pass it as the single argument:
+Copy only the contents of the code block and pass it as the single argument:
 
 ```powershell
 .\tools\ems-plan-mixer.ps1 'TRAINING_NAME,00_I,01_S,02_B,10_A'
@@ -39,5 +41,5 @@ Full tool instructions: [EvE Modular Skillplans tools](../tools/README-EN.md).
 - [Logistics](logistics/README-EN.md) — T1 and T2 logistics frigates and cruisers, separated by race and repair type.
 - [Gila](gila/README-EN.md) — shield, missile and medium-drone modules for the Gila, with separate Alpha and Omega recipes.
 - [Mining](mining/README-EN.md) — Venture, Pioneer, Outrider, Mining Barges and Exhumers.
-- [Mining Command](mining-command/README-EN.md) — Porpoise and Orca support, tank, hull, drones and current module-coverage limits.
+- [Mining Command](mining-command/README-EN.md) — Porpoise and Orca boosting, Industrial Core, compression, drones and remote support.
 - [Community Fits](community-fits/README-EN.md) — minimal modular plans for exact public fit snapshots from community creators.

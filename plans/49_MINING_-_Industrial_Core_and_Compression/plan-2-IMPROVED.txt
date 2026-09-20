@@ -1,0 +1,35 @@
+Industry I
+Industry II
+Industry III
+Industry IV
+Industry V
+Mass Production I
+Mass Production II
+Mass Production III
+Mass Production IV
+Mass Production V
+Advanced Mass Production I
+Industrial Reconfiguration I
+Industrial Reconfiguration II
+Industrial Reconfiguration III
+Industrial Reconfiguration IV
+Shipboard Compression Technology I
+Shipboard Compression Technology II
+Shipboard Compression Technology III
+Leadership I
+Leadership II
+Leadership III
+Leadership IV
+Leadership V
+Mining Foreman I
+Mining Foreman II
+Mining Foreman III
+Mining Foreman IV
+Mining Foreman V
+Mining Director I
+Mining Director II
+Mining Director III
+Fleet Compression Logistics I
+Fleet Compression Logistics II
+Fleet Compression Logistics III
+Fleet Compression Logistics IV

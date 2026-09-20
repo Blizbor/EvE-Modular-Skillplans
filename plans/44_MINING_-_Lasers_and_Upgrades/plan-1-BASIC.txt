@@ -1,0 +1,14 @@
+Science I
+Science II
+Science III
+Science IV
+Mining I
+Mining II
+Mining III
+Mining IV
+Astrogeology I
+Astrogeology II
+Astrogeology III
+Mining Upgrades I
+Mining Upgrades II
+Mining Upgrades III

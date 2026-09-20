@@ -2,81 +2,123 @@
 
 [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
 
-This path covers the available Gallente logistics ships without assigning them to a fleet doctrine:
+This path covers the four available classes directly:
 
-- **T1 Logistics Frigate: Navitas**
-- **T2 Logistics Frigate: Thalia**
-- **T1 Logistics Cruiser: Exequror**
-- **T2 Logistics Cruiser: Oneiros**
+- T1 Logistics Frigate: **Navitas**;
+- T2 Logistics Frigate: **Thalia**;
+- T1 Logistics Cruiser: **Exequror**;
+- T2 Logistics Cruiser: **Oneiros**.
 
-Primary role: **armor remote repair**.
+Primary role: **remote armor repair**. Tools are supplied by `40 LOGISTICS - Remote Armor Repair`, `43 LOGISTICS - Repair Drones`.
 
-## Module coverage
+## What each stage provides
 
-The current library covers:
+| Module | BASIC | IMPROVED | STANDARD |
+|---|---|---|---|
+| `40 Remote Armor Repair` | tool skill III; entry into small T1 modules and Small Remote Armor Repairer II | skill IV; medium and large T2 remote modules plus another 5% capacitor-use reduction | skill V; another 5% capacitor-use reduction |
+| `43 LOGISTICS - Repair Drones` | Repair Drone Operation III | level IV; 5% more repair amount than III | level V; another 5% repair amount |
+| hull module `97` | hull skill III; access and first trials | hull skill IV; minimum for regular use | hull skill V; full specialist |
 
-1. CORE and fitting with `00`, navigation with `01`, and targeting with `02`;
-2. the ship's own armor buffer tank with `21`;
-3. racial T1 hulls and the T2 Logistics hull modules.
+Logistics is skill-intensive because every stage improves more than module access: capacitor use, repair output and hull bonuses all improve. BASIC on a T2 hull is an entry stage, not the end of training.
 
-The current library does **not** contain a dedicated remote-repair support module. The recipes below therefore cover only the existing modular part of the path and must not be presented as complete training for the fitted remote-repair modules.  Raw individual skills are not appended to the recipe.
+## Alpha
 
-## Alpha and Omega
-
-- **Alpha:** Navitas and Exequror are available when the exact fit is Alpha-legal. The Alpha recipes provide the maximum available module files, but BASIC-level support is only an entry point and does not guarantee adequate repair output or capacitor stability.
-- **Alpha:** Thalia and Oneiros are unavailable. The `97 ... A` files contain only Alpha-accessible prerequisites and do not unlock either T2 hull.
-- **Omega:** IMPROVED CORE, tank and racial hull modules are the normal T1 target. T2 hull recipes use racial hull STANDARD and Logistics Frigates or Logistics Cruisers IMPROVED; BASIC is only the initial hull-access stage.
+Alpha can fly the Navitas and Exequror, but cannot fly the Thalia or Oneiros. The Alpha ceiling stops the primary remote-repair tool at III and Repair Drone Operation at II. This supports an entry role with T1 modules, but does not reach the Omega threshold for regular use of medium and large T2 remote modules.
 
 ## T1 Logistics Frigate: Navitas
 
-Modules, in required order:
+1. CORE and fitting: `00 I`, `01 I`, `02 I`.
+2. Tank: `21 I`.
+3. Hull: `90_GALLENTE I`; racial Frigate IV strengthens the hull bonuses.
+4. Tools: `40 I`, `43 I`.
 
-- CORE: `00 I`, `01 I`, `02 I`;
-- tank: `21 I`;
-- hull: `90 Gallente I`;
-- remote-repair tools: no dedicated module currently exists.
+ENTRY uses BASIC modules for first trials; REGULAR raises the racial hull and tools to IV.
+
+Training string:
 
 ```text
-TRAINING: GALLENTE_T1_LOGISTICS_FRIGATE_ALPHA,00_A,01_A,02_A,21_A,90_GALLENTE_A
-TRAINING: GALLENTE_T1_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,21_I,90_GALLENTE_I
+GALLENTE_NAVITAS_ENTRY,00_B,01_B,02_B,21_B,90_GALLENTE_B,40_B,43_B
+```
+
+Training string:
+
+```text
+GALLENTE_NAVITAS_ALPHA,00_A,01_A,02_A,21_A,90_GALLENTE_A,40_A,43_A
+```
+
+Training string:
+
+```text
+GALLENTE_NAVITAS_REGULAR,00_I,01_I,02_I,21_I,90_GALLENTE_I,40_I,43_I
 ```
 
 ## T2 Logistics Frigate: Thalia
 
-Modules, in required order:
+ENTRY unlocks the hull and supports first trials. REGULAR raises Logistics Frigates from III to IV and is the proper regular-use threshold. SPECIALIST provides Logistics Frigates V and maximizes the main tools.
 
-- CORE: `00 I`, `01 I`, `02 I`;
-- tank: `21 I`;
-- hull: `90 Gallente S`, `97 Logistics Frigates I`;
-- remote-repair tools: no dedicated module currently exists.
+Training string:
 
 ```text
-TRAINING: GALLENTE_T2_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,21_I,90_GALLENTE_S,97_LOGISTICS_FRIGATES_I
+GALLENTE_THALIA_ENTRY,00_I,01_I,02_I,21_I,90_GALLENTE_S,97_LOGISTICS_FRIGATES_B,40_I,43_I
+```
+
+Training string:
+
+```text
+GALLENTE_THALIA_REGULAR,00_I,01_I,02_I,21_I,90_GALLENTE_S,97_LOGISTICS_FRIGATES_I,40_I,43_I
+```
+
+Training string:
+
+```text
+GALLENTE_THALIA_SPECIALIST,00_S,01_I,02_S,21_I,90_GALLENTE_S,97_LOGISTICS_FRIGATES_S,40_S,43_S
 ```
 
 ## T1 Logistics Cruiser: Exequror
 
-Modules, in required order:
+1. CORE and fitting: `00 I`, `01 I`, `02 I`.
+2. Tank: `21 I`.
+3. Hull: `92_GALLENTE I`; racial Cruiser IV is the practical minimum.
+4. Tools: `40 I`, `43 I`.
 
-- CORE: `00 I`, `01 I`, `02 I`;
-- tank: `21 I`;
-- hull: `92 Gallente I`;
-- remote-repair tools: no dedicated module currently exists.
+ENTRY uses BASIC modules for first trials; REGULAR raises the racial hull and tools to IV.
+
+Training string:
 
 ```text
-TRAINING: GALLENTE_T1_LOGISTICS_CRUISER_ALPHA,00_A,01_A,02_A,21_A,92_GALLENTE_A
-TRAINING: GALLENTE_T1_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_I,21_I,92_GALLENTE_I
+GALLENTE_EXEQUROR_ENTRY,00_B,01_B,02_B,21_B,92_GALLENTE_B,40_B,43_B
+```
+
+Training string:
+
+```text
+GALLENTE_EXEQUROR_ALPHA,00_A,01_A,02_A,21_A,92_GALLENTE_A,40_A,43_A
+```
+
+Training string:
+
+```text
+GALLENTE_EXEQUROR_REGULAR,00_I,01_I,02_I,21_I,92_GALLENTE_I,40_I,43_I
 ```
 
 ## T2 Logistics Cruiser: Oneiros
 
-Modules, in required order:
+ENTRY is for hull access and first trials. REGULAR raises Logistics Cruisers to IV and is the minimum for regular use. SPECIALIST raises Logistics Cruisers and the tools to V, further improving hull bonuses and capacitor economics.
 
-- CORE: `00 I`, `01 I`, `02 S`;
-- tank: `21 I`;
-- hull: `92 Gallente S`, `97 Logistics Cruisers I`;
-- remote-repair tools: no dedicated module currently exists.
+Training string:
 
 ```text
-TRAINING: GALLENTE_T2_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_S,21_I,92_GALLENTE_S,97_LOGISTICS_CRUISERS_I
+GALLENTE_ONEIROS_ENTRY,00_I,01_I,02_S,21_I,92_GALLENTE_S,97_LOGISTICS_CRUISERS_B,40_I,43_I
+```
+
+Training string:
+
+```text
+GALLENTE_ONEIROS_REGULAR,00_I,01_I,02_S,21_I,92_GALLENTE_S,97_LOGISTICS_CRUISERS_I,40_I,43_I
+```
+
+Training string:
+
+```text
+GALLENTE_ONEIROS_SPECIALIST,00_S,01_I,02_S,21_S,92_GALLENTE_S,97_LOGISTICS_CRUISERS_S,40_S,43_S
 ```

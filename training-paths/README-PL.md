@@ -12,13 +12,15 @@ Training Path łączy atomowe moduły z `plans/` w trening do konkretnego statku
 
 ## Pobranie, zapis i skopiowanie planu
 
-Każda pojedyncza ścieżka zawiera co najmniej jeden wiersz w postaci:
+Każda pojedyncza ścieżka zawiera co najmniej jeden blok w postaci:
+
+Training string:
 
 ```text
-TRAINING: TRAINING_NAME,00_I,01_S,02_B,10_A
+TRAINING_NAME,00_I,01_S,02_B,10_A
 ```
 
-Skopiuj cały wiersz albo samą część po `TRAINING:` i przekaż ją jako jedyny parametr:
+Skopiuj wyłącznie zawartość bloku kodu i przekaż ją jako jedyny parametr:
 
 ```powershell
 .\tools\ems-plan-mixer.ps1 'TRAINING_NAME,00_I,01_S,02_B,10_A'
@@ -39,5 +41,5 @@ Pełna instrukcja: [narzędzia EvE Modular Skillplans](../tools/README-PL.md).
 - [Logistics](logistics/README-PL.md) — T1 i T2 Logistics Frigates oraz Logistics Cruisers, rozdzielone według rasy i typu napraw.
 - [Gila](gila/README-PL.md) — moduły shield, missiles i medium drones dla Gili, z osobnymi receptami Alpha i Omega.
 - [Mining](mining/README-PL.md) — Venture, Pioneer, Outrider, Mining Barges i Exhumers.
-- [Mining Command](mining-command/README-PL.md) — Porpoise i Orca: support, tank, hull, drony oraz obecne granice pokrycia modułowego.
+- [Mining Command](mining-command/README-PL.md) — boosty Porpoise i Orki, Industrial Core, kompresja, drony i remote support.
 - [Community Fits](community-fits/README-PL.md) — minimalne plany modułowe dla dokładnych snapshotów publicznych fitów twórców społeczności.

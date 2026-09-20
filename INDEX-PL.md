@@ -1,4 +1,4 @@
-# Indeks planów — 89
+# Indeks planów — 99
 
 🇵🇱 **Polski** | [🇬🇧 English](INDEX-EN.md)
 
@@ -15,6 +15,16 @@ Każdy moduł zawiera również jeden plik Alpha. Liczba w jego nazwie pokazuje 
 - **22 TANK - Armor Active** — [`README`](./plans/22_TANK_-_Armor_Active/README-PL.md)
 - **30 TANK - Shield Passive/Buffer** — [`README`](./plans/30_TANK_-_Shield_Passive-Buffer/README-PL.md)
 - **31 TANK - Shield Active** — [`README`](./plans/31_TANK_-_Shield_Active/README-PL.md)
+- **40 LOGISTICS - Remote Armor Repair** — [`README`](./plans/40_LOGISTICS_-_Remote_Armor_Repair/README-PL.md)
+- **41 LOGISTICS - Remote Shield Boost** — [`README`](./plans/41_LOGISTICS_-_Remote_Shield_Boost/README-PL.md)
+- **42 LOGISTICS - Capacitor Transfer** — [`README`](./plans/42_LOGISTICS_-_Capacitor_Transfer/README-PL.md)
+- **43 LOGISTICS - Repair Drones** — [`README`](./plans/43_LOGISTICS_-_Repair_Drones/README-PL.md)
+- **44 MINING - Lasers and Upgrades** — [`README`](./plans/44_MINING_-_Lasers_and_Upgrades/README-PL.md)
+- **45 MINING - Drones** — [`README`](./plans/45_MINING_-_Drones/README-PL.md)
+- **46 MINING - Gas Harvesting** — [`README`](./plans/46_MINING_-_Gas_Harvesting/README-PL.md)
+- **47 MINING - Ice Harvesting** — [`README`](./plans/47_MINING_-_Ice_Harvesting/README-PL.md)
+- **48 MINING - Foreman Bursts** — [`README`](./plans/48_MINING_-_Foreman_Bursts/README-PL.md)
+- **49 MINING - Industrial Core and Compression** — [`README`](./plans/49_MINING_-_Industrial_Core_and_Compression/README-PL.md)
 - **50 WEAPON - Turret Support** — [`README`](./plans/50_WEAPON_-_Turret_Support/README-PL.md)
 - **51 WEAPON - Hybrid** — [`README`](./plans/51_WEAPON_-_Hybrid/README-PL.md)
 - **52 WEAPON - Projectile** — [`README`](./plans/52_WEAPON_-_Projectile/README-PL.md)

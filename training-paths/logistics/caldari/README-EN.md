@@ -2,81 +2,124 @@
 
 [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
 
-This path covers the available Caldari logistics ships without assigning them to a fleet doctrine:
+This path covers the four available classes directly:
 
-- **T1 Logistics Frigate: Bantam**
-- **T2 Logistics Frigate: Kirin**
-- **T1 Logistics Cruiser: Osprey**
-- **T2 Logistics Cruiser: Basilisk**
+- T1 Logistics Frigate: **Bantam**;
+- T2 Logistics Frigate: **Kirin**;
+- T1 Logistics Cruiser: **Osprey**;
+- T2 Logistics Cruiser: **Basilisk**.
 
-Primary role: **shield remote repair; Osprey and Basilisk also use capacitor transfer**.
+Primary role: **remote shield boost and capacitor transfer on cruisers**. Tools are supplied by `41 LOGISTICS - Remote Shield Boost`, `43 LOGISTICS - Repair Drones` and `42 LOGISTICS - Capacitor Transfer`.
 
-## Module coverage
+## What each stage provides
 
-The current library covers:
+| Module | BASIC | IMPROVED | STANDARD |
+|---|---|---|---|
+| `41 Remote Shield Boost` | tool skill III; entry into small T1 modules and Small Remote Shield Booster II | skill IV; medium and large T2 remote modules plus another 5% capacitor-use reduction | skill V; another 5% capacitor-use reduction |
+| `43 LOGISTICS - Repair Drones` | Repair Drone Operation III | level IV; 5% more repair amount than III | level V; another 5% repair amount |
+| `42 LOGISTICS - Capacitor Transfer` | Capacitor Emission Systems III; entry stage | level IV; medium and large T2 transmitters plus another 5% capacitor-use reduction | level V; another 5% capacitor-use reduction |
+| hull module `97` | hull skill III; access and first trials | hull skill IV; minimum for regular use | hull skill V; full specialist |
 
-1. CORE and fitting with `00`, navigation with `01`, and targeting with `02`;
-2. the ship's own shield passive/buffer tank with `30`;
-3. racial T1 hulls and the T2 Logistics hull modules.
+Logistics is skill-intensive because every stage improves more than module access: capacitor use, repair output and hull bonuses all improve. BASIC on a T2 hull is an entry stage, not the end of training.
 
-The current library does **not** contain a dedicated remote-repair support module. The recipes below therefore cover only the existing modular part of the path and must not be presented as complete training for the fitted remote-repair modules. The cruiser line also requires capacitor-transfer competence from the exact fit. Raw individual skills are not appended to the recipe.
+## Alpha
 
-## Alpha and Omega
-
-- **Alpha:** Bantam and Osprey are available when the exact fit is Alpha-legal. The Alpha recipes provide the maximum available module files, but BASIC-level support is only an entry point and does not guarantee adequate repair output or capacitor stability.
-- **Alpha:** Kirin and Basilisk are unavailable. The `97 ... A` files contain only Alpha-accessible prerequisites and do not unlock either T2 hull.
-- **Omega:** IMPROVED CORE, tank and racial hull modules are the normal T1 target. T2 hull recipes use racial hull STANDARD and Logistics Frigates or Logistics Cruisers IMPROVED; BASIC is only the initial hull-access stage.
+Alpha can fly the Bantam and Osprey, but cannot fly the Kirin or Basilisk. The Alpha ceiling stops the primary remote-repair tool at III and Repair Drone Operation at II. This supports an entry role with T1 modules, but does not reach the Omega threshold for regular use of medium and large T2 remote modules.
 
 ## T1 Logistics Frigate: Bantam
 
-Modules, in required order:
+1. CORE and fitting: `00 I`, `01 I`, `02 I`.
+2. Tank: `30 I`.
+3. Hull: `90_CALDARI I`; racial Frigate IV strengthens the hull bonuses.
+4. Tools: `41 I`, `43 I`.
 
-- CORE: `00 I`, `01 I`, `02 I`;
-- tank: `30 I`;
-- hull: `90 Caldari I`;
-- remote-repair tools: no dedicated module currently exists.
+ENTRY uses BASIC modules for first trials; REGULAR raises the racial hull and tools to IV.
+
+Training string:
 
 ```text
-TRAINING: CALDARI_T1_LOGISTICS_FRIGATE_ALPHA,00_A,01_A,02_A,30_A,90_CALDARI_A
-TRAINING: CALDARI_T1_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,30_I,90_CALDARI_I
+CALDARI_BANTAM_ENTRY,00_B,01_B,02_B,30_B,90_CALDARI_B,41_B,43_B
+```
+
+Training string:
+
+```text
+CALDARI_BANTAM_ALPHA,00_A,01_A,02_A,30_A,90_CALDARI_A,41_A,43_A
+```
+
+Training string:
+
+```text
+CALDARI_BANTAM_REGULAR,00_I,01_I,02_I,30_I,90_CALDARI_I,41_I,43_I
 ```
 
 ## T2 Logistics Frigate: Kirin
 
-Modules, in required order:
+ENTRY unlocks the hull and supports first trials. REGULAR raises Logistics Frigates from III to IV and is the proper regular-use threshold. SPECIALIST provides Logistics Frigates V and maximizes the main tools.
 
-- CORE: `00 I`, `01 I`, `02 I`;
-- tank: `30 I`;
-- hull: `90 Caldari S`, `97 Logistics Frigates I`;
-- remote-repair tools: no dedicated module currently exists.
+Training string:
 
 ```text
-TRAINING: CALDARI_T2_LOGISTICS_FRIGATE_OMEGA,00_I,01_I,02_I,30_I,90_CALDARI_S,97_LOGISTICS_FRIGATES_I
+CALDARI_KIRIN_ENTRY,00_I,01_I,02_I,30_I,90_CALDARI_S,97_LOGISTICS_FRIGATES_B,41_I,43_I
+```
+
+Training string:
+
+```text
+CALDARI_KIRIN_REGULAR,00_I,01_I,02_I,30_I,90_CALDARI_S,97_LOGISTICS_FRIGATES_I,41_I,43_I
+```
+
+Training string:
+
+```text
+CALDARI_KIRIN_SPECIALIST,00_S,01_I,02_S,30_I,90_CALDARI_S,97_LOGISTICS_FRIGATES_S,41_S,43_S
 ```
 
 ## T1 Logistics Cruiser: Osprey
 
-Modules, in required order:
+1. CORE and fitting: `00 I`, `01 I`, `02 I`.
+2. Tank: `30 I`.
+3. Hull: `92_CALDARI I`; racial Cruiser IV is the practical minimum.
+4. Tools: `41 I`, `43 I`, `42 I`.
 
-- CORE: `00 I`, `01 I`, `02 I`;
-- tank: `30 I`;
-- hull: `92 Caldari I`;
-- remote-repair tools: no dedicated module currently exists.
+ENTRY uses BASIC modules for first trials; REGULAR raises the racial hull and all three tools to IV.
+
+Training string:
 
 ```text
-TRAINING: CALDARI_T1_LOGISTICS_CRUISER_ALPHA,00_A,01_A,02_A,30_A,92_CALDARI_A
-TRAINING: CALDARI_T1_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_I,30_I,92_CALDARI_I
+CALDARI_OSPREY_ENTRY,00_B,01_B,02_B,30_B,92_CALDARI_B,41_B,43_B,42_B
+```
+
+Training string:
+
+```text
+CALDARI_OSPREY_ALPHA,00_A,01_A,02_A,30_A,92_CALDARI_A,41_A,43_A,42_A
+```
+
+Training string:
+
+```text
+CALDARI_OSPREY_REGULAR,00_I,01_I,02_I,30_I,92_CALDARI_I,41_I,43_I,42_I
 ```
 
 ## T2 Logistics Cruiser: Basilisk
 
-Modules, in required order:
+ENTRY is for hull access and first trials. REGULAR raises Logistics Cruisers to IV and is the minimum for regular use. SPECIALIST raises Logistics Cruisers and the tools to V, further improving hull bonuses and capacitor economics.
 
-- CORE: `00 I`, `01 I`, `02 S`;
-- tank: `30 I`;
-- hull: `92 Caldari S`, `97 Logistics Cruisers I`;
-- remote-repair tools: no dedicated module currently exists.
+Training string:
 
 ```text
-TRAINING: CALDARI_T2_LOGISTICS_CRUISER_OMEGA,00_I,01_I,02_S,30_I,92_CALDARI_S,97_LOGISTICS_CRUISERS_I
+CALDARI_BASILISK_ENTRY,00_I,01_I,02_S,30_I,92_CALDARI_S,97_LOGISTICS_CRUISERS_B,41_I,43_I,42_I
+```
+
+Training string:
+
+```text
+CALDARI_BASILISK_REGULAR,00_I,01_I,02_S,30_I,92_CALDARI_S,97_LOGISTICS_CRUISERS_I,41_I,43_I,42_I
+```
+
+Training string:
+
+```text
+CALDARI_BASILISK_SPECIALIST,00_S,01_I,02_S,30_S,92_CALDARI_S,97_LOGISTICS_CRUISERS_S,41_S,43_S,42_S
 ```

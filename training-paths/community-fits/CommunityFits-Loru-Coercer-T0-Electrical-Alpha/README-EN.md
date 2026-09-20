@@ -24,9 +24,17 @@ EvE Modular Skillplans does not claim authorship of the fit. The set below is th
 | 50 WEAPON — Turret Support | [`plan-3-ALPHA.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-STANDARD.txt) | Alpha reaches the full STANDARD turret-support tier |
 | 53 WEAPON — Energy | [`plan-1.5-ALPHA.txt`](../../../plans/53_WEAPON_-_Energy/plan-1.5-ALPHA.txt) | [`plan-2-IMPROVED.txt`](../../../plans/53_WEAPON_-_Energy/plan-2-IMPROVED.txt) | the extra specialization tier applies to T2 guns, which this fit does not use |
 
-TRAINING: LORU_COERCER_T0_ELECTRICAL_ALPHA,00_A,01_A,02_A,10_A,22_A,91_AMARR_A,50_A,53_A
+Training string:
 
-TRAINING: LORU_COERCER_T0_ELECTRICAL_OMEGA,00_B,01_B,02_B,10_I,22_B,91_AMARR_I,50_S,53_I
+```text
+LORU_COERCER_T0_ELECTRICAL_ALPHA,00_A,01_A,02_A,10_A,22_A,91_AMARR_A,50_A,53_A
+```
+
+Training string:
+
+```text
+LORU_COERCER_T0_ELECTRICAL_OMEGA,00_B,01_B,02_B,10_I,22_B,91_AMARR_I,50_S,53_I
+```
 
 ## Fit
 

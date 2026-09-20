@@ -1,0 +1,18 @@
+Mining I
+Mining II
+Mining III
+Mining IV
+Drones I
+Drones II
+Drones III
+Drones IV
+Drones V
+Mining Drone Operation I
+Mining Drone Operation II
+Mining Drone Operation III
+Mining Drone Operation IV
+Mining Drone Operation V
+Mining Drone Specialization I
+Mining Drone Specialization II
+Mining Drone Specialization III
+Mining Drone Specialization IV

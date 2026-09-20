@@ -83,13 +83,15 @@ plan-20260919-37-20.txt
 
 ## Format recepty
 
-W Training Path zapisujemy jeden wiersz:
+Training Path zawiera gotowy blok do skopiowania:
+
+Training string:
 
 ```text
-TRAINING: TRAINING_NAME,00_I,01_S,02_B,10_A
+TRAINING_NAME,00_I,01_S,02_B,10_A
 ```
 
-Prefiks `TRAINING:` jest opcjonalny dla skryptu, więc można skopiować cały wiersz albo tylko część po dwukropku.
+Należy skopiować wyłącznie zawartość bloku kodu. Skrypt nadal przyjmuje stary prefiks `TRAINING:` dla zgodności wstecznej, ale nowa dokumentacja go nie używa.
 
 | Sufiks | Wybrany plik |
 |---|---|

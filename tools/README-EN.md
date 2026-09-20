@@ -83,13 +83,15 @@ plan-20260919-37-20.txt
 
 ## Recipe format
 
-A Training Path contains one line:
+A Training Path contains a ready-to-copy block:
+
+Training string:
 
 ```text
-TRAINING: TRAINING_NAME,00_I,01_S,02_B,10_A
+TRAINING_NAME,00_I,01_S,02_B,10_A
 ```
 
-The `TRAINING:` prefix is optional for the script, so either the complete line or only the part after the colon can be copied.
+Copy only the contents of the code block. The script still accepts the legacy `TRAINING:` prefix for backward compatibility, but new documentation does not use it.
 
 | Suffix | Selected file |
 |---|---|

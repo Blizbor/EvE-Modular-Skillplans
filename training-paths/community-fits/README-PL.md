@@ -14,7 +14,7 @@ Ta sekcja łączy **publiczny fit używany przez społeczność** z modułami Ev
 - Training path nie dopisuje pojedynczych skilli poza planami modułów.
 - Opis różnicy mówi, co wybrany plan OMEGA daje ponad ALPHA dokładnie temu fitowi; jeżeli nie daje nic, jest to zaznaczone wprost.
 - Kolejność wierszy tabeli jest kolejnością treningu.
-- Każda strona fita zawiera gotowe ciągi `TRAINING:` dla narzędzia pobierającego.
+- Każda strona fita zawiera gotowe do skopiowania bloki training string dla narzędzia pobierającego.
 
 ## Nazewnictwo
 

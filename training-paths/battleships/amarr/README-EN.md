@@ -21,9 +21,17 @@ This document **does not recommend one hull**. It lists sensible T1 battleships 
 3. Hull: `94_AMARR`.
 4. Weapons/tools: `50_I`, `53_S`.
 
-TRAINING: APOCALYPSE_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
+Training string:
 
-TRAINING: APOCALYPSE_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
+```text
+APOCALYPSE_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
+```
+
+Training string:
+
+```text
+APOCALYPSE_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
+```
 
 ## Abaddon
 
@@ -32,9 +40,17 @@ TRAINING: APOCALYPSE_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
 3. Hull: `94_AMARR`.
 4. Weapons/tools: `50_I`, `53_S`.
 
-TRAINING: ABADDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
+Training string:
 
-TRAINING: ABADDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
+```text
+ABADDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
+```
+
+Training string:
+
+```text
+ABADDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
+```
 
 ## Armageddon
 
@@ -43,6 +59,14 @@ TRAINING: ABADDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
 3. Hull: `94_AMARR`.
 4. Weapons/tools: `70_I`, `73_I`.
 
-TRAINING: ARMAGEDDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,70_A,73_A
+Training string:
 
-TRAINING: ARMAGEDDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,70_I,73_I
+```text
+ARMAGEDDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,70_A,73_A
+```
+
+Training string:
+
+```text
+ARMAGEDDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,70_I,73_I
+```

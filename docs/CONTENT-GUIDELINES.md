@@ -17,7 +17,7 @@ These rules apply to every contribution to **EvE Modular Skillplans**.
 - Every path must describe both Alpha and Omega use. If Alpha pilots cannot use a hull, module or stage, say so explicitly.
 - Recommended modules must distinguish when BASIC is sufficient and when IMPROVED or STANDARD is justified.
 - For Alpha pilots, state when the available Alpha skills unlock an item but are still too weak for sensible use of the ship or fit.
-- Every individual path must include the complete training string that can be passed as the single argument to the download and clipboard tool, using the canonical form `TRAINING: TRAINING_NAME,00_I,01_S,02_B,10_A`.
+- Every individual path must include at least one ready-to-copy block. Put `Training string:` above the fenced code block and place only `TRAINING_NAME,00_I,01_S,02_B,10_A` inside it. Do not put a `TRAINING:` prefix inside the code block.
 
 ### Required order inside a path
 
@@ -77,7 +77,7 @@ Poniższe zasady obowiązują przy każdej zmianie treści w projekcie **EvE Mod
 - Każda ścieżka musi opisywać użycie przez pilotów Alpha i Omega. Jeżeli Alpha nie może użyć hulla, modułu albo etapu, należy napisać to wprost.
 - Zalecane moduły muszą rozróżniać sytuacje, w których wystarcza BASIC, oraz te, w których uzasadniony jest IMPROVED albo STANDARD.
 - W przypadku Alpha trzeba zaznaczyć, kiedy dostępne skille formalnie odblokowują element, ale są zbyt słabe, aby sensownie używać danego statku albo fita.
-- Każda pojedyncza ścieżka musi zawierać kompletny string, który można przekazać jako jedyny parametr narzędzia pobierającego plan i kopiującego go do schowka, w kanonicznej postaci `TRAINING: TRAINING_NAME,00_I,01_S,02_B,10_A`.
+- Każda pojedyncza ścieżka musi zawierać co najmniej jeden gotowy do skopiowania blok. Nad blokiem kodu umieszczamy `Training string:`, a wewnątrz wyłącznie `TRAINING_NAME,00_I,01_S,02_B,10_A`. W bloku kodu nie umieszczamy prefiksu `TRAINING:`.
 
 ### Obowiązkowa kolejność w opisie ścieżki
 

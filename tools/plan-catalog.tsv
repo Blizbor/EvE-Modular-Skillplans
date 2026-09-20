@@ -8,6 +8,16 @@
 22	plans/22_TANK_-_Armor_Active	plan-0.5-ALPHA.txt
 30	plans/30_TANK_-_Shield_Passive-Buffer	plan-2-ALPHA.txt
 31	plans/31_TANK_-_Shield_Active	plan-3-ALPHA.txt
+40	plans/40_LOGISTICS_-_Remote_Armor_Repair	plan-1-ALPHA.txt
+41	plans/41_LOGISTICS_-_Remote_Shield_Boost	plan-1-ALPHA.txt
+42	plans/42_LOGISTICS_-_Capacitor_Transfer	plan-2-ALPHA.txt
+43	plans/43_LOGISTICS_-_Repair_Drones	plan-0.5-ALPHA.txt
+44	plans/44_MINING_-_Lasers_and_Upgrades	plan-0.5-ALPHA.txt
+45	plans/45_MINING_-_Drones	plan-0.5-ALPHA.txt
+46	plans/46_MINING_-_Gas_Harvesting	plan-1.5-ALPHA.txt
+47	plans/47_MINING_-_Ice_Harvesting	plan-0.5-ALPHA.txt
+48	plans/48_MINING_-_Foreman_Bursts	plan-0.5-ALPHA.txt
+49	plans/49_MINING_-_Industrial_Core_and_Compression	plan-0.5-ALPHA.txt
 50	plans/50_WEAPON_-_Turret_Support	plan-3-ALPHA.txt
 51	plans/51_WEAPON_-_Hybrid	plan-1.5-ALPHA.txt
 52	plans/52_WEAPON_-_Projectile	plan-1.5-ALPHA.txt
