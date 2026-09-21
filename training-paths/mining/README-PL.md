@@ -2,73 +2,51 @@
 
 Ta ścieżka obejmuje Venture, Pioneera, Outridera, Mining Barges i Exhumers. Pioneer jest pełnoprawnym celem dla lekkiego minera lub pilota traktującego mining jako zajęcie poboczne; Outrider jest osobną gałęzią command/support, a nie obowiązkowym etapem do barges.
 
-## Progresja hulli
+## Mapa progresji
 
-| Cel | Charakter etapu | Zalecany hull plan | Co daje ten etap |
+Pełne powiązanie hulli, wymagań odblokowujących i narzędzi pokazuje [diagram progresji](DIAGRAM-PL.md). Zawiera dwie gałęzie hulli oraz dwie odpowiadające im grupy narzędzi.
+
+### Progresja hulli
+
+| Obecny hull | Następny hull | Skille otwierające następny etap | Znaczenie etapu |
 |---|---|---|---|
-| Venture | najtańsze wejście w asteroid mining i gas | `96_MINING_FRIGATE I` | Mining Frigate IV i użyteczny statek do rozpoczęcia aktywności |
-| Pioneer | docelowy lekki miner lub mining side-role | `96_MINING_DESTROYER I` | większy mining hold, trzy turrety i wyższy yield niż Venture |
-| Outrider | boczna specjalizacja command/support | `96_MINING_DESTROYER S`, `97_COMMAND_DESTROYERS B` | mining i jeden burst; bez Industrial Core i kompresji |
-| Mining Barge | wyspecjalizowany hull Omega | `96_MINING_BARGE I` | Mining Barge IV oraz wybór profilu tank, hold albo yield |
-| Exhumer | odpowiednik T2 barek | `96_MINING_BARGE S`, `96_EXHUMERS I` | Mining Barge V i Exhumers IV |
+| 🅰️ Venture | 🅰️ Pioneer | Mining Frigate III, Mining IV, Industry III, Mining Destroyer I | kontynuuje linię małych hulli; Pioneer może pozostać docelowym lekkim minerem albo mining side-role |
+| 🅰️ Pioneer | ⭐ Outrider | Mining Destroyer V, Command Destroyers I | opcjonalna gałąź command dla Omegi; nie prowadzi do barek, Porpoise ani kompresji |
+| 🅰️ Venture | ⭐ Procurer, Retriever albo Covetor | Mining Frigate III, Mining IV, Astrogeology III, Industry V | rozpoczyna osobną gałąź Mining Barges dla Omegi i daje wybór profilu tank, hold albo yield |
+| ⭐ Mining Barge | ⭐ Skiff, Mackinaw albo Hulk | Mining Barge V, Exhumers | rozwija wybrany profil barki do odpowiednika T2 |
 
-## Jak jeden etap odblokowuje następny
+Gałęzie są wyborem, a nie jednym obowiązkowym łańcuchem. Venture może prowadzić do Pioneera albo bezpośrednio w stronę Mining Barges. Outrider jest bocznym rozwinięciem Pioneera. Pary barek pozostają stałe: Procurer ze Skiffem, Retriever z Mackinawem oraz Covetor z Hulkiem.
 
-### Venture: wspólny początek dwóch gałęzi
+### Narzędzia małych hulli
 
-`96_MINING_FRIGATE B` daje Mining Frigate III. Ten poziom nie tylko odblokowuje Venture, ale jest też wymaganiem hulla zarówno dla Mining Destroyer, jak i Mining Barge. Od tego miejsca pilot może wybrać lekką gałąź Pioneer albo cięższą gałąź barek; nie musi trenować obu.
+| Punkt początkowy | Wymaganie | Wynik |
+|---|---|---|
+| Venture | Mining I | Miner I |
+| Miner I | Mining IV | Miner II |
+| etap Miner I | Mining IV | Gas Cloud Scoop I |
+| Gas Cloud Scoop I | Gas Cloud Harvesting V | Gas Cloud Scoop II |
+| Venture | Mining Upgrades I | Mining Laser Upgrade I |
+| Mining Laser Upgrade I | Mining Upgrades IV | Mining Laser Upgrade II |
 
-Absolutne minimum do rozpoczęcia asteroid mining na Venture:
+Jest to progresja narzędzi używanych przez Venture i Pioneera. Hull może być wart wyskilowania przed uzyskaniem wszystkich narzędzi T2: narzędzia T1 tworzą etap absolutnego minimum, natomiast Miner II i Mining Laser Upgrade II są normalnym rozwinięciem zestawu do asteroid mining.
 
-⭐Training string:
+### Narzędzia Mining Barges i Exhumers
 
-```text
-VENTURE_ASTEROID_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,96_MINING_FRIGATE_B,44_B
-```
+| Narzędzie początkowe | Wymaganie | Narzędzie specjalistyczne |
+|---|---|---|
+| Strip Miner I | Mining V | Modulated Strip Miner II oraz skille odpowiednich mining crystals |
+| Ice Harvester I | Ice Harvesting V | Ice Harvester II |
+| Gas Cloud Harvester I | Gas Cloud Harvesting V | Gas Cloud Harvester II |
 
-### Pioneer: rozwinięcie lekkiego minera
+Mining Barges i Exhumers korzystają z własnych rodzin narzędzi dostępnych wyłącznie dla Omegi. Odblokowanie hulla nie kończy automatycznie treningu narzędzi: pilot wybiera asteroid ore, ice albo gas i rozwija tylko odpowiednią gałąź.
 
-Do Mining Frigate III dochodzą Mining IV i Industry III, po czym `96_MINING_DESTROYER B` odblokowuje Pioneer i podnosi Mining Destroyer do II. Jest to działający etap wejściowy. `96_MINING_DESTROYER I` podnosi hull do IV i jest poziomem regularnym. `44 I` dodaje Miner II oraz Mining Laser Upgrade II, więc poprawia zarówno same lasery, jak i ich low-slotowy upgrade.
+Outrider pozostaje boczną gałęzią command/support. Nie ma Industrial Core ani kompresji. Porpoise, Orca, Industrial Core i kompresja znajdują się w osobnej ścieżce [Mining Command](../mining-command/README-PL.md).
 
-⭐Training string:
+## Ile trenować
 
-```text
-PIONEER_ENTRY_OMEGA,00_B,01_B,02_B,30_B,96_MINING_DESTROYER_B,44_B
-```
-
-Pioneer może pozostać docelowym lekkim minerem. Jeżeli pilot wybiera Outrider, potrzebne są Mining Destroyer V z `96 ... S` oraz Command Destroyers z `97 ... B`. Jest to boczna specjalizacja command/support, a nie droga do Mining Barge ani Porpoise.
-
-### Mining Barge: druga gałąź po Venture
-
-Mining Frigate III spełnia hull prerequisite, ale barge wymaga również Astrogeology III i Industry V. `96_MINING_BARGE B` daje Mining Barge III i odblokowuje Procurer, Retriever oraz Covetor. Poziom IV z `96 ... I` jest regularnym przystankiem, a `44 I` daje Modulated Strip Miner II i Mining Laser Upgrade II.
-
-⭐Training string:
-
-```text
-MINING_BARGE_ENTRY_OMEGA,00_B,01_B,02_B,30_B,96_MINING_BARGE_B,44_B
-```
-
-### Exhumer: rozwinięcie wybranej barki
-
-Mining Barge V oraz Astrogeology V otwierają trening Exhumers. `96_EXHUMERS B` daje Exhumers III i pozwala rozpocząć użycie Skiff, Mackinaw albo Hulk. `96_EXHUMERS I` podnosi hull do IV i jest poziomem regularnym. Pilot rozwija tylko profil odpowiadający wybranej barce: Procurer zyskuje Skiff, Retriever zyskuje Mackinaw, a Covetor zyskuje Hulk.
-
-⭐Training string:
-
-```text
-EXHUMER_ENTRY_OMEGA,00_I,01_I,02_I,30_I,96_MINING_BARGE_S,96_EXHUMERS_B,44_I
-```
-
-Outrider nie jest skrótem do Porpoise. Rozwija boczną gałąź Mining Destroyer V i Command Destroyers, podczas gdy Porpoise używa Industrial Command Ships. Jeżeli celem są Industrial Core i kompresja, właściwa ścieżka znajduje się w [Mining Command](../mining-command/README-PL.md).
-
-## Etapy modułów
-
-| Moduł | BASIC | IMPROVED | STANDARD |
-|---|---|---|---|
-| `44 MINING - Lasers and Upgrades` | wejście do miningu T1 | Miner II i Mining Laser Upgrade II | specjalistyczny yield i support fittingowy |
-| `45 MINING - Drones` | mining drones T1 | Mining Drone II | mocniejsza specjalizacja |
-| `46 MINING - Gas Harvesting` | dwa scoopy | cztery scoopy | piąty scoop, jeżeli hull może go zamontować |
-| `47 MINING - Ice Harvesting` | wejściowy cycle time | regularny ice mining | wyspecjalizowany ice miner |
-| `48 MINING - Foreman Bursts` | burst T1 | burst T2 i mocne bonusy do regularnego użycia | maksymalna siła bursta w tym module |
+- **Absolutne minimum:** odblokowanie wybranego hulla i jego narzędzia T1. Pozwala sprawdzić aktywność bez udawania, że pilot jest już rozwinięty.
+- **Regularne użycie:** podniesienie hulla do opisanego niżej praktycznego poziomu oraz wyskilowanie odpowiedniego narzędzia lub upgrade'u T2, jeżeli jest dostępny.
+- **Specjalizacja:** poziom V wtedy, gdy odblokowuje następny hull albo wymaga go konkretne narzędzie. Poziom V nie jest dodawany tylko dlatego, że pilot rozpoczął daną gałąź.
 
 ## Alpha i Omega
 

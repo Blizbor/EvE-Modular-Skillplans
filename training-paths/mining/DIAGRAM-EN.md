@@ -1,29 +1,82 @@
-# Mining — diagram
+# Mining — progression diagram
 
 [🇵🇱 Polski](DIAGRAM-PL.md) | 🇬🇧 **English**
 
 ```mermaid
-flowchart TD
-    V["Venture: Mining Frigate III or IV"]
-    P["Pioneer: Mining Destroyer II or IV"]
-    O["Outrider: Destroyer V and Command Destroyers"]
-    B["Mining Barge: Barge III or IV"]
-    E["Exhumer: Barge V and Exhumers III or IV"]
-    L["Lasers: 44 B; Miner II and MLU II: 44 I"]
-    S["Strip miners and MLU II: 44 I"]
-    D["Mining drones: 45 B, I or S"]
+flowchart LR
 
-    V --> P
-    P -. optional specialization .-> O
-    V --> B
-    B --> E
-    L --> V
-    L --> P
-    S --> B
-    S --> E
-    D --> P
-    D --> B
-    D --> E
+    %% =========================
+    %% HULL PROGRESSION
+    %% =========================
+
+    V["🅰️ Mining Frigate<br/>Venture"]
+
+    P["🅰️ Mining Destroyer<br/>Pioneer"]
+    O["⭐ Command Destroyer<br/>Outrider"]
+
+    MB["⭐ Mining Barges<br/>Procurer<br/>Retriever<br/>Covetor"]
+    EX["⭐ Exhumers<br/>Skiff<br/>Mackinaw<br/>Hulk"]
+
+    V -->|"Mining Frigate III<br/>Mining IV<br/>Industry III<br/>Mining Destroyer I"| P
+    P -->|"Mining Destroyer V<br/>Command Destroyers I"| O
+
+    V -->|"Mining Frigate III<br/>Mining IV<br/>Astrogeology III<br/>Industry V"| MB
+    MB -->|"Mining Barge V<br/>Exhumers"| EX
+
+
+    %% =========================
+    %% SMALL-HULL TOOLS
+    %% =========================
+
+    ML1["Miner I"]
+    ML2["Miner II"]
+
+    GS1["Gas Cloud Scoop I"]
+    GS2["Gas Cloud Scoop II"]
+
+    MLU1["Mining Laser Upgrade I"]
+    MLU2["Mining Laser Upgrade II"]
+
+    MLU1 -->|"Mining Upgrades IV"| MLU2
+
+    V ---|"Mining I"| ML1
+
+    V ---|"Mining Upgrades I"| MLU1
+
+    ML1 -->|"Mining IV"| ML2
+    ML1 -->|"Mining IV"| GS1
+    GS1 -->|"Gas Cloud Harvesting V"| GS2
+
+
+    %% =========================
+    %% BARGE / EXHUMER TOOLS
+    %% =========================
+
+    SM1["⭐ Strip Miner I"]
+    SM2["⭐ Modulated Strip Miner II<br/>+ Mining Crystals skills"]
+
+    IH1["⭐ Ice Harvester I"]
+    IH2["⭐ Ice Harvester II"]
+
+    GH1["⭐ Gas Cloud Harvester I"]
+    GH2["⭐ Gas Cloud Harvester II"]
+
+    MB --- SM1
+    MB --- IH1
+    MB --- GH1
+
+    SM1 -->|"Mining V"| SM2
+    IH1 -->|"Ice Harvesting V"| IH2
+    GH1 -->|"Gas Cloud Harvesting V"| GH2
+
+
+    %% =========================
+    %% STYLES
+    %% =========================
+
+    classDef hull fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#111827;
+
+    class V,P,O,MB,EX hull;
 ```
 
-`44 B` is sufficient to enter T1 mining. `44 I` is the regular threshold: it provides Miner II, Modulated Strip Miner II and Mining Laser Upgrade II. Module `45` develops mining drones independently of the chosen hull branch. Gas uses `46`, ice uses `47`, and the Outrider additionally uses `48` for foreman bursts. Porpoise and Orca are covered in the separate [Mining Command Training Path](../mining-command/README-EN.md).
+Blue nodes show hull progression. Connections between them list the skills that unlock the next ship. The remaining nodes show separate tool progression: small hulls develop Miner, Gas Cloud Scoop and Mining Laser Upgrade, while Mining Barges and Exhumers use the separate strip miner, ice harvester and gas cloud harvester families.
