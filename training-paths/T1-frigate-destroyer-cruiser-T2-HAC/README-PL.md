@@ -4,6 +4,8 @@
 
 Dokumenty opisują pełną progresję pilota: T1 Frigate, T1 Destroyer, T1 Cruiser oraz T2 Heavy Assault Cruiser. Każdy etap ma własny sensowny przystanek, pokazuje rozwijane narzędzia i wyjaśnia, co daje wydanie kolejnych SP. Pilot Alpha może ukończyć etapy T1, ale nie może latać Heavy Assault Cruiserem.
 
+String Alpha wybiera maksymalne pliki Alpha z użytych modułów. Nie jest automatycznie mniejszym podzbiorem zestawionej z nim recepty Omega: ze względu na nierówny limit Alpha może zawierać pojedyncze skille wyższe lub szersze, także nieprzydatne danemu hullowi. „Najbliższy Omega” oznacza tutaj sensowny następny próg dla tego samego hulla. Opisy przy parach wskazują jego rzeczywiste korzyści zamiast zakładać, że każdy skill Omegi jest wyższy.
+
 ## Jak rozwija się ta ścieżka
 
 | Etap | Poziom przejściowy | Poziom do regularnego użycia | Co daje kolejny etap |

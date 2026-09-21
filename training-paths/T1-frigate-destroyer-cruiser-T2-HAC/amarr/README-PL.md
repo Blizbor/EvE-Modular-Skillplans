@@ -44,6 +44,8 @@ Armor Buffer `21` jest wspólną bazą dla wskazanych hulli. Active Armor `22` j
 
 Poziomy BASIC pozwalają rozpocząć naukę taniej laserowej fregaty. Amarr Frigate III odblokowuje etap, armor buffer BASIC wystarcza do pierwszych prób, a `53 B` daje małe lasery T2. Jest to punkt wejścia, nie docelowy poziom pilota fregatowego.
 
+Poniższa recepta pokazuje próg BASIC Omegi. Maksymalny plan Alpha dla tego samego hulla znajduje się w następnym, regularnym etapie, ponieważ moduł `A` oznacza maksimum dostępne dla Alpha, a nie absolutne minimum.
+
 ⭐Training string:
 
 ```text
@@ -53,6 +55,14 @@ AMARR_FRIGATE_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,10_B,21_B,90_AMARR_B,50_B,53
 ### 2. Regularna T1 Frigate
 
 Amarr Frigate IV stosuje kolejny poziom bonusów Punisher lub Executioner. Navigation IMPROVED poprawia kontrolę zasięgu i poruszanie się, natomiast pozostałe supporty można nadal rozwijać stopniowo.
+
+Alpha i najbliższy plan Omega osiągają Amarr Frigate IV. Omega podnosi Capacitor Systems Operation, najważniejsze skille navigation oraz Signature Analysis do IV. Maksymalny moduł Alpha zawiera jednocześnie część szerszych skilli turretów i armoru, więc nie jest po prostu krótszą wersją recepty Omega.
+
+🅰️Training string:
+
+```text
+AMARR_LASER_FRIGATE_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,50_A,53_A
+```
 
 ⭐Training string:
 
@@ -64,10 +74,28 @@ AMARR_FRIGATE_REGULAR_OMEGA,00_B,01_I,02_B,10_B,21_B,90_AMARR_I,50_B,53_B
 
 Coercer wykorzystuje tę samą małą broń, dlatego inwestycja w `50 I` poprawia osiem turretów bez otwierania nowej rodziny broni. Dragoon jest alternatywą dronową: zamiast laserów rozwija Drone Support oraz light drones. Amarr Destroyer III wystarcza do przejścia dalej, a IV jest poziomem regularnym dla pilota faktycznie latającego destroyerem.
 
+Alpha i najbliższy plan Omega osiągają Amarr Destroyer IV. Na obu hullach Omega podnosi Capacitor Systems Operation, navigation i Signature Analysis do IV. Na Dragonie dochodzi rzeczywista różnica Drone Interfacing IV zamiast III; na Coercerze zestawiony plan Omega nie podnosi małych specializations ponad maksimum Alpha.
+
+#### Coercer
+
+🅰️Training string:
+
+```text
+AMARR_COERCER_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,91_AMARR_A,50_A,53_A
+```
+
 ⭐Training string:
 
 ```text
 AMARR_COERCER_REGULAR_OMEGA,00_B,01_I,02_B,10_I,21_B,90_AMARR_B,91_AMARR_I,50_I,53_B
+```
+
+#### Dragoon
+
+🅰️Training string:
+
+```text
+AMARR_DRAGOON_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,91_AMARR_A,70_A,71_A
 ```
 
 ⭐Training string:
@@ -80,10 +108,28 @@ AMARR_DRAGOON_REGULAR_OMEGA,00_B,01_I,02_B,10_I,21_B,90_AMARR_B,91_AMARR_I,70_I,
 
 Omen i Maller wymagają medium energy turrets T2 z `53 I`; Cruiser IV jest właściwym poziomem do regularnego użycia bonusów hulla. Arbitrator pozwala zamiast tego rozwinąć light i medium drones. Destroyer IV nie jest wymaganiem cruisera, więc recepty tego etapu używają jedynie `91 B`.
 
+Alpha i najbliższy plan Omega osiągają Amarr Cruiser IV oraz medium laser specializations III na gałęzi turretowej. Omega podnosi navigation, targeting, Advanced Weapon Upgrades oraz armor compensations; Alpha zachowuje kilka wyższych indywidualnych limitów, między innymi nieprzydatny temu hullowi Large Energy Turret IV. Na Arbitratorze Omega dodatkowo podnosi Drone Interfacing do IV i Medium Drone Operation do V, podczas gdy Alpha kończy odpowiednio na III i IV.
+
+#### Omen / Maller
+
+🅰️Training string:
+
+```text
+AMARR_LASER_CRUISER_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,91_AMARR_A,92_AMARR_A,50_A,53_A
+```
+
 ⭐Training string:
 
 ```text
 AMARR_LASER_CRUISER_REGULAR_OMEGA,00_I,01_I,02_I,10_S,21_I,90_AMARR_B,91_AMARR_B,92_AMARR_I,50_I,53_I
+```
+
+#### Arbitrator
+
+🅰️Training string:
+
+```text
+AMARR_ARBITRATOR_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,91_AMARR_A,92_AMARR_A,70_A,71_A,72_A
 ```
 
 ⭐Training string:
@@ -96,11 +142,17 @@ AMARR_ARBITRATOR_REGULAR_OMEGA,00_I,01_I,02_I,10_S,21_I,90_AMARR_B,91_AMARR_B,92
 
 Racial Cruiser V jest wymagany do obu hulli. HAC III z `97 B` pozwala wejść w statek i rozpocząć próby, ale nie jest poziomem regularnym. Zealot kontynuuje lasery; Sacrilege rozpoczyna pełną gałąź HML/HAM.
 
+Ten etap jest dostępny wyłącznie dla Omegi. Recepta Alpha nie jest tu publikowana, ponieważ nie odblokowałaby żadnego z opisanych hulli.
+
+#### Zealot
+
 ⭐Training string:
 
 ```text
 ZEALOT_ENTRY_OMEGA,00_I,01_I,02_I,10_S,21_I,92_AMARR_S,97_HEAVY_ASSAULT_CRUISERS_B,50_I,53_I
 ```
+
+#### Sacrilege
 
 ⭐Training string:
 
@@ -117,11 +169,7 @@ Zealot jest bezpośrednim rozwinięciem laserowego cruisera. `92_AMARR S` jest w
 3. Hulle: `90_AMARR`, `91_AMARR`, `92_AMARR`; dla Omegi także `97_HEAVY_ASSAULT_CRUISERS`.
 4. Broń/narzędzia: `50`, `53`.
 
-🅰️Training string:
-
-```text
-ZEALOT_T1_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,91_AMARR_A,92_AMARR_A,50_A,53_A
-```
+Alpha nie może latać Zealotem. Ostatni plan Alpha w tej gałęzi znajduje się wyżej przy Omenie/Mallerze i nie jest nazywany planem Zealota.
 
 ⭐Training string:
 
@@ -138,11 +186,7 @@ Sacrilege zmienia główną broń na heavy assault missiles. Pilot tej gałęzi 
 3. Hulle: `90_AMARR`, `91_AMARR`, `92_AMARR`; dla Omegi także `97_HEAVY_ASSAULT_CRUISERS`.
 4. Broń/narzędzia: `60`, `62`.
 
-🅰️Training string:
-
-```text
-SACRILEGE_T1_ALPHA,00_A,01_A,02_A,10_A,21_A,90_AMARR_A,91_AMARR_A,92_AMARR_A,60_A,62_A
-```
+Alpha nie może latać Sacrilege. Nie istnieje Alpha odpowiednik tego etapu; dostępne Alpha skille HML/HAM nie odblokowują hulla.
 
 ⭐Training string:
 

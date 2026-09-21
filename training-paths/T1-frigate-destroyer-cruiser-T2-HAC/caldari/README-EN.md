@@ -44,6 +44,8 @@ Shield Buffer `30` is the shared base for both branches. Add Shield Active `31` 
 
 Kestrel begins the missile line and Merlin the hybrid-turret line. Racial Frigate III with BASIC support is enough for first trials. This stage teaches range, damage application and shield tanking; it is not the completed pilot standard.
 
+The recipes below are Omega BASIC thresholds. The maximum Alpha plans for the same hulls appear in the next regular stage because module `A` means the Alpha-accessible maximum, not the absolute minimum.
+
 ⭐Training string:
 
 ```text
@@ -60,10 +62,28 @@ CALDARI_MERLIN_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,10_B,30_B,90_CALDARI_B,50_B
 
 Caldari Frigate IV strengthens hull bonuses. `61 I` supplies T2 rockets and light missiles for Kestrel, while `51 B` already supplies small T2 hybrids for Merlin.
 
+Alpha and the nearest Omega plan both reach Caldari Frigate IV. On Kestrel they have the same rockets/light-missile level, while Omega raises Warhead Upgrades, Target Navigation Prediction and Guided Missile Precision from III to IV, and Missile Projection from II to IV. On Merlin, the paired Omega recipe does not raise small hybrid specializations above the Alpha maximum; the real gain for both branches includes Capacitor Systems Operation, navigation and Signature Analysis IV.
+
+#### Kestrel
+
+🅰️Training string:
+
+```text
+CALDARI_KESTREL_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,60_A,61_A
+```
+
 ⭐Training string:
 
 ```text
 CALDARI_KESTREL_REGULAR_OMEGA,00_B,01_I,02_B,10_B,30_B,90_CALDARI_I,60_I,61_I
+```
+
+#### Merlin
+
+🅰️Training string:
+
+```text
+CALDARI_MERLIN_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,50_A,51_A
 ```
 
 ⭐Training string:
@@ -76,10 +96,28 @@ CALDARI_MERLIN_REGULAR_OMEGA,00_B,01_I,02_B,10_B,30_B,90_CALDARI_I,50_I,51_B
 
 Corax keeps rockets/light missiles and Cormorant keeps small hybrids. Destroyer III unlocks cruiser, while IV gives the regular-use level of hull bonuses.
 
+Alpha and the nearest Omega plan both reach Caldari Destroyer IV. Omega Corax gains stronger Missile Support plus Capacitor Systems Operation, navigation and Signature Analysis IV. On Cormorant the difference is in those supports; the paired Omega recipe does not raise small hybrid specializations above the Alpha maximum.
+
+#### Corax
+
+🅰️Training string:
+
+```text
+CALDARI_CORAX_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,91_CALDARI_A,60_A,61_A
+```
+
 ⭐Training string:
 
 ```text
 CALDARI_CORAX_REGULAR_OMEGA,00_B,01_I,02_B,10_I,30_B,90_CALDARI_B,91_CALDARI_I,60_I,61_I
+```
+
+#### Cormorant
+
+🅰️Training string:
+
+```text
+CALDARI_CORMORANT_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,91_CALDARI_A,50_A,51_A
 ```
 
 ⭐Training string:
@@ -92,10 +130,28 @@ CALDARI_CORMORANT_REGULAR_OMEGA,00_B,01_I,02_B,10_I,30_B,90_CALDARI_B,91_CALDARI
 
 Caracal can use `61 I` for RLML or `62 I` for HML/HAM. Moa uses T2 medium hybrids from `51 I`. Caldari Cruiser IV is the regular level; Destroyer IV remains optional, so the cruiser recipes use `91 B`.
 
+Alpha and the nearest Omega plan both reach Caldari Cruiser IV. Alpha Caracal has the same HML/HAM level from module `62`; Omega raises Missile Support, navigation, targeting and Advanced Weapon Upgrades. Alpha and Omega Moa both reach medium hybrid specializations III, so Omega's gain likewise comes from those supports rather than a higher hull level.
+
+#### Caracal
+
+🅰️Training string:
+
+```text
+CALDARI_CARACAL_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,91_CALDARI_A,92_CALDARI_A,60_A,62_A
+```
+
 ⭐Training string:
 
 ```text
 CALDARI_CARACAL_REGULAR_OMEGA,00_I,01_I,02_I,10_S,30_I,90_CALDARI_B,91_CALDARI_B,92_CALDARI_I,60_I,62_I
+```
+
+#### Moa
+
+🅰️Training string:
+
+```text
+CALDARI_MOA_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,91_CALDARI_A,92_CALDARI_A,50_A,51_A
 ```
 
 ⭐Training string:
@@ -108,11 +164,17 @@ CALDARI_MOA_REGULAR_OMEGA,00_I,01_I,02_I,10_S,30_I,90_CALDARI_B,91_CALDARI_B,92_
 
 Racial Cruiser V with HAC III unlocks the expensive T2 hull. Cerberus continues missiles and Eagle hybrid turrets. HAC III is for first trials; HAC IV remains the regular target.
 
+This stage is Omega-only. No Alpha recipe is published here because it would unlock neither Cerberus nor Eagle.
+
+#### Cerberus
+
 ⭐Training string:
 
 ```text
 CERBERUS_ENTRY_OMEGA,00_I,01_I,02_I,10_S,30_I,92_CALDARI_S,97_HEAVY_ASSAULT_CRUISERS_B,60_I,62_I
 ```
+
+#### Eagle
 
 ⭐Training string:
 
@@ -129,11 +191,7 @@ Cerberus ends the missile branch, but launcher family still depends on the fit. 
 3. Hulls: `90_CALDARI`, `91_CALDARI`, `92_CALDARI`; Omega also uses `97_HEAVY_ASSAULT_CRUISERS`.
 4. Weapons/tools: `60`, `62`.
 
-🅰️Training string:
-
-```text
-CERBERUS_T1_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,91_CALDARI_A,92_CALDARI_A,60_A,62_A
-```
+Alpha cannot fly Cerberus. The final Alpha plan in this branch is placed with Caracal.
 
 ⭐Training string:
 
@@ -150,11 +208,7 @@ Eagle develops the Merlin, Cormorant and Moa route through the same hybrid-turre
 3. Hulls: `90_CALDARI`, `91_CALDARI`, `92_CALDARI`; Omega also uses `97_HEAVY_ASSAULT_CRUISERS`.
 4. Weapons/tools: `50`, `51`.
 
-🅰️Training string:
-
-```text
-EAGLE_T1_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,91_CALDARI_A,92_CALDARI_A,50_A,51_A
-```
+Alpha cannot fly Eagle. The final Alpha plan in this branch is placed with Moa.
 
 ⭐Training string:
 

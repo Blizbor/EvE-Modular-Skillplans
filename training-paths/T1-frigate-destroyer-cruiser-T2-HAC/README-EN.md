@@ -4,6 +4,8 @@
 
 These documents describe the complete pilot progression: T1 Frigate, T1 Destroyer, T1 Cruiser and T2 Heavy Assault Cruiser. Every stage is a useful stopping point, shows which tools are being developed and explains what the next SP investment provides. Alpha pilots can complete the T1 stages but cannot fly Heavy Assault Cruisers.
 
+An Alpha string selects the maximum Alpha file from every module it uses. It is not automatically a smaller subset of the paired Omega recipe: uneven Alpha limits can leave individual skills higher or broader, including skills irrelevant to that hull. “Nearest Omega” means the next sensible threshold for the same hull. Each pair therefore describes its real benefits instead of assuming that every Omega skill is higher.
+
 ## How this path develops
 
 | Stage | Transitional level | Regular-use level | What the next stage provides |

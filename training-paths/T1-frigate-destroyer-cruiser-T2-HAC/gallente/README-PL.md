@@ -44,6 +44,8 @@ Armor Buffer `21` jest wspólną bazą. Active Armor `22` zastępuje albo uzupe�
 
 Incursus/Atron rozpoczynają linię hybrid, a Tristan linię dronową. Racial Frigate III i supporty BASIC tworzą najniższy sensowny punkt rozpoczęcia. Dają możliwość przetestowania stylu walki przed inwestowaniem w kolejną klasę hulla.
 
+Poniższe recepty pokazują próg BASIC Omegi. Maksymalne plany Alpha dla tych samych hulli znajdują się w następnym, regularnym etapie, ponieważ moduł `A` oznacza maksimum dostępne dla Alpha, a nie absolutne minimum.
+
 ⭐Training string:
 
 ```text
@@ -60,10 +62,28 @@ GALLENTE_TRISTAN_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,10_B,21_B,90_GALLENTE_B,7
 
 Gallente Frigate IV dodaje kolejny poziom bonusów hulla. Hybridy rozwijają się przez `50 I`, a Tristan zyskuje T2 light drones dzięki `71 I`.
 
+Alpha i najbliższy plan Omega osiągają Gallente Frigate IV. Na Incursusie/Atronie zestawiona Omega nie podnosi small hybrid specializations ponad maksimum Alpha; podnosi Capacitor Systems Operation, navigation i Signature Analysis do IV. Tristan ma dodatkowo rzeczywistą różnicę Drone Interfacing IV dla Omegi zamiast III dla Alpha.
+
+#### Incursus / Atron
+
+🅰️Training string:
+
+```text
+GALLENTE_HYBRID_FRIGATE_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,50_A,51_A
+```
+
 ⭐Training string:
 
 ```text
 GALLENTE_HYBRID_FRIGATE_REGULAR_OMEGA,00_B,01_I,02_B,10_B,21_B,90_GALLENTE_I,50_I,51_B
+```
+
+#### Tristan
+
+🅰️Training string:
+
+```text
+GALLENTE_TRISTAN_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,70_A,71_A
 ```
 
 ⭐Training string:
@@ -76,10 +96,28 @@ GALLENTE_TRISTAN_REGULAR_OMEGA,00_B,01_I,02_B,10_B,21_B,90_GALLENTE_I,70_I,71_I
 
 Catalyst wykorzystuje małe hybridy, a Algos light i medium drones. Destroyer IV jest uzasadniony, gdy pilot regularnie używa tego etapu; do samego cruisera wystarcza poziom III.
 
+Alpha i najbliższy plan Omega osiągają Gallente Destroyer IV. Na Catalyście Omega podnosi Capacitor Systems Operation, navigation i Signature Analysis do IV, ale nie podnosi small hybrid specializations ponad maksimum Alpha. Na Algosie dochodzi Drone Interfacing IV zamiast III; zestawiona recepta tego etapu nie zawiera jeszcze pełnego modułu medium drones.
+
+#### Catalyst
+
+🅰️Training string:
+
+```text
+GALLENTE_CATALYST_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,91_GALLENTE_A,50_A,51_A
+```
+
 ⭐Training string:
 
 ```text
 GALLENTE_CATALYST_REGULAR_OMEGA,00_B,01_I,02_B,10_I,21_B,90_GALLENTE_B,91_GALLENTE_I,50_I,51_B
+```
+
+#### Algos
+
+🅰️Training string:
+
+```text
+GALLENTE_ALGOS_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,91_GALLENTE_A,70_A,71_A,72_A
 ```
 
 ⭐Training string:
@@ -92,10 +130,28 @@ GALLENTE_ALGOS_REGULAR_OMEGA,00_B,01_I,02_B,10_I,21_B,90_GALLENTE_B,91_GALLENTE_
 
 Thorax wymaga medium hybridów T2 z `51 I`; Vexor rozwija pełne supporty oraz light/medium drones. Gallente Cruiser IV jest właściwym poziomem regularnym. Armor active `22` zastępuje buffer `21`, jeżeli konkretny fit używa local repairera.
 
+Alpha i najbliższy plan Omega osiągają Gallente Cruiser IV. Thorax Alpha i Omega osiągają medium hybrid specializations III; Omega podnosi navigation, targeting, Advanced Weapon Upgrades i armor compensations. Vexor Omega dodaje Drone Interfacing IV oraz Medium Drone Operation V ponad limity Alpha III i IV.
+
+#### Thorax
+
+🅰️Training string:
+
+```text
+GALLENTE_THORAX_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,91_GALLENTE_A,92_GALLENTE_A,50_A,51_A,70_A
+```
+
 ⭐Training string:
 
 ```text
 GALLENTE_THORAX_REGULAR_OMEGA,00_I,01_I,02_I,10_S,21_I,90_GALLENTE_B,91_GALLENTE_B,92_GALLENTE_I,50_I,51_I,70_B
+```
+
+#### Vexor
+
+🅰️Training string:
+
+```text
+GALLENTE_VEXOR_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,91_GALLENTE_A,92_GALLENTE_A,70_A,71_A,72_A
 ```
 
 ⭐Training string:
@@ -108,11 +164,17 @@ GALLENTE_VEXOR_REGULAR_OMEGA,00_I,01_I,02_I,10_S,21_I,90_GALLENTE_B,91_GALLENTE_
 
 Deimos kontynuuje medium hybridy, a Ishtar przechodzi do heavy i sentry drones. Racial Cruiser V jest wymaganiem, a HAC III jedynie wejściem. Moduł `73 I` jest dla Ishtara ważniejszy niż przypadkowa gałąź turretów.
 
+Ten etap jest dostępny wyłącznie dla Omegi. Recepta Alpha nie jest tu publikowana, ponieważ nie odblokowałaby Deimosa ani Ishtara; Alpha nie ma też dostępu do Sentry Drone Interfacing wymaganej przez pełną gałąź Ishtara.
+
+#### Deimos
+
 ⭐Training string:
 
 ```text
 DEIMOS_ENTRY_OMEGA,00_I,01_I,02_I,10_S,21_I,92_GALLENTE_S,97_HEAVY_ASSAULT_CRUISERS_B,50_I,51_I
 ```
+
+#### Ishtar
 
 ⭐Training string:
 
@@ -129,11 +191,7 @@ Deimos jest bezpośrednim rozwinięciem Thoraxa i medium hybrid turrets. `51 I` 
 3. Hulle: `90_GALLENTE`, `91_GALLENTE`, `92_GALLENTE`; dla Omegi także `97_HEAVY_ASSAULT_CRUISERS`.
 4. Broń/narzędzia: `50`, `51`.
 
-🅰️Training string:
-
-```text
-DEIMOS_T1_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,91_GALLENTE_A,92_GALLENTE_A,50_A,51_A
-```
+Alpha nie może latać Deimosem. Ostatni plan Alpha tej gałęzi znajduje się przy Thoraxie.
 
 ⭐Training string:
 
@@ -150,11 +208,7 @@ Ishtar rozwija dronową linię Tristan, Algos i Vexor. Medium drones z `72 I` po
 3. Hulle: `90_GALLENTE`, `91_GALLENTE`, `92_GALLENTE`; dla Omegi także `97_HEAVY_ASSAULT_CRUISERS`.
 4. Broń/narzędzia: `70`, `72`; dla Ishtara także `73` heavy i sentry drones.
 
-🅰️Training string:
-
-```text
-ISHTAR_T1_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,91_GALLENTE_A,92_GALLENTE_A,70_A,72_A
-```
+Alpha nie może latać Ishtarem. Ostatni plan Alpha głównej gałęzi dronowej znajduje się przy Vexorze.
 
 ⭐Training string:
 

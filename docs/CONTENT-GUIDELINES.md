@@ -15,6 +15,8 @@ These rules apply to every contribution to **EvE Modular Skillplans**.
 - The shared introduction must also explain how to pass the supplied training string to the project tool, obtain the combined plan on screen, in a text file and in the clipboard, and paste it into EVE Online.
 - Every directory README must list its subdirectories and give a short, concrete description of what each one contains. A list of names alone is insufficient.
 - Every path must describe both Alpha and Omega use. If Alpha pilots cannot use a hull, module or stage, say so explicitly.
+- Never name or present an Alpha recipe as a plan for an Omega-only hull. Place the Alpha recipe at the last hull it can actually fly, pair it with the nearest sensible Omega recipe for that same hull, and explain the concrete performance or unlock difference.
+- Do not label an `A` recipe as the absolute-minimum stage unless the Alpha maximum genuinely is that minimum. The `A` level means the maximum accessible to Alpha within a module; it is not synonymous with BASIC.
 - Recommended modules must distinguish when BASIC is sufficient and when IMPROVED or STANDARD is justified.
 - A training path must explain progression, not merely store a maximum-effect recipe. Describe useful intermediate stopping points and the practical benefit gained at each relevant stage.
 - Begin a progression with an **absolute minimum** stage, then distinguish regular-use stages and T2 entry or specialization where they exist. At every stage, state what is unlocked, what improves and why that stopping point may be sufficient.
@@ -78,6 +80,8 @@ Poniższe zasady obowiązują przy każdej zmianie treści w projekcie **EvE Mod
 - Wspólny wstęp musi również wyjaśniać, jak przekazać podany string do narzędzia projektu, otrzymać połączony plan na ekranie, w pliku tekstowym i w schowku oraz wkleić go do EVE Online.
 - README każdego katalogu musi wymieniać podkatalogi oraz zawierać przy każdym krótki, konkretny opis jego zawartości. Sama lista nazw nie wystarcza.
 - Każda ścieżka musi opisywać użycie przez pilotów Alpha i Omega. Jeżeli Alpha nie może użyć hulla, modułu albo etapu, należy napisać to wprost.
+- Recepty Alpha nigdy nie nazywamy ani nie przedstawiamy jako planu dla hulla dostępnego wyłącznie dla Omegi. Umieszczamy ją przy ostatnim hullu, którym Alpha rzeczywiście może latać, zestawiamy z najbliższą sensowną receptą Omega dla tego samego hulla i opisujemy konkretną różnicę w osiągach albo odblokowaniach.
+- Recepty `A` nie opisujemy jako etapu absolutnego minimum, chyba że maksimum Alpha rzeczywiście jest tym minimum. Poziom `A` oznacza maksimum dostępne dla Alpha w danym module; nie jest synonimem poziomu BASIC.
 - Zalecane moduły muszą rozróżniać sytuacje, w których wystarcza BASIC, oraz te, w których uzasadniony jest IMPROVED albo STANDARD.
 - Training path musi wyjaśniać progresję, a nie być wyłącznie magazynem recepty maksymalizującej efekt. Należy opisać użyteczne przystanki pośrednie oraz praktyczną korzyść uzyskiwaną na każdym istotnym etapie.
 - Progresję rozpoczynamy od etapu **absolutne minimum**, a następnie rozróżniamy etapy regularnego użycia oraz wejście w T2 lub specjalizację, jeżeli istnieją. Na każdym etapie podajemy, co zostaje odblokowane, co się poprawia i dlaczego dany przystanek może wystarczyć.

@@ -44,6 +44,8 @@ Minmatar nie wymaga trenowania obu tanków naraz. Shield `30` naturalnie pasuje 
 
 Rifter/Slasher rozpoczynają linię projectile, a Breacher linię missiles. Racial Frigate III, tank BASIC i podstawowe supporty pozwalają tanio sprawdzić wybrany styl walki.
 
+Poniższe recepty pokazują próg BASIC Omegi. Maksymalne plany Alpha dla tych samych hulli znajdują się w następnym, regularnym etapie, ponieważ moduł `A` oznacza maksimum dostępne dla Alpha, a nie absolutne minimum.
+
 ⭐Training string:
 
 ```text
@@ -60,10 +62,28 @@ MINMATAR_BREACHER_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,10_B,30_B,31_B,90_MINMAT
 
 Minmatar Frigate IV dodaje kolejny poziom bonusów. Rifter/Slasher korzystają z małych projectile T2 z `52 B`, a Breacher z T2 rockets/light missiles z `61 I`. Navigation IMPROVED jest szczególnie użyteczne na mobilnych hullach Minmatar.
 
+Alpha i najbliższy plan Omega osiągają Minmatar Frigate IV. Na Rifterze/Slasherze zestawiona Omega nie podnosi small projectile specializations ponad maksimum Alpha; poprawia Capacitor Systems Operation, navigation i Signature Analysis. Breacher ma ten sam poziom rockets/light missiles, natomiast Omega podnosi Missile Support; maksymalny moduł Alpha ma nawet Shield Compensation IV wobec III w tej oszczędnej recepcie Omega.
+
+#### Rifter / Slasher
+
+🅰️Training string:
+
+```text
+MINMATAR_PROJECTILE_FRIGATE_ALPHA,00_A,01_A,02_A,10_A,30_A,90_MINMATAR_A,50_A,52_A
+```
+
 ⭐Training string:
 
 ```text
 MINMATAR_PROJECTILE_FRIGATE_REGULAR_OMEGA,00_B,01_I,02_B,10_B,30_B,90_MINMATAR_I,50_I,52_B
+```
+
+#### Breacher
+
+🅰️Training string:
+
+```text
+MINMATAR_BREACHER_ALPHA,00_A,01_A,02_A,10_A,30_A,31_A,90_MINMATAR_A,60_A,61_A
 ```
 
 ⭐Training string:
@@ -76,10 +96,28 @@ MINMATAR_BREACHER_REGULAR_OMEGA,00_B,01_I,02_B,10_B,30_B,31_B,90_MINMATAR_I,60_I
 
 Thrasher kontynuuje projectile, a Talwar missiles. Destroyer IV jest poziomem do regularnego wykorzystania bonusów; poziom III wystarcza tylko jako odblokowanie cruisera.
 
+Alpha i najbliższy plan Omega osiągają Minmatar Destroyer IV. Na Thrasherze zestawiona Omega poprawia Capacitor Systems Operation, navigation i Signature Analysis, ale nie podnosi small projectile specializations ponad maksimum Alpha. Talwar ma ten sam poziom rockets/light missiles, natomiast Omega podnosi Missile Support oraz te same supporty ogólne.
+
+#### Thrasher
+
+🅰️Training string:
+
+```text
+MINMATAR_THRASHER_ALPHA,00_A,01_A,02_A,10_A,30_A,90_MINMATAR_A,91_MINMATAR_A,50_A,52_A
+```
+
 ⭐Training string:
 
 ```text
 MINMATAR_THRASHER_REGULAR_OMEGA,00_B,01_I,02_B,10_I,30_B,90_MINMATAR_B,91_MINMATAR_I,50_I,52_B
+```
+
+#### Talwar
+
+🅰️Training string:
+
+```text
+MINMATAR_TALWAR_ALPHA,00_A,01_A,02_A,10_A,30_A,90_MINMATAR_A,91_MINMATAR_A,60_A,61_A
 ```
 
 ⭐Training string:
@@ -92,10 +130,28 @@ MINMATAR_TALWAR_REGULAR_OMEGA,00_B,01_I,02_B,10_I,30_B,90_MINMATAR_B,91_MINMATAR
 
 Stabber i Rupture rozwijają medium projectile T2 z `52 I`; Bellicose używa `61 I` dla RLML albo `62 I` dla HML/HAM. Minmatar Cruiser IV jest poziomem regularnym. Tank należy wybrać dla konkretnego hulla i fita.
 
+Alpha i najbliższy plan Omega osiągają Minmatar Cruiser IV oraz medium projectile specializations III na gałęzi turretowej. Omega podnosi navigation, targeting i Advanced Weapon Upgrades, lecz nie poziom hulla. Bellicose Alpha ma ten sam poziom HML/HAM z modułu `62`; Omega podnosi Missile Support oraz te same supporty ogólne.
+
+#### Stabber / Rupture
+
+🅰️Training string:
+
+```text
+MINMATAR_PROJECTILE_CRUISER_ALPHA,00_A,01_A,02_A,10_A,30_A,90_MINMATAR_A,91_MINMATAR_A,92_MINMATAR_A,50_A,52_A
+```
+
 ⭐Training string:
 
 ```text
 MINMATAR_PROJECTILE_CRUISER_REGULAR_OMEGA,00_I,01_I,02_I,10_S,30_I,90_MINMATAR_B,91_MINMATAR_B,92_MINMATAR_I,50_I,52_I
+```
+
+#### Bellicose
+
+🅰️Training string:
+
+```text
+MINMATAR_BELLICOSE_ALPHA,00_A,01_A,02_A,10_A,30_A,90_MINMATAR_A,91_MINMATAR_A,92_MINMATAR_A,60_A,62_A
 ```
 
 ⭐Training string:
@@ -108,11 +164,17 @@ MINMATAR_BELLICOSE_REGULAR_OMEGA,00_I,01_I,02_I,10_S,30_I,90_MINMATAR_B,91_MINMA
 
 Vagabond kontynuuje medium projectile, a obecny Muninn heavy missiles. Racial Cruiser V otwiera oba hulle; HAC III pozwala zacząć, ale HAC IV pozostaje właściwym celem regularnym.
 
+Ten etap jest dostępny wyłącznie dla Omegi. Recepta Alpha nie jest tu publikowana, ponieważ nie odblokowałaby Vagabonda ani Muninna.
+
+#### Vagabond
+
 ⭐Training string:
 
 ```text
 VAGABOND_ENTRY_OMEGA,00_I,01_I,02_I,10_S,30_I,92_MINMATAR_S,97_HEAVY_ASSAULT_CRUISERS_B,50_I,52_I
 ```
+
+#### Muninn
 
 ⭐Training string:
 
@@ -129,11 +191,7 @@ Vagabond jest końcem projectile branch rozwijanej przez Rifter, Thrasher i Stab
 3. Hulle: `90_MINMATAR`, `91_MINMATAR`, `92_MINMATAR`; dla Omegi także `97_HEAVY_ASSAULT_CRUISERS`.
 4. Broń/narzędzia: `50`, `52`.
 
-🅰️Training string:
-
-```text
-VAGABOND_T1_ALPHA,00_A,01_A,02_A,10_A,30_A,90_MINMATAR_A,91_MINMATAR_A,92_MINMATAR_A,50_A,52_A
-```
+Alpha nie może latać Vagabondem. Ostatni plan Alpha tej gałęzi znajduje się przy Stabberze/Rupture.
 
 ⭐Training string:
 
@@ -150,11 +208,7 @@ Obecny Muninn jest missile HAC-em. Pilot nie powinien trenować projectile turre
 3. Hulle: `90_MINMATAR`, `91_MINMATAR`, `92_MINMATAR`; dla Omegi także `97_HEAVY_ASSAULT_CRUISERS`.
 4. Broń/narzędzia: `60`, `62`.
 
-🅰️Training string:
-
-```text
-MUNINN_T1_ALPHA,00_A,01_A,02_A,10_A,30_A,90_MINMATAR_A,91_MINMATAR_A,92_MINMATAR_A,60_A,62_A
-```
+Alpha nie może latać Muninnem. Ostatni plan Alpha tej gałęzi znajduje się przy Bellicose.
 
 ⭐Training string:
 
