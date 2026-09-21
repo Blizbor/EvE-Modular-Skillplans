@@ -13,16 +13,30 @@ This path covers the available T1 hulls and two Heavy Assault Cruiser branches. 
 
 **Omega:** a HAC requires the racial Cruiser at `STANDARD`, the `97 HEAVY ASSAULT CRUISERS` module, and `IMPROVED` in the matching medium weapon family.
 
-## Practical Gallente progression
+## Gallente progression map
 
-| Stage | Hybrid branch | Drone branch | Recommended stop |
+The [progression diagram](DIAGRAM-EN.md) shows the shared hull requirements and a clear split between hybrid turrets and drones.
+
+### Shared hull progression
+
+| Stage | Minimum opening the next stage | Regular-use level | What remains useful |
 |---|---|---|---|
-| Frigate | Incursus, Atron | Tristan | `90_GALLENTE I`; `50 B/I` with `51 B`, or `70 B` with `71 I` |
-| Destroyer | Catalyst | Algos | `91_GALLENTE I`; Catalyst develops small hybrids, Algos develops light and medium drones |
-| Cruiser | Thorax | Vexor | `92_GALLENTE I`; Thorax uses `50 I` and `51 I`, Vexor uses `70 I` with `71/72 I` |
-| HAC | Deimos | Ishtar | `92_GALLENTE S`, `97 ... I`; Deimos develops medium hybrids, Ishtar uses heavy and sentry drones from module `73` |
+| Gallente Frigate | Gallente Frigate III opens Gallente Destroyer | `90_GALLENTE I`: Frigate IV | CORE, fitting, navigation and armor carry onward; small hybrids or light drones also work on the destroyer |
+| Gallente Destroyer | Gallente Destroyer III opens Gallente Cruiser | `91_GALLENTE I`: Destroyer IV | level IV strengthens Catalyst or Algos but is not a cruiser prerequisite |
+| Gallente Cruiser | Gallente Cruiser V opens HAC | `92_GALLENTE I`: Cruiser IV | Thorax and Vexor are complete stages; level V is the cost of entering either HAC |
+| Heavy Assault Cruiser | Heavy Assault Cruisers I unlocks the class | `97 ... I`: HAC IV | Deimos and Ishtar share hull requirements but have entirely different weapon priorities |
 
-Thorax uses drones as support but does not require the full drone branch before the pilot begins flying it. Vexor and Ishtar reverse that priority: drones are their primary tool, so a turret plan is not mandatory. An actively tanked Deimos uses branch `22`, rather than automatically using buffer module `21`.
+### Reuse of weapons and drones
+
+| Branch | T1 Frigate and Destroyer | T1 Cruiser | HAC | Reuse of earlier training |
+|---|---|---|---|---|
+| hybrid turrets | Incursus/Atron, Catalyst | Thorax | Deimos | turret supports remain common; small hybrids work through the destroyer, while medium hybrids carry directly from Thorax into Deimos |
+| drones | Tristan, Algos | Vexor | Ishtar | Drone Support and light drones work from the frigate onward; medium drones enter on Algos/Vexor, and Ishtar adds heavy and sentry drones |
+| secondary weapon | drones or turrets according to hull | Thorax may use support drones | Deimos may use support drones | a secondary weapon does not justify completing the entire second branch before using the hull |
+
+### Tank
+
+Armor Buffer `21` is the shared base. Active Armor `22` replaces or supplements it when the actual fit uses a local repairer, especially on Incursus or Deimos. Shared hull requirements do not turn Vexor and Ishtar into turret ships or Thorax and Deimos into drone ships.
 
 ## Progression stages
 

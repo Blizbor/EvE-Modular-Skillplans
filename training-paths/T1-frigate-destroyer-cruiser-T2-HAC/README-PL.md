@@ -15,6 +15,14 @@ Dokumenty opisują pełną progresję pilota: T1 Frigate, T1 Destroyer, T1 Cruis
 
 Frigate III, Destroyer III i Cruiser III są poprawnymi etapami odblokowania lub pierwszych prób. Jeżeli pilot ma regularnie latać danym hullem T1, naturalnym celem jest poziom IV. Przejście do HAC wymaga racial Cruiser V, ale nie wymaga trenowania hulla destroyera do V.
 
+## Jak czytać mapy ras
+
+- Niebieskie węzły pokazują wspólną progresję hulli oraz skille wymagane do otwarcia następnej klasy.
+- Osobne ciągi broni i dronów pokazują, które wcześniejsze skille są dalej wykorzystywane przez konkretny statek.
+- Te same wymagania hulla nie oznaczają tej samej broni. Przykładowo Zealot i Sacrilege wymagają Amarr Cruiser V, ale jeden rozwija lasery, a drugi missiles.
+- Tank jest wybierany pod hull i rzeczywisty fit. Wspólna rasa albo klasa hulla nie jest powodem do trenowania jednocześnie wszystkich odmian tanku.
+- Drony są główną bronią tylko w zaznaczonej gałęzi. Na pozostałych hullach mogą być bronią pomocniczą i nie wymagają ukończenia pełnej specjalizacji przed rozpoczęciem latania.
+
 ## Rozwój supportów
 
 - Na taniej fregacie supporty BASIC pozwalają rozpocząć naukę hulla i jego broni.

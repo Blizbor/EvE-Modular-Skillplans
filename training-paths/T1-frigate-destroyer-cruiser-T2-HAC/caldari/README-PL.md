@@ -13,16 +13,30 @@ Ta ścieżka prowadzi przez dostępne hulle T1 do dwóch wariantów Heavy Assaul
 
 **Omega:** HAC wymaga racial Cruiser na poziomie `STANDARD`, modułu `97 HEAVY ASSAULT CRUISERS` oraz `IMPROVED` dla właściwej rodziny średniej broni.
 
-## Praktyczna progresja Caldari
+## Mapa progresji Caldari
 
-| Etap | Gałąź missiles | Gałąź hybrid | Zalecany przystanek |
+[Diagram progresji](DIAGRAM-PL.md) pokazuje wspólne wymagania hulli oraz dwie równoległe gałęzie broni korzystające z tej samej bazy shield.
+
+### Wspólna progresja hulli
+
+| Etap | Minimum otwierające następny etap | Poziom regularny | Co pozostaje użyteczne |
 |---|---|---|---|
-| Frigate | Kestrel | Merlin | `90_CALDARI I`; `60 B/I` z `61 I` albo `50 B/I` z `51 B` |
-| Destroyer | Corax | Cormorant | `91_CALDARI I`; ukończ wybraną małą broń przed przejściem do droższego hulla |
-| Cruiser | Caracal | Moa | `92_CALDARI I`, `30 I`; Caracal używa `61 I` dla RLML albo `62 I` dla HML/HAM, Moa używa `51 I` |
-| HAC | Cerberus | Eagle | `92_CALDARI S`, `97 ... I`; medium missiles albo medium hybrids na poziomie IMPROVED |
+| Caldari Frigate | Caldari Frigate III otwiera Caldari Destroyer | `90_CALDARI I`: Frigate IV | CORE, fitting, navigation i shield przechodzą na następne hulle; wybrana mała broń pracuje także na destroyerze |
+| Caldari Destroyer | Caldari Destroyer III otwiera Caldari Cruiser | `91_CALDARI I`: Destroyer IV | poziom IV wzmacnia Coraxa albo Cormoranta, ale nie jest wymaganiem cruisera |
+| Caldari Cruiser | Caldari Cruiser V otwiera HAC | `92_CALDARI I`: Cruiser IV | Caracal i Moa są pełnoprawnymi etapami; poziom V jest kosztem wejścia w oba HAC-e |
+| Heavy Assault Cruiser | Heavy Assault Cruisers I odblokowuje klasę | `97 ... I`: HAC IV | Cerberus i Eagle używają tych samych skilli hulla, lecz innych skilli broni |
 
-Caracal jest użytecznym celem samym w sobie, a nie tylko wymaganiem do Cerberusa; to samo dotyczy Moi przed Eagle. `31 Shield Active` należy dodać tylko do fitów z boosterem. Buffer lub passive shield nie uzasadnia trenowania aktywnego tanku.
+### Wykorzystanie broni i dronów
+
+| Gałąź | T1 Frigate i Destroyer | T1 Cruiser | HAC | Wykorzystanie wcześniejszego treningu |
+|---|---|---|---|---|
+| missiles | Kestrel, Corax | Caracal | Cerberus | rockets i light missiles obsługują małe hulle oraz RLML Caracala; HML/HAM są nową częścią gałęzi dla Caracala i Cerberusa |
+| hybrid turrets | Merlin, Cormorant | Moa | Eagle | supporty turretów pozostają wspólne; small hybrids pracują do destroyera, a medium hybrids przechodzą z Moi bezpośrednio do Eagle |
+| drones | brak głównej gałęzi | pomocnicze light drones tam, gdzie hull ma drone bay | pomocnicze light drones zależnie od hulla i fita | drony są dodatkiem i nie zastępują missiles ani hybrid turrets |
+
+### Tank
+
+Shield Buffer `30` jest wspólną bazą obu gałęzi. Shield Active `31` należy dodać wyłącznie do fita z shield boosterem. Ten sam ciąg hulli nie wymaga trenowania aktywnego tanku dla buffer albo passive shield fita.
 
 ## Etapy progresji
 

@@ -13,16 +13,30 @@ Ta ścieżka prowadzi przez dostępne hulle T1 do dwóch wariantów Heavy Assaul
 
 **Omega:** HAC wymaga racial Cruiser na poziomie `STANDARD`, modułu `97 HEAVY ASSAULT CRUISERS` oraz `IMPROVED` dla właściwej rodziny średniej broni.
 
-## Praktyczna progresja Minmatar
+## Mapa progresji Minmatar
 
-| Etap | Gałąź projectile | Gałąź missiles | Zalecany przystanek |
+[Diagram progresji](DIAGRAM-PL.md) pokazuje wspólne wymagania hulli, dwie gałęzie broni oraz wybór tanku zależny od konkretnego statku i fita.
+
+### Wspólna progresja hulli
+
+| Etap | Minimum otwierające następny etap | Poziom regularny | Co pozostaje użyteczne |
 |---|---|---|---|
-| Frigate | Rifter, Slasher | Breacher | `90_MINMATAR I`; `50 B/I` z `52 B` albo `60 B/I` z `61 I` |
-| Destroyer | Thrasher | Talwar | `91_MINMATAR I`; mała broń zgodna z wybranym hullem |
-| Cruiser | Stabber, Rupture | Bellicose | `92_MINMATAR I`; projectile `50 I` i `52 I` albo missiles `60 I` oraz `61/62 I` |
-| HAC | Vagabond | Muninn | `92_MINMATAR S`, `97 ... I`; Vagabond używa projectile, obecny Muninn missiles |
+| Minmatar Frigate | Minmatar Frigate III otwiera Minmatar Destroyer | `90_MINMATAR I`: Frigate IV | CORE, fitting i navigation przechodzą dalej; wybrana mała broń pracuje także na destroyerze |
+| Minmatar Destroyer | Minmatar Destroyer III otwiera Minmatar Cruiser | `91_MINMATAR I`: Destroyer IV | poziom IV wzmacnia Thrashera albo Talwara, ale nie jest wymaganiem cruisera |
+| Minmatar Cruiser | Minmatar Cruiser V otwiera HAC | `92_MINMATAR I`: Cruiser IV | Stabber, Rupture i Bellicose są pełnoprawnymi etapami; poziom V jest kosztem wejścia w oba HAC-e |
+| Heavy Assault Cruiser | Heavy Assault Cruisers I odblokowuje klasę | `97 ... I`: HAC IV | Vagabond i Muninn mają wspólne wymagania hulla, lecz inne główne uzbrojenie i możliwy tank |
 
-Minmatar nie wymaga trenowania obu tanków naraz. Stabber i Vagabond naturalnie korzystają z shield i mobilności; Rupture może wymagać armor albo shield zależnie od konkretnego fita. `31 Shield Active` jest uzasadniony dla aktywnie tankowanego Breachera lub Vagabonda, ale nie dla każdego hulla w tej rasie.
+### Wykorzystanie broni i dronów
+
+| Gałąź | T1 Frigate i Destroyer | T1 Cruiser | HAC | Wykorzystanie wcześniejszego treningu |
+|---|---|---|---|---|
+| projectile turrets | Rifter/Slasher, Thrasher | Stabber, Rupture | Vagabond | supporty turretów są wspólne; small projectile pracują do destroyera, a medium projectile przechodzą z cruisera do Vagabonda |
+| missiles | Breacher, Talwar | Bellicose | Muninn | rockets i light missiles obsługują małe hulle; HML/HAM są nową częścią gałęzi dla Bellicose i obecnego Muninna |
+| drones | brak głównej gałęzi | light/medium drones jako broń pomocnicza tam, gdzie hull ma drone bay | broń pomocnicza zależna od hulla i fita | drony nie zastępują projectile ani missiles i nie wymagają pełnej specjalizacji przed użyciem hulla |
+
+### Tank
+
+Minmatar nie wymaga trenowania obu tanków naraz. Shield `30` naturalnie pasuje do Stabbera i Vagabonda oraz wielu fitów pozostałych hulli. Armor `21` jest alternatywą dla Rupture, Muninna albo innego konkretnego armor fita. Shield Active `31` ma sens wyłącznie z boosterem, na przykład w odpowiednim ficie Breachera lub Vagabonda.
 
 ## Etapy progresji
 

@@ -13,16 +13,30 @@ This path covers the available T1 hulls and two Heavy Assault Cruiser branches. 
 
 **Omega:** a HAC requires the racial Cruiser at `STANDARD`, the `97 HEAVY ASSAULT CRUISERS` module, and `IMPROVED` in the matching medium weapon family.
 
-## Practical Amarr progression
+## Amarr progression map
 
-| Stage | Useful hulls | Recommended stop | What the pilot gains |
+The [progression diagram](DIAGRAM-EN.md) separates the shared hull requirements from three different primary-weapon investments.
+
+### Shared hull progression
+
+| Stage | Minimum opening the next stage | Regular-use level | What remains useful |
 |---|---|---|---|
-| Frigate | Punisher, Executioner | `90_AMARR I`, `50 B`, `53 B` | Frigate IV strengthens hull bonuses, while the selected small weapon teaches lasers without forcing the full medium branch |
-| Destroyer | Coercer, Dragoon | `91_AMARR I`; for Coercer `50 I` and `53 B`, for Dragoon `70 B/I` | Coercer develops small lasers; Dragoon provides a complete drone side branch |
-| Cruiser | Omen, Maller, Arbitrator | `92_AMARR I`; laser cruiser `50 I` and `53 I`, Arbitrator `70 I` with light/medium drones | Cruiser IV is the regular-use threshold; Omen/Maller develop lasers, while Arbitrator develops drones without requiring turrets |
-| HAC | Zealot, Sacrilege | `92_AMARR S`, `97 ... I` | Zealot uses medium energy turrets; Sacrilege changes to missiles and does not require lasers |
+| Amarr Frigate | Amarr Frigate III opens Amarr Destroyer | `90_AMARR I`: Frigate IV | CORE, fitting, navigation, armor and the small weapon continue to work on the destroyer |
+| Amarr Destroyer | Amarr Destroyer III opens Amarr Cruiser | `91_AMARR I`: Destroyer IV | level IV strengthens a destroyer that remains in use but is not a cruiser prerequisite |
+| Amarr Cruiser | Amarr Cruiser V opens HAC | `92_AMARR I`: Cruiser IV | Cruiser IV is the T1 stop; level V is the cost of entering either HAC |
+| Heavy Assault Cruiser | Heavy Assault Cruisers I unlocks the class | `97 ... I`: HAC IV | both HACs share hull requirements but use different weapons |
 
-Active armor module `22` is a separate branch for fits with a local repairer. It should not be trained merely because the faction commonly uses armor. The final recipes below describe complete HAC branches; every T1 stage remains a useful stopping point.
+### Reuse of weapons and drones
+
+| Branch | T1 Frigate and Destroyer | T1 Cruiser | HAC | Reuse of earlier training |
+|---|---|---|---|---|
+| energy turrets | Punisher/Executioner, Coercer | Omen, Maller | Zealot | turret supports and small lasers work through the destroyer; medium energy turrets added for cruisers carry directly into Zealot |
+| drones | Dragoon | Arbitrator | no primary-drone HAC in this path | Drone Support and light drones carry into Arbitrator, which adds medium drones and may remain the destination of this branch |
+| missiles | no required T1 stage | no required T1 stage | Sacrilege | Sacrilege uses separate Missile Support and HML/HAM; earlier laser training is not its requirement |
+
+### Tank
+
+Armor Buffer `21` is the shared base for the listed hulls. Active Armor `22` is a separate branch only for a fit with a local repairer. Shared hull requirements do not mean that Zealot and Sacrilege must use identical tanks or weapons.
 
 ## Progression stages
 

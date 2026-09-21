@@ -13,16 +13,30 @@ This path covers the available T1 hulls and two Heavy Assault Cruiser branches. 
 
 **Omega:** a HAC requires the racial Cruiser at `STANDARD`, the `97 HEAVY ASSAULT CRUISERS` module, and `IMPROVED` in the matching medium weapon family.
 
-## Practical Minmatar progression
+## Minmatar progression map
 
-| Stage | Projectile branch | Missile branch | Recommended stop |
+The [progression diagram](DIAGRAM-EN.md) shows the shared hull requirements, two weapon branches and a tank choice determined by the actual ship and fit.
+
+### Shared hull progression
+
+| Stage | Minimum opening the next stage | Regular-use level | What remains useful |
 |---|---|---|---|
-| Frigate | Rifter, Slasher | Breacher | `90_MINMATAR I`; `50 B/I` with `52 B`, or `60 B/I` with `61 I` |
-| Destroyer | Thrasher | Talwar | `91_MINMATAR I`; use the small weapon matching the selected hull |
-| Cruiser | Stabber, Rupture | Bellicose | `92_MINMATAR I`; projectile `50 I` and `52 I`, or missiles `60 I` with `61/62 I` |
-| HAC | Vagabond | Muninn | `92_MINMATAR S`, `97 ... I`; Vagabond uses projectiles, the current Muninn uses missiles |
+| Minmatar Frigate | Minmatar Frigate III opens Minmatar Destroyer | `90_MINMATAR I`: Frigate IV | CORE, fitting and navigation carry onward; the selected small weapon also works on the destroyer |
+| Minmatar Destroyer | Minmatar Destroyer III opens Minmatar Cruiser | `91_MINMATAR I`: Destroyer IV | level IV strengthens Thrasher or Talwar but is not a cruiser prerequisite |
+| Minmatar Cruiser | Minmatar Cruiser V opens HAC | `92_MINMATAR I`: Cruiser IV | Stabber, Rupture and Bellicose are complete stages; level V is the cost of entering either HAC |
+| Heavy Assault Cruiser | Heavy Assault Cruisers I unlocks the class | `97 ... I`: HAC IV | Vagabond and Muninn share hull requirements but differ in primary weapon and possible tank |
 
-Minmatar does not require training both tank branches at once. Stabber and Vagabond naturally use shield and mobility; Rupture may use armor or shield according to the actual fit. `31 Shield Active` is justified for an actively tanked Breacher or Vagabond, not for every hull in the faction.
+### Reuse of weapons and drones
+
+| Branch | T1 Frigate and Destroyer | T1 Cruiser | HAC | Reuse of earlier training |
+|---|---|---|---|---|
+| projectile turrets | Rifter/Slasher, Thrasher | Stabber, Rupture | Vagabond | turret supports remain common; small projectiles work through the destroyer, while medium projectiles carry from the cruiser into Vagabond |
+| missiles | Breacher, Talwar | Bellicose | Muninn | rockets and light missiles operate small hulls; HML/HAM are the new part of the branch for Bellicose and the current Muninn |
+| drones | no primary branch | light/medium drones as secondary weapons where the hull has a bay | secondary weapon according to hull and fit | drones do not replace projectiles or missiles and do not require full specialization before the hull is used |
+
+### Tank
+
+Minmatar does not require both tank branches at once. Shield `30` naturally fits Stabber and Vagabond and many fits for the other hulls. Armor `21` is an alternative for Rupture, Muninn or another specific armor fit. Shield Active `31` is useful only with a booster, for example on an appropriate Breacher or Vagabond fit.
 
 ## Progression stages
 

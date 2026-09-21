@@ -13,16 +13,30 @@ This path covers the available T1 hulls and two Heavy Assault Cruiser branches. 
 
 **Omega:** a HAC requires the racial Cruiser at `STANDARD`, the `97 HEAVY ASSAULT CRUISERS` module, and `IMPROVED` in the matching medium weapon family.
 
-## Practical Caldari progression
+## Caldari progression map
 
-| Stage | Missile branch | Hybrid branch | Recommended stop |
+The [progression diagram](DIAGRAM-EN.md) shows the shared hull requirements and two parallel weapon branches using the same shield foundation.
+
+### Shared hull progression
+
+| Stage | Minimum opening the next stage | Regular-use level | What remains useful |
 |---|---|---|---|
-| Frigate | Kestrel | Merlin | `90_CALDARI I`; `60 B/I` with `61 I`, or `50 B/I` with `51 B` |
-| Destroyer | Corax | Cormorant | `91_CALDARI I`; complete the selected small weapon before moving into the more expensive hull |
-| Cruiser | Caracal | Moa | `92_CALDARI I`, `30 I`; Caracal uses `61 I` for RLML or `62 I` for HML/HAM, while Moa uses `51 I` |
-| HAC | Cerberus | Eagle | `92_CALDARI S`, `97 ... I`; medium missiles or medium hybrids at IMPROVED |
+| Caldari Frigate | Caldari Frigate III opens Caldari Destroyer | `90_CALDARI I`: Frigate IV | CORE, fitting, navigation and shield carry onward; the selected small weapon also works on the destroyer |
+| Caldari Destroyer | Caldari Destroyer III opens Caldari Cruiser | `91_CALDARI I`: Destroyer IV | level IV strengthens Corax or Cormorant but is not a cruiser prerequisite |
+| Caldari Cruiser | Caldari Cruiser V opens HAC | `92_CALDARI I`: Cruiser IV | Caracal and Moa are complete stages; level V is the cost of entering either HAC |
+| Heavy Assault Cruiser | Heavy Assault Cruisers I unlocks the class | `97 ... I`: HAC IV | Cerberus and Eagle share hull skills but not weapon skills |
 
-Caracal is a useful destination in its own right, not merely a Cerberus prerequisite; the same is true of Moa before Eagle. Add `31 Shield Active` only for a fit that uses a booster. A buffer or passive shield fit does not justify training the active-tank branch.
+### Reuse of weapons and drones
+
+| Branch | T1 Frigate and Destroyer | T1 Cruiser | HAC | Reuse of earlier training |
+|---|---|---|---|---|
+| missiles | Kestrel, Corax | Caracal | Cerberus | rockets and light missiles operate the small hulls and an RLML Caracal; HML/HAM are the new part of the branch for Caracal and Cerberus |
+| hybrid turrets | Merlin, Cormorant | Moa | Eagle | turret supports remain common; small hybrids work through the destroyer, while medium hybrids carry directly from Moa into Eagle |
+| drones | no primary branch | secondary light drones where the hull has a drone bay | secondary light drones according to hull and fit | drones are an addition and do not replace missiles or hybrid turrets |
+
+### Tank
+
+Shield Buffer `30` is the shared base for both branches. Add Shield Active `31` only for a fit with a shield booster. Following the same hull progression does not justify training active tank for a buffer or passive-shield fit.
 
 ## Progression stages
 

@@ -13,16 +13,30 @@ Ta ścieżka prowadzi przez dostępne hulle T1 do dwóch wariantów Heavy Assaul
 
 **Omega:** HAC wymaga racial Cruiser na poziomie `STANDARD`, modułu `97 HEAVY ASSAULT CRUISERS` oraz `IMPROVED` dla właściwej rodziny średniej broni.
 
-## Praktyczna progresja Amarr
+## Mapa progresji Amarr
 
-| Etap | Użyteczne hulle | Zalecany przystanek | Co pilot zyskuje |
+[Diagram progresji](DIAGRAM-PL.md) pokazuje oddzielnie wspólne wymagania hulli oraz trzy różne inwestycje w główną broń.
+
+### Wspólna progresja hulli
+
+| Etap | Minimum otwierające następny etap | Poziom regularny | Co pozostaje użyteczne |
 |---|---|---|---|
-| Frigate | Punisher, Executioner | `90_AMARR I`, `50 B`, `53 B` | Frigate IV wzmacnia bonusy hulla, a właściwa mała broń pozwala poznać lasery bez trenowania całej gałęzi medium |
-| Destroyer | Coercer, Dragoon | `91_AMARR I`; dla Coercera `50 I` i `53 B`, dla Dragoona `70 B/I` | Coercer rozwija małe lasery, Dragoon daje pełnoprawną boczną gałąź dronową |
-| Cruiser | Omen, Maller, Arbitrator | `92_AMARR I`; laserowy cruiser `50 I` i `53 I`, Arbitrator `70 I` i drony light/medium | Cruiser IV jest regularnym progiem; Omen/Maller rozwijają lasery, Arbitrator pozwala rozwijać drony bez wymuszania turretów |
-| HAC | Zealot, Sacrilege | `92_AMARR S`, `97 ... I` | Zealot wykorzystuje medium energy turrets; Sacrilege przechodzi na missiles i nie wymaga laserów |
+| Amarr Frigate | Amarr Frigate III otwiera Amarr Destroyer | `90_AMARR I`: Frigate IV | CORE, fitting, navigation, armor oraz mała broń nadal pracują na destroyerze |
+| Amarr Destroyer | Amarr Destroyer III otwiera Amarr Cruiser | `91_AMARR I`: Destroyer IV | poziom IV wzmacnia używany destroyer, ale nie jest wymaganiem cruisera |
+| Amarr Cruiser | Amarr Cruiser V otwiera HAC | `92_AMARR I`: Cruiser IV | Cruiser IV jest przystankiem T1; poziom V jest kosztem wejścia w oba HAC-e |
+| Heavy Assault Cruiser | Heavy Assault Cruisers I odblokowuje klasę | `97 ... I`: HAC IV | oba HAC-e mają identyczne wymagania hulla, lecz korzystają z innej broni |
 
-Tank aktywny `22` jest osobną gałęzią dla fitów z local repem. Nie należy trenować go tylko dlatego, że rasa zwykle używa armoru. Recepty końcowe poniżej pokazują kompletne gałęzie HAC; etapy T1 pozostają samodzielnymi, użytecznymi przystankami.
+### Wykorzystanie broni i dronów
+
+| Gałąź | T1 Frigate i Destroyer | T1 Cruiser | HAC | Wykorzystanie wcześniejszego treningu |
+|---|---|---|---|---|
+| energy turrets | Punisher/Executioner, Coercer | Omen, Maller | Zealot | supporty turretów i małe lasery pracują do destroyera; na cruiserze dochodzą medium energy turrets, które przechodzą bezpośrednio do Zealota |
+| drones | Dragoon | Arbitrator | brak głównego drone HAC-a w tej ścieżce | Drone Support i light drones przechodzą do Arbitratora, który dodaje medium drones i może pozostać docelowym etapem tej gałęzi |
+| missiles | brak obowiązkowego etapu T1 | brak obowiązkowego etapu T1 | Sacrilege | Sacrilege korzysta z osobnych Missile Support oraz HML/HAM; wcześniejsze lasery nie są jego wymaganiem |
+
+### Tank
+
+Armor Buffer `21` jest wspólną bazą dla wskazanych hulli. Active Armor `22` jest osobną gałęzią wyłącznie dla fita z local repairerem. Wspólne wymagania hulla nie oznaczają, że Zealot i Sacrilege muszą mieć identyczny tank ani broń.
 
 ## Etapy progresji
 

@@ -13,16 +13,30 @@ Ta ścieżka prowadzi przez dostępne hulle T1 do dwóch wariantów Heavy Assaul
 
 **Omega:** HAC wymaga racial Cruiser na poziomie `STANDARD`, modułu `97 HEAVY ASSAULT CRUISERS` oraz `IMPROVED` dla właściwej rodziny średniej broni.
 
-## Praktyczna progresja Gallente
+## Mapa progresji Gallente
 
-| Etap | Gałąź hybrid | Gałąź drones | Zalecany przystanek |
+[Diagram progresji](DIAGRAM-PL.md) pokazuje wspólne wymagania hulli oraz wyraźny podział na gałąź hybrid turrets i gałąź dronową.
+
+### Wspólna progresja hulli
+
+| Etap | Minimum otwierające następny etap | Poziom regularny | Co pozostaje użyteczne |
 |---|---|---|---|
-| Frigate | Incursus, Atron | Tristan | `90_GALLENTE I`; `50 B/I` z `51 B` albo `70 B` z `71 I` |
-| Destroyer | Catalyst | Algos | `91_GALLENTE I`; Catalyst rozwija małe hybridy, Algos light i medium drones |
-| Cruiser | Thorax | Vexor | `92_GALLENTE I`; Thorax `50 I` i `51 I`, Vexor `70 I` oraz `71/72 I` |
-| HAC | Deimos | Ishtar | `92_GALLENTE S`, `97 ... I`; Deimos rozwija medium hybridy, Ishtar ciężkie i sentry drones z modułu `73` |
+| Gallente Frigate | Gallente Frigate III otwiera Gallente Destroyer | `90_GALLENTE I`: Frigate IV | CORE, fitting, navigation i armor przechodzą dalej; małe hybridy albo light drones pracują także na destroyerze |
+| Gallente Destroyer | Gallente Destroyer III otwiera Gallente Cruiser | `91_GALLENTE I`: Destroyer IV | poziom IV wzmacnia Catalysta albo Algosa, ale nie jest wymaganiem cruisera |
+| Gallente Cruiser | Gallente Cruiser V otwiera HAC | `92_GALLENTE I`: Cruiser IV | Thorax i Vexor są pełnoprawnymi etapami; poziom V jest kosztem wejścia w oba HAC-e |
+| Heavy Assault Cruiser | Heavy Assault Cruisers I odblokowuje klasę | `97 ... I`: HAC IV | Deimos i Ishtar mają wspólne wymagania hulla, lecz całkowicie inny priorytet uzbrojenia |
 
-Thorax korzysta z dronów jako uzupełnienia, ale nie wymaga pełnej gałęzi dronowej przed rozpoczęciem latania. Vexor i Ishtar odwracają priorytet: drony są ich głównym narzędziem, więc turret plan nie jest obowiązkowy. Dla aktywnie tankowanego Deimosa właściwą gałęzią jest `22`, a nie automatycznie buffer `21`.
+### Wykorzystanie broni i dronów
+
+| Gałąź | T1 Frigate i Destroyer | T1 Cruiser | HAC | Wykorzystanie wcześniejszego treningu |
+|---|---|---|---|---|
+| hybrid turrets | Incursus/Atron, Catalyst | Thorax | Deimos | supporty turretów są wspólne; small hybrids pracują do destroyera, a medium hybrids przechodzą z Thoraxa bezpośrednio do Deimosa |
+| drones | Tristan, Algos | Vexor | Ishtar | Drone Support i light drones pracują od fregaty; medium drones dochodzą na Algosie/Vexorze, a Ishtar dodaje heavy i sentry drones |
+| broń pomocnicza | drony lub turrety zależnie od hulla | Thorax może używać dronów pomocniczych | Deimos może używać dronów pomocniczych | pomocnicza broń nie uzasadnia trenowania całej drugiej gałęzi przed użyciem hulla |
+
+### Tank
+
+Armor Buffer `21` jest wspólną bazą. Active Armor `22` zastępuje albo uzupełnia ją wtedy, gdy konkretny fit używa local repairera, szczególnie na Incursusie lub Deimosie. Wspólne wymagania hulla nie zmieniają Vexora i Ishtara w turret ships ani Thoraxa i Deimosa w drone ships.
 
 ## Etapy progresji
 

@@ -15,6 +15,14 @@ These documents describe the complete pilot progression: T1 Frigate, T1 Destroye
 
 Frigate III, Destroyer III and Cruiser III are valid unlock or first-trial stages. When a pilot intends to fly a T1 hull regularly, level IV is the natural target. Moving to a HAC requires racial Cruiser V, but does not require training the destroyer hull to V.
 
+## How to read the faction maps
+
+- Blue nodes show shared hull progression and the skills required to open the next class.
+- Separate weapon and drone chains show which earlier skills remain useful on a specific ship.
+- Identical hull requirements do not imply identical weapons. For example, Zealot and Sacrilege both require Amarr Cruiser V, but one develops lasers and the other missiles.
+- Tank is selected for the hull and actual fit. A shared faction or hull class is not a reason to train every tank branch at once.
+- Drones are the primary weapon only in the marked branch. On other hulls they may be secondary and do not require completing the full specialization before the ship is used.
+
 ## Support progression
 
 - BASIC support is enough to begin learning a cheap frigate and its weapon system.
