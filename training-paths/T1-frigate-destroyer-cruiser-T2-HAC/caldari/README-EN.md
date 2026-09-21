@@ -24,6 +24,88 @@ This path covers the available T1 hulls and two Heavy Assault Cruiser branches. 
 
 Caracal is a useful destination in its own right, not merely a Cerberus prerequisite; the same is true of Moa before Eagle. Add `31 Shield Active` only for a fit that uses a booster. A buffer or passive shield fit does not justify training the active-tank branch.
 
+## Progression stages
+
+### 1. Absolute minimum: T1 Frigate
+
+Kestrel begins the missile line and Merlin the hybrid-turret line. Racial Frigate III with BASIC support is enough for first trials. This stage teaches range, damage application and shield tanking; it is not the completed pilot standard.
+
+⭐Training string:
+
+```text
+CALDARI_KESTREL_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,10_B,30_B,90_CALDARI_B,60_B,61_B
+```
+
+⭐Training string:
+
+```text
+CALDARI_MERLIN_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,10_B,30_B,90_CALDARI_B,50_B,51_B
+```
+
+### 2. Regular T1 Frigate
+
+Caldari Frigate IV strengthens hull bonuses. `61 I` supplies T2 rockets and light missiles for Kestrel, while `51 B` already supplies small T2 hybrids for Merlin.
+
+⭐Training string:
+
+```text
+CALDARI_KESTREL_REGULAR_OMEGA,00_B,01_I,02_B,10_B,30_B,90_CALDARI_I,60_I,61_I
+```
+
+⭐Training string:
+
+```text
+CALDARI_MERLIN_REGULAR_OMEGA,00_B,01_I,02_B,10_B,30_B,90_CALDARI_I,50_I,51_B
+```
+
+### 3. Regular T1 Destroyer
+
+Corax keeps rockets/light missiles and Cormorant keeps small hybrids. Destroyer III unlocks cruiser, while IV gives the regular-use level of hull bonuses.
+
+⭐Training string:
+
+```text
+CALDARI_CORAX_REGULAR_OMEGA,00_B,01_I,02_B,10_I,30_B,90_CALDARI_B,91_CALDARI_I,60_I,61_I
+```
+
+⭐Training string:
+
+```text
+CALDARI_CORMORANT_REGULAR_OMEGA,00_B,01_I,02_B,10_I,30_B,90_CALDARI_B,91_CALDARI_I,50_I,51_B
+```
+
+### 4. Regular T1 Cruiser
+
+Caracal can use `61 I` for RLML or `62 I` for HML/HAM. Moa uses T2 medium hybrids from `51 I`. Caldari Cruiser IV is the regular level; Destroyer IV remains optional, so the cruiser recipes use `91 B`.
+
+⭐Training string:
+
+```text
+CALDARI_CARACAL_REGULAR_OMEGA,00_I,01_I,02_I,10_S,30_I,90_CALDARI_B,91_CALDARI_B,92_CALDARI_I,60_I,62_I
+```
+
+⭐Training string:
+
+```text
+CALDARI_MOA_REGULAR_OMEGA,00_I,01_I,02_I,10_S,30_I,90_CALDARI_B,91_CALDARI_B,92_CALDARI_I,50_I,51_I
+```
+
+### 5. T2 HAC: entry
+
+Racial Cruiser V with HAC III unlocks the expensive T2 hull. Cerberus continues missiles and Eagle hybrid turrets. HAC III is for first trials; HAC IV remains the regular target.
+
+⭐Training string:
+
+```text
+CERBERUS_ENTRY_OMEGA,00_I,01_I,02_I,10_S,30_I,92_CALDARI_S,97_HEAVY_ASSAULT_CRUISERS_B,60_I,62_I
+```
+
+⭐Training string:
+
+```text
+EAGLE_ENTRY_OMEGA,00_I,01_I,02_I,10_S,30_I,92_CALDARI_S,97_HEAVY_ASSAULT_CRUISERS_B,50_I,51_I
+```
+
 ## Cerberus
 
 Cerberus ends the missile branch, but launcher family still depends on the fit. `61 I` supports rapid light launchers, while `62 I` supports heavy and heavy assault missiles. The recipe below is the heavy variant; both families do not need to be trained before first using the hull. `97 ... I` supplies HAC IV, and `30 I` is the common shield foundation. Add `31` only for an active fit.
@@ -33,13 +115,13 @@ Cerberus ends the missile branch, but launcher family still depends on the fit. 
 3. Hulls: `90_CALDARI`, `91_CALDARI`, `92_CALDARI`; Omega also uses `97_HEAVY_ASSAULT_CRUISERS`.
 4. Weapons/tools: `60`, `62`.
 
-Training string:
+🅰️Training string:
 
 ```text
 CERBERUS_T1_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,91_CALDARI_A,92_CALDARI_A,60_A,62_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 CERBERUS_HAC_OMEGA,00_I,01_I,02_I,10_S,30_I,90_CALDARI_I,91_CALDARI_I,92_CALDARI_S,97_HEAVY_ASSAULT_CRUISERS_I,60_I,62_I
@@ -54,13 +136,13 @@ Eagle develops the Merlin, Cormorant and Moa route through the same hybrid-turre
 3. Hulls: `90_CALDARI`, `91_CALDARI`, `92_CALDARI`; Omega also uses `97_HEAVY_ASSAULT_CRUISERS`.
 4. Weapons/tools: `50`, `51`.
 
-Training string:
+🅰️Training string:
 
 ```text
 EAGLE_T1_ALPHA,00_A,01_A,02_A,10_A,30_A,90_CALDARI_A,91_CALDARI_A,92_CALDARI_A,50_A,51_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 EAGLE_HAC_OMEGA,00_I,01_I,02_I,10_S,30_I,90_CALDARI_I,91_CALDARI_I,92_CALDARI_S,97_HEAVY_ASSAULT_CRUISERS_I,50_I,51_I

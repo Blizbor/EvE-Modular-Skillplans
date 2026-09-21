@@ -85,7 +85,7 @@ plan-20260919-37-20.txt
 
 Training Path zawiera gotowy blok do skopiowania:
 
-Training string:
+⭐Training string:
 
 ```text
 TRAINING_NAME,00_I,01_S,02_B,10_A

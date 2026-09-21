@@ -25,13 +25,13 @@ PvE Ravens commonly use an active shield tank. Module `30` supplies the shield f
 3. Hull: `94_CALDARI`.
 4. Weapons/tools: `60_I`, `63_I`.
 
-Training string:
+🅰️Training string:
 
 ```text
 RAVEN_ALPHA,00_A,01_A,02_A,10_A,30_A,31_A,94_CALDARI_A,60_A,63_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 RAVEN_OMEGA,00_I,01_I,02_I,10_S,30_I,31_I,94_CALDARI_I,60_I,63_I
@@ -48,13 +48,13 @@ The recipe includes shield buffer support. An active PvE fit also requires `31`.
 3. Hull: `94_CALDARI`.
 4. Weapons/tools: `50_I`, `51_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 ROKH_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A,50_A,51_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 ROKH_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,50_I,51_S
@@ -69,13 +69,13 @@ Scorpion is an ECM and support platform, not a DPS counterpart to Raven or Rokh.
 3. Hull: `94_CALDARI`.
 4. Weapons/tools: no PvE EWAR module exists in the current catalog; the recipe therefore stops at hull and support modules.
 
-Training string:
+🅰️Training string:
 
 ```text
 SCORPION_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 SCORPION_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I

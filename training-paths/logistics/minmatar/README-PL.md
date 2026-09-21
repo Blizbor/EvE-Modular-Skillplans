@@ -34,19 +34,19 @@ Alpha ma dostęp do **Burst** i **Scythe**, ale nie do **Scalpel** ani **Scimita
 
 ENTRY używa modułów BASIC do pierwszych prób; REGULAR podnosi racial hull i narzędzia do IV.
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_BURST_ENTRY,00_B,01_B,02_B,30_B,90_MINMATAR_B,41_B,43_B
 ```
 
-Training string:
+🅰️Training string:
 
 ```text
 MINMATAR_BURST_ALPHA,00_A,01_A,02_A,30_A,90_MINMATAR_A,41_A,43_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_BURST_REGULAR,00_I,01_I,02_I,30_I,90_MINMATAR_I,41_I,43_I
@@ -56,19 +56,19 @@ MINMATAR_BURST_REGULAR,00_I,01_I,02_I,30_I,90_MINMATAR_I,41_I,43_I
 
 Poziom ENTRY odblokowuje i pozwala sprawdzić hull. REGULAR podnosi Logistics Frigates z III do IV i jest właściwym progiem do regularnego użycia. SPECIALIST daje Logistics Frigates V i maksymalizuje główne narzędzia.
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_SCALPEL_ENTRY,00_I,01_I,02_I,30_I,90_MINMATAR_S,97_LOGISTICS_FRIGATES_B,41_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_SCALPEL_REGULAR,00_I,01_I,02_I,30_I,90_MINMATAR_S,97_LOGISTICS_FRIGATES_I,41_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_SCALPEL_SPECIALIST,00_S,01_I,02_S,30_I,90_MINMATAR_S,97_LOGISTICS_FRIGATES_S,41_S,43_S
@@ -83,19 +83,19 @@ MINMATAR_SCALPEL_SPECIALIST,00_S,01_I,02_S,30_I,90_MINMATAR_S,97_LOGISTICS_FRIGA
 
 ENTRY używa modułów BASIC do pierwszych prób; REGULAR podnosi racial hull i narzędzia do IV.
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_SCYTHE_ENTRY,00_B,01_B,02_B,30_B,92_MINMATAR_B,41_B,43_B
 ```
 
-Training string:
+🅰️Training string:
 
 ```text
 MINMATAR_SCYTHE_ALPHA,00_A,01_A,02_A,30_A,92_MINMATAR_A,41_A,43_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_SCYTHE_REGULAR,00_I,01_I,02_I,30_I,92_MINMATAR_I,41_I,43_I
@@ -105,19 +105,19 @@ MINMATAR_SCYTHE_REGULAR,00_I,01_I,02_I,30_I,92_MINMATAR_I,41_I,43_I
 
 ENTRY służy do odblokowania hulla i pierwszych prób. REGULAR podnosi Logistics Cruisers do IV; jest to minimalny poziom do regularnego użycia. SPECIALIST podnosi Logistics Cruisers oraz narzędzia do V, co dalej poprawia bonusy hulla i ekonomikę capacitora.
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_SCIMITAR_ENTRY,00_I,01_I,02_S,30_I,92_MINMATAR_S,97_LOGISTICS_CRUISERS_B,41_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_SCIMITAR_REGULAR,00_I,01_I,02_S,30_I,92_MINMATAR_S,97_LOGISTICS_CRUISERS_I,41_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 MINMATAR_SCIMITAR_SPECIALIST,00_S,01_I,02_S,30_S,92_MINMATAR_S,97_LOGISTICS_CRUISERS_S,41_S,43_S

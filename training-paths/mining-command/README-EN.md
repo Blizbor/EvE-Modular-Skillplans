@@ -46,7 +46,7 @@ Every level of `Mining Foreman` extends burst-effect duration, `Mining Director`
 
 First useful Porpoise with a T1 burst, Core I and asteroid-ore compression:
 
-Training string:
+⭐Training string:
 
 ```text
 PORPOISE_ENTRY_OMEGA,00_B,01_B,02_B,30_B,96_INDUSTRIAL_COMMAND_SHIPS_B,48_B,49_B
@@ -54,7 +54,7 @@ PORPOISE_ENTRY_OMEGA,00_B,01_B,02_B,30_B,96_INDUSTRIAL_COMMAND_SHIPS_B,48_B,49_B
 
 Boosting without deploying an Industrial Core:
 
-Training string:
+⭐Training string:
 
 ```text
 PORPOISE_BOOSTS_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48_I
@@ -62,7 +62,7 @@ PORPOISE_BOOSTS_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48_I
 
 Boosting, Industrial Core and compression:
 
-Training string:
+⭐Training string:
 
 ```text
 PORPOISE_COMPRESSION_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48_I,49_I
@@ -70,7 +70,7 @@ PORPOISE_COMPRESSION_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48_
 
 Complete mining and remote-support set:
 
-Training string:
+⭐Training string:
 
 ```text
 PORPOISE_FULL_SUPPORT_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48_I,49_I,70_I,45_I,41_I
@@ -85,7 +85,7 @@ PORPOISE_FULL_SUPPORT_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48
 
 First useful Orca with a T1 burst, Large Industrial Core I and asteroid-ore compression:
 
-Training string:
+⭐Training string:
 
 ```text
 ORCA_ENTRY_OMEGA,00_B,01_B,02_B,30_B,96_INDUSTRIAL_COMMAND_SHIPS_B,48_B,49_B
@@ -93,7 +93,7 @@ ORCA_ENTRY_OMEGA,00_B,01_B,02_B,30_B,96_INDUSTRIAL_COMMAND_SHIPS_B,48_B,49_B
 
 Regular boosting and common compression:
 
-Training string:
+⭐Training string:
 
 ```text
 ORCA_REGULAR_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48_I,49_I
@@ -101,7 +101,7 @@ ORCA_REGULAR_OMEGA,00_I,01_I,02_I,30_I,96_INDUSTRIAL_COMMAND_SHIPS_I,48_I,49_I
 
 Dedicated boosting, full compression and mining drones:
 
-Training string:
+⭐Training string:
 
 ```text
 ORCA_SPECIALIST_OMEGA,00_S,01_I,02_I,30_S,96_INDUSTRIAL_COMMAND_SHIPS_S,48_S,49_S,70_S,45_S

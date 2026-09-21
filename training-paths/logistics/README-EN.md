@@ -24,7 +24,7 @@ Logistics does not make a single jump from “not working” to “complete.” 
 
 Amarr and Caldari cruisers also use capacitor transfer. A low level in that tool affects not just the pilot's own capacitor but the stability of the entire cap chain. Gallente and Minmatar do not receive that module automatically because their primary path does not require a cap chain.
 
-The tool modules are `40` Remote Armor Repair, `41` Remote Shield Boost, `42` Capacitor Transfer and `43` Repair Drones. Copy only the contents of the fenced block below `Training string:` and pass it to the plan mixer as its single argument.
+The tool modules are `40` Remote Armor Repair, `41` Remote Shield Boost, `42` Capacitor Transfer and `43` Repair Drones. Copy only the contents of the fenced block below `🅰️Training string:` or `⭐Training string:` and pass it to the plan mixer as its single argument.
 
 - [Amarr](amarr/README-EN.md) — Inquisitor, Deacon, Augoror and Guardian; armor repairs, with capacitor transfer on the cruiser line.
 - [Caldari](caldari/README-EN.md) — Bantam, Kirin, Osprey and Basilisk; shield repairs, with capacitor transfer on the cruiser line.

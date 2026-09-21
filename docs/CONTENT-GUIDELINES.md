@@ -17,9 +17,10 @@ These rules apply to every contribution to **EvE Modular Skillplans**.
 - Every path must describe both Alpha and Omega use. If Alpha pilots cannot use a hull, module or stage, say so explicitly.
 - Recommended modules must distinguish when BASIC is sufficient and when IMPROVED or STANDARD is justified.
 - A training path must explain progression, not merely store a maximum-effect recipe. Describe useful intermediate stopping points and the practical benefit gained at each relevant stage.
+- Begin a progression with an **absolute minimum** stage, then distinguish regular-use stages and T2 entry or specialization where they exist. At every stage, state what is unlocked, what improves and why that stopping point may be sufficient.
 - Training strings support the explanation; they do not replace it. Preserve useful hull-role, unlock and progression information when restructuring an existing document.
 - For Alpha pilots, state when the available Alpha skills unlock an item but are still too weak for sensible use of the ship or fit.
-- Every individual path must include at least one ready-to-copy block. Put `Training string:` above the fenced code block and place only `TRAINING_NAME,00_I,01_S,02_B,10_A` inside it. Do not put a `TRAINING:` prefix inside the code block.
+- Every individual path must include at least one ready-to-copy block. Put `🅰️Training string:` above an Alpha recipe and `⭐Training string:` above an Omega recipe. Place only `TRAINING_NAME,00_I,01_S,02_B,10_A` inside the fenced code block; do not put a `TRAINING:` prefix inside it.
 
 ### Required order inside a path
 
@@ -79,9 +80,10 @@ Poniższe zasady obowiązują przy każdej zmianie treści w projekcie **EvE Mod
 - Każda ścieżka musi opisywać użycie przez pilotów Alpha i Omega. Jeżeli Alpha nie może użyć hulla, modułu albo etapu, należy napisać to wprost.
 - Zalecane moduły muszą rozróżniać sytuacje, w których wystarcza BASIC, oraz te, w których uzasadniony jest IMPROVED albo STANDARD.
 - Training path musi wyjaśniać progresję, a nie być wyłącznie magazynem recepty maksymalizującej efekt. Należy opisać użyteczne przystanki pośrednie oraz praktyczną korzyść uzyskiwaną na każdym istotnym etapie.
+- Progresję rozpoczynamy od etapu **absolutne minimum**, a następnie rozróżniamy etapy regularnego użycia oraz wejście w T2 lub specjalizację, jeżeli istnieją. Na każdym etapie podajemy, co zostaje odblokowane, co się poprawia i dlaczego dany przystanek może wystarczyć.
 - Training string wspiera opis, ale go nie zastępuje. Podczas przebudowy istniejącego dokumentu zachowujemy wartościowe informacje o rolach hulli, odblokowaniach i progresji.
 - W przypadku Alpha trzeba zaznaczyć, kiedy dostępne skille formalnie odblokowują element, ale są zbyt słabe, aby sensownie używać danego statku albo fita.
-- Każda pojedyncza ścieżka musi zawierać co najmniej jeden gotowy do skopiowania blok. Nad blokiem kodu umieszczamy `Training string:`, a wewnątrz wyłącznie `TRAINING_NAME,00_I,01_S,02_B,10_A`. W bloku kodu nie umieszczamy prefiksu `TRAINING:`.
+- Każda pojedyncza ścieżka musi zawierać co najmniej jeden gotowy do skopiowania blok. Nad receptą Alpha umieszczamy `🅰️Training string:`, a nad receptą Omega `⭐Training string:`. W bloku kodu umieszczamy wyłącznie `TRAINING_NAME,00_I,01_S,02_B,10_A`; nie dodajemy prefiksu `TRAINING:`.
 
 ### Obowiązkowa kolejność w opisie ścieżki
 

@@ -24,13 +24,13 @@ EvE Modular Skillplans does not claim authorship of the fit. The set below is th
 | 50 WEAPON — Turret Support | [`plan-3-ALPHA.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-STANDARD.txt) | Alpha reaches the full STANDARD turret-support tier |
 | 52 WEAPON — Projectile | [`plan-1.5-ALPHA.txt`](../../../plans/52_WEAPON_-_Projectile/plan-1.5-ALPHA.txt) | [`plan-2-IMPROVED.txt`](../../../plans/52_WEAPON_-_Projectile/plan-2-IMPROVED.txt) | the extra specialization tier applies to T2 guns, which this fit does not use |
 
-Training string:
+🅰️Training string:
 
 ```text
 LORU_THRASHER_T0_GAMMA_ALPHA,00_A,01_A,02_A,10_A,30_A,91_MINMATAR_A,50_A,52_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 LORU_THRASHER_T0_GAMMA_OMEGA,00_B,01_B,02_B,10_I,30_B,91_MINMATAR_I,50_S,52_I

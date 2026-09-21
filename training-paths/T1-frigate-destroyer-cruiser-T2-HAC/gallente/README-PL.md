@@ -24,6 +24,88 @@ Ta ścieżka prowadzi przez dostępne hulle T1 do dwóch wariantów Heavy Assaul
 
 Thorax korzysta z dronów jako uzupełnienia, ale nie wymaga pełnej gałęzi dronowej przed rozpoczęciem latania. Vexor i Ishtar odwracają priorytet: drony są ich głównym narzędziem, więc turret plan nie jest obowiązkowy. Dla aktywnie tankowanego Deimosa właściwą gałęzią jest `22`, a nie automatycznie buffer `21`.
 
+## Etapy progresji
+
+### 1. Absolutne minimum: T1 Frigate
+
+Incursus/Atron rozpoczynają linię hybrid, a Tristan linię dronową. Racial Frigate III i supporty BASIC tworzą najniższy sensowny punkt rozpoczęcia. Dają możliwość przetestowania stylu walki przed inwestowaniem w kolejną klasę hulla.
+
+⭐Training string:
+
+```text
+GALLENTE_HYBRID_FRIGATE_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,10_B,21_B,90_GALLENTE_B,50_B,51_B
+```
+
+⭐Training string:
+
+```text
+GALLENTE_TRISTAN_ABSOLUTE_MINIMUM_OMEGA,00_B,01_B,02_B,10_B,21_B,90_GALLENTE_B,70_B,71_B
+```
+
+### 2. Regularna T1 Frigate
+
+Gallente Frigate IV dodaje kolejny poziom bonusów hulla. Hybridy rozwijają się przez `50 I`, a Tristan zyskuje T2 light drones dzięki `71 I`.
+
+⭐Training string:
+
+```text
+GALLENTE_HYBRID_FRIGATE_REGULAR_OMEGA,00_B,01_I,02_B,10_B,21_B,90_GALLENTE_I,50_I,51_B
+```
+
+⭐Training string:
+
+```text
+GALLENTE_TRISTAN_REGULAR_OMEGA,00_B,01_I,02_B,10_B,21_B,90_GALLENTE_I,70_I,71_I
+```
+
+### 3. Regularny T1 Destroyer
+
+Catalyst wykorzystuje małe hybridy, a Algos light i medium drones. Destroyer IV jest uzasadniony, gdy pilot regularnie używa tego etapu; do samego cruisera wystarcza poziom III.
+
+⭐Training string:
+
+```text
+GALLENTE_CATALYST_REGULAR_OMEGA,00_B,01_I,02_B,10_I,21_B,90_GALLENTE_B,91_GALLENTE_I,50_I,51_B
+```
+
+⭐Training string:
+
+```text
+GALLENTE_ALGOS_REGULAR_OMEGA,00_B,01_I,02_B,10_I,21_B,90_GALLENTE_B,91_GALLENTE_I,70_I,71_I,72_B
+```
+
+### 4. Regularny T1 Cruiser
+
+Thorax wymaga medium hybridów T2 z `51 I`; Vexor rozwija pełne supporty oraz light/medium drones. Gallente Cruiser IV jest właściwym poziomem regularnym. Armor active `22` zastępuje buffer `21`, jeżeli konkretny fit używa local repairera.
+
+⭐Training string:
+
+```text
+GALLENTE_THORAX_REGULAR_OMEGA,00_I,01_I,02_I,10_S,21_I,90_GALLENTE_B,91_GALLENTE_B,92_GALLENTE_I,50_I,51_I,70_B
+```
+
+⭐Training string:
+
+```text
+GALLENTE_VEXOR_REGULAR_OMEGA,00_I,01_I,02_I,10_S,21_I,90_GALLENTE_B,91_GALLENTE_B,92_GALLENTE_I,70_I,71_I,72_I
+```
+
+### 5. T2 HAC: wejście
+
+Deimos kontynuuje medium hybridy, a Ishtar przechodzi do heavy i sentry drones. Racial Cruiser V jest wymaganiem, a HAC III jedynie wejściem. Moduł `73 I` jest dla Ishtara ważniejszy niż przypadkowa gałąź turretów.
+
+⭐Training string:
+
+```text
+DEIMOS_ENTRY_OMEGA,00_I,01_I,02_I,10_S,21_I,92_GALLENTE_S,97_HEAVY_ASSAULT_CRUISERS_B,50_I,51_I
+```
+
+⭐Training string:
+
+```text
+ISHTAR_ENTRY_OMEGA,00_I,01_I,02_I,10_S,21_I,92_GALLENTE_S,97_HEAVY_ASSAULT_CRUISERS_B,70_I,72_I,73_I
+```
+
 ## Deimos
 
 Deimos jest bezpośrednim rozwinięciem Thoraxa i medium hybrid turrets. `51 I` zapewnia medium blastery i railguny T2, natomiast STANDARD obejmuje także large hybrids i nie jest automatycznym celem tej ścieżki. Recepta pokazuje armor buffer; aktywnie tankowany Deimos używa `22 I`, aby wykorzystać rolę local repair.
@@ -33,13 +115,13 @@ Deimos jest bezpośrednim rozwinięciem Thoraxa i medium hybrid turrets. `51 I` 
 3. Hulle: `90_GALLENTE`, `91_GALLENTE`, `92_GALLENTE`; dla Omegi także `97_HEAVY_ASSAULT_CRUISERS`.
 4. Broń/narzędzia: `50`, `51`.
 
-Training string:
+🅰️Training string:
 
 ```text
 DEIMOS_T1_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,91_GALLENTE_A,92_GALLENTE_A,50_A,51_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 DEIMOS_HAC_OMEGA,00_I,01_I,02_I,10_S,21_I,90_GALLENTE_I,91_GALLENTE_I,92_GALLENTE_S,97_HEAVY_ASSAULT_CRUISERS_I,50_I,51_I
@@ -54,13 +136,13 @@ Ishtar rozwija dronową linię Tristan, Algos i Vexor. Medium drones z `72 I` po
 3. Hulle: `90_GALLENTE`, `91_GALLENTE`, `92_GALLENTE`; dla Omegi także `97_HEAVY_ASSAULT_CRUISERS`.
 4. Broń/narzędzia: `70`, `72`; dla Ishtara także `73` heavy i sentry drones.
 
-Training string:
+🅰️Training string:
 
 ```text
 ISHTAR_T1_ALPHA,00_A,01_A,02_A,10_A,21_A,90_GALLENTE_A,91_GALLENTE_A,92_GALLENTE_A,70_A,72_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 ISHTAR_HAC_OMEGA,00_I,01_I,02_I,10_S,21_I,90_GALLENTE_I,91_GALLENTE_I,92_GALLENTE_S,97_HEAVY_ASSAULT_CRUISERS_I,70_I,72_I,73_I

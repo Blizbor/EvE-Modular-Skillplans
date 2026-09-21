@@ -26,7 +26,7 @@ The route to both racial Cruiser skills passes through the matching frigate skil
 
 Caracal uses Caldari Cruiser, shield and missiles. It makes most of that training useful while the pilot finishes Gallente Cruiser and drones.
 
-Training string:
+⭐Training string:
 
 ```text
 GILA_CARACAL_STAGE,00_B,01_B,02_B,10_I,30_I,92_CALDARI_I,60_I,61_I
@@ -36,7 +36,7 @@ GILA_CARACAL_STAGE,00_B,01_B,02_B,10_I,30_I,92_CALDARI_I,60_I,61_I
 
 Vexor uses Gallente Cruiser with light and medium drones. It develops Gila's primary weapon while shield and missiles are still being completed. Armor is not an automatic requirement of this path; add it only for the selected Vexor fit.
 
-Training string:
+⭐Training string:
 
 ```text
 GILA_VEXOR_STAGE,00_B,01_B,02_B,10_I,92_GALLENTE_I,70_I,71_I,72_I
@@ -55,13 +55,13 @@ Caracal and Vexor are two equally valid orders for reaching the target. The pilo
 
 ### Rapid light missile fit
 
-Training string:
+🅰️Training string:
 
 ```text
 GILA_RLML_ALPHA,00_A,01_A,02_A,10_A,30_A,92_CALDARI_A,92_GALLENTE_A,60_A,61_A,70_A,72_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 GILA_RLML_OMEGA,00_I,01_I,02_I,10_S,30_I,92_CALDARI_I,92_GALLENTE_I,60_I,61_I,70_I,72_I
@@ -69,13 +69,13 @@ GILA_RLML_OMEGA,00_I,01_I,02_I,10_S,30_I,92_CALDARI_I,92_GALLENTE_I,60_I,61_I,70
 
 ### Heavy or heavy assault missile fit
 
-Training string:
+🅰️Training string:
 
 ```text
 GILA_HEAVY_MISSILES_ALPHA,00_A,01_A,02_A,10_A,30_A,92_CALDARI_A,92_GALLENTE_A,60_A,62_A,70_A,72_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 GILA_HEAVY_MISSILES_OMEGA,00_I,01_I,02_I,10_S,30_I,92_CALDARI_I,92_GALLENTE_I,60_I,62_I,70_I,72_I

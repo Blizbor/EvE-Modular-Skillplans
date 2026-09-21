@@ -1,8 +1,8 @@
-# T1 to HAC
+# T1 Frigate, Destroyer, Cruiser and T2 HAC
 
 [🇵🇱 Polski](README-PL.md) | 🇬🇧 **English**
 
-These documents show useful T1 hull stages and the modules needed for a selected HAC branch. Alpha pilots can complete the T1 stages but cannot fly Heavy Assault Cruisers. Omega recipes use IMPROVED support and the appropriate T2 medium weapon branch before the expensive T2 hull.
+These documents describe the complete pilot progression: T1 Frigate, T1 Destroyer, T1 Cruiser and T2 Heavy Assault Cruiser. Every stage is a useful stopping point, shows which tools are being developed and explains what the next SP investment provides. Alpha pilots can complete the T1 stages but cannot fly Heavy Assault Cruisers.
 
 ## How this path develops
 

@@ -24,7 +24,7 @@ Logistics nie ma jednego skoku od „nie działa” do „gotowy”. BASIC pozwa
 
 Amarr i Caldari cruisery używają także capacitor transfer. Niski poziom tego narzędzia wpływa nie tylko na własny capacitor pilota, ale na stabilność całego cap-chain. Gallente i Minmatar nie otrzymują tego modułu automatycznie, ponieważ ich podstawowa ścieżka nie wymaga cap-chain.
 
-Moduły narzędzi to `40` Remote Armor Repair, `41` Remote Shield Boost, `42` Capacitor Transfer i `43` Repair Drones. Należy skopiować wyłącznie zawartość bloku pod `Training string:` i przekazać ją jako jedyny parametr miksera planów.
+Moduły narzędzi to `40` Remote Armor Repair, `41` Remote Shield Boost, `42` Capacitor Transfer i `43` Repair Drones. Należy skopiować wyłącznie zawartość bloku pod `🅰️Training string:` albo `⭐Training string:` i przekazać ją jako jedyny parametr miksera planów.
 
 - [Amarr](amarr/README-PL.md) — Inquisitor, Deacon, Augoror i Guardian; armor repairs, a w linii cruiserów także capacitor transfer.
 - [Caldari](caldari/README-PL.md) — Bantam, Kirin, Osprey i Basilisk; shield repairs, a w linii cruiserów także capacitor transfer.

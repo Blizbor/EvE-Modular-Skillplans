@@ -25,13 +25,13 @@ Raven PvE zwykle używa aktywnego shield tanku. `30` zapewnia bazę shield, a `3
 3. Hull: `94_CALDARI`.
 4. Broń/narzędzia: `60_I`, `63_I`.
 
-Training string:
+🅰️Training string:
 
 ```text
 RAVEN_ALPHA,00_A,01_A,02_A,10_A,30_A,31_A,94_CALDARI_A,60_A,63_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 RAVEN_OMEGA,00_I,01_I,02_I,10_S,30_I,31_I,94_CALDARI_I,60_I,63_I
@@ -48,13 +48,13 @@ Recepta obejmuje shield buffer. Aktywny fit PvE wymaga również `31`.
 3. Hull: `94_CALDARI`.
 4. Broń/narzędzia: `50_I`, `51_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 ROKH_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A,50_A,51_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 ROKH_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I,50_I,51_S
@@ -69,13 +69,13 @@ Scorpion jest platformą ECM i supportu, a nie DPS-owym odpowiednikiem Ravena lu
 3. Hull: `94_CALDARI`.
 4. Broń/narzędzia: w obecnym katalogu nie ma modułu EWAR PvE, dlatego recepta kończy się na hullu i supportach.
 
-Training string:
+🅰️Training string:
 
 ```text
 SCORPION_ALPHA,00_A,01_A,02_A,10_A,30_A,94_CALDARI_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 SCORPION_OMEGA,00_I,01_I,02_I,10_S,30_I,94_CALDARI_I

@@ -14,7 +14,7 @@ Training Path łączy atomowe moduły z `plans/` w trening do konkretnego statku
 
 Każda pojedyncza ścieżka zawiera co najmniej jeden blok w postaci:
 
-Training string:
+⭐Training string:
 
 ```text
 TRAINING_NAME,00_I,01_S,02_B,10_A
@@ -36,7 +36,7 @@ Pełna instrukcja: [narzędzia EvE Modular Skillplans](../tools/README-PL.md).
 
 ## Dostępne grupy
 
-- [T1 do HAC](t1-to-hac/README-PL.md) — rasowe etapy T1 Frigate, Destroyer i Cruiser prowadzące do wybranej gałęzi Heavy Assault Cruiser.
+- [T1 Frigate, Destroyer, Cruiser i T2 HAC](T1-frigate-destroyer-cruiser-T2-HAC/README-PL.md) — pełna progresja rasowa od absolutnego minimum na fregacie, przez regularne destroyery i cruisery, do wejściowego oraz regularnego poziomu Heavy Assault Cruiser.
 - [Battleships](battleships/README-PL.md) — praktyczne T1 Battleshipy każdej rasy wraz z gałęziami tanku i podstawowej broni.
 - [Logistics](logistics/README-PL.md) — T1 i T2 Logistics Frigates oraz Logistics Cruisers, rozdzielone według rasy i typu napraw.
 - [Gila](gila/README-PL.md) — moduły shield, missiles i medium drones dla Gili, z osobnymi receptami Alpha i Omega.

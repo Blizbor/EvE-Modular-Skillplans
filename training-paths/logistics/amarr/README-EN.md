@@ -35,19 +35,19 @@ Alpha can fly the Inquisitor and Augoror, but cannot fly the Deacon or Guardian.
 
 ENTRY uses BASIC modules for first trials; REGULAR raises the racial hull and tools to IV.
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_INQUISITOR_ENTRY,00_B,01_B,02_B,21_B,90_AMARR_B,40_B,43_B
 ```
 
-Training string:
+🅰️Training string:
 
 ```text
 AMARR_INQUISITOR_ALPHA,00_A,01_A,02_A,21_A,90_AMARR_A,40_A,43_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_INQUISITOR_REGULAR,00_I,01_I,02_I,21_I,90_AMARR_I,40_I,43_I
@@ -57,19 +57,19 @@ AMARR_INQUISITOR_REGULAR,00_I,01_I,02_I,21_I,90_AMARR_I,40_I,43_I
 
 ENTRY unlocks the hull and supports first trials. REGULAR raises Logistics Frigates from III to IV and is the proper regular-use threshold. SPECIALIST provides Logistics Frigates V and maximizes the main tools.
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_DEACON_ENTRY,00_I,01_I,02_I,21_I,90_AMARR_S,97_LOGISTICS_FRIGATES_B,40_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_DEACON_REGULAR,00_I,01_I,02_I,21_I,90_AMARR_S,97_LOGISTICS_FRIGATES_I,40_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_DEACON_SPECIALIST,00_S,01_I,02_S,21_I,90_AMARR_S,97_LOGISTICS_FRIGATES_S,40_S,43_S
@@ -84,19 +84,19 @@ AMARR_DEACON_SPECIALIST,00_S,01_I,02_S,21_I,90_AMARR_S,97_LOGISTICS_FRIGATES_S,4
 
 ENTRY uses BASIC modules for first trials; REGULAR raises the racial hull and all three tools to IV.
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_AUGOROR_ENTRY,00_B,01_B,02_B,21_B,92_AMARR_B,40_B,43_B,42_B
 ```
 
-Training string:
+🅰️Training string:
 
 ```text
 AMARR_AUGOROR_ALPHA,00_A,01_A,02_A,21_A,92_AMARR_A,40_A,43_A,42_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_AUGOROR_REGULAR,00_I,01_I,02_I,21_I,92_AMARR_I,40_I,43_I,42_I
@@ -106,19 +106,19 @@ AMARR_AUGOROR_REGULAR,00_I,01_I,02_I,21_I,92_AMARR_I,40_I,43_I,42_I
 
 ENTRY is for hull access and first trials. REGULAR raises Logistics Cruisers to IV and is the minimum for regular use. SPECIALIST raises Logistics Cruisers and the tools to V, further improving hull bonuses and capacitor economics.
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_GUARDIAN_ENTRY,00_I,01_I,02_S,21_I,92_AMARR_S,97_LOGISTICS_CRUISERS_B,40_I,43_I,42_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_GUARDIAN_REGULAR,00_I,01_I,02_S,21_I,92_AMARR_S,97_LOGISTICS_CRUISERS_I,40_I,43_I,42_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 AMARR_GUARDIAN_SPECIALIST,00_S,01_I,02_S,21_S,92_AMARR_S,97_LOGISTICS_CRUISERS_S,40_S,43_S,42_S

@@ -25,13 +25,13 @@ The recipe below uses armor buffer module `21`. A PvE fit with a local repairer 
 3. Hull: `94_AMARR`.
 4. Weapons/tools: `50_I`, `53_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 APOCALYPSE_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 APOCALYPSE_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
@@ -48,13 +48,13 @@ The recipe represents a buffer fit. PvE with a local repairer uses `22 I` instea
 3. Hull: `94_AMARR`.
 4. Weapons/tools: `50_I`, `53_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 ABADDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 ABADDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
@@ -71,13 +71,13 @@ The hull also bonuses capacitor-warfare range. The library does not yet have a d
 3. Hull: `94_AMARR`.
 4. Weapons/tools: `70_I`, `73_I`.
 
-Training string:
+🅰️Training string:
 
 ```text
 ARMAGEDDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,70_A,73_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 ARMAGEDDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,70_I,73_I

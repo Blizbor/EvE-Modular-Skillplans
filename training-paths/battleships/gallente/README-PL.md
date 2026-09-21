@@ -25,13 +25,13 @@ Poniższa recepta używa armor buffer. Dla typowego aktywnego PvE należy wybra�
 3. Hull: `94_GALLENTE`.
 4. Broń/narzędzia: `70_I`, `73_I`.
 
-Training string:
+🅰️Training string:
 
 ```text
 DOMINIX_ALPHA,00_A,01_A,02_A,10_A,21_A,94_GALLENTE_A,70_A,73_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 DOMINIX_OMEGA,00_I,01_I,02_I,10_S,21_I,94_GALLENTE_I,70_I,73_I
@@ -48,13 +48,13 @@ Tank zależy od fita: recepta pokazuje buffer `21`; fit z local repairerem używ
 3. Hull: `94_GALLENTE`.
 4. Broń/narzędzia: `50_I`, `51_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 MEGATHRON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_GALLENTE_A,50_A,51_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 MEGATHRON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_GALLENTE_I,50_I,51_S
@@ -69,13 +69,13 @@ Hyperion łączy large hybrid turrets z mocnym bonusem local armor repair. W tej
 3. Hull: `94_GALLENTE`.
 4. Broń/narzędzia: `50_I`, `51_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 HYPERION_ALPHA,00_A,01_A,02_A,10_A,22_A,94_GALLENTE_A,50_A,51_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 HYPERION_OMEGA,00_I,01_I,02_I,10_S,22_I,94_GALLENTE_I,50_I,51_S

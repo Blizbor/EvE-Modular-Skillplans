@@ -34,19 +34,19 @@ Alpha ma dostęp do **Navitas** i **Exequror**, ale nie do **Thalia** ani **Onei
 
 ENTRY używa modułów BASIC do pierwszych prób; REGULAR podnosi racial hull i narzędzia do IV.
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_NAVITAS_ENTRY,00_B,01_B,02_B,21_B,90_GALLENTE_B,40_B,43_B
 ```
 
-Training string:
+🅰️Training string:
 
 ```text
 GALLENTE_NAVITAS_ALPHA,00_A,01_A,02_A,21_A,90_GALLENTE_A,40_A,43_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_NAVITAS_REGULAR,00_I,01_I,02_I,21_I,90_GALLENTE_I,40_I,43_I
@@ -56,19 +56,19 @@ GALLENTE_NAVITAS_REGULAR,00_I,01_I,02_I,21_I,90_GALLENTE_I,40_I,43_I
 
 Poziom ENTRY odblokowuje i pozwala sprawdzić hull. REGULAR podnosi Logistics Frigates z III do IV i jest właściwym progiem do regularnego użycia. SPECIALIST daje Logistics Frigates V i maksymalizuje główne narzędzia.
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_THALIA_ENTRY,00_I,01_I,02_I,21_I,90_GALLENTE_S,97_LOGISTICS_FRIGATES_B,40_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_THALIA_REGULAR,00_I,01_I,02_I,21_I,90_GALLENTE_S,97_LOGISTICS_FRIGATES_I,40_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_THALIA_SPECIALIST,00_S,01_I,02_S,21_I,90_GALLENTE_S,97_LOGISTICS_FRIGATES_S,40_S,43_S
@@ -83,19 +83,19 @@ GALLENTE_THALIA_SPECIALIST,00_S,01_I,02_S,21_I,90_GALLENTE_S,97_LOGISTICS_FRIGAT
 
 ENTRY używa modułów BASIC do pierwszych prób; REGULAR podnosi racial hull i narzędzia do IV.
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_EXEQUROR_ENTRY,00_B,01_B,02_B,21_B,92_GALLENTE_B,40_B,43_B
 ```
 
-Training string:
+🅰️Training string:
 
 ```text
 GALLENTE_EXEQUROR_ALPHA,00_A,01_A,02_A,21_A,92_GALLENTE_A,40_A,43_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_EXEQUROR_REGULAR,00_I,01_I,02_I,21_I,92_GALLENTE_I,40_I,43_I
@@ -105,19 +105,19 @@ GALLENTE_EXEQUROR_REGULAR,00_I,01_I,02_I,21_I,92_GALLENTE_I,40_I,43_I
 
 ENTRY służy do odblokowania hulla i pierwszych prób. REGULAR podnosi Logistics Cruisers do IV; jest to minimalny poziom do regularnego użycia. SPECIALIST podnosi Logistics Cruisers oraz narzędzia do V, co dalej poprawia bonusy hulla i ekonomikę capacitora.
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_ONEIROS_ENTRY,00_I,01_I,02_S,21_I,92_GALLENTE_S,97_LOGISTICS_CRUISERS_B,40_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_ONEIROS_REGULAR,00_I,01_I,02_S,21_I,92_GALLENTE_S,97_LOGISTICS_CRUISERS_I,40_I,43_I
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 GALLENTE_ONEIROS_SPECIALIST,00_S,01_I,02_S,21_S,92_GALLENTE_S,97_LOGISTICS_CRUISERS_S,40_S,43_S

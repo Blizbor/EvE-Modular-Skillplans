@@ -25,13 +25,13 @@ Poniższa recepta używa armor buffer `21`. Fit PvE z local repairerem powinien 
 3. Hull: `94_AMARR`.
 4. Broń/narzędzia: `50_I`, `53_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 APOCALYPSE_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 APOCALYPSE_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
@@ -48,13 +48,13 @@ Recepta pokazuje wariant buffer. Dla PvE z local repairerem należy wybrać `22 
 3. Hull: `94_AMARR`.
 4. Broń/narzędzia: `50_I`, `53_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 ABADDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,50_A,53_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 ABADDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,50_I,53_S
@@ -71,13 +71,13 @@ Hull bonusuje również zasięg capacitor warfare. Biblioteka nie ma jeszcze oso
 3. Hull: `94_AMARR`.
 4. Broń/narzędzia: `70_I`, `73_I`.
 
-Training string:
+🅰️Training string:
 
 ```text
 ARMAGEDDON_ALPHA,00_A,01_A,02_A,10_A,21_A,94_AMARR_A,70_A,73_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 ARMAGEDDON_OMEGA,00_I,01_I,02_I,10_S,21_I,94_AMARR_I,70_I,73_I

@@ -23,13 +23,13 @@ Maelstrom combines projectile turrets with an active shield-booster bonus. Large
 3. Hull: `94_MINMATAR`.
 4. Weapons/tools: `50_I`, `52_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 MAELSTROM_ALPHA,00_A,01_A,02_A,10_A,30_A,31_A,94_MINMATAR_A,50_A,52_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 MAELSTROM_OMEGA,00_I,01_I,02_I,10_S,30_I,31_I,94_MINMATAR_I,50_I,52_S
@@ -44,13 +44,13 @@ Tempest is a flexible projectile battleship. `94_MINMATAR I`, `50 I` and `52 S` 
 3. Hull: `94_MINMATAR`.
 4. Weapons/tools: `50_I`, `52_S`.
 
-Training string:
+🅰️Training string:
 
 ```text
 TEMPEST_ALPHA,00_A,01_A,02_A,10_A,21_A,94_MINMATAR_A,50_A,52_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 TEMPEST_OMEGA,00_I,01_I,02_I,10_S,21_I,94_MINMATAR_I,50_I,52_S
@@ -65,13 +65,13 @@ Typhoon develops missiles and drones rather than large projectile turrets. `60 I
 3. Hull: `94_MINMATAR`.
 4. Weapons/tools: `60_I`, `63_I`, `70_I`.
 
-Training string:
+🅰️Training string:
 
 ```text
 TYPHOON_ALPHA,00_A,01_A,02_A,10_A,30_A,94_MINMATAR_A,60_A,63_A,70_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 TYPHOON_OMEGA,00_I,01_I,02_I,10_S,30_I,94_MINMATAR_I,60_I,63_I,70_I

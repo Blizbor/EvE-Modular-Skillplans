@@ -1,8 +1,8 @@
-# T1 do HAC
+# T1 Frigate, Destroyer, Cruiser i T2 HAC
 
 🇵🇱 **Polski** | [🇬🇧 English](README-EN.md)
 
-Dokumenty pokazują użyteczne etapy hulli T1 oraz moduły potrzebne do wybranej gałęzi HAC. Pilot Alpha może ukończyć etapy T1, ale nie może latać Heavy Assault Cruiserem. Recepty Omega wymagają supportów IMPROVED i właściwej gałęzi broni medium T2 przed drogim hullem T2.
+Dokumenty opisują pełną progresję pilota: T1 Frigate, T1 Destroyer, T1 Cruiser oraz T2 Heavy Assault Cruiser. Każdy etap ma własny sensowny przystanek, pokazuje rozwijane narzędzia i wyjaśnia, co daje wydanie kolejnych SP. Pilot Alpha może ukończyć etapy T1, ale nie może latać Heavy Assault Cruiserem.
 
 ## Jak rozwija się ta ścieżka
 

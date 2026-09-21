@@ -14,7 +14,7 @@ A Training Path combines atomic modules from `plans/` into training for a concre
 
 Every individual path contains at least one block in this form:
 
-Training string:
+⭐Training string:
 
 ```text
 TRAINING_NAME,00_I,01_S,02_B,10_A
@@ -36,7 +36,7 @@ Full tool instructions: [EvE Modular Skillplans tools](../tools/README-EN.md).
 
 ## Available groups
 
-- [T1 to HAC](t1-to-hac/README-EN.md) — racial T1 frigate, destroyer and cruiser stages leading to a selected Heavy Assault Cruiser branch.
+- [T1 Frigate, Destroyer, Cruiser and T2 HAC](T1-frigate-destroyer-cruiser-T2-HAC/README-EN.md) — complete racial progression from the absolute-minimum frigate stage through regular destroyers and cruisers to entry and regular Heavy Assault Cruiser levels.
 - [Battleships](battleships/README-EN.md) — practical T1 battleship choices by race, including tank and primary weapon branches.
 - [Logistics](logistics/README-EN.md) — T1 and T2 logistics frigates and cruisers, separated by race and repair type.
 - [Gila](gila/README-EN.md) — shield, missile and medium-drone modules for the Gila, with separate Alpha and Omega recipes.

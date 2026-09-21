@@ -24,13 +24,13 @@ EvE Modular Skillplans nie przypisuje sobie autorstwa fita. Poniższy zestaw jes
 | 50 WEAPON — Turret Support | [`plan-3-ALPHA.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-ALPHA.txt) | [`plan-3-STANDARD.txt`](../../../plans/50_WEAPON_-_Turret_Support/plan-3-STANDARD.txt) | Alpha osiąga pełny poziom STANDARD supportów turretów |
 | 53 WEAPON — Energy | [`plan-1.5-ALPHA.txt`](../../../plans/53_WEAPON_-_Energy/plan-1.5-ALPHA.txt) | [`plan-2-IMPROVED.txt`](../../../plans/53_WEAPON_-_Energy/plan-2-IMPROVED.txt) | dodatkowy poziom specjalizacji dotyczy broni T2, której ten fit nie używa |
 
-Training string:
+🅰️Training string:
 
 ```text
 LORU_COERCER_T0_ELECTRICAL_ALPHA,00_A,01_A,02_A,10_A,22_A,91_AMARR_A,50_A,53_A
 ```
 
-Training string:
+⭐Training string:
 
 ```text
 LORU_COERCER_T0_ELECTRICAL_OMEGA,00_B,01_B,02_B,10_I,22_B,91_AMARR_I,50_S,53_I
