@@ -1,15 +1,12 @@
 # Training Paths
 
 A Training Path combines atomic modules from `plans/` into training for a concrete ship, fit or activity. “Scenario” and “progression” are one concept in this project.
-
 ## How to read a path
-
 - `B` selects BASIC, `I` selects IMPROVED, `S` selects STANDARD and `A` selects the maximum Alpha file available in a module.
 - BASIC is an entry threshold. IMPROVED is the normal regular-use target. STANDARD is used when a fit, T2 access or specialization benefits from it.
 - Every path describes Alpha and Omega separately. A module marked `A` does not guarantee that Alpha can use the final hull.
 - Module lists and recipes use this order: CORE and fitting, tank, hull, then tools or weapons.
 - A path may identify a missing module. It must not replace that module by silently appending individual skills.
-
 ## Download, save and copy a plan
 
 Every individual path contains at least one block in this form:
@@ -29,13 +26,10 @@ Copy only the contents of the code block and pass it as the single argument:
 ```bash
 tools/ems-plan-mixer.sh 'TRAINING_NAME,00_I,01_S,02_B,10_A'
 ```
-
 The tool downloads and merges the modules, prints the completed plan, saves it as a text file and copies it to the clipboard when the operating system provides a supported clipboard command. In EVE Online, create or edit a personal skill plan and use the clipboard import.
 
 Full tool instructions: [EvE Modular Skillplans tools](../tools/README-EN.md).
-
 ## Available groups
-
 - [T1 Frigate, Destroyer, Cruiser and T2 HAC](T1-frigate-destroyer-cruiser-T2-HAC/README-EN.md) — complete racial progression from the absolute-minimum frigate stage through regular destroyers and cruisers to entry and regular Heavy Assault Cruiser levels.
 - [Battleships](battleships/README-EN.md) — practical T1 battleship choices by race, including tank and primary weapon branches.
 - [Logistics](logistics/README-EN.md) — T1 and T2 logistics frigates and cruisers, separated by race and repair type.
@@ -43,3 +37,5 @@ Full tool instructions: [EvE Modular Skillplans tools](../tools/README-EN.md).
 - [Mining](mining/README-EN.md) — Venture, Pioneer, Outrider, Mining Barges and Exhumers.
 - [Mining Command](mining-command/README-EN.md) — Porpoise and Orca boosting, Industrial Core, compression, drones and remote support.
 - [Community Fits](community-fits/README-EN.md) — minimal modular plans for exact public fit snapshots from community creators.
+- [Abyss](abyss/README-EN.md) — learner paths that use the Abyss to build piloting skill and prepare for higher tiers.
+- [Homefront Operations](homefront/README-EN.md) — farm guide for 3- and 5-pilot squads based on current EVE University / HF.C fits, with regional variants and full fittings.
